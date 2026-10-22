@@ -67,13 +67,13 @@ cpu = 'aarch64'
 endian = 'little'
 EOT
 
-if ! done_zlib; then
+if ! done_ zlib; then
   fetch "https://github.com/madler/zlib/releases/download/v$ZLIB_VER/zlib-$ZLIB_VER.tar.gz"
   ( cd "$WORK/src/zlib-$ZLIB_VER" && ./configure --prefix="$PREFIX" --static && make -j"$JOBS" && make install )
   mark zlib
 fi
 
-if ! done_ffi; then
+if ! done_ ffi; then
   fetch "https://github.com/libffi/libffi/releases/download/v$FFI_VER/libffi-$FFI_VER.tar.gz"
   ( cd "$WORK/src/libffi-$FFI_VER" && ./configure --host=$TRIPLE --prefix="$PREFIX" --libdir="$PREFIX/lib" \
       --disable-shared --enable-static --with-pic --disable-docs --disable-multi-os-directory \
@@ -81,7 +81,7 @@ if ! done_ffi; then
   mark ffi
 fi
 
-if ! done_pcre2; then
+if ! done_ pcre2; then
   fetch "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-$PCRE2_VER/pcre2-$PCRE2_VER.tar.gz"
   ( cd "$WORK/src/pcre2-$PCRE2_VER" && ./configure --host=$TRIPLE --prefix="$PREFIX" --libdir="$PREFIX/lib" \
       --disable-shared --enable-static --with-pic --disable-jit \
@@ -89,18 +89,18 @@ if ! done_pcre2; then
   mark pcre2
 fi
 
-if ! done_glib; then
+if ! done_ glib; then
   fetch "https://download.gnome.org/sources/glib/${GLIB_VER%.*}/glib-$GLIB_VER.tar.xz"
   ( cd "$WORK/src/glib-$GLIB_VER" && rm -rf _b && meson setup _b --cross-file "$CROSS" \
       --prefix "$PREFIX" --libdir lib --buildtype release --default-library static \
-      -Dtests=false -Dnls=disabled -Dintrospection=disabled -Dman-pages=disabled \
-      -Ddocumentation=false -Dlibmount=disabled -Dselinux=disabled -Dxattr=false \
+      -Dtests=false -Dnls=disabled -Dman=false \
+      -Dgtk_doc=false -Dlibmount=disabled -Dselinux=disabled -Dxattr=false \
       -Dsysprof=disabled -Dlibelf=disabled \
     && ninja -C _b -j"$JOBS" && ninja -C _b install )
   mark glib
 fi
 
-if ! done_pixman; then
+if ! done_ pixman; then
   fetch "https://cairographics.org/releases/pixman-$PIXMAN_VER.tar.gz"
   ( cd "$WORK/src/pixman-$PIXMAN_VER" && rm -rf _b && meson setup _b --cross-file "$CROSS" \
       --prefix "$PREFIX" --libdir lib --buildtype release --default-library static \
@@ -109,7 +109,7 @@ if ! done_pixman; then
   mark pixman
 fi
 
-if ! done_openssl; then
+if ! done_ openssl; then
   fetch "https://github.com/openssl/openssl/releases/download/openssl-$OPENSSL_VER/openssl-$OPENSSL_VER.tar.gz"
   ( cd "$WORK/src/openssl-$OPENSSL_VER" && export ANDROID_NDK_ROOT="$NDK" \
     && env -u CC -u CXX -u AR -u RANLIB -u NM -u STRIP -u CFLAGS -u CXXFLAGS \
@@ -120,7 +120,7 @@ if ! done_openssl; then
   mark openssl
 fi
 
-if ! done_sdl; then
+if ! done_ sdl; then
   fetch "https://github.com/libsdl-org/SDL/releases/download/release-$SDL_VER/SDL2-$SDL_VER.tar.gz"
   ( cd "$WORK/src/SDL2-$SDL_VER" \
     && env -u CC -u CXX -u AR -u RANLIB -u NM -u STRIP -u CFLAGS -u CXXFLAGS \
