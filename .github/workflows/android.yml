@@ -5,6 +5,13 @@ on:
     branches: [android-port]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
 jobs:
   build:
     runs-on: ubuntu-24.04
@@ -17,17 +24,25 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y ninja-build pkg-config python3-venv python3-packaging cmake meson gcc g++ make perl xz-utils
 
-      - name: Cache cross-built dependencies
-        uses: actions/cache@v4
+      - name: Restore cross-built dependencies
+        uses: actions/cache/restore@v4
         with:
           path: android/prefix
-          key: android-deps-${{ hashFiles('android/build-deps.sh') }}
+          key: android-deps-v1-${{ github.run_id }}
+          restore-keys: android-deps-v1-
 
       - name: Build dependencies
-        run: bash android/build-deps.sh
+        run: bash android/build-deps.sh 2>&1 | tee android/deps.log
+
+      - name: Save dependency cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: android/prefix
+          key: android-deps-v1-${{ github.run_id }}
 
       - name: Build QEMU (libmain.so)
-        run: bash android/build-qemu.sh
+        run: bash android/build-qemu.sh 2>&1 | tee android/qemu.log
 
       - name: Upload native libs
         uses: actions/upload-artifact@v4
@@ -35,13 +50,24 @@ jobs:
           name: native-libs-arm64
           path: android/out/*.so
 
-      - name: Upload logs on failure
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-logs
-          path: |
-            build-android/config.log
-            build-android/meson-logs/meson-log.txt
-            android/work/src/*/_b/meson-logs/meson-log.txt
-          if-no-files-found: ignore
+      - name: Publish log tails to ci-logs branch
+        if: always()
+        run: |
+          set +e
+          mkdir -p /tmp/out
+          for f in android/deps.log android/qemu.log; do
+            [ -f "$f" ] && tail -n 3000 "$f" > "/tmp/out/$(basename "$f")"
+          done
+          [ -f build-android/config.log ] && tail -n 400 build-android/config.log > /tmp/out/config.log.tail
+          [ -f build-android/meson-logs/meson-log.txt ] && tail -n 400 build-android/meson-logs/meson-log.txt > /tmp/out/qemu-meson-log.tail
+          for f in android/work/src/*/_b/meson-logs/meson-log.txt; do
+            [ -f "$f" ] && tail -n 300 "$f" > "/tmp/out/$(echo "$f" | cut -d/ -f4)-meson-log.tail"
+          done
+          URL="https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          git clone --depth 1 --branch ci-logs "$URL" /tmp/cil 2>/dev/null || {
+            mkdir /tmp/cil; git -C /tmp/cil init -q -b ci-logs; git -C /tmp/cil remote add origin "$URL"; }
+          rm -rf /tmp/cil/latest; mkdir -p /tmp/cil/latest
+          cp /tmp/out/* /tmp/cil/latest/ 2>/dev/null
+          echo "run ${{ github.run_id }} sha ${{ github.sha }}" > /tmp/cil/latest/RUN
+          cd /tmp/cil && git add -A && git -c user.name=ci -c user.email=ci@users.noreply.github.com commit -q -m "logs for run ${{ github.run_id }}"
+          git push origin HEAD:ci-logs
