@@ -1,0 +1,400 @@
+    coroutine pool                               : YES
+    Block whitelist (rw)                         : 
+    Block whitelist (ro)                         : 
+    Use block whitelist in tools                 : NO
+    VirtFS (9P) support                          : NO
+    VirtFS (9P) Proxy Helper support (deprecated): NO
+    Live block migration                         : YES
+    replication support                          : YES
+    bochs support                                : YES
+    cloop support                                : YES
+    dmg support                                  : YES
+    qcow v1 support                              : YES
+    vdi support                                  : YES
+    vhdx support                                 : YES
+    vmdk support                                 : YES
+    vpc support                                  : YES
+    vvfat support                                : YES
+    qed support                                  : YES
+    parallels support                            : YES
+    FUSE exports                                 : NO
+    VDUSE block exports                          : YES
+
+  Crypto
+    TLS priority                                 : NORMAL
+    GNUTLS support                               : NO
+    libgcrypt                                    : NO
+    nettle                                       : NO
+    AF_ALG support                               : NO
+    rng-none                                     : NO
+    Linux keyring                                : YES
+    Linux keyutils                               : NO
+
+  User interface
+    SDL support                                  : YES 2.30.9
+    SDL image support                            : NO
+    GTK support                                  : NO
+    pixman                                       : YES 0.43.4
+    VTE support                                  : NO
+    PNG support                                  : NO
+    VNC support                                  : YES
+    VNC SASL support                             : NO
+    VNC JPEG support                             : NO
+    spice protocol support                       : NO
+    curses support                               : NO
+    brlapi support                               : NO
+
+  Audio backends
+    OSS support                                  : NO
+    sndio support                                : NO
+    ALSA support                                 : NO
+    PulseAudio support                           : NO
+    PipeWire support                             : NO
+    JACK support                                 : NO
+
+  Network backends
+    AF_XDP support                               : NO
+    slirp support                                : NO
+    vde support                                  : NO
+    netmap support                               : NO
+    l2tpv3 support                               : YES
+
+  Dependencies
+    libtasn1                                     : NO
+    PAM                                          : NO
+    iconv support                                : NO
+    virgl support                                : NO
+    rutabaga support                             : NO
+    blkio support                                : NO
+    curl support                                 : NO
+    Multipath support                            : NO
+    Linux AIO support                            : NO
+    Linux io_uring support                       : NO
+    ATTR/XATTR support                           : NO
+    RDMA support                                 : NO
+    PVRDMA support                               : NO
+    fdt support                                  : internal
+    libcap-ng support                            : NO
+    bpf support                                  : NO
+    rbd support                                  : NO
+    smartcard support                            : NO
+    U2F support                                  : NO
+    libusb                                       : NO
+    usb net redir                                : NO
+    OpenGL support (epoxy)                       : NO
+    GBM                                          : NO
+    libiscsi support                             : NO
+    libnfs support                               : NO
+    seccomp support                              : NO
+    GlusterFS support                            : NO
+    hv-balloon support                           : YES
+    TPM support                                  : YES
+    libssh support                               : NO
+    lzo support                                  : NO
+    snappy support                               : NO
+    bzip2 support                                : NO
+    lzfse support                                : NO
+    zstd support                                 : NO
+    NUMA host support                            : NO
+    capstone                                     : NO
+    libpmem support                              : NO
+    libdaxctl support                            : NO
+    libudev                                      : NO
+    FUSE lseek                                   : NO
+    selinux                                      : NO
+    libdw                                        : NO
+
+  Subprojects
+    berkeley-softfloat-3                         : YES
+    berkeley-testfloat-3                         : YES
+    dtc                                          : YES
+    keycodemapdb                                 : YES
+    libvduse                                     : YES
+
+  User defined options
+    Cross files                                  : config-meson.cross
+    Native files                                 : config-meson.native
+    werror                                       : false
+    b_pie                                        : false
+    attr                                         : disabled
+    bpf                                          : disabled
+    cap_ng                                       : disabled
+    capstone                                     : disabled
+    curses                                       : disabled
+    docs                                         : disabled
+    fuse                                         : disabled
+    gcrypt                                       : disabled
+    gio                                          : disabled
+    gnutls                                       : disabled
+    gtk                                          : disabled
+    guest_agent                                  : disabled
+    kvm                                          : disabled
+    libnfs                                       : disabled
+    libusb                                       : disabled
+    linux_aio                                    : disabled
+    linux_io_uring                               : disabled
+    nettle                                       : disabled
+    opengl                                       : disabled
+    plugins                                      : true
+    sdl                                          : enabled
+    sdl_image                                    : disabled
+    seccomp                                      : disabled
+    slirp                                        : disabled
+    tools                                        : disabled
+    usb_redir                                    : disabled
+    vhost_kernel                                 : disabled
+    vhost_net                                    : disabled
+    vhost_user                                   : disabled
+    xen                                          : disabled
+
+Found ninja-1.13.2 at /usr/local/bin/ninja
+Running compile:
+Working directory:  /home/runner/work/qemu-ios/qemu-ios/build-android/meson-private/tmp47phwv4k
+Code:
+ 
+-----------
+Command line: `cc /home/runner/work/qemu-ios/qemu-ios/build-android/meson-private/tmp47phwv4k/testfile.c -o /home/runner/work/qemu-ios/qemu-ios/build-android/meson-private/tmp47phwv4k/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs` -> 0
+stdout:
+install: /usr/lib/gcc/x86_64-linux-gnu/13/
+programs: =/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/13/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/13/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+-----------
+Failed to guess install tag for /usr/local/share/qemu/trace-events-all
+Failed to guess install tag for /usr/local/share/qemu/edk2-aarch64-code.fd
+Failed to guess install tag for /usr/local/share/qemu/edk2-arm-code.fd
+Failed to guess install tag for /usr/local/share/qemu/edk2-arm-vars.fd
+Failed to guess install tag for /usr/local/share/qemu/edk2-i386-code.fd
+Failed to guess install tag for /usr/local/share/qemu/edk2-i386-secure-code.fd
+Failed to guess install tag for /usr/local/share/qemu/edk2-i386-vars.fd
+Failed to guess install tag for /usr/local/share/qemu/edk2-x86_64-code.fd
+Failed to guess install tag for /usr/local/share/qemu/edk2-x86_64-secure-code.fd
+Failed to guess install tag for /usr/local/share/icons/hicolor/16x16/apps/qemu.png
+Failed to guess install tag for /usr/local/share/icons/hicolor/24x24/apps/qemu.png
+Failed to guess install tag for /usr/local/share/icons/hicolor/32x32/apps/qemu.png
+Failed to guess install tag for /usr/local/share/icons/hicolor/48x48/apps/qemu.png
+Failed to guess install tag for /usr/local/share/icons/hicolor/64x64/apps/qemu.png
+Failed to guess install tag for /usr/local/share/icons/hicolor/128x128/apps/qemu.png
+Failed to guess install tag for /usr/local/share/icons/hicolor/256x256/apps/qemu.png
+Failed to guess install tag for /usr/local/share/icons/hicolor/512x512/apps/qemu.png
+Failed to guess install tag for /usr/local/share/icons/hicolor/32x32/apps/qemu.bmp
+Failed to guess install tag for /usr/local/share/icons/hicolor/scalable/apps/qemu.svg
+Failed to guess install tag for /usr/local/share/applications/qemu.desktop
+Failed to guess install tag for /usr/local/share/qemu/bios.bin
+Failed to guess install tag for /usr/local/share/qemu/bios-256k.bin
+Failed to guess install tag for /usr/local/share/qemu/bios-microvm.bin
+Failed to guess install tag for /usr/local/share/qemu/qboot.rom
+Failed to guess install tag for /usr/local/share/qemu/vgabios.bin
+Failed to guess install tag for /usr/local/share/qemu/vgabios-cirrus.bin
+Failed to guess install tag for /usr/local/share/qemu/vgabios-stdvga.bin
+Failed to guess install tag for /usr/local/share/qemu/vgabios-vmware.bin
+Failed to guess install tag for /usr/local/share/qemu/vgabios-qxl.bin
+Failed to guess install tag for /usr/local/share/qemu/vgabios-virtio.bin
+Failed to guess install tag for /usr/local/share/qemu/vgabios-ramfb.bin
+Failed to guess install tag for /usr/local/share/qemu/vgabios-bochs-display.bin
+Failed to guess install tag for /usr/local/share/qemu/vgabios-ati.bin
+Failed to guess install tag for /usr/local/share/qemu/openbios-sparc32
+Failed to guess install tag for /usr/local/share/qemu/openbios-sparc64
+Failed to guess install tag for /usr/local/share/qemu/openbios-ppc
+Failed to guess install tag for /usr/local/share/qemu/QEMU,tcx.bin
+Failed to guess install tag for /usr/local/share/qemu/QEMU,cgthree.bin
+Failed to guess install tag for /usr/local/share/qemu/pxe-e1000.rom
+Failed to guess install tag for /usr/local/share/qemu/pxe-eepro100.rom
+Failed to guess install tag for /usr/local/share/qemu/pxe-ne2k_pci.rom
+Failed to guess install tag for /usr/local/share/qemu/pxe-pcnet.rom
+Failed to guess install tag for /usr/local/share/qemu/pxe-rtl8139.rom
+Failed to guess install tag for /usr/local/share/qemu/pxe-virtio.rom
+Failed to guess install tag for /usr/local/share/qemu/efi-e1000.rom
+Failed to guess install tag for /usr/local/share/qemu/efi-eepro100.rom
+Failed to guess install tag for /usr/local/share/qemu/efi-ne2k_pci.rom
+Failed to guess install tag for /usr/local/share/qemu/efi-pcnet.rom
+Failed to guess install tag for /usr/local/share/qemu/efi-rtl8139.rom
+Failed to guess install tag for /usr/local/share/qemu/efi-virtio.rom
+Failed to guess install tag for /usr/local/share/qemu/efi-e1000e.rom
+Failed to guess install tag for /usr/local/share/qemu/efi-vmxnet3.rom
+Failed to guess install tag for /usr/local/share/qemu/qemu-nsis.bmp
+Failed to guess install tag for /usr/local/share/qemu/multiboot.bin
+Failed to guess install tag for /usr/local/share/qemu/multiboot_dma.bin
+Failed to guess install tag for /usr/local/share/qemu/linuxboot.bin
+Failed to guess install tag for /usr/local/share/qemu/linuxboot_dma.bin
+Failed to guess install tag for /usr/local/share/qemu/kvmvapic.bin
+Failed to guess install tag for /usr/local/share/qemu/pvh.bin
+Failed to guess install tag for /usr/local/share/qemu/s390-ccw.img
+Failed to guess install tag for /usr/local/share/qemu/s390-netboot.img
+Failed to guess install tag for /usr/local/share/qemu/slof.bin
+Failed to guess install tag for /usr/local/share/qemu/skiboot.lid
+Failed to guess install tag for /usr/local/share/qemu/palcode-clipper
+Failed to guess install tag for /usr/local/share/qemu/u-boot.e500
+Failed to guess install tag for /usr/local/share/qemu/u-boot-sam460-20100605.bin
+Failed to guess install tag for /usr/local/share/qemu/qemu_vga.ndrv
+Failed to guess install tag for /usr/local/share/qemu/edk2-licenses.txt
+Failed to guess install tag for /usr/local/share/qemu/hppa-firmware.img
+Failed to guess install tag for /usr/local/share/qemu/opensbi-riscv32-generic-fw_dynamic.bin
+Failed to guess install tag for /usr/local/share/qemu/opensbi-riscv64-generic-fw_dynamic.bin
+Failed to guess install tag for /usr/local/share/qemu/npcm7xx_bootrom.bin
+Failed to guess install tag for /usr/local/share/qemu/vof.bin
+Failed to guess install tag for /usr/local/share/qemu/vof-nvram.bin
+Failed to guess install tag for /usr/local/share/qemu/bamboo.dtb
+Failed to guess install tag for /usr/local/share/qemu/canyonlands.dtb
+Failed to guess install tag for /usr/local/share/qemu/petalogix-s3adsp1800.dtb
+Failed to guess install tag for /usr/local/share/qemu/petalogix-ml605.dtb
+Failed to guess install tag for /usr/local/share/qemu/firmware/50-edk2-i386-secure.json
+Failed to guess install tag for /usr/local/share/qemu/firmware/50-edk2-x86_64-secure.json
+Failed to guess install tag for /usr/local/share/qemu/firmware/60-edk2-aarch64.json
+Failed to guess install tag for /usr/local/share/qemu/firmware/60-edk2-arm.json
+Failed to guess install tag for /usr/local/share/qemu/firmware/60-edk2-i386.json
+Failed to guess install tag for /usr/local/share/qemu/firmware/60-edk2-x86_64.json
+Failed to guess install tag for /usr/local/share/qemu/keymaps/ar
+Failed to guess install tag for /usr/local/share/qemu/keymaps/bepo
+Failed to guess install tag for /usr/local/share/qemu/keymaps/cz
+Failed to guess install tag for /usr/local/share/qemu/keymaps/da
+Failed to guess install tag for /usr/local/share/qemu/keymaps/de
+Failed to guess install tag for /usr/local/share/qemu/keymaps/de-ch
+Failed to guess install tag for /usr/local/share/qemu/keymaps/en-gb
+Failed to guess install tag for /usr/local/share/qemu/keymaps/en-us
+Failed to guess install tag for /usr/local/share/qemu/keymaps/es
+Failed to guess install tag for /usr/local/share/qemu/keymaps/et
+Failed to guess install tag for /usr/local/share/qemu/keymaps/fi
+Failed to guess install tag for /usr/local/share/qemu/keymaps/fo
+Failed to guess install tag for /usr/local/share/qemu/keymaps/fr
+Failed to guess install tag for /usr/local/share/qemu/keymaps/fr-be
+Failed to guess install tag for /usr/local/share/qemu/keymaps/fr-ca
+Failed to guess install tag for /usr/local/share/qemu/keymaps/fr-ch
+Failed to guess install tag for /usr/local/share/qemu/keymaps/hr
+Failed to guess install tag for /usr/local/share/qemu/keymaps/hu
+Failed to guess install tag for /usr/local/share/qemu/keymaps/is
+Failed to guess install tag for /usr/local/share/qemu/keymaps/it
+Failed to guess install tag for /usr/local/share/qemu/keymaps/ja
+Failed to guess install tag for /usr/local/share/qemu/keymaps/lt
+Failed to guess install tag for /usr/local/share/qemu/keymaps/lv
+Failed to guess install tag for /usr/local/share/qemu/keymaps/mk
+Failed to guess install tag for /usr/local/share/qemu/keymaps/nl
+Failed to guess install tag for /usr/local/share/qemu/keymaps/no
+Failed to guess install tag for /usr/local/share/qemu/keymaps/pl
+Failed to guess install tag for /usr/local/share/qemu/keymaps/pt
+Failed to guess install tag for /usr/local/share/qemu/keymaps/pt-br
+Failed to guess install tag for /usr/local/share/qemu/keymaps/ru
+Failed to guess install tag for /usr/local/share/qemu/keymaps/th
+Failed to guess install tag for /usr/local/share/qemu/keymaps/tr
+Failed to guess install tag for /usr/local/share/qemu/keymaps/sl
+Failed to guess install tag for /usr/local/share/qemu/keymaps/sv
+Command line for building ['libqemu-arm-softmmu.fa'] is long, using a response file
+!meson_ci!/ci_include "/home/runner/work/qemu-ios/qemu-ios/build-android/build.ninja"
+Failed to guess install tag for /usr/local/share/qemu/trace-events-all
+Failed to guess install tag for /usr/local/share/qemu/edk2-aarch64-code.fd
+Failed to guess install tag for /usr/local/share/qemu/edk2-arm-code.fd
+Failed to guess install tag for /usr/local/share/qemu/edk2-arm-vars.fd
+Failed to guess install tag for /usr/local/share/qemu/edk2-i386-code.fd
+Failed to guess install tag for /usr/local/share/qemu/edk2-i386-secure-code.fd
+Failed to guess install tag for /usr/local/share/qemu/edk2-i386-vars.fd
+Failed to guess install tag for /usr/local/share/qemu/edk2-x86_64-code.fd
+Failed to guess install tag for /usr/local/share/qemu/edk2-x86_64-secure-code.fd
+Failed to guess install tag for /usr/local/share/icons/hicolor/16x16/apps/qemu.png
+Failed to guess install tag for /usr/local/share/icons/hicolor/24x24/apps/qemu.png
+Failed to guess install tag for /usr/local/share/icons/hicolor/32x32/apps/qemu.png
+Failed to guess install tag for /usr/local/share/icons/hicolor/48x48/apps/qemu.png
+Failed to guess install tag for /usr/local/share/icons/hicolor/64x64/apps/qemu.png
+Failed to guess install tag for /usr/local/share/icons/hicolor/128x128/apps/qemu.png
+Failed to guess install tag for /usr/local/share/icons/hicolor/256x256/apps/qemu.png
+Failed to guess install tag for /usr/local/share/icons/hicolor/512x512/apps/qemu.png
+Failed to guess install tag for /usr/local/share/icons/hicolor/32x32/apps/qemu.bmp
+Failed to guess install tag for /usr/local/share/icons/hicolor/scalable/apps/qemu.svg
+Failed to guess install tag for /usr/local/share/applications/qemu.desktop
+Failed to guess install tag for /usr/local/share/qemu/bios.bin
+Failed to guess install tag for /usr/local/share/qemu/bios-256k.bin
+Failed to guess install tag for /usr/local/share/qemu/bios-microvm.bin
+Failed to guess install tag for /usr/local/share/qemu/qboot.rom
+Failed to guess install tag for /usr/local/share/qemu/vgabios.bin
+Failed to guess install tag for /usr/local/share/qemu/vgabios-cirrus.bin
+Failed to guess install tag for /usr/local/share/qemu/vgabios-stdvga.bin
+Failed to guess install tag for /usr/local/share/qemu/vgabios-vmware.bin
+Failed to guess install tag for /usr/local/share/qemu/vgabios-qxl.bin
+Failed to guess install tag for /usr/local/share/qemu/vgabios-virtio.bin
+Failed to guess install tag for /usr/local/share/qemu/vgabios-ramfb.bin
+Failed to guess install tag for /usr/local/share/qemu/vgabios-bochs-display.bin
+Failed to guess install tag for /usr/local/share/qemu/vgabios-ati.bin
+Failed to guess install tag for /usr/local/share/qemu/openbios-sparc32
+Failed to guess install tag for /usr/local/share/qemu/openbios-sparc64
+Failed to guess install tag for /usr/local/share/qemu/openbios-ppc
+Failed to guess install tag for /usr/local/share/qemu/QEMU,tcx.bin
+Failed to guess install tag for /usr/local/share/qemu/QEMU,cgthree.bin
+Failed to guess install tag for /usr/local/share/qemu/pxe-e1000.rom
+Failed to guess install tag for /usr/local/share/qemu/pxe-eepro100.rom
+Failed to guess install tag for /usr/local/share/qemu/pxe-ne2k_pci.rom
+Failed to guess install tag for /usr/local/share/qemu/pxe-pcnet.rom
+Failed to guess install tag for /usr/local/share/qemu/pxe-rtl8139.rom
+Failed to guess install tag for /usr/local/share/qemu/pxe-virtio.rom
+Failed to guess install tag for /usr/local/share/qemu/efi-e1000.rom
+Failed to guess install tag for /usr/local/share/qemu/efi-eepro100.rom
+Failed to guess install tag for /usr/local/share/qemu/efi-ne2k_pci.rom
+Failed to guess install tag for /usr/local/share/qemu/efi-pcnet.rom
+Failed to guess install tag for /usr/local/share/qemu/efi-rtl8139.rom
+Failed to guess install tag for /usr/local/share/qemu/efi-virtio.rom
+Failed to guess install tag for /usr/local/share/qemu/efi-e1000e.rom
+Failed to guess install tag for /usr/local/share/qemu/efi-vmxnet3.rom
+Failed to guess install tag for /usr/local/share/qemu/qemu-nsis.bmp
+Failed to guess install tag for /usr/local/share/qemu/multiboot.bin
+Failed to guess install tag for /usr/local/share/qemu/multiboot_dma.bin
+Failed to guess install tag for /usr/local/share/qemu/linuxboot.bin
+Failed to guess install tag for /usr/local/share/qemu/linuxboot_dma.bin
+Failed to guess install tag for /usr/local/share/qemu/kvmvapic.bin
+Failed to guess install tag for /usr/local/share/qemu/pvh.bin
+Failed to guess install tag for /usr/local/share/qemu/s390-ccw.img
+Failed to guess install tag for /usr/local/share/qemu/s390-netboot.img
+Failed to guess install tag for /usr/local/share/qemu/slof.bin
+Failed to guess install tag for /usr/local/share/qemu/skiboot.lid
+Failed to guess install tag for /usr/local/share/qemu/palcode-clipper
+Failed to guess install tag for /usr/local/share/qemu/u-boot.e500
+Failed to guess install tag for /usr/local/share/qemu/u-boot-sam460-20100605.bin
+Failed to guess install tag for /usr/local/share/qemu/qemu_vga.ndrv
+Failed to guess install tag for /usr/local/share/qemu/edk2-licenses.txt
+Failed to guess install tag for /usr/local/share/qemu/hppa-firmware.img
+Failed to guess install tag for /usr/local/share/qemu/opensbi-riscv32-generic-fw_dynamic.bin
+Failed to guess install tag for /usr/local/share/qemu/opensbi-riscv64-generic-fw_dynamic.bin
+Failed to guess install tag for /usr/local/share/qemu/npcm7xx_bootrom.bin
+Failed to guess install tag for /usr/local/share/qemu/vof.bin
+Failed to guess install tag for /usr/local/share/qemu/vof-nvram.bin
+Failed to guess install tag for /usr/local/share/qemu/bamboo.dtb
+Failed to guess install tag for /usr/local/share/qemu/canyonlands.dtb
+Failed to guess install tag for /usr/local/share/qemu/petalogix-s3adsp1800.dtb
+Failed to guess install tag for /usr/local/share/qemu/petalogix-ml605.dtb
+Failed to guess install tag for /usr/local/share/qemu/firmware/50-edk2-i386-secure.json
+Failed to guess install tag for /usr/local/share/qemu/firmware/50-edk2-x86_64-secure.json
+Failed to guess install tag for /usr/local/share/qemu/firmware/60-edk2-aarch64.json
+Failed to guess install tag for /usr/local/share/qemu/firmware/60-edk2-arm.json
+Failed to guess install tag for /usr/local/share/qemu/firmware/60-edk2-i386.json
+Failed to guess install tag for /usr/local/share/qemu/firmware/60-edk2-x86_64.json
+Failed to guess install tag for /usr/local/share/qemu/keymaps/ar
+Failed to guess install tag for /usr/local/share/qemu/keymaps/bepo
+Failed to guess install tag for /usr/local/share/qemu/keymaps/cz
+Failed to guess install tag for /usr/local/share/qemu/keymaps/da
+Failed to guess install tag for /usr/local/share/qemu/keymaps/de
+Failed to guess install tag for /usr/local/share/qemu/keymaps/de-ch
+Failed to guess install tag for /usr/local/share/qemu/keymaps/en-gb
+Failed to guess install tag for /usr/local/share/qemu/keymaps/en-us
+Failed to guess install tag for /usr/local/share/qemu/keymaps/es
+Failed to guess install tag for /usr/local/share/qemu/keymaps/et
+Failed to guess install tag for /usr/local/share/qemu/keymaps/fi
+Failed to guess install tag for /usr/local/share/qemu/keymaps/fo
+Failed to guess install tag for /usr/local/share/qemu/keymaps/fr
+Failed to guess install tag for /usr/local/share/qemu/keymaps/fr-be
+Failed to guess install tag for /usr/local/share/qemu/keymaps/fr-ca
+Failed to guess install tag for /usr/local/share/qemu/keymaps/fr-ch
+Failed to guess install tag for /usr/local/share/qemu/keymaps/hr
+Failed to guess install tag for /usr/local/share/qemu/keymaps/hu
+Failed to guess install tag for /usr/local/share/qemu/keymaps/is
+Failed to guess install tag for /usr/local/share/qemu/keymaps/it
+Failed to guess install tag for /usr/local/share/qemu/keymaps/ja
+Failed to guess install tag for /usr/local/share/qemu/keymaps/lt
+Failed to guess install tag for /usr/local/share/qemu/keymaps/lv
+Failed to guess install tag for /usr/local/share/qemu/keymaps/mk
+Failed to guess install tag for /usr/local/share/qemu/keymaps/nl
+Failed to guess install tag for /usr/local/share/qemu/keymaps/no
+Failed to guess install tag for /usr/local/share/qemu/keymaps/pl
+Failed to guess install tag for /usr/local/share/qemu/keymaps/pt
+Failed to guess install tag for /usr/local/share/qemu/keymaps/pt-br
+Failed to guess install tag for /usr/local/share/qemu/keymaps/ru
+Failed to guess install tag for /usr/local/share/qemu/keymaps/th
+Failed to guess install tag for /usr/local/share/qemu/keymaps/tr
+Failed to guess install tag for /usr/local/share/qemu/keymaps/sl
+Failed to guess install tag for /usr/local/share/qemu/keymaps/sv
+Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/python3 /home/runner/work/qemu-ios/qemu-ios/scripts/symlink-install-tree.py'

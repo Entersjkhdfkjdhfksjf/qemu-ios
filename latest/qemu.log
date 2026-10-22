@@ -1,0 +1,585 @@
+python determined to be '/usr/bin/python3'
+python version: Python 3.12.3
+mkvenv: Creating non-isolated virtual environment at 'pyvenv'
+mkvenv: checking for meson>=0.63.0
+The Meson build system
+Version: 1.3.2
+Source dir: /home/runner/work/qemu-ios/qemu-ios
+Build dir: /home/runner/work/qemu-ios/qemu-ios/build-android
+Build type: cross build
+Project name: qemu
+Project version: 8.2.0
+C compiler for the host machine: aarch64-linux-android29-clang (clang 21.0.0 "Android (16134705, +pgo, +bolt, +lto, +mlgo, based on r574158c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 9f872551d3c681d06fd303b36f16ed5c274735eb)")
+C linker for the host machine: aarch64-linux-android29-clang ld.lld 21.0.0
+C compiler for the build machine: cc (gcc 13.3.0 "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0")
+C linker for the build machine: cc ld.lld 21.0.0
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: aarch64
+Host machine cpu: aarch64
+Target machine cpu family: aarch64
+Target machine cpu: aarch64
+Program scripts/symlink-install-tree.py found: YES (/home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/python3 /home/runner/work/qemu-ios/qemu-ios/scripts/symlink-install-tree.py)
+Program sh found: YES (/usr/bin/sh)
+Program python3 found: YES (/home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/python3)
+Program bzip2 found: YES (/usr/bin/bzip2)
+Program iasl found: NO
+Compiler for C supports arguments -fno-pie: YES 
+Compiler for C supports arguments -no-pie: NO 
+Compiler for C supports link arguments -Wl,-z,relro: YES 
+Compiler for C supports link arguments -Wl,-z,now: YES 
+Compiler for C supports link arguments -Wl,--warn-common: YES 
+Compiler for C supports arguments -Wundef: YES 
+Compiler for C supports arguments -Wwrite-strings: YES 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Compiler for C supports arguments -Wredundant-decls: YES 
+Compiler for C supports arguments -Wold-style-declaration: NO 
+Compiler for C supports arguments -Wold-style-definition: YES 
+Compiler for C supports arguments -Wtype-limits: YES 
+Compiler for C supports arguments -Wformat-security: YES 
+Compiler for C supports arguments -Wformat-y2k: YES 
+Compiler for C supports arguments -Winit-self: YES 
+Compiler for C supports arguments -Wignored-qualifiers: YES 
+Compiler for C supports arguments -Wempty-body: YES 
+Compiler for C supports arguments -Wnested-externs: YES 
+Compiler for C supports arguments -Wendif-labels: YES 
+Compiler for C supports arguments -Wexpansion-to-defined: YES 
+Compiler for C supports arguments -Wimplicit-fallthrough=2: NO 
+Compiler for C supports arguments -Wmissing-format-attribute: YES 
+Compiler for C supports arguments -Wno-initializer-overrides: YES 
+Compiler for C supports arguments -Wno-missing-include-dirs: YES 
+Compiler for C supports arguments -Wno-shift-negative-value: YES 
+Compiler for C supports arguments -Wno-string-plus-int: YES 
+Compiler for C supports arguments -Wno-typedef-redefinition: YES 
+Compiler for C supports arguments -Wno-tautological-type-limit-compare: YES 
+Compiler for C supports arguments -Wno-psabi: YES 
+Compiler for C supports arguments -Wno-gnu-variable-sized-type-not-at-end: YES 
+Compiler for C supports arguments -Wshadow=local: NO 
+Compiler for C supports arguments -Wthread-safety: YES 
+Program cgcc found: NO
+Library m found: YES
+Run-time dependency threads found: YES
+Library util found: NO
+Run-time dependency appleframeworks found: NO (tried framework)
+Found pkg-config: YES (/home/runner/work/qemu-ios/qemu-ios/android/pkg-config-static) 1.8.1
+Run-time dependency glib-2.0 found: YES 2.78.6
+Run-time dependency gmodule-no-export-2.0 found: YES 2.78.6
+Dependency gio-2.0 skipped: feature gio disabled
+Program scripts/xml-preprocess.py found: YES (/home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/python3 /home/runner/work/qemu-ios/qemu-ios/scripts/xml-preprocess.py)
+Run-time dependency pixman-1 found: YES 0.43.4
+Run-time dependency zlib found: YES 1.3.1
+Library aio skipped: feature linux_aio disabled
+Dependency liburing skipped: feature linux_io_uring disabled
+Dependency libnfs skipped: feature libnfs disabled
+Run-time dependency appleframeworks found: NO (tried framework)
+Run-time dependency appleframeworks found: NO (tried framework)
+Dependency libseccomp skipped: feature seccomp disabled
+Library cap-ng skipped: feature cap_ng disabled
+Run-time dependency xkbcommon found: NO (tried pkgconfig)
+Dependency slirp skipped: feature slirp disabled
+Has header "libvdeplug.h" : NO 
+Run-time dependency libpulse found: NO (tried pkgconfig)
+Run-time dependency alsa found: NO (tried pkgconfig)
+Run-time dependency jack found: NO (tried pkgconfig)
+Run-time dependency libpipewire-0.3 found: NO (tried pkgconfig)
+Run-time dependency sndio found: NO (tried pkgconfig)
+Run-time dependency spice-protocol found: NO (tried pkgconfig)
+Run-time dependency spice-server found: NO (tried pkgconfig)
+Library rt found: NO
+Run-time dependency libiscsi found: NO (tried pkgconfig)
+Run-time dependency libzstd found: NO (tried pkgconfig)
+Run-time dependency virglrenderer found: NO (tried pkgconfig)
+Run-time dependency rutabaga_gfx_ffi found: NO (tried pkgconfig)
+Run-time dependency blkio found: NO (tried pkgconfig)
+Run-time dependency libcurl found: NO (tried pkgconfig)
+Run-time dependency libudev found: NO (tried pkgconfig)
+Has header "brlapi.h" : NO 
+Run-time dependency sdl2 found: YES 2.30.9
+Dependency SDL2_image skipped: feature sdl_image disabled
+Library rados found: NO
+Has header "rbd/librbd.h" : NO 
+Run-time dependency glusterfs-api found: NO (tried pkgconfig)
+Run-time dependency libssh found: NO (tried pkgconfig)
+Has header "bzlib.h" : NO 
+Has header "lzfse.h" : NO 
+Has header "sys/soundcard.h" : NO 
+Dependency epoxy skipped: feature opengl disabled
+Has header "epoxy/egl.h" with dependency epoxy: NO 
+Dependency libgcrypt skipped: feature gcrypt disabled
+Dependency nettle skipped: feature nettle disabled
+Run-time dependency gmp found: NO (tried pkgconfig)
+Run-time dependency libpng found: NO (tried pkgconfig)
+Run-time dependency libjpeg found: NO (tried pkgconfig)
+Has header "sasl/sasl.h" : NO 
+Has header "security/pam_appl.h" : NO 
+Has header "snappy-c.h" : NO 
+Has header "lzo/lzo1x.h" : NO 
+Has header "numa.h" : NO 
+Library ibumad found: NO
+Has header "rdma/rdma_cma.h" : NO 
+Library ibverbs found: NO
+Run-time dependency libcacard found: NO (tried pkgconfig)
+Run-time dependency u2f-emu found: NO (tried pkgconfig)
+Run-time dependency canokey-qemu found: NO (tried pkgconfig)
+Dependency libusbredirparser-0.5 skipped: feature usb_redir disabled
+Dependency libusb-1.0 skipped: feature libusb disabled
+Run-time dependency libpmem found: NO (tried pkgconfig)
+Run-time dependency libdaxctl found: NO (tried pkgconfig)
+Run-time dependency libkeyutils found: NO (tried pkgconfig)
+Checking for function "gettid" : YES 
+Run-time dependency libselinux found: NO (tried pkgconfig)
+Checking for function "malloc_trim" : NO 
+Header "sys/stat.h" has symbol "STATX_BASIC_STATS" : YES 
+Header "sys/stat.h" has symbol "STATX_MNT_ID" : YES 
+Dependency fuse3 skipped: feature fuse disabled
+Dependency libbpf skipped: feature bpf disabled
+Run-time dependency libxdp found: NO (tried pkgconfig)
+Run-time dependency libdw found: NO (tried pkgconfig)
+Has header "sys/epoll.h" : YES 
+Has header "linux/magic.h" : YES 
+Has header "valgrind/valgrind.h" : NO 
+Has header "linux/btrfs.h" : YES 
+Has header "libdrm/drm.h" : NO 
+Has header "pty.h" : YES 
+Has header "sys/disk.h" : NO 
+Has header "sys/ioccom.h" : NO 
+Has header "sys/kcov.h" : NO 
+Checking for function "close_range" : NO 
+Checking for function "accept4" : YES 
+Checking for function "clock_adjtime" : YES 
+Checking for function "dup3" : YES 
+Checking for function "fallocate" : YES 
+Checking for function "posix_fallocate" : YES 
+Checking for function "getcpu" : NO 
+Checking for function "sched_getcpu" : NO 
+Checking for function "posix_memalign" : YES 
+Checking for function "_aligned_malloc" : NO 
+Checking for function "valloc" : NO 
+Checking for function "memalign" : YES 
+Checking for function "ppoll" : YES 
+Checking for function "preadv" : NO 
+Checking for function "pthread_fchdir_np" : NO 
+Checking for function "sendfile" : YES 
+Checking for function "setns" : YES 
+Initialized empty Git repository in /home/runner/work/qemu-ios/qemu-ios/subprojects/dtc/.git/
+From https://gitlab.com/qemu-project/dtc
+ * branch            b6910bec11614980a21e46fbccc35934b671bd81 -> FETCH_HEAD
+HEAD is now at b6910be Bump version to v1.6.1
+Initialized empty Git repository in /home/runner/work/qemu-ios/qemu-ios/subprojects/keycodemapdb/.git/
+From https://gitlab.com/qemu-project/keycodemapdb
+ * branch            f5772a62ec52591ff6870b7e8ef32482371f22c6 -> FETCH_HEAD
+HEAD is now at f5772a6 Add Qemu qcode support for F13 to F24
+Initialized empty Git repository in /home/runner/work/qemu-ios/qemu-ios/subprojects/berkeley-softfloat-3/.git/
+From https://gitlab.com/qemu-project/berkeley-softfloat-3
+ * branch            b64af41c3276f97f0e181920400ee056b9c88037 -> FETCH_HEAD
+HEAD is now at b64af41 Fix typo in function 'softfloat_propagateNaNF128M' for RISC-V.
+Checking for function "unshare" : YES 
+Checking for function "syncfs" : YES 
+Checking for function "sync_file_range" : YES 
+Checking for function "timerfd_create" : YES 
+Checking for function "copy_file_range" : NO 
+Checking for function "getifaddrs" : YES 
+Checking for function "openpty" with dependency -lutil: YES 
+Checking for function "strchrnul" : YES 
+Checking for function "system" : YES 
+Checking for function "getloadavg" : YES 
+Header "linux/blkzoned.h" has symbol "BLKOPENZONE" : YES 
+Header "sys/epoll.h" has symbol "epoll_create1" : YES 
+Header "linux/falloc.h" has symbol "FALLOC_FL_PUNCH_HOLE" : YES 
+Header "linux/falloc.h" has symbol "FALLOC_FL_KEEP_SIZE" : YES 
+Header "linux/falloc.h" has symbol "FALLOC_FL_ZERO_RANGE" : YES 
+Has header "linux/fiemap.h" : YES 
+Header "linux/fs.h" has symbol "FS_IOC_FIEMAP" : YES 
+Checking for function "getrandom" : YES 
+Header "sys/random.h" has symbol "GRND_NONBLOCK" : YES 
+Header "sys/inotify.h" has symbol "inotify_init" : YES 
+Header "sys/inotify.h" has symbol "inotify_init1" : YES 
+Header "sys/prctl.h" has symbol "PR_SET_TIMERSLACK" : YES 
+Header "linux/rtnetlink.h" has symbol "IFLA_PROTO_DOWN" : YES 
+Header "sys/sysmacros.h" has symbol "makedev" : YES 
+Header "getopt.h" has symbol "optreset" : YES 
+Header "netinet/in.h" has symbol "IPPROTO_MPTCP" : YES 
+Checking whether type "struct sigevent" has member "sigev_notify_thread_id" : YES 
+Checking whether type "struct stat" has member "st_atim" : YES 
+Checking whether type "struct blk_zone" has member "capacity" : YES 
+Checking for type "struct iovec" : YES 
+Checking for type "struct utmpx" : YES 
+Checking for type "struct mmsghdr" : YES 
+Header "linux/vm_sockets.h" has symbol "AF_VSOCK" : YES 
+Program scripts/minikconf.py found: YES (/home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/python3 /home/runner/work/qemu-ios/qemu-ios/scripts/minikconf.py)
+Configuring arm-softmmu-config-target.h using configuration
+Configuring arm-softmmu-config-devices.mak with command
+Reading depfile: /home/runner/work/qemu-ios/qemu-ios/build-android/meson-private/arm-softmmu-config-devices.mak.d
+Configuring arm-softmmu-config-devices.h using configuration
+Program scripts/make-config-poison.sh found: YES (/home/runner/work/qemu-ios/qemu-ios/scripts/make-config-poison.sh)
+Dependency capstone skipped: feature capstone disabled
+Library fdt found: NO
+
+Executing subproject dtc 
+
+dtc| Project name: dtc
+dtc| Project version: 1.6.0
+dtc| C compiler for the host machine: aarch64-linux-android29-clang (clang 21.0.0 "Android (16134705, +pgo, +bolt, +lto, +mlgo, based on r574158c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 9f872551d3c681d06fd303b36f16ed5c274735eb)")
+dtc| C linker for the host machine: aarch64-linux-android29-clang ld.lld 21.0.0
+dtc| C compiler for the build machine: cc (gcc 13.3.0 "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0")
+dtc| C linker for the build machine: cc ld.lld 21.0.0
+dtc| Compiler for C supports arguments -Wpointer-arith: YES
+dtc| Compiler for C supports arguments -Wcast-qual: YES
+dtc| Compiler for C supports arguments -Wnested-externs: YES (cached)
+dtc| Compiler for C supports arguments -Wstrict-prototypes: YES (cached)
+dtc| Compiler for C supports arguments -Wmissing-prototypes: YES (cached)
+dtc| Compiler for C supports arguments -Wredundant-decls: YES (cached)
+dtc| Compiler for C supports arguments -Wshadow: YES
+dtc| Dependency yaml-0.1 skipped: feature yaml disabled
+dtc| Run-time dependency valgrind found: NO (tried pkgconfig)
+dtc| Program python found: NO (disabled by: python )
+dtc| Program swig skipped: feature python disabled
+dtc| Found git repository at /home/runner/work/qemu-ios/qemu-ios/subprojects/dtc
+dtc| Compiler for C supports link arguments -Wl,--version-script=/home/runner/work/qemu-ios/qemu-ios/subprojects/dtc/libfdt/version.lds: NO
+dtc| Build targets in project: 3
+dtc| Subproject dtc finished.
+
+Configuring config-host.h using configuration
+Program scripts/hxtool found: YES (/home/runner/work/qemu-ios/qemu-ios/scripts/hxtool)
+Program scripts/shaderinclude.py found: YES (/home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/python3 /home/runner/work/qemu-ios/qemu-ios/scripts/shaderinclude.py)
+Program scripts/qapi-gen.py found: YES (/home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/python3 /home/runner/work/qemu-ios/qemu-ios/scripts/qapi-gen.py)
+Program scripts/qemu-version.sh found: YES (/home/runner/work/qemu-ios/qemu-ios/scripts/qemu-version.sh)
+
+Executing subproject libvduse 
+
+libvduse| Project name: libvduse
+libvduse| Project version: undefined
+libvduse| C compiler for the host machine: aarch64-linux-android29-clang (clang 21.0.0 "Android (16134705, +pgo, +bolt, +lto, +mlgo, based on r574158c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 9f872551d3c681d06fd303b36f16ed5c274735eb)")
+libvduse| C linker for the host machine: aarch64-linux-android29-clang ld.lld 21.0.0
+libvduse| C compiler for the build machine: cc (gcc 13.3.0 "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0")
+libvduse| C linker for the build machine: cc ld.lld 21.0.0
+libvduse| Compiler for C supports arguments -Wsign-compare: YES
+libvduse| Compiler for C supports arguments -Wdeclaration-after-statement: YES
+libvduse| Compiler for C supports arguments -Wstrict-aliasing: YES
+libvduse| Build targets in project: 9
+libvduse| Subproject libvduse finished.
+
+
+Executing subproject keycodemapdb 
+
+keycodemapdb| Project name: keycodemapdb
+keycodemapdb| Project version: undefined
+keycodemapdb| Program tools/keymap-gen found: YES (/home/runner/work/qemu-ios/qemu-ios/subprojects/keycodemapdb/tools/keymap-gen)
+keycodemapdb| Build targets in project: 267
+keycodemapdb| Subproject keycodemapdb finished.
+
+Program scripts/decodetree.py found: YES (/home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/python3 /home/runner/work/qemu-ios/qemu-ios/scripts/decodetree.py)
+Program ../scripts/modules/module_block.py found: YES (/home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/python3 /home/runner/work/qemu-ios/qemu-ios/block/../scripts/modules/module_block.py)
+Program ../scripts/block-coroutine-wrapper.py found: YES (/home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/python3 /home/runner/work/qemu-ios/qemu-ios/block/../scripts/block-coroutine-wrapper.py)
+Program scripts/modinfo-collect.py found: YES (/home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/python3 /home/runner/work/qemu-ios/qemu-ios/scripts/modinfo-collect.py)
+Program scripts/modinfo-generate.py found: YES (/home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/python3 /home/runner/work/qemu-ios/qemu-ios/scripts/modinfo-generate.py)
+Program llvm-nm found: YES
+Program scripts/undefsym.py found: YES (/home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/python3 /home/runner/work/qemu-ios/qemu-ios/scripts/undefsym.py)
+Program scripts/feature_to_c.py found: YES (/home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/python3 /home/runner/work/qemu-ios/qemu-ios/scripts/feature_to_c.py)
+Program dtc found: NO
+Configuring 50-edk2-i386-secure.json using configuration
+Configuring 50-edk2-x86_64-secure.json using configuration
+Configuring 60-edk2-aarch64.json using configuration
+Configuring 60-edk2-arm.json using configuration
+Configuring 60-edk2-i386.json using configuration
+Configuring 60-edk2-x86_64.json using configuration
+Program qemu-keymap found: NO
+Program /home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/sphinx-build skipped: feature docs disabled
+Program /home/runner/work/qemu-ios/qemu-ios/scripts/decodetree.py found: YES (/home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/python3 /home/runner/work/qemu-ios/qemu-ios/scripts/decodetree.py)
+
+Executing subproject berkeley-softfloat-3 
+
+berkeley-softfloat-3| Project name: berkeley-softfloat-3
+berkeley-softfloat-3| Project version: undefined
+berkeley-softfloat-3| C compiler for the host machine: aarch64-linux-android29-clang (clang 21.0.0 "Android (16134705, +pgo, +bolt, +lto, +mlgo, based on r574158c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 9f872551d3c681d06fd303b36f16ed5c274735eb)")
+Initialized empty Git repository in /home/runner/work/qemu-ios/qemu-ios/subprojects/berkeley-testfloat-3/.git/
+From https://gitlab.com/qemu-project/berkeley-testfloat-3
+ * branch            e7af9751d9f9fd3b47911f51a5cfd08af256a9ab -> FETCH_HEAD
+HEAD is now at e7af975 Fix -Wreturn-type errors in fNNRandom
+berkeley-softfloat-3| C linker for the host machine: aarch64-linux-android29-clang ld.lld 21.0.0
+berkeley-softfloat-3| C compiler for the build machine: cc (gcc 13.3.0 "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0")
+berkeley-softfloat-3| C linker for the build machine: cc ld.lld 21.0.0
+berkeley-softfloat-3| Configuring platform.h using configuration
+berkeley-softfloat-3| Build targets in project: 349
+berkeley-softfloat-3| Subproject berkeley-softfloat-3 finished.
+
+
+Executing subproject berkeley-testfloat-3 
+
+berkeley-testfloat-3| Project name: berkeley-testfloat-3
+berkeley-testfloat-3| Project version: undefined
+berkeley-testfloat-3| C compiler for the host machine: aarch64-linux-android29-clang (clang 21.0.0 "Android (16134705, +pgo, +bolt, +lto, +mlgo, based on r574158c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 9f872551d3c681d06fd303b36f16ed5c274735eb)")
+berkeley-testfloat-3| C linker for the host machine: aarch64-linux-android29-clang ld.lld 21.0.0
+berkeley-testfloat-3| C compiler for the build machine: cc (gcc 13.3.0 "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0")
+berkeley-testfloat-3| C linker for the build machine: cc ld.lld 21.0.0
+berkeley-testfloat-3| Configuring platform.h using configuration
+berkeley-testfloat-3| Compiler for C supports arguments -Wno-ignored-pragmas: YES
+berkeley-testfloat-3| Build targets in project: 351
+berkeley-testfloat-3| Subproject berkeley-testfloat-3 finished.
+
+Program diff found: YES (/usr/bin/diff)
+Program dbus-daemon found: YES (/usr/bin/dbus-daemon)
+Run-time dependency gvnc-1.0 found: NO (tried pkgconfig)
+Run-time dependency sysprof-capture-4 found: NO (tried pkgconfig)
+Run-time dependency glib-2.0 found: YES 2.78.6
+Program initrd-stress.sh found: YES (/home/runner/work/qemu-ios/qemu-ios/tests/migration/initrd-stress.sh)
+Build targets in project: 491
+NOTICE: Future-deprecated features used:
+ * 1.1.0: {'"boolean option" keyword argument "value" of type str'}
+
+qemu 8.2.0
+
+  Build environment
+    Build directory                              : /home/runner/work/qemu-ios/qemu-ios/build-android
+    Source path                                  : /home/runner/work/qemu-ios/qemu-ios
+    Download dependencies                        : YES
+
+  Directories
+    Build directory                              : /home/runner/work/qemu-ios/qemu-ios/build-android
+    Source path                                  : /home/runner/work/qemu-ios/qemu-ios
+    Download dependencies                        : YES
+    Install prefix                               : /usr/local
+    BIOS directory                               : share/qemu
+    firmware path                                : share/qemu-firmware
+    binary directory                             : /usr/local/bin
+    library directory                            : /usr/local/lib
+    module directory                             : lib/qemu
+    libexec directory                            : /usr/local/libexec
+    include directory                            : /usr/local/include
+    config directory                             : /usr/local/etc
+    local state directory                        : /var/local
+    Manual directory                             : /usr/local/share/man
+    Doc directory                                : /usr/local/share/doc
+
+  Host binaries
+    python                                       : /home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/python3 (version: 3.12)
+    sphinx-build                                 : NO
+    gdb                                          : 
+    iasl                                         : NO
+    genisoimage                                  : 
+
+  Configurable features
+    Documentation                                : NO
+    system-mode emulation                        : YES
+    user-mode emulation                          : NO
+    block layer                                  : YES
+    Install blobs                                : YES
+    module support                               : NO
+    fuzzing support                              : NO
+    Audio drivers                                : 
+    Trace backends                               : log
+    D-Bus display                                : NO
+    QOM debugging                                : YES
+    Relocatable install                          : YES
+    vhost-kernel support                         : NO
+    vhost-net support                            : NO
+    vhost-user support                           : NO
+    vhost-user-crypto support                    : NO
+    vhost-user-blk server support                : NO
+    vhost-vdpa support                           : YES
+    build guest agent                            : NO
+
+  Compilation
+    host CPU                                     : aarch64
+    host endianness                              : little
+    C compiler                                   : aarch64-linux-android29-clang
+    Host C compiler                              : cc
+    C++ compiler                                 : NO
+    Objective-C compiler                         : NO
+    CFLAGS                                       : -fPIC -ftls-model=global-dynamic -I/home/runner/work/qemu-ios/qemu-ios/android/prefix/include -g -O2
+    LDFLAGS                                      : -fPIC -ftls-model=global-dynamic -I/home/runner/work/qemu-ios/qemu-ios/android/prefix/include -L/home/runner/work/qemu-ios/qemu-ios/android/prefix/lib -lcrypto -Wl,-z,max-page-size=16384
+    QEMU_CFLAGS                                  : -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -fno-strict-aliasing -fno-common -fwrapv -fno-pie -fstack-protector-strong
+    QEMU_LDFLAGS                                 : -fstack-protector-strong -Wl,-z,relro -Wl,-z,now -Wl,--warn-common
+    link-time optimization (LTO)                 : NO
+    PIE                                          : NO
+    static build                                 : NO
+    malloc trim support                          : NO
+    membarrier                                   : NO
+    debug graph lock                             : NO
+    debug stack usage                            : NO
+    mutex debugging                              : NO
+    memory allocator                             : system
+    avx2 optimization                            : NO
+    avx512bw optimization                        : NO
+    avx512f optimization                         : NO
+    gcov                                         : NO
+    thread sanitizer                             : NO
+    CFI support                                  : NO
+    strip binaries                               : NO
+    sparse                                       : NO
+    mingw32 support                              : NO
+
+  Cross compilers
+    arm                                          : /home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/python3 -B /home/runner/work/qemu-ios/qemu-ios/tests/docker/docker.py --engine podman cc --cc arm-linux-gnueabihf-gcc -i qemu/debian-armhf-cross -s /home/runner/work/qemu-ios/qemu-ios --
+
+  Targets and accelerators
+    KVM support                                  : NO
+    HVF support                                  : NO
+    WHPX support                                 : NO
+    NVMM support                                 : NO
+    Xen support                                  : NO
+    Xen emulation                                : NO
+    TCG support                                  : YES
+    TCG backend                                  : native (aarch64)
+    TCG plugins                                  : YES
+    TCG debug enabled                            : NO
+    target list                                  : arm-softmmu
+    default devices                              : YES
+    out of process emulation                     : YES
+    vfio-user server                             : NO
+
+  Block layer support
+    coroutine backend                            : sigaltstack
+    coroutine pool                               : YES
+    Block whitelist (rw)                         : 
+    Block whitelist (ro)                         : 
+    Use block whitelist in tools                 : NO
+    VirtFS (9P) support                          : NO
+    VirtFS (9P) Proxy Helper support (deprecated): NO
+    Live block migration                         : YES
+    replication support                          : YES
+    bochs support                                : YES
+    cloop support                                : YES
+    dmg support                                  : YES
+    qcow v1 support                              : YES
+    vdi support                                  : YES
+    vhdx support                                 : YES
+    vmdk support                                 : YES
+    vpc support                                  : YES
+    vvfat support                                : YES
+    qed support                                  : YES
+    parallels support                            : YES
+    FUSE exports                                 : NO
+    VDUSE block exports                          : YES
+
+  Crypto
+    TLS priority                                 : NORMAL
+    GNUTLS support                               : NO
+    libgcrypt                                    : NO
+    nettle                                       : NO
+    AF_ALG support                               : NO
+    rng-none                                     : NO
+    Linux keyring                                : YES
+    Linux keyutils                               : NO
+
+  User interface
+    SDL support                                  : YES 2.30.9
+    SDL image support                            : NO
+    GTK support                                  : NO
+    pixman                                       : YES 0.43.4
+    VTE support                                  : NO
+    PNG support                                  : NO
+    VNC support                                  : YES
+    VNC SASL support                             : NO
+    VNC JPEG support                             : NO
+    spice protocol support                       : NO
+    curses support                               : NO
+    brlapi support                               : NO
+
+  Audio backends
+    OSS support                                  : NO
+    sndio support                                : NO
+    ALSA support                                 : NO
+    PulseAudio support                           : NO
+    PipeWire support                             : NO
+    JACK support                                 : NO
+
+  Network backends
+    AF_XDP support                               : NO
+    slirp support                                : NO
+    vde support                                  : NO
+    netmap support                               : NO
+    l2tpv3 support                               : YES
+
+  Dependencies
+    libtasn1                                     : NO
+    PAM                                          : NO
+    iconv support                                : NO
+    virgl support                                : NO
+    rutabaga support                             : NO
+    blkio support                                : NO
+    curl support                                 : NO
+    Multipath support                            : NO
+    Linux AIO support                            : NO
+    Linux io_uring support                       : NO
+    ATTR/XATTR support                           : NO
+    RDMA support                                 : NO
+    PVRDMA support                               : NO
+    fdt support                                  : internal
+    libcap-ng support                            : NO
+    bpf support                                  : NO
+    rbd support                                  : NO
+    smartcard support                            : NO
+    U2F support                                  : NO
+    libusb                                       : NO
+    usb net redir                                : NO
+    OpenGL support (epoxy)                       : NO
+    GBM                                          : NO
+    libiscsi support                             : NO
+    libnfs support                               : NO
+    seccomp support                              : NO
+    GlusterFS support                            : NO
+    hv-balloon support                           : YES
+    TPM support                                  : YES
+    libssh support                               : NO
+    lzo support                                  : NO
+    snappy support                               : NO
+    bzip2 support                                : NO
+    lzfse support                                : NO
+    zstd support                                 : NO
+    NUMA host support                            : NO
+    capstone                                     : NO
+    libpmem support                              : NO
+    libdaxctl support                            : NO
+    libudev                                      : NO
+    FUSE lseek                                   : NO
+    selinux                                      : NO
+    libdw                                        : NO
+
+  Subprojects
+    berkeley-softfloat-3                         : YES
+    berkeley-testfloat-3                         : YES
+    dtc                                          : YES
+    keycodemapdb                                 : YES
+    libvduse                                     : YES
+
+  User defined options
+    Cross files                                  : config-meson.cross
+    Native files                                 : config-meson.native
+    werror                                       : false
+    b_pie                                        : false
+    attr                                         : disabled
+    bpf                                          : disabled
+    cap_ng                                       : disabled
+    capstone                                     : disabled
+    curses                                       : disabled
+    docs                                         : disabled
+    fuse                                         : disabled
+    gcrypt                                       : disabled
+    gio                                          : disabled
+    gnutls                                       : disabled
+    gtk                                          : disabled
+    guest_agent                                  : disabled
+    kvm                                          : disabled
+    libnfs                                       : disabled
+    libusb                                       : disabled
+    linux_aio                                    : disabled
+    linux_io_uring                               : disabled
+    nettle                                       : disabled
+    opengl                                       : disabled
+    plugins                                      : true
+    sdl                                          : enabled
+    sdl_image                                    : disabled
+    seccomp                                      : disabled
+    slirp                                        : disabled
+    tools                                        : disabled
+    usb_redir                                    : disabled
+    vhost_kernel                                 : disabled
+    vhost_net                                    : disabled
+    vhost_user                                   : disabled
+    xen                                          : disabled
+
+Found ninja-1.13.2 at /usr/local/bin/ninja
+Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyvenv/bin/python3 /home/runner/work/qemu-ios/qemu-ios/scripts/symlink-install-tree.py'
+ninja: error: unknown target 'arm-softmmu/qemu-system-arm'
