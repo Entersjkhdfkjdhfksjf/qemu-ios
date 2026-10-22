@@ -1,12 +1,3 @@
-+ AppleMPVDDriver[0xc0b60240]::start(provider 0xc0bcec40)
-config(e02f4860): starting on prng, 10
-config(e02f4860): starting on spi0, 10
-AppleS5L8900XSPIController::attach(spi0)
-AppleS5L8900XSPIController::probe(spi0)
-AppleS5L8900XSPIController::detach(spi0)
-AppleS5L8900XSPIController::start(spi0) <1>
-AppleS5L8900XSPIController::attach(spi0)
-AppleS5L8900XSPIController::start: spi0: _spiBaseAddress = 0xe9679000, _spiVersion = 1
 config(e02f4450): starting on spi1, 10
 AppleS5L8900XSPIController::attach(spi1)
 AppleS5L8900XSPIController::probe(spi1)
@@ -443,13 +434,13 @@
 AppleARMCHRPNVRAM::probe(nvram)
 AppleARMCHRPNVRAM::detach(nvram)
 AppleARMCHRPNVRAM::start(nvram) <1>
-AppleARMCHRPNVRAM::attach(nvram)
-config(e03ad4d0): starting on raw-device, 10
+AppleARMCHRPNVRconfig(e03ad4d0): starting on raw-device, 10
 AppleImage3NORAccess::attach(raw-device)
 AppleImage3NORAccess::probe(raw-device)
 AppleImage3NORAccess::detach(raw-device)
 AppleImage3NORAccess::start(raw-device) <1>
 AppleImage3NORAccess::attach(raw-device)
+AM::attach(nvram)
 AppleARMSPIFlashController::detach(nor-flash)
 AppleARMSPIFlashController::start(nor-flash) <1> failed
 config(e038b8a0): terminating
@@ -459,24 +450,22 @@
 config(e02f58a0): terminating
 config(e0227410): starting on AppleM2H264MPDDriver, 10
 config(e0227410): terminating
-+ AppleMPVDDriver[0xc0b60240]::setPowerStateGated()
+R+ AppleMPVDDriver[0xc0b60240]::setPowerStateGated()
 
-Registering: ../AppleARMPE/arm-io/AppleS5L8720XIO/mpvd@1600000/AppleMPVDDriver
+egistering: ../AppleARMPE/arm-io/AppleS5L8720XIO/mpvd@1600000/AppleMPVDDriver
 config(18): creating
-cconfig(e030f510): starting on AppleMPVDDriver, 10
+config(e02f4c70): terminating
+config(e030f510): starting on AppleMPVDDriver, 10
 config(e030f510): terminating
-onfig(e02f4c70): terminating
 AppleMBX: Detected mbx,s5l8720x.  SupportsWriteCombining: true
+virtual IOReturn IOSDIOController::enumerateSlot(UInt8, bool): Searching for SDIO device in slot: 0
 AppleARMPL080DMAC::_initDMAChannel: index: 5, bufPA: 0x8da2000, bufLA: 0xeb25d000
 AppleMBXDevice(0xc0d10c40)::start: Using DMAEventSource
-virtual IOReturn IOSDIOController::enumerateSlot(UInt8, bool): Searching for SDIO device in slot: 0
 Registering: ../AppleS5L8720XIO/mbx@3000000/AppleMBXController/AppleMBXDevice
 config(17): creating
 AppleMBXDevice(0xc0d10c40)::setPowerState(1)
 AppleMBXDevice(0xc0d10c40)::changePowerStateGated(1)
-config(e0228860): starting on AppleMBXDevice, 10
 config(e030e8e0): terminating
-config(e0228860): terminating
 IOResources: family specific matching fails
 IOResources: family specific matching fails
 IOResources: match category com_apple_platform_AppleKernelStorage exists
@@ -491,9 +480,16 @@
 IOResources: family specific matching fails
 IOResources: family specific matching fails
 IOResources: family specific matching fails
-config(16): creating
+config(17): creating
 From path: "<dict><key>IOProviderClass</key><string>IOMedia</string><key>IOPropertyMatch</key><dict><key>Partition ID</key><integer>1</integer></dict></dict>", Waiting on <dict ID="0"><key>IOProviderClass</key><string ID="1">IOMedia</string><key>IOPropertyMatch</key><dict ID="2"><key>Partition ID</key><integer size="64" ID="3">0x1</integer></dict></dict>
-config(e02f3c30): starting on IOResources, 10
+config(e02f3c30): starting on AppleMBXDevice, 10
+config(e02f3c30): terminating
+config(e0229490): terminating
+AppleSimpleNORAccess::start imageVersion: 3
+Registering: ../raw-device@8000/AppleImage3NORAccess
+config(16): creating
+config(e03ad4d0): terminating
+config(e0229490): starting on IOResources, 10
 IOResources: family specific matching fails
 IOResources: match category com_apple_platform_AppleKernelStorage exists
 IOResources: match category IOCoreSurfaceRoot exists
@@ -516,21 +512,26 @@
 IONetworkStack::start(IOResources) <1>
 IONetworkStack::attach(IOResources)
 Registering: IOService:/IOResources/IONetworkStack
-config(17): creating
+config(16): creating
 AppleMobileFileIntegrity::start(IOResources) <1>
 AppleMobileFileIntegrity::attach(IOResources)
-virtual bool AppleMobileFileIntegrity::start(IOServiconfig(e02f4040): starting on IONetworkStack, 10
-config(e02f4040): terminating
-ce*): built Sep  4 2008 13:54:29
+virtual bool AppleMobileFileIntegrity::start(IOService*): built Sepconfig(e02f3c30): starting on AppleImage3NORAccess, 10
+AppleImage3NORAccessUserClient::attach(AppleImage3NORAccess)
+AppleImage3NORAccessUserClient::probe(AppleImage3NORAccess)
+AppleImage3NORAccessUserClient::detach(AppleImage3NORAccess)
+AppleImage3NORAccessUserClient::start(AppleImage3NORAccess) <1>
+AppleImage3NORAccessUserClient::attach(AppleImage3NORAccess)
+config(e02f3c30): terminating
+  4 2008 13:54:29
 virtual bool AppleMobileFileIntegrity::start(IOService*): signature enforcement disabled by boot-arg
 Registering: IOService:/IOResources/AppleMobileFileIntegrity
-config(17): creating
+config(16): creating
 AppleFairplayTextCrypter::start(IOResources) <1>
-AppleFairplayTextCrypter::attach(IOResources)
-config(e02f4450): starting on AppleMobileFileIntegrity, 10
+AppleFairplayTextCrypter::attach(IORconfig(e030e8e0): starting on IONetworkStack, 10
+config(e030e8e0): terminating
+esources)
 AppleNullTextCrypter::start(IOResources) <1>
 AppleNullTextCrypter::attach(IOResources)
-config(e02f3c30): terminating
 config(e0229490): terminating
 AppleS5L8720XFMSS::newDeviceWithRegistryEntry: Read NAND Chip ID[0]: 0xB614D5AD
 AppleS5L8720XFMSS::newDeviceWithRegistryEntry: Read NAND Chip ID[1]: 0xB614D5AD
@@ -543,8 +544,13 @@
 AppleS5L8720XFMSS::newDeviceWithRegistryEntry: PhysBanks: 0x0000000F  ReadID: 0xB614D5AD csBitmap: 0x0000000F
 disk::attach(AppleS5L8720XFMSS)
 Registering: ../flash-controller0@A00000/AppleS5L8720XFMSS/disk@FF
-config(16): creating
-config(e022a0c0): terminconfig(e0229490): starting on disk, 10
+config(15): creating
+config(e022a0c0): terminating
+config(e030f510): starting on AppleMobileFileIntegrity, 10
+config(e030f510): terminating
+Registering: ../AppleARMPE/arm-io/AppleS5L8720XIO/clcd@900000/AppleM2CLCD
+config(14): creating
+AppleM2CLCD::start took 503 msconfig(e02f4c70): starting on disk, 10
 AppleNANDFTL::attach(disk)
 AppleNANDFTL::probe(disk)
 AppleNANDFTL::detach(disk)
@@ -554,29 +560,27 @@
 AppleS5L8720XFMSS::_fmssInitCmdsAndCEMaskCtrl: VendorSpecific: VS_CMD_SAMSUNG_2P
 AppleS5L8720XFMSS::_fmssCalcTimingInfo: NAND Bus Timing - Setup: 14 Hold: 14 EDO: 21 HCLK: 133 FMCTRL0: 0x20011000
 AppleS5L8720XFMSS::_fmssCalcTimingInfo: NAND Bus Timing - Setup: 14 Hold: 14 EDO: 21 HCLK: 133 FMCTRL0: 0x20011000
-ating
-Registering: ../AppleARMPE/arm-io/AppleS5L8720XIO/clcd@900000/AppleM2CLCD
-config(16): creating
-AppleM2CLCD::start took 504 ms
+
 config(e0229080): terminating
-config(e02f3c30): starting on AppleM2CLCD, 10
+config(e0228860): starting on AppleM2CLCD, 10
 AppleMBX: Added swap device: AppleM2CLCD  id: c0b23040
 AppleMBX: Using AppleM2CLCD as legacy swap device
-config(e02f3c30): terminating
+config(e0228860): terminating
 config(e02f3410): terminating
-config(e02f4450): terminating
 Registering: ../AppleARMPE/arm-io/AppleS5L8720XIO/sha1@0/AppleS5L8900XSHA1
-config(13): creating
-config(e02f4040): starting on AppleS5L8900XSHA1, 10
-AppleS5L8900XSHA1::start took 569 ms
+config(12): creating
+AppleS5L8900XSHA1::start took 580 ms
+config(e0228450): terminating
+config(e02f3410): starting on AppleS5L8900XSHA1, 10
+config(e02f3410): terminating
 config(e03ac080): waking
 Registering: ../uart0@4C00000/AppleS5L8900XSerial/iap/IOSerialBSDClient
-config(14): creating
+config(11): creating
 AppleOnboardSerialBSDClient::start(iap) <1>
-AppleOnboardSerialBSDClient::attach(iap)
-AppleReliableSerialLayer::start(iconfig(e0228860): starting on IOSerialBSDClient, 10
+AppleOnboardSerialBSDClient::attach(iaconfig(e0228860): starting on IOSerialBSDClient, 10
 config(e0228860): terminating
-ap) <1>
+p)
+AppleReliableSerialLayer::start(iap) <1>
 AppleReliableSerialLayer::attach(iap)
 AppleReliableSerialLayer::detach(iap)
 AppleReliableSerialLayer::start(iap) <1> failed
@@ -584,31 +588,30 @@
 IOAccessoryPortSerial::attach(iap)
 config(e03ac490): waking
 Registering: ../uart1@5B00000/AppleS5L8900XSerial/bluetooth/IOSerialBSDClient
-config(14): creating
+config(11): creating
 AppleOnboardSerialBSDClient::start(bluetooth) <1>
 AppleOnboardSerialBSDClient::attach(bluetooth)
+config(e0229080): starting on IOSerialBSDClient, 10
+config(e0229080): terminating
 AppleReliableSerialLayer::start(bluetooth) <1>
 AppleReliableSerialLayer::attach(bluetooth)
-config(e030e8e0): starting on IOSerialBSDClient, 10
-config(e030e8e0): terminating
 AppleReliableSerialLayer::detach(bluetooth)
 AppleReliableSerialLayer::start(bluetooth) <1> failed
 BTReset::start(bluetooth) <1>
 BTReset::attach(bluetooth)
 config(e03ac490): terminating
 Registering: IOService:/AppleARMPE/dock/IOAccessoryManager
-config(13): creating
-Regunexpected CLCD interrupt: 00000001
-config(e03ac490): starting on IOAccessoryManager, 10
-config(e03ac490): terminating
-istering: IOService:/AppleARMPE/dock/IOAccessoryManager
-config(13): creating
-config(14): creating
-IOAccessoryManager::start took 695 ms
-config(e0227000): terminating
-config(e030config(e0228860): starting on IOResources, 10
+config(10): creating
+Registering: IOService:/AppleARMPE/dock/IOAccessoryManager
+config(e030f510): starting on IOAccessoryManager, 10
+unexpected CLCD interrupt: 00000001
 virtual IOReturn IOSDIOController::enumerateSlot(UInt8, bool): Timed out waiting for card to become ready
 virtual void AppleS5L8900XSDIO::enumerateCards(): Unable to communicate with SDIO device
+config(e030f510): terminating
+config(10): creating
+IOAccessoryManager::start took 693 ms
+config(e0227000): terminating
+config(e022a0c0): starting on IOResources, 10
 IOResources: match category IONetworkStack exists
 IOResources: match category com_apple_platform_AppleKernelStorage exists
 IOResources: match category IOCoreSurfaceRoot exists
@@ -619,37 +622,33 @@
 IOResources: match category IOHDIXController exists
 IOResources: match category AppleFairplayTextCrypter exists
 IOResources: match category AppleNullTextCrypter exists
-config(e0228860): terminating
-e8e0): starting on IOAccessoryManager, 10
-config(e030e8e0): terminating
+config(e022a0c0): terminating
 Registering: ../arm-io/AppleS5L8720XIO/scaler@1000000/AppleM2ScalerCSCDriver
-config(12): creating
-AppleM2ScalerCSCDriver::start took 535 ms
+config(9): creating
+AppleM2ScalerCSCDriver::start took 532 ms
 config(e02f5490): terminating
-config(e02f4450): starting on AppleM2ScalerCSCDriver, 10
-config(e02f4450): terminating
-config(e0228450): terminating
+config(e0229490): starting on AppleM2ScalerCSCDriver, 10
+config(e0229490): terminating
 IOResources: family specific matching fails
 Registering: ../arm-io/AppleS5L8720XIO/usb-otg@400000/AppleSynopsysOTG2
-config(10): creating
-AppleSynopsysOTG2::start took 614 ms
+config(8): creating
+AppleSynopsysOTG2::start took 612 ms
 config(e0228c70): terminating
-config(e02f3410): starting on AppleSynopsysOTG2, 10
+config(e0229490): starting on AppleSynopsysOTG2, 10
 IOIpodUSBDevice::attach(AppleSynopsysOTG2)
 IOIpodUSBDevice::probe(AppleSynopsysOTG2)
 IOIpodUSBDevice::detach(AppleSynopsysOTG2)
 IOIpodUSBDevice::start(AppleSynopsysOTG2) <1>
 IOIpodUSBDevice::attach(AppleSynopsysOTG2)
 Registering: ../usb-otg@400000/AppleSynopsysOTG2/IOIpodUSBDevice
-config(10): creating
-config(e02f3410): terminating
-config(e0229080): starting on IOIpodUSBDevice, 10
-config(e0229080): terminating
+config(8): creating
+config(e0229490): terminating
+config(e02f5490): starting on IOIpodUSBDevice, 10
+config(e02f5490): terminating
 IOAccessoryPortSerial::start: could not set up serial port: device is offline
 IOAccessoryPortSerial::detach(iap)
 IOAccessoryPortSerial::start(iap) <1> failed
 config(e03ac080): terminating
-config(e02f4040): terminating
 AppleS5L8720XFMSS::handleOpen: FMSS Ready
 AppleNANDFTL::_FILInit: driver advertises ReadMultiple
 AppleNANDFTL::_FILInit: driver advertises ReadScattered
@@ -659,9 +658,12 @@
 [FTL:MSG] FIL_Init            [OK]
 [FTL:MSG] BUF_Init            [OK]
 [FTL:MSG] FPart Init          [OK]
-config(7): creating
+read new style signature 0x43313131 (line:281)
+[FTL:MSG] VSVFL Register  [OK]
+[FTL:MSG] VFL Init            [OK]
+config(6): creating
 config(e03ad8e0): terminating
-config(e02f4040): starting on IOResources, 10
+config(e03ac080): starting on IOResources, 10
 IOResources: family specific matching fails
 IOResources: match category IONetworkStack exists
 IOResources: match category com_apple_platform_AppleKernelStorage exists
@@ -673,46 +675,32 @@
 IOResources: match category IOHDIXController exists
 IOResources: match category AppleFairplayTextCrypter exists
 IOResources: match category AppleNullTextCrypter exists
-config(e02f4040): terminating
-read new style signature 0x43313131 (line:281)
-[FTL:MSG] VSVFL Register  [OK]
-[FTL:MSG] VFL Init            [OK]
-AppleSimpleNORAccess::start imageVersion: 3
-Registering: ../raw-device@8000/AppleImage3NORAccess
-config(6): creating
-config(e03ad4d0): terminating
-config(e02f4040): starting on AppleImage3NORAccess, 10
-AppleImage3NORAccessUserClient::attach(AppleImage3NORAccess)
-AppleImage3NORAccessUserClient::probe(AppleImage3NORAccess)
-AppleImage3NORAccessUserClient::detach(AppleImage3NORAccess)
-AppleImage3NORAccessUserClient::start(AppleImage3NORAccess) <1>
-AppleImage3NORAccessUserClient::attach(AppleImage3NORAccess)
-config(e02f4040): terminating
-AppleMultitouchZ2SPI: detected HBPP. driver will be kept alive
+config(e03ac080): terminating
 Registering: ../audio0@4A/AppleCS42L58Audio/AppleEmbeddedAudioDevice
 config(5): creating
 Registering: ../AppleS5L8900XI2CController/audio0@4A/AppleCS42L58Audio
 config(6): creating
 config(e038a860): terminating
-config(e02f4040): starting on AppleEmbeddedAudioDevice, 10
-config(e02f4040): terminating
-config(e03ad4d0): starting on AppleCS42L58Audio, 10
-config(e03ad4d0): terminating
+config(e02f5490): starting on AppleEmbeddedAudioDevice, 10
+config(e02f5490): terminating
+config(e0229490): starting on AppleCS42L58Audio, 10
+config(e0229490): terminating
+AppleMultitouchZ2SPI: detected HBPP. driver will be kept alive
 Registering: ../AppleS5L8900XSPIController/multi-touch@0/AppleMultitouchZ2SPI
 config(4): creating
 config(e038b490): terminating
-config(e03ad4d0): starting on AppleMultitouchZ2SPI, 10
-config(e03ad4d0): terminating
+config(e0229490): starting on AppleMultitouchZ2SPI, 10
+config(e0229490): terminating
 AppleMultitouchZ2SPI: enabled power, scheduled bootloading
 AppleMultitouchZ2SPI: downloaded 128 bytes of prox calibration data ("built-in")
 AppleMultitouchZ2SPI: downloaded 256 bytes of calibration data ("built-in")
 Registering: ../AppleARMPE/arm-io/AppleS5L8720XIO/tv-out@1300000/AppleM2TVOut
 config(3): creating
-AppleM2TVOut::start took 631 ms
+AppleM2TVOut::start took 638 ms
 config(e02f5080): terminating
-config(e03ad4d0): starting on AppleM2TVOut, 10
+config(e0229490): starting on AppleM2TVOut, 10
 AppleMBX: Added swap device: AppleM2TVOut  id: c0c91440
-config(e03ad4d0): terminating
+config(e0229490): terminating
 AppleS5L8720XFMSS::_fmssInitCmdsAndCEMaskCtrl: VendorSpecific: VS_CMD_SAMSUNG_2P
 AppleS5L8720XFMSS::_fmssInitCmdsAndCEMaskCtrl: VendorSpecific: VS_CMD_SAMSUNG_2P
 [FTL:MSG] VFL_Open            [OK]
@@ -724,10 +712,10 @@
 Registering: ../AppleS5L8720XFMSS/disk@FF/AppleNANDFTL/IOFlashBlockDevice
 config(3): creating
 AppleNANDFTL::start: block device created, ready for work
-config(e0229490): terminating
+config(e02f4c70): terminating
 config(e038b490): starting on AppleNANDFTL, 10
-AppleD1759PMUPowerSource: status 0x00000000
-config(e02f4040): starting on IOFlashBlockDevice, 10
+config(e038b490): terminating
+config(e02f5490): starting on IOFlashBlockDevice, 10
 IOBlockStorageDriver::attach(IOFlashBlockDevice)
 IOBlockStorageDriver::probe(IOFlashBlockDevice)
 IOBlockStorageDriver::detach(IOFlashBlockDevice)
@@ -735,19 +723,19 @@
 IOBlockStorageDriver::attach(IOFlashBlockDevice)
 unknown vendor unknown product Media::attach(IOBlockStorageDriver)
 Registering: ../IOBlockStorageDriver/unknown vendor unknown product Media
-config(3): creating
+config(2): creating
 Registering: ../disk@FF/AppleNANDFTL/IOFlashBlockDevice/IOBlockStorageDriver
-config(4): creating
-config(e02f4040): terminating
+config(3): creating
+config(e02f5490): terminating
 config(e038a860): starting on unknown vendor unknown product Media, 10
+AppleD1759PMUPowerSource: status 0x00000000
+config(e03ac080): starting on IOBlockStorageDriver, 10
+config(e03ac080): terminating
 IOMediaBSDClient::attach(unknown vendor unknown product Media)
 IOMediaBSDClient::probe(unknown vendor unknown product Media)
 IOMediaBSDClient::detach(unknown vendor unknown product Media)
 IOGUIDPartitionScheme::attach(unknown vendor unknown product Media)
 IOGUIDPartitionScheme::probe(unknown vendor unknown product Media)
-config(e03ad8e0): starting on IOBlockStorageDriver, 10
-config(e03ad8e0): terminating
-config(e038b490): terminating
 IOGUIDPartitionScheme::detach(unknown vendor unknown product Media)
 IOFDiskPartitionScheme::attach(unknown vendor unknown product Media)
 IOFDiskPartitionScheme::probe(unknown vendor unknown product Media)
@@ -763,9 +751,9 @@
 config(3): creating
 match category exists, skipping IOFDiskPartitionScheme::start(unknown vendor unknown product Media) <1>
 config(e038a860): terminating
-config(e038b490): starting on IOMediaBSDClient, 10
-config(e038b490): terminating
-config(e03ad8e0): starting on Untitled 1, 10
+config(e03ac080): starting on IOMediaBSDClient, 10
+config(e03ac080): terminating
+config(e02f5490): starting on Untitled 1, 10
 IOMediaBSDClient::attach(Untitled 1)
 IOMediaBSDClient::probe(Untitled 1)
 IOMediaBSDClient::detach(Untitled 1)
@@ -773,19 +761,19 @@
 IOMediaBSDClient::attach(Untitled 1)
 Registering: ../IOGUIDPartitionScheme/Untitled 1@1/IOMediaBSDClient
 config(2): creating
-config(e02f4040): starting on IOMediaBSDClient, 10
+config(e038b490): starting on IOMediaBSDClient, 10
 Got boot device = IOService:/AppleARMPE/arm-io/AppleS5L8720XIO/flash-controller0@A00000/AppleS5L8720XFMSS/disk@FF/AppleNANDFTL/IOFlashBlockDevice/IOBlockStorageDriver/unknown vendor unknown product Media/IOGUIDPartitionScheme/Untitled 1@1
 BSD root: disk0s1, major 14, minor 1
-config(e03ad8e0): terminating
-config(e02f4040): terminating
-Registering: ../AppleARMPE/arm-io/AppleS5L8720XIO/aes@C00000/AppleS5L8900XAES
-config(1): cJettisoning kernel linker.
-AppleMultitouchZ2SPI: downloaded 48612 bytes of firmware data ("0x0051.bin") in 117ms.
-reating
-AppleS5L8900XAES::start took 758 ms
+config(e02f5490): terminating
+config(e038b490): terminating
+AppleMultitouchZ2SPI: downloaded 48612 bytes of firmware data ("0x0051.bin") in 116ms.
+RJettisoning kernel linker.
+egistering: ../AppleARMPE/arm-io/AppleS5L8720XIO/aes@C00000/AppleS5L8900XAES
+config(1): creating
+AppleS5L8900XAES::start took 772 ms
 config(e02f60c0): terminating
-config(e03ac080): starting on AppleS5L8900XAES, 10
-config(e03ac080): terminating
+config(e03ad8e0): starting on AppleS5L8900XAES, 10
+config(e03ad8e0): terminating
 AppleD1759PMUPowerSource: _powerSupplyType 1, _usbConnectType 1
 AppleD1759PMUPowerSource: enabling idle sleep
 AppleD1759PMUPowerSource: cap -1, ext 0, chrgCap 0, chrg 0 (0 mA, cyc 0, kind 0), warn 0, crit 0
@@ -806,9 +794,9 @@
 AppleD1759PMUPowerSource: cap 75, ext 0, chrgCap 0, chrg 0 (0 mA, cyc 0, kind 0), warn 0, crit 0
 Registering: ../IOGUIDPartitionScheme/Untitled 1@1
 config(0): creating
-config(e0228450): starting on Untitled 1, 10
+config(e030f510): starting on Untitled 1, 10
 Untitled 1: match category IOMediaBSDClient exists
-config(e0228450): terminating
+config(e030f510): terminating
 Wed Dec 31 16:00:04 localhost configd[9] <Debug>: loading com.apple.SystemConfiguration.MobileWatchdog
 Wed Dec 31 16:00:04 localhost configd[9] <Debug>: loading com.apple.configd.usbdeviceconfig
 Wed Dec 31 16:00:04 localhost configd[9] <Debug>: loading com.apple.SystemConfiguration.PowerManagement
@@ -823,19 +811,19 @@
 Wed Dec 31 16:00:04 localhost configd[9] <Debug>: adding  com.apple.SystemConfiguration.IPMonitor
 Wed Dec 31 16:00:04 localhost configd[9] <Debug>: loading com.apple.SystemConfiguration.PPPController
 Wed Dec 31 16:00:04 localhost configd[9] <Debug>: adding  com.apple.SystemConfiguration.ThermalMonitor
-Wed Dec 31 16:00:05 localhost configd[9] <Notice>: watchdog: disabled by driver
 com_apple_driver_FairPlayIOKitUserClient::attach(com_apple_driver_FairPlayIOKit)
+Wed Dec 31 16:00:05 localhost configd[9] <Notice>: watchdog: disabled by driver
 RootDomainUserClient::attach(IOPMrootDomain)
-IOMobileFramebufferUserClient::attach(AppleM2CLCD)
-AppleTetheredDeviceUserClient::attach(AppleTetheredDevice)
 IONetworkStackUserClient::attach(IONetworkStack)
 Wed Dec 31 16:00:05 localhost configd[9] <Error>: InterfaceNamer: no network interfaces, could not update platform UUID
 TTY.iap: doesn't have a IOModemSerialStream interface
 IOSerialBSDClient: family specific matching fails
 TTY.bluetooth: doesn't have a IOModemSerialStream interface
 IOSerialBSDClient: family specific matching fails
-Wed Dec 31 16:00:06 localhost configd[9] <Error>: Could not establish network configuration: Success!
-Wed Dec 31 16:00:06 localhost configd[9] <Notice>: CLTM: No thermal sensors detected, not registering for notifications
+Wed Dec 31 16:00:05 localhost configd[9] <Error>: Could not establish network configuration: Success!
+Wed Dec 31 16:00:05 localhost configd[9] <Notice>: CLTM: No thermal sensors detected, not registering for notifications
+IOMobileFramebufferUserClient::attach(AppleM2CLCD)
+AppleTetheredDeviceUserClient::attach(AppleTetheredDevice)
 RootDomainUserClient::attach(IOPMrootDomain)
 RootDomainUserClient::attach(IOPMrootDomain)
 RootDomainUserClient::detach(IOPMrootDomain)
@@ -843,8 +831,8 @@
 RootDomainUserClient::attach(IOPMrootDomain)
 RootDomainUserClient::attach(IOPMrootDomain)
 IOResources: family specific matching fails
-Wed Dec 31 16:00:07 localhost configd[9] <Info>: hostname (prefs) = iPod-touch
-Wed Dec 31 16:00:07 iPod-touch configd[9] <Notice>: setting hostname to "iPod-touch"
+Wed Dec 31 16:00:06 localhost configd[9] <Info>: hostname (prefs) = iPod-touch
+Wed Dec 31 16:00:06 iPod-touch configd[9] <Notice>: setting hostname to "iPod-touch"
 AppleSynopsysOTG2 - Configuration: PTP
 AppleSynopsysOTG2          Interface: PTP
 AppleSynopsysOTG2 - Configuration: iPod USB Interface
@@ -869,7 +857,7 @@
 IOUSBDeviceInterface::attach(AppleSynopsysOTG2)
 Registering: ../usb-otg@400000/AppleSynopsysOTG2/IOUSBDeviceInterface@4
 config(4): creating
-config(e0227410): starting on IOUSBDeviceInterface, 10
+config(e02f58a0): starting on IOUSBDeviceInterface, 10
 IOUSBDeviceUserClientIniter::attach(IOUSBDeviceInterface)
 IOUSBDeviceUserClientIniter::probe(IOUSBDeviceInterface)
 IOUSBDeviceUserClientIniter::detach(IOUSBDeviceInterface)
@@ -877,22 +865,23 @@
 IOUSBDeviceUserClientIniter::attach(IOUSBDeviceInterface)
 Registering: ../usb-otg@400000/AppleSynopsysOTG2/IOUSBDeviceInterface@0
 IOUSBDeviceInterface: match category IOUSBDeviceUserClientIniter exists
-config(e0227410): terminating
+config(e02f58a0): terminating
+config(e038b8a0): starting on IOUSBDeviceInterface, 10
+config(e03adcf0): starting on IOUSBDeviceInterface, 10
 config(e03ae100): starting on IOUSBDeviceInterface, 10
+config(e030f100): starting on IOUSBDeviceInterface, 10
 AppleUSBMike::attach(IOUSBDeviceInterface)
 AppleUSBMike::probe(IOUSBDeviceInterface)
 AppleUSBMike::detach(IOUSBDeviceInterface)
 AppleUSBMike::start(IOUSBDeviceInterface) <2>
 AppleUSBMike::attach(IOUSBDeviceInterface)
 AppleSynopsysOTG2::gated_registerFunction Register function USBAudioControl
-config(e03ae100): terminating
-config(e03adcf0): starting on IOUSBDeviceInterface, 10
+config(e038b8a0): terminating
 AppleUSBMike::attach(IOUSBDeviceInterface)
 AppleUSBMike::probe(IOUSBDeviceInterface)
 AppleUSBMike::detach(IOUSBDeviceInterface)
 AppleUSBMike::start(IOUSBDeviceInterface) <3>
 AppleUSBMike::attach(IOUSBDeviceInterface)
-config(e038b8a0): starting on IOUSBDeviceInterface, 10
 IOAccessoryPortUSB::attach(IOUSBDeviceInterface)
 IOAccessoryPortUSB::probe(IOUSBDeviceInterface)
 IOAccessoryPortUSB::detach(IOUSBDeviceInterface)
@@ -902,29 +891,28 @@
 AppleSynopsysOTG2::gated_registerFunction Register function IapOverUsbHid
 Registering: ../AppleSynopsysOTG2/IOUSBDeviceInterface@3/IOAccessoryPortUSB
 config(3): creating
-config(e038b8a0): terminating
-config(e02f4860): starting on IOUSBDeviceInterface, 10
+config(e02f58a0): starting on IOAccessoryPortUSB, 10
+config(e03ae100): terminating
 AppleUSBDeviceMux::attach(IOUSBDeviceInterface)
 AppleUSBDeviceMux::probe(IOUSBDeviceInterface)
 AppleUSBDeviceMux::detach(IOUSBDeviceInterface)
 AppleUSBDeviceMux::start(IOUSBDeviceInterface) <1>
 AppleUSBDeviceMux::attach(IOUSBDeviceInterface)
 virtual bool AppleUSBDeviceMux::start(IOService*) build: Aug 10 2008 22:34:20
-config(e02f58a0): starting on IOAccessoryPortUSB, 10
-config(e02f58a0): terminating
 Registering: ../AppleSynopsysOTG2/IOUSBDeviceInterface@1/AppleUSBMike
-config(2): creating
-AppleSynopsysOTG2::gated_registerFunction Register function USBAconfig(e02f58a0): starting on AppleUSBMike, 10
-config(e02f58a0): terminating
-udioStreaming
+config(3): creating
+AppleSynopsysOTG2::gated_registerFunction Register function USBAudioStreaming
 config(e03adcf0): terminating
+config(e02f4040): starting on AppleUSBMike, 10
+config(e02f4040): terminating
+config(e02f58a0): terminating
 init_waste
 AppleSynopsysOTG2::gated_registerFunction Register function AppleUSBMux
 Registering: ../AppleSynopsysOTG2/IOUSBDeviceInterface@4/AppleUSBDeviceMux
 config(1): creating
-config(e02f4860): terminating
-config(e03adcf0): starting on AppleUSBDeviceMux, 10
-config(e03adcf0): terminating
+config(e030f100): terminating
+config(e02f58a0): starting on AppleUSBDeviceMux, 10
+config(e02f58a0): terminating
 
 GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
 DCFG=00000000 DCTL=00000000 DSTS=00000000 
@@ -953,8 +941,8 @@
 AppleMBXUserClient::attach(AppleMBXDevice)
 Registering: ../AppleMBXController/AppleMBXDevice/AppleMBXUserClient
 config(0): creating
-config(e02f4860): starting on AppleMBXUserClient, 10
-config(e02f4860): terminating
+config(e02f4040): starting on AppleMBXUserClient, 10
+config(e02f4040): terminating
 IOMobileFramebufferUserClient::attach(AppleM2TVOut)
 IOMobileFramebufferUserClient::detach(AppleM2TVOut)
 IOHIDEventServiceUserClient::attach(AppleM68Buttons)
@@ -1080,17 +1068,17 @@
          com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
 unexpected CLCD interrupt: 00000001
 unexpected CLCD interrupt: 00000001
-Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: processing command "AUTH" w/data
-Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: sending status 0
-Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: processing command "PREFS open" w/data
-Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: sending status 0
-Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: processing command "PREFS lock/wait"
-Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: sending status 0
-Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: processing command "PREFS unlock"
-Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: sending status 0
-Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: processing command "PREFS close"
-Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: processing command "EXIT"
-Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: per-session socket : invalidate fd 6
+Wed Dec 31 16:00:10 iPod-touch SCHelper[14] <Debug>: processing command "AUTH" w/data
+Wed Dec 31 16:00:10 iPod-touch SCHelper[14] <Debug>: sending status 0
+Wed Dec 31 16:00:10 iPod-touch SCHelper[14] <Debug>: processing command "PREFS open" w/data
+Wed Dec 31 16:00:10 iPod-touch SCHelper[14] <Debug>: sending status 0
+Wed Dec 31 16:00:10 iPod-touch SCHelper[14] <Debug>: processing command "PREFS lock/wait"
+Wed Dec 31 16:00:10 iPod-touch SCHelper[14] <Debug>: sending status 0
+Wed Dec 31 16:00:10 iPod-touch SCHelper[14] <Debug>: processing command "PREFS unlock"
+Wed Dec 31 16:00:10 iPod-touch SCHelper[14] <Debug>: sending status 0
+Wed Dec 31 16:00:10 iPod-touch SCHelper[14] <Debug>: processing command "PREFS close"
+Wed Dec 31 16:00:10 iPod-touch SCHelper[14] <Debug>: processing command "EXIT"
+Wed Dec 31 16:00:10 iPod-touch SCHelper[14] <Debug>: per-session socket : invalidate fd 6
 unexpected CLCD interrupt: 00000001
 unexpected CLCD interrupt: 00000001
 unexpected CLCD interrupt: 00000001
@@ -1105,16 +1093,16 @@
 EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
 EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
 
-Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: processing command "AUTH" w/data
-Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: sending status 0
-Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: processing command "PREFS open" w/data
-Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: sending status 0
-Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: processing command "PREFS lock/wait"
-Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: sending status 0
-Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: processing command "PREFS commit" w/data
-Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: sending status 0 w/reply
-Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: processing command "PREFS unlock"
-Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: sending status 0
+Wed Dec 31 16:00:13 iPod-touch SCHelper[14] <Debug>: processing command "AUTH" w/data
+Wed Dec 31 16:00:13 iPod-touch SCHelper[14] <Debug>: sending status 0
+Wed Dec 31 16:00:13 iPod-touch SCHelper[14] <Debug>: processing command "PREFS open" w/data
+Wed Dec 31 16:00:13 iPod-touch SCHelper[14] <Debug>: sending status 0
+Wed Dec 31 16:00:13 iPod-touch SCHelper[14] <Debug>: processing command "PREFS lock/wait"
+Wed Dec 31 16:00:13 iPod-touch SCHelper[14] <Debug>: sending status 0
+Wed Dec 31 16:00:13 iPod-touch SCHelper[14] <Debug>: processing command "PREFS commit" w/data
+Wed Dec 31 16:00:13 iPod-touch SCHelper[14] <Debug>: sending status 0 w/reply
+Wed Dec 31 16:00:13 iPod-touch SCHelper[14] <Debug>: processing command "PREFS unlock"
+Wed Dec 31 16:00:13 iPod-touch SCHelper[14] <Debug>: sending status 0
 Wed Dec 31 16:00:13 iPod-touch SCHelper[14] <Debug>: processing command "PREFS close"
 Wed Dec 31 16:00:13 iPod-touch SCHelper[14] <Debug>: processing command "EXIT"
 Wed Dec 31 16:00:13 iPod-touch SCHelper[14] <Debug>: per-session socket : invalidate fd 6
@@ -1409,8 +1397,8 @@
          com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
       Kernel loadable modules in backtrace (with dependencies):
          com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
-Wed Dec 31 16:02:09 iPod-touch configd[9] <Notice>: WiFi: Display off.  Adjusting scan intervals for dim screen.
-Wed Dec 31 16:02:09 iPod-touch configd[9] <Notice>: 
+Wed Dec 31 16:02:10 iPod-touch configd[9] <Notice>: WiFi: Display off.  Adjusting scan intervals for dim screen.
+Wed Dec 31 16:02:10 iPod-touch configd[9] <Notice>: 
 unexpected CLCD interrupt: 00000001
       Kernel loadable modules in backtrace (with dependencies):
          com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
@@ -1419,6 +1407,18 @@
       Kernel loadable modules in backtrace (with dependencies):
          com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
 ApplePinotLCD::_lcdEnable: enable: 0
+AppleS5L8720XFMSS::_fmssTimeoutHandler: interrupt timed out
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
 
 GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
 DCFG=00000000 DCTL=00000000 DSTS=00000000 
@@ -1458,8 +1458,8 @@
 
 kernel abort type 4: fault_type=0x3, fault_addr=0xec3fd01c
 r0: 0xc0d77f40  r1: 0x00000000  r2: 0xec3fd000  r3: 0xffffffff
-r4: 0xc05026fc  r5: 0x00000000  r6: 0xc0d36460  r7: 0xeb243ec4
-r8: 0xc04ff6f0  r9: 0xe02f7920 r10: 0x00000000 r11: 0xc0b60240
+r4: 0xc05026fc  r5: 0x00000000  r6: 0xc0d36460  r7: 0xea623ec4
+r8: 0xc04ff6f0  r9: 0xe02f7510 r10: 0x00000000 r11: 0xc0b60240
 12: 0xc018be50  sp: 0xc0d36460  lr: 0xc04ff6b0  pc: 0xc04fef28
 cpsr: 0x60070113 fsr: 0x00000808 far: 0xec3fd01c
 
@@ -1470,25 +1470,25 @@
 secure boot?: NO
 Paniclog version: 1
 Task 0xc09d6ce8: 1997 pages, 62 threads: pid 0: kernel_task
-	thread 0xe02f7920
-		kernel backtrace: eb243d98
-		  lr: 0xc00670b5  fp: 0xeb243dc8
-		  lr: 0xc00687bc  fp: 0xeb243dd4
-		  lr: 0xc0068cc8  fp: 0xeb243e68
-		  lr: 0xc006539c  fp: 0xeb243ec4
-		  lr: 0xc04ff6b0  fp: 0xeb243ed4
-		  lr: 0xc04ff734  fp: 0xeb243ee4
-		  lr: 0xc016009b  fp: 0xeb243f08
-		  lr: 0xc05009e0  fp: 0xeb243f28
-		  lr: 0xc0158fe9  fp: 0xeb243f64
-		  lr: 0xc01591e7  fp: 0xeb243f80
-		  lr: 0xc00296e7  fp: 0xeb243fa8
+	thread 0xe02f7510
+		kernel backtrace: ea623d98
+		  lr: 0xc00670b5  fp: 0xea623dc8
+		  lr: 0xc00687bc  fp: 0xea623dd4
+		  lr: 0xc0068cc8  fp: 0xea623e68
+		  lr: 0xc006539c  fp: 0xea623ec4
+		  lr: 0xc04ff6b0  fp: 0xea623ed4
+		  lr: 0xc04ff734  fp: 0xea623ee4
+		  lr: 0xc016009b  fp: 0xea623f08
+		  lr: 0xc05009e0  fp: 0xea623f28
+		  lr: 0xc0158fe9  fp: 0xea623f64
+		  lr: 0xc01591e7  fp: 0xea623f80
+		  lr: 0xc00296e7  fp: 0xea623fa8
 		  lr: 0xc00659f8  fp: 0x00000000
 
 Task 0xc09d6b10: 114 pages, 3 threads: pid 1: launchd
 Task 0xc09d6760: 362 pages, 3 threads: pid 8: lockdownd
-Task 0xc09d6588: 446 pages, 4 threads: pid 9: configd
-Task 0xc09d61d8: 2312 pages, 10 threads: pid 10: SpringBoard
+Task 0xc09d6588: 448 pages, 4 threads: pid 9: configd
+Task 0xc09d61d8: 2296 pages, 10 threads: pid 10: SpringBoard
 Task 0xc09d6000: 94 pages, 2 threads: pid 11: notifyd
 Memory access exception (1,0,0)
 ethernet MAC address: 73:65:72:69:61:6c

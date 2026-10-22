@@ -373,34 +373,6 @@ ipod_touch_lcd_read: read invalid location 0x00000410.
 ipod_touch_lcd_read: read invalid location 0x00000410.
 ipod_touch_lcd_read: read invalid location 0x00000410.
 ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
-ipod_touch_lcd_read: read invalid location 0x00000410.
 ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
 ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
 ipod_touch_sdio_read: offset = 0x00000010
@@ -563,12 +535,313 @@ ipod_touch_lcd_read: read invalid location 0x00000410.
 ipod_touch_lcd_read: read invalid location 0x00000410.
 ipod_touch_lcd_read: read invalid location 0x00000410.
 ipod_touch_lcd_read: read invalid location 0x00000410.
+ipod_touch_lcd_read: read invalid location 0x00000410.
+ipod_touch_lcd_read: read invalid location 0x00000410.
+ipod_touch_lcd_read: read invalid location 0x00000410.
+ipod_touch_lcd_read: read invalid location 0x00000410.
+ipod_touch_lcd_read: read invalid location 0x00000410.
+ipod_touch_lcd_read: read invalid location 0x00000410.
+ipod_touch_lcd_read: read invalid location 0x00000410.
+ipod_touch_lcd_read: read invalid location 0x00000410.
+ipod_touch_lcd_read: read invalid location 0x00000410.
+ipod_touch_lcd_read: read invalid location 0x00000410.
+ipod_touch_lcd_read: read invalid location 0x00000410.
+ipod_touch_lcd_read: read invalid location 0x00000410.
+ipod_touch_lcd_read: read invalid location 0x00000410.
+ipod_touch_lcd_read: read invalid location 0x00000410.
+ipod_touch_lcd_read: read invalid location 0x00000410.
 ipod_touch_lcd_read: read invalid location 0x00000300.
 ipod_touch_lcd_read: read invalid location 0x00000304.
 ipod_touch_lcd_read: read invalid location 0x00001b18.
 ipod_touch_lcd_read: read invalid location 0x00001b1c.
 ipod_touch_lcd_read: read invalid location 0x00001b20.
 ipod_touch_lcd_read: read invalid location 0x00001b24.
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
+ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
+ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
+ipod_touch_sdio_read: offset = 0x00000010
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_read: offset = 0x00000008
+ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
+SDIO CMD: 5, ADDR: 0, FUNC: 0
+ipod_touch_sdio_read: offset = 0x00000018
+ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
+ipod_touch_sdio_read: offset = 0x00000020
+ipod_touch_sdio_read: offset = 0x00000024
+ipod_touch_sdio_read: offset = 0x00000028
+ipod_touch_sdio_read: offset = 0x0000002c
 ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
 ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
 ipod_touch_sdio_read: offset = 0x00000010
@@ -930,281 +1203,8 @@ ipod_touch_sdio_read: offset = 0x00000020
 ipod_touch_sdio_read: offset = 0x00000024
 ipod_touch_sdio_read: offset = 0x00000028
 ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
 Writing PMU register cmd 4 reg 7
 Writing PMU register cmd 149 reg 7
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
-ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
-ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
-ipod_touch_sdio_read: offset = 0x00000010
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_read: offset = 0x00000008
-ipod_touch_sdio_write: writing 0x80040045 to 0x00000008
-SDIO CMD: 5, ADDR: 0, FUNC: 0
-ipod_touch_sdio_read: offset = 0x00000018
-ipod_touch_sdio_write: writing 0x00000011 to 0x00000014
-ipod_touch_sdio_read: offset = 0x00000020
-ipod_touch_sdio_read: offset = 0x00000024
-ipod_touch_sdio_read: offset = 0x00000028
-ipod_touch_sdio_read: offset = 0x0000002c
 ipod_touch_sdio_write: writing 0x00000000 to 0x0000000c
 ipod_touch_sdio_write: writing 0x00040045 to 0x00000008
 ipod_touch_sdio_read: offset = 0x00000010
@@ -1308,20 +1308,6 @@ Writing PMU register cmd 6 reg 16
 Reading PMU register 6
 Writing PMU register cmd 7 reg 16
 Writing PMU register cmd 32 reg 16
-Reading accelerometer register 32
-Reading accelerometer register 33
-Reading accelerometer register 34
-Reading mikey register 4
-Writing PMU register cmd 32 reg 12
-Reading PMU register 32
-Writing PMU register cmd 33 reg 12
-Writing PMU register cmd 0 reg 12
-Writing PMU register cmd 0 reg 4
-Reading PMU register 0
-s5l8900_gpio_read: read from location 0x00000184
-s5l8900_gpio_read: read from location 0x00000184
-s5l8900_gpio_read: read from location 0x00000124
-s5l8900_gpio_read: read from location 0x00000184
 isl29003dl_event Got event 1
 isl29003dl_send Lightsensor ready
 Writing lightsensor data 0
@@ -1370,15 +1356,23 @@ Writing lightsensor data 2
 isl29003dl_send unknown register 1
 Writing lightsensor data 2
 isl29003dl_event Got event 3
-Reading accelerometer register 41
-Reading accelerometer register 43
-Reading accelerometer register 45
-Reading accelerometer register 41
-Reading accelerometer register 43
-Reading accelerometer register 45
+s5l8900_gpio_read: read from location 0x00000184
+s5l8900_gpio_read: read from location 0x00000184
+s5l8900_gpio_read: read from location 0x00000124
+s5l8900_gpio_read: read from location 0x00000184
+Reading mikey register 4
+Writing PMU register cmd 32 reg 12
+Reading PMU register 32
+Writing PMU register cmd 33 reg 12
+Writing PMU register cmd 0 reg 12
+Writing PMU register cmd 0 reg 4
+Reading PMU register 0
 Reading accelerometer register 32
 Reading accelerometer register 33
 Reading accelerometer register 34
+Reading accelerometer register 41
+Reading accelerometer register 43
+Reading accelerometer register 45
 isl29003dl_event Got event 1
 isl29003dl_send Lightsensor ready
 Writing lightsensor data 2
@@ -1393,10 +1387,16 @@ Writing lightsensor data 3
 isl29003dl_send unknown register 1
 Writing lightsensor data 3
 isl29003dl_event Got event 3
+Reading accelerometer register 41
+Reading accelerometer register 43
+Reading accelerometer register 45
 Writing PMU register cmd 1 reg 49
 Writing PMU register cmd 7 reg 49
 Writing PMU register cmd 7 reg 48
 Writing PMU register cmd 193 reg 48
+Reading accelerometer register 32
+Reading accelerometer register 33
+Reading accelerometer register 34
 Writing PMU register cmd 193 reg 64
 Writing PMU register cmd 35 reg 64
 Writing PMU register cmd 35 reg 64
