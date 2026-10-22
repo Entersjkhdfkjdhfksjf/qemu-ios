@@ -27,12 +27,12 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [4/1878] Generating hmp-commands.h with a custom command (wrapped by meson to capture output)
 [5/1878] Generating trace/trace-root.h with a custom command
 [6/1878] Generating hmp-commands-info.h with a custom command (wrapped by meson to capture output)
-[7/1878] Generating trace/trace-crypto.h with a custom command
+[7/1878] Generating trace/trace-root.c with a custom command
 [8/1878] Generating qemu-options.def with a custom command (wrapped by meson to capture output)
-[9/1878] Generating trace/trace-root.c with a custom command
+[9/1878] Generating trace/trace-crypto.h with a custom command
 [10/1878] Generating trace/trace-crypto.c with a custom command
-[11/1878] Generating trace/trace-qapi.h with a custom command
-[12/1878] Generating trace/trace-qapi.c with a custom command
+[11/1878] Generating trace/trace-qapi.c with a custom command
+[12/1878] Generating trace/trace-qapi.h with a custom command
 [13/1878] Generating trace/trace-qom.h with a custom command
 [14/1878] Generating trace/trace-qom.c with a custom command
 [15/1878] Generating trace/trace-monitor.h with a custom command
@@ -48,8 +48,8 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [25/1878] Generating trace/trace-io.h with a custom command
 [26/1878] Generating trace/trace-io.c with a custom command
 [27/1878] Generating trace/trace-nbd.c with a custom command
-[28/1878] Generating trace/trace-scsi.h with a custom command
-[29/1878] Generating trace/trace-nbd.h with a custom command
+[28/1878] Generating trace/trace-nbd.h with a custom command
+[29/1878] Generating trace/trace-scsi.h with a custom command
 [30/1878] Generating trace/trace-scsi.c with a custom command
 [31/1878] Generating trace/trace-accel_kvm.h with a custom command
 [32/1878] Generating trace/trace-accel_kvm.c with a custom command
@@ -57,30 +57,30 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [34/1878] Generating trace/trace-audio.c with a custom command
 [35/1878] Generating trace/trace-backends.h with a custom command
 [36/1878] Generating trace/trace-backends.c with a custom command
-[37/1878] Generating trace/trace-backends_tpm.c with a custom command
-[38/1878] Generating trace/trace-backends_tpm.h with a custom command
+[37/1878] Generating trace/trace-backends_tpm.h with a custom command
+[38/1878] Generating trace/trace-backends_tpm.c with a custom command
 [39/1878] Generating trace/trace-chardev.h with a custom command
 [40/1878] Generating trace/trace-chardev.c with a custom command
 [41/1878] Generating trace/trace-ebpf.h with a custom command
 [42/1878] Generating trace/trace-ebpf.c with a custom command
 [43/1878] Generating trace/trace-hw_9pfs.h with a custom command
 [44/1878] Generating trace/trace-hw_9pfs.c with a custom command
-[45/1878] Generating trace/trace-hw_adc.h with a custom command
+[45/1878] Generating trace/trace-hw_acpi.h with a custom command
 [46/1878] Generating trace/trace-hw_acpi.c with a custom command
-[47/1878] Generating trace/trace-hw_acpi.h with a custom command
+[47/1878] Generating trace/trace-hw_adc.h with a custom command
 [48/1878] Generating trace/trace-hw_adc.c with a custom command
 [49/1878] Generating trace/trace-hw_alpha.c with a custom command
 [50/1878] Generating trace/trace-hw_alpha.h with a custom command
-[51/1878] Generating trace/trace-hw_arm.h with a custom command
-[52/1878] Generating trace/trace-hw_arm.c with a custom command
-[53/1878] Generating trace/trace-hw_audio.h with a custom command
-[54/1878] Generating trace/trace-hw_audio.c with a custom command
-[55/1878] Generating trace/trace-hw_block.c with a custom command
-[56/1878] Generating trace/trace-hw_block.h with a custom command
+[51/1878] Generating trace/trace-hw_arm.c with a custom command
+[52/1878] Generating trace/trace-hw_audio.h with a custom command
+[53/1878] Generating trace/trace-hw_audio.c with a custom command
+[54/1878] Generating trace/trace-hw_arm.h with a custom command
+[55/1878] Generating trace/trace-hw_block.h with a custom command
+[56/1878] Generating trace/trace-hw_block.c with a custom command
 [57/1878] Generating trace/trace-hw_block_dataplane.h with a custom command
 [58/1878] Generating trace/trace-hw_block_dataplane.c with a custom command
-[59/1878] Generating trace/trace-hw_char.h with a custom command
-[60/1878] Generating trace/trace-hw_char.c with a custom command
+[59/1878] Generating trace/trace-hw_char.c with a custom command
+[60/1878] Generating trace/trace-hw_char.h with a custom command
 [61/1878] Generating trace/trace-hw_display.h with a custom command
 [62/1878] Generating trace/trace-hw_display.c with a custom command
 [63/1878] Generating trace/trace-hw_dma.h with a custom command
@@ -89,8 +89,8 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [66/1878] Generating trace/trace-hw_hyperv.c with a custom command
 [67/1878] Generating trace/trace-hw_i2c.h with a custom command
 [68/1878] Generating trace/trace-hw_i2c.c with a custom command
-[69/1878] Generating trace/trace-hw_i386_xen.h with a custom command
-[70/1878] Generating trace/trace-hw_i386.h with a custom command
+[69/1878] Generating trace/trace-hw_i386.h with a custom command
+[70/1878] Generating trace/trace-hw_i386_xen.h with a custom command
 [71/1878] Generating trace/trace-hw_i386.c with a custom command
 [72/1878] Generating trace/trace-hw_i386_xen.c with a custom command
 [73/1878] Generating trace/trace-hw_i386_kvm.c with a custom command
@@ -101,8 +101,8 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [78/1878] Generating trace/trace-hw_input.c with a custom command
 [79/1878] Generating trace/trace-hw_intc.c with a custom command
 [80/1878] Generating trace/trace-hw_isa.h with a custom command
-[81/1878] Generating trace/trace-hw_isa.c with a custom command
-[82/1878] Generating trace/trace-hw_intc.h with a custom command
+[81/1878] Generating trace/trace-hw_intc.h with a custom command
+[82/1878] Generating trace/trace-hw_isa.c with a custom command
 [83/1878] Generating trace/trace-hw_mem.h with a custom command
 [84/1878] Generating trace/trace-hw_mem.c with a custom command
 [85/1878] Generating trace/trace-hw_mips.h with a custom command
@@ -111,49 +111,49 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [88/1878] Generating trace/trace-hw_misc_macio.h with a custom command
 [89/1878] Generating trace/trace-hw_misc.h with a custom command
 [90/1878] Generating trace/trace-hw_misc_macio.c with a custom command
-[91/1878] Generating qapi/shared QAPI source files with a custom command
-[92/1878] Generating trace/trace-hw_net.h with a custom command
-[93/1878] Generating trace/trace-hw_net.c with a custom command
-[94/1878] Generating trace/trace-hw_net_can.h with a custom command
-[95/1878] Generating trace/trace-hw_nubus.c with a custom command
-[96/1878] Generating trace/trace-hw_net_can.c with a custom command
+[91/1878] Generating trace/trace-hw_net_can.h with a custom command
+[92/1878] Generating qapi/shared QAPI source files with a custom command
+[93/1878] Generating trace/trace-hw_net.h with a custom command
+[94/1878] Generating trace/trace-hw_net.c with a custom command
+[95/1878] Generating trace/trace-hw_net_can.c with a custom command
+[96/1878] Generating trace/trace-hw_nubus.c with a custom command
 [97/1878] Generating trace/trace-hw_nubus.h with a custom command
-[98/1878] Generating trace/trace-hw_nvram.c with a custom command
+[98/1878] Generating trace/trace-hw_nvme.c with a custom command
 [99/1878] Generating trace/trace-hw_nvram.h with a custom command
-[100/1878] Generating trace/trace-hw_nvme.c with a custom command
+[100/1878] Generating trace/trace-hw_nvram.c with a custom command
 [101/1878] Generating trace/trace-hw_nvme.h with a custom command
-[102/1878] Generating trace/trace-hw_pci.c with a custom command
-[103/1878] Generating trace/trace-hw_pci.h with a custom command
-[104/1878] Generating trace/trace-hw_pci_host.c with a custom command
-[105/1878] Generating trace/trace-hw_pci_host.h with a custom command
-[106/1878] Generating trace/trace-hw_ppc.c with a custom command
-[107/1878] Generating trace/trace-hw_rdma.h with a custom command
-[108/1878] Generating trace/trace-hw_rdma.c with a custom command
-[109/1878] Generating trace/trace-hw_ppc.h with a custom command
+[102/1878] Generating trace/trace-hw_pci.h with a custom command
+[103/1878] Generating trace/trace-hw_pci.c with a custom command
+[104/1878] Generating trace/trace-hw_pci_host.h with a custom command
+[105/1878] Generating trace/trace-hw_pci_host.c with a custom command
+[106/1878] Generating trace/trace-hw_ppc.h with a custom command
+[107/1878] Generating trace/trace-hw_ppc.c with a custom command
+[108/1878] Generating trace/trace-hw_rdma.h with a custom command
+[109/1878] Generating trace/trace-hw_rdma.c with a custom command
 [110/1878] Generating trace/trace-hw_rdma_vmw.h with a custom command
 [111/1878] Generating trace/trace-hw_rdma_vmw.c with a custom command
-[112/1878] Generating trace/trace-hw_rtc.h with a custom command
-[113/1878] Generating trace/trace-hw_rtc.c with a custom command
-[114/1878] Generating trace/trace-hw_s390x.c with a custom command
-[115/1878] Generating trace/trace-hw_s390x.h with a custom command
+[112/1878] Generating trace/trace-hw_rtc.c with a custom command
+[113/1878] Generating trace/trace-hw_rtc.h with a custom command
+[114/1878] Generating trace/trace-hw_s390x.h with a custom command
+[115/1878] Generating trace/trace-hw_s390x.c with a custom command
 [116/1878] Generating trace/trace-hw_scsi.c with a custom command
 [117/1878] Generating trace/trace-hw_sd.c with a custom command
 [118/1878] Generating trace/trace-hw_sd.h with a custom command
-[119/1878] Generating trace/trace-hw_scsi.h with a custom command
-[120/1878] Generating trace/trace-hw_sh4.h with a custom command
+[119/1878] Generating trace/trace-hw_sh4.h with a custom command
+[120/1878] Generating trace/trace-hw_scsi.h with a custom command
 [121/1878] Generating trace/trace-hw_sh4.c with a custom command
 [122/1878] Generating trace/trace-hw_sparc.h with a custom command
 [123/1878] Generating trace/trace-hw_sparc.c with a custom command
-[124/1878] Generating trace/trace-hw_sparc64.c with a custom command
-[125/1878] Generating trace/trace-hw_sparc64.h with a custom command
+[124/1878] Generating trace/trace-hw_sparc64.h with a custom command
+[125/1878] Generating trace/trace-hw_sparc64.c with a custom command
 [126/1878] Generating trace/trace-hw_ssi.h with a custom command
 [127/1878] Generating trace/trace-hw_ssi.c with a custom command
 [128/1878] Generating trace/trace-hw_timer.c with a custom command
 [129/1878] Generating trace/trace-hw_timer.h with a custom command
 [130/1878] Generating trace/trace-hw_tpm.h with a custom command
 [131/1878] Generating trace/trace-hw_tpm.c with a custom command
-[132/1878] Generating trace/trace-hw_ufs.h with a custom command
-[133/1878] Generating trace/trace-hw_ufs.c with a custom command
+[132/1878] Generating trace/trace-hw_ufs.c with a custom command
+[133/1878] Generating trace/trace-hw_ufs.h with a custom command
 [134/1878] Generating trace/trace-hw_usb.c with a custom command
 [135/1878] Generating trace/trace-hw_vfio.c with a custom command
 [136/1878] Generating trace/trace-hw_vfio.h with a custom command
@@ -174,47 +174,47 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [151/1878] Generating trace/trace-migration.h with a custom command
 [152/1878] Generating trace/trace-ui.h with a custom command
 [153/1878] Generating trace/trace-hw_remote.h with a custom command
-[154/1878] Generating trace/trace-hw_remote.c with a custom command
-[155/1878] Generating trace/trace-ui.c with a custom command
+[154/1878] Generating trace/trace-ui.c with a custom command
+[155/1878] Generating trace/trace-hw_remote.c with a custom command
 [156/1878] Generating trace/trace-accel_tcg.h with a custom command
 [157/1878] Generating trace/trace-accel_tcg.c with a custom command
-[158/1878] Generating trace/trace-hw_core.c with a custom command
-[159/1878] Generating trace/trace-hw_core.h with a custom command
+[158/1878] Generating trace/trace-hw_core.h with a custom command
+[159/1878] Generating trace/trace-hw_core.c with a custom command
 [160/1878] Generating trace/trace-target_arm.h with a custom command
 [161/1878] Generating trace/trace-target_arm.c with a custom command
-[162/1878] Generating trace/trace-target_arm_hvf.c with a custom command
-[163/1878] Generating trace/trace-target_arm_hvf.h with a custom command
+[162/1878] Generating trace/trace-target_arm_hvf.h with a custom command
+[163/1878] Generating trace/trace-target_arm_hvf.c with a custom command
 [164/1878] Generating trace/trace-target_hppa.h with a custom command
 [165/1878] Generating trace/trace-target_hppa.c with a custom command
 [166/1878] Generating trace/trace-target_i386.h with a custom command
 [167/1878] Generating trace/trace-target_i386.c with a custom command
-[168/1878] Generating trace/trace-target_i386_kvm.h with a custom command
-[169/1878] Generating trace/trace-target_i386_kvm.c with a custom command
-[170/1878] Generating trace/trace-target_mips_tcg.c with a custom command
-[171/1878] Generating trace/trace-target_mips_tcg.h with a custom command
-[172/1878] Generating trace/trace-target_nios2.h with a custom command
-[173/1878] Generating trace/trace-target_nios2.c with a custom command
+[168/1878] Generating trace/trace-target_i386_kvm.c with a custom command
+[169/1878] Generating trace/trace-target_i386_kvm.h with a custom command
+[170/1878] Generating trace/trace-target_mips_tcg.h with a custom command
+[171/1878] Generating trace/trace-target_mips_tcg.c with a custom command
+[172/1878] Generating trace/trace-target_nios2.c with a custom command
+[173/1878] Generating trace/trace-target_nios2.h with a custom command
 [174/1878] Generating trace/trace-target_ppc.h with a custom command
 [175/1878] Generating trace/trace-target_ppc.c with a custom command
 [176/1878] Generating trace/trace-target_riscv.h with a custom command
 [177/1878] Generating trace/trace-target_riscv.c with a custom command
 [178/1878] Generating trace/trace-target_s390x.h with a custom command
 [179/1878] Generating trace/trace-target_s390x.c with a custom command
-[180/1878] Generating trace/trace-target_s390x_kvm.h with a custom command
-[181/1878] Generating trace/trace-target_s390x_kvm.c with a custom command
-[182/1878] Generating trace/trace-target_sparc.c with a custom command
-[183/1878] Generating trace/trace-target_sparc.h with a custom command
+[180/1878] Generating trace/trace-target_s390x_kvm.c with a custom command
+[181/1878] Generating trace/trace-target_s390x_kvm.h with a custom command
+[182/1878] Generating trace/trace-target_sparc.h with a custom command
+[183/1878] Generating trace/trace-target_sparc.c with a custom command
 [184/1878] Generating trace/trace-qapi_commands_authz_trace_events.h with a custom command
 [185/1878] Generating trace/trace-qapi_commands_authz_trace_events.c with a custom command
-[186/1878] Generating trace/trace-qapi_commands_block_trace_events.h with a custom command
-[187/1878] Generating trace/trace-qapi_commands_block_trace_events.c with a custom command
+[186/1878] Generating trace/trace-qapi_commands_block_trace_events.c with a custom command
+[187/1878] Generating trace/trace-qapi_commands_block_trace_events.h with a custom command
 [188/1878] Generating trace/trace-qapi_commands_block_core_trace_events.c with a custom command
 [189/1878] Generating trace/trace-qapi_commands_block_core_trace_events.h with a custom command
-[190/1878] Generating trace/trace-qapi_commands_block_export_trace_events.c with a custom command
-[191/1878] Generating trace/trace-qapi_commands_block_export_trace_events.h with a custom command
+[190/1878] Generating trace/trace-qapi_commands_block_export_trace_events.h with a custom command
+[191/1878] Generating trace/trace-qapi_commands_block_export_trace_events.c with a custom command
 [192/1878] Generating trace/trace-qapi_commands_char_trace_events.h with a custom command
-[193/1878] Generating trace/trace-qapi_commands_common_trace_events.h with a custom command
-[194/1878] Generating trace/trace-qapi_commands_char_trace_events.c with a custom command
+[193/1878] Generating trace/trace-qapi_commands_char_trace_events.c with a custom command
+[194/1878] Generating trace/trace-qapi_commands_common_trace_events.h with a custom command
 [195/1878] Generating trace/trace-qapi_commands_common_trace_events.c with a custom command
 [196/1878] Generating trace/trace-qapi_commands_compat_trace_events.h with a custom command
 [197/1878] Generating trace/trace-qapi_commands_compat_trace_events.c with a custom command
@@ -222,8 +222,8 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [199/1878] Generating trace/trace-qapi_commands_control_trace_events.c with a custom command
 [200/1878] Generating trace/trace-qapi_commands_crypto_trace_events.h with a custom command
 [201/1878] Generating trace/trace-qapi_commands_crypto_trace_events.c with a custom command
-[202/1878] Generating trace/trace-qapi_commands_cxl_trace_events.c with a custom command
-[203/1878] Generating trace/trace-qapi_commands_cxl_trace_events.h with a custom command
+[202/1878] Generating trace/trace-qapi_commands_cxl_trace_events.h with a custom command
+[203/1878] Generating trace/trace-qapi_commands_cxl_trace_events.c with a custom command
 [204/1878] Generating trace/trace-qapi_commands_dump_trace_events.h with a custom command
 [205/1878] Generating trace/trace-qapi_commands_dump_trace_events.c with a custom command
 [206/1878] Generating trace/trace-qapi_commands_error_trace_events.h with a custom command
@@ -238,44 +238,44 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [215/1878] Generating trace/trace-qapi_commands_machine_trace_events.h with a custom command
 [216/1878] Generating trace/trace-qapi_commands_migration_trace_events.c with a custom command
 [217/1878] Generating trace/trace-qapi_commands_migration_trace_events.h with a custom command
-[218/1878] Generating trace/trace-qapi_commands_misc_trace_events.h with a custom command
-[219/1878] Generating trace/trace-qapi_commands_misc_trace_events.c with a custom command
+[218/1878] Generating trace/trace-qapi_commands_misc_trace_events.c with a custom command
+[219/1878] Generating trace/trace-qapi_commands_misc_trace_events.h with a custom command
 [220/1878] Generating trace/trace-qapi_commands_net_trace_events.h with a custom command
 [221/1878] Generating trace/trace-qapi_commands_net_trace_events.c with a custom command
 [222/1878] Generating trace/trace-qapi_commands_pragma_trace_events.h with a custom command
 [223/1878] Generating trace/trace-qapi_commands_pragma_trace_events.c with a custom command
-[224/1878] Generating trace/trace-qapi_commands_qom_trace_events.h with a custom command
-[225/1878] Generating trace/trace-qapi_commands_qom_trace_events.c with a custom command
+[224/1878] Generating trace/trace-qapi_commands_qom_trace_events.c with a custom command
+[225/1878] Generating trace/trace-qapi_commands_qom_trace_events.h with a custom command
 [226/1878] Generating trace/trace-qapi_commands_replay_trace_events.h with a custom command
 [227/1878] Generating trace/trace-qapi_commands_replay_trace_events.c with a custom command
 [228/1878] Generating trace/trace-qapi_commands_run_state_trace_events.h with a custom command
 [229/1878] Generating trace/trace-qapi_commands_run_state_trace_events.c with a custom command
-[230/1878] Generating trace/trace-qapi_commands_sockets_trace_events.h with a custom command
-[231/1878] Generating trace/trace-qapi_commands_sockets_trace_events.c with a custom command
+[230/1878] Generating trace/trace-qapi_commands_sockets_trace_events.c with a custom command
+[231/1878] Generating trace/trace-qapi_commands_sockets_trace_events.h with a custom command
 [232/1878] Generating trace/trace-qapi_commands_stats_trace_events.h with a custom command
 [233/1878] Generating trace/trace-qapi_commands_stats_trace_events.c with a custom command
 [234/1878] Generating trace/trace-qapi_commands_trace_trace_events.h with a custom command
 [235/1878] Generating trace/trace-qapi_commands_trace_trace_events.c with a custom command
-[236/1878] Generating trace/trace-qapi_commands_transaction_trace_events.c with a custom command
-[237/1878] Generating trace/trace-qapi_commands_transaction_trace_events.h with a custom command
+[236/1878] Generating trace/trace-qapi_commands_transaction_trace_events.h with a custom command
+[237/1878] Generating trace/trace-qapi_commands_transaction_trace_events.c with a custom command
 [238/1878] Generating trace/trace-qapi_commands_virtio_trace_events.c with a custom command
 [239/1878] Generating trace/trace-qapi_commands_virtio_trace_events.h with a custom command
 [240/1878] Generating trace/trace-qapi_commands_yank_trace_events.h with a custom command
 [241/1878] Generating trace/trace-qapi_commands_yank_trace_events.c with a custom command
 [242/1878] Generating trace/trace-qapi_commands_acpi_trace_events.h with a custom command
 [243/1878] Generating trace/trace-qapi_commands_acpi_trace_events.c with a custom command
-[244/1878] Generating trace/trace-qapi_commands_audio_trace_events.h with a custom command
-[245/1878] Generating trace/trace-qapi_commands_audio_trace_events.c with a custom command
+[244/1878] Generating trace/trace-qapi_commands_audio_trace_events.c with a custom command
+[245/1878] Generating trace/trace-qapi_commands_audio_trace_events.h with a custom command
 [246/1878] Generating trace/trace-qapi_commands_cryptodev_trace_events.h with a custom command
 [247/1878] Generating trace/trace-qapi_commands_cryptodev_trace_events.c with a custom command
-[248/1878] Generating trace/trace-qapi_commands_qdev_trace_events.h with a custom command
-[249/1878] Generating trace/trace-qapi_commands_qdev_trace_events.c with a custom command
-[250/1878] Generating trace/trace-qapi_commands_pci_trace_events.h with a custom command
-[251/1878] Generating trace/trace-qapi_commands_pci_trace_events.c with a custom command
+[248/1878] Generating trace/trace-qapi_commands_qdev_trace_events.c with a custom command
+[249/1878] Generating trace/trace-qapi_commands_qdev_trace_events.h with a custom command
+[250/1878] Generating trace/trace-qapi_commands_pci_trace_events.c with a custom command
+[251/1878] Generating trace/trace-qapi_commands_pci_trace_events.h with a custom command
 [252/1878] Generating trace/trace-qapi_commands_rdma_trace_events.h with a custom command
 [253/1878] Generating trace/trace-qapi_commands_rdma_trace_events.c with a custom command
-[254/1878] Generating trace/trace-qapi_commands_rocker_trace_events.h with a custom command
-[255/1878] Generating trace/trace-qapi_commands_rocker_trace_events.c with a custom command
+[254/1878] Generating trace/trace-qapi_commands_rocker_trace_events.c with a custom command
+[255/1878] Generating trace/trace-qapi_commands_rocker_trace_events.h with a custom command
 [256/1878] Generating trace/trace-qapi_commands_tpm_trace_events.c with a custom command
 [257/1878] Generating trace/trace-qapi_commands_tpm_trace_events.h with a custom command
 [258/1878] Generating trace/trace-qapi_commands_ui_trace_events.c with a custom command
@@ -292,28 +292,28 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [269/1878] Generating ui/input-keymap-qcode-to-linux.c.inc with a custom command (wrapped by meson to capture output)
 [270/1878] Generating ui/input-keymap-qcode-to-qnum.c.inc with a custom command (wrapped by meson to capture output)
 [271/1878] Generating ui/input-keymap-qcode-to-sun.c.inc with a custom command (wrapped by meson to capture output)
-[272/1878] Generating ui/input-keymap-qnum-to-qcode.c.inc with a custom command (wrapped by meson to capture output)
-[273/1878] Generating ui/input-keymap-usb-to-qcode.c.inc with a custom command (wrapped by meson to capture output)
+[272/1878] Generating ui/input-keymap-usb-to-qcode.c.inc with a custom command (wrapped by meson to capture output)
+[273/1878] Generating ui/input-keymap-qnum-to-qcode.c.inc with a custom command (wrapped by meson to capture output)
 [274/1878] Generating ui/input-keymap-win32-to-qcode.c.inc with a custom command (wrapped by meson to capture output)
 [275/1878] Generating ui/input-keymap-xorgevdev-to-qcode.c.inc with a custom command (wrapped by meson to capture output)
 [276/1878] Generating ui/input-keymap-xorgkbd-to-qcode.c.inc with a custom command (wrapped by meson to capture output)
 [277/1878] Generating ui/input-keymap-xorgxquartz-to-qcode.c.inc with a custom command (wrapped by meson to capture output)
 [278/1878] Generating ui/input-keymap-x11-to-qcode.c.inc with a custom command (wrapped by meson to capture output)
 [279/1878] Generating ui/shader/texture-blit-frag.h with a custom command (wrapped by meson to capture output)
-[280/1878] Generating ui/input-keymap-xorgxwin-to-qcode.c.inc with a custom command (wrapped by meson to capture output)
-[281/1878] Generating ui/input-keymap-osx-to-qcode.c.inc with a custom command (wrapped by meson to capture output)
+[280/1878] Generating ui/input-keymap-osx-to-qcode.c.inc with a custom command (wrapped by meson to capture output)
+[281/1878] Generating ui/input-keymap-xorgxwin-to-qcode.c.inc with a custom command (wrapped by meson to capture output)
 [282/1878] Generating ui/shader/texture-blit-vert.h with a custom command (wrapped by meson to capture output)
 [283/1878] Generating block/module_block.h with a custom command
 [284/1878] Generating block/block-gen.c with a custom command
 [285/1878] Generating ui/shader/texture-blit-flip-vert.h with a custom command (wrapped by meson to capture output)
-[286/1878] Compiling C object subprojects/dtc/libfdt/libfdt.a.p/fdt_addresses.c.o
-[287/1878] Compiling C object subprojects/dtc/libfdt/libfdt.a.p/fdt_check.c.o
-[288/1878] Compiling C object subprojects/dtc/libfdt/libfdt.a.p/fdt.c.o
+[286/1878] Compiling C object subprojects/dtc/libfdt/libfdt.a.p/fdt.c.o
+[287/1878] Compiling C object subprojects/dtc/libfdt/libfdt.a.p/fdt_addresses.c.o
+[288/1878] Compiling C object subprojects/dtc/libfdt/libfdt.a.p/fdt_check.c.o
 [289/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-builtin-types.c.o
 [290/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-authz.c.o
 [291/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-authz.c.o
-[292/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-builtin-visit.c.o
-[293/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-authz.c.o
+[292/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-authz.c.o
+[293/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-builtin-visit.c.o
 [294/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-authz.c.o
 [295/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-block.c.o
 [296/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-block.c.o
@@ -325,38 +325,38 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [302/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-block-export.c.o
 [303/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-block-export.c.o
 [304/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-char.c.o
-[305/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-block-core.c.o
-[306/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-block-export.c.o
+[305/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-block-export.c.o
+[306/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-block-core.c.o
 [307/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-char.c.o
-[308/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-char.c.o
-[309/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-char.c.o
-[310/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-common.c.o
-[311/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-common.c.o
-[312/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-common.c.o
+[308/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-char.c.o
+[309/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-common.c.o
+[310/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-char.c.o
+[311/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-common.c.o
+[312/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-common.c.o
 [313/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-common.c.o
 [314/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-compat.c.o
 [315/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-block-core.c.o
-[316/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-compat.c.o
-[317/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-compat.c.o
+[316/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-compat.c.o
+[317/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-compat.c.o
 [318/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-compat.c.o
 [319/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-control.c.o
 [320/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-control.c.o
 [321/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-control.c.o
-[322/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-control.c.o
-[323/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-crypto.c.o
-[324/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-crypto.c.o
+[322/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-crypto.c.o
+[323/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-crypto.c.o
+[324/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-control.c.o
 [325/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-crypto.c.o
 [326/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-cxl.c.o
-[327/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-crypto.c.o
-[328/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-cxl.c.o
+[327/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-cxl.c.o
+[328/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-crypto.c.o
 [329/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-cxl.c.o
 [330/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-dump.c.o
-[331/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-cxl.c.o
-[332/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-dump.c.o
+[331/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-dump.c.o
+[332/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-cxl.c.o
 [333/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-dump.c.o
-[334/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-dump.c.o
-[335/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-error.c.o
-[336/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-error.c.o
+[334/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-error.c.o
+[335/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-error.c.o
+[336/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-dump.c.o
 [337/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-error.c.o
 [338/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-error.c.o
 [339/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-introspect.c.o
@@ -371,31 +371,31 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [348/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-job.c.o
 [349/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-machine-common.c.o
 [350/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-machine-common.c.o
-[351/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-machine.c.o
-[352/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-machine.c.o
+[351/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-machine.c.o
+[352/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-machine.c.o
 [353/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-migration.c.o
 [354/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-machine.c.o
 [355/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-migration.c.o
-[356/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-machine.c.o
-[357/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-migration.c.o
+[356/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-migration.c.o
+[357/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-machine.c.o
 [358/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-misc.c.o
 [359/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-misc.c.o
 [360/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-misc.c.o
 [361/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-net.c.o
 [362/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-misc.c.o
 [363/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-migration.c.o
-[364/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-pragma.c.o
-[365/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-net.c.o
+[364/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-net.c.o
+[365/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-pragma.c.o
 [366/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-net.c.o
 [367/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-net.c.o
 [368/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-pragma.c.o
 [369/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-pragma.c.o
 [370/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-pragma.c.o
-[371/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-qom.c.o
-[372/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-qom.c.o
+[371/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-qom.c.o
+[372/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-qom.c.o
 [373/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-replay.c.o
-[374/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-replay.c.o
-[375/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-qom.c.o
+[374/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-qom.c.o
+[375/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-replay.c.o
 [376/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-qom.c.o
 [377/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-replay.c.o
 [378/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-run-state.c.o
@@ -417,9 +417,9 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [394/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-trace.c.o
 [395/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-transaction.c.o
 [396/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-transaction.c.o
-[397/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-transaction.c.o
-[398/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-transaction.c.o
-[399/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-virtio.c.o
+[397/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-virtio.c.o
+[398/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-transaction.c.o
+[399/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-transaction.c.o
 [400/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-virtio.c.o
 [401/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-yank.c.o
 [402/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-virtio.c.o
@@ -428,15 +428,15 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [405/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-yank.c.o
 [406/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-yank.c.o
 [407/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-acpi.c.o
-[408/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-acpi.c.o
-[409/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-acpi.c.o
+[408/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-acpi.c.o
+[409/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-acpi.c.o
 [410/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-acpi.c.o
 [411/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-audio.c.o
 [412/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-audio.c.o
 [413/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-audio.c.o
 [414/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-cryptodev.c.o
-[415/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-cryptodev.c.o
-[416/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-audio.c.o
+[415/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-audio.c.o
+[416/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-cryptodev.c.o
 [417/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-cryptodev.c.o
 [418/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-cryptodev.c.o
 [419/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-qdev.c.o
@@ -446,8 +446,8 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [423/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-pci.c.o
 [424/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-pci.c.o
 [425/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-pci.c.o
-[426/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-rdma.c.o
-[427/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-pci.c.o
+[426/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-pci.c.o
+[427/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-types-rdma.c.o
 [428/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-rdma.c.o
 [429/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-rdma.c.o
 [430/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-rdma.c.o
@@ -463,20 +463,20 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [440/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-events-ui.c.o
 [441/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-root.c.o
 [442/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-crypto.c.o
-[443/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qom.c.o
-[444/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-ui.c.o
-[445/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi.c.o
-[446/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-ui.c.o
+[443/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-commands-ui.c.o
+[444/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi.c.o
+[445/1878] Compiling C object libqemuutil.a.p/meson-generated_.._qapi_qapi-visit-ui.c.o
+[446/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qom.c.o
 [447/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-monitor.c.o
-[448/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-gdbstub.c.o
-[449/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-util.c.o
-[450/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-authz.c.o
-[451/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-io.c.o
-[452/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-nbd.c.o
-[453/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-scsi.c.o
-[454/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-block.c.o
-[455/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-backends.c.o
-[456/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-audio.c.o
+[448/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-util.c.o
+[449/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-authz.c.o
+[450/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-gdbstub.c.o
+[451/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-scsi.c.o
+[452/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-block.c.o
+[453/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-io.c.o
+[454/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-nbd.c.o
+[455/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-audio.c.o
+[456/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-backends.c.o
 [457/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-accel_kvm.c.o
 [458/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-backends_tpm.c.o
 [459/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-ebpf.c.o
@@ -500,8 +500,8 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [477/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_ide.c.o
 [478/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_input.c.o
 [479/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_isa.c.o
-[480/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_intc.c.o
-[481/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_mem.c.o
+[480/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_mem.c.o
+[481/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_intc.c.o
 [482/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_mips.c.o
 [483/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_misc_macio.c.o
 [484/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_misc.c.o
@@ -512,8 +512,8 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [489/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_nvme.c.o
 [490/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_pci.c.o
 [491/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_pci_host.c.o
-[492/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_ppc.c.o
-[493/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_rdma.c.o
+[492/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_rdma.c.o
+[493/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_ppc.c.o
 [494/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_rdma_vmw.c.o
 [495/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_rtc.c.o
 [496/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_s390x.c.o
@@ -526,12 +526,12 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [503/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_timer.c.o
 [504/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_tpm.c.o
 [505/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_ufs.c.o
-[506/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_virtio.c.o
-[507/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_usb.c.o
-[508/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_vfio.c.o
+[506/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_usb.c.o
+[507/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_vfio.c.o
+[508/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_virtio.c.o
 [509/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_watchdog.c.o
-[510/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_gpio.c.o
-[511/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_xen.c.o
+[510/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_xen.c.o
+[511/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-hw_gpio.c.o
 [512/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-net.c.o
 [513/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-migration.c.o
 [514/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-system.c.o
@@ -546,24 +546,24 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [523/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-target_i386_kvm.c.o
 [524/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-target_mips_tcg.c.o
 [525/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-target_nios2.c.o
-[526/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-target_riscv.c.o
-[527/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-target_ppc.c.o
+[526/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-target_ppc.c.o
+[527/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-target_riscv.c.o
 [528/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-target_s390x.c.o
 [529/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-target_s390x_kvm.c.o
-[530/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_authz_trace_events.c.o
-[531/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-target_sparc.c.o
+[530/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-target_sparc.c.o
+[531/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_authz_trace_events.c.o
 [532/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_block_trace_events.c.o
 [533/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_block_core_trace_events.c.o
 [534/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_block_export_trace_events.c.o
 [535/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_char_trace_events.c.o
 [536/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_common_trace_events.c.o
 [537/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_compat_trace_events.c.o
-[538/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_crypto_trace_events.c.o
-[539/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_control_trace_events.c.o
+[538/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_control_trace_events.c.o
+[539/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_crypto_trace_events.c.o
 [540/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_cxl_trace_events.c.o
 [541/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_dump_trace_events.c.o
-[542/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_introspect_trace_events.c.o
-[543/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_error_trace_events.c.o
+[542/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_error_trace_events.c.o
+[543/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_introspect_trace_events.c.o
 [544/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_job_trace_events.c.o
 [545/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_machine_common_trace_events.c.o
 [546/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_machine_trace_events.c.o
@@ -578,35 +578,35 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [555/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_stats_trace_events.c.o
 [556/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_trace_trace_events.c.o
 [557/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_transaction_trace_events.c.o
-[558/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_yank_trace_events.c.o
-[559/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_virtio_trace_events.c.o
+[558/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_virtio_trace_events.c.o
+[559/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_yank_trace_events.c.o
 [560/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_acpi_trace_events.c.o
 [561/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_audio_trace_events.c.o
 [562/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_cryptodev_trace_events.c.o
 [563/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_qdev_trace_events.c.o
 [564/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_pci_trace_events.c.o
 [565/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_rdma_trace_events.c.o
-[566/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_tpm_trace_events.c.o
-[567/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_rocker_trace_events.c.o
+[566/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_rocker_trace_events.c.o
+[567/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_tpm_trace_events.c.o
 [568/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_ui_trace_events.c.o
 [569/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_machine_target_trace_events.c.o
 [570/1878] Compiling C object libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_misc_target_trace_events.c.o
-[571/1878] Compiling C object libqemuutil.a.p/qapi_opts-visitor.c.o
-[572/1878] Compiling C object libqemuutil.a.p/qapi_qapi-clone-visitor.c.o
+[571/1878] Compiling C object libqemuutil.a.p/qapi_qapi-clone-visitor.c.o
+[572/1878] Compiling C object libqemuutil.a.p/qapi_opts-visitor.c.o
 [573/1878] Compiling C object libqemuutil.a.p/qapi_qapi-dealloc-visitor.c.o
 [574/1878] Compiling C object libqemuutil.a.p/qapi_qapi-forward-visitor.c.o
 [575/1878] Compiling C object libqemuutil.a.p/qapi_qapi-util.c.o
-[576/1878] Compiling C object libqemuutil.a.p/qapi_qapi-visit-core.c.o
+[576/1878] Compiling C object libqemuutil.a.p/qapi_qobject-output-visitor.c.o
 [577/1878] Compiling C object libqemuutil.a.p/qapi_qobject-input-visitor.c.o
-[578/1878] Compiling C object libqemuutil.a.p/qapi_qobject-output-visitor.c.o
+[578/1878] Compiling C object libqemuutil.a.p/qapi_qapi-visit-core.c.o
 [579/1878] Compiling C object libqemuutil.a.p/qapi_string-input-visitor.c.o
 [580/1878] Compiling C object libqemuutil.a.p/qapi_qapi-type-helpers.c.o
 [581/1878] Compiling C object libqemuutil.a.p/qapi_string-output-visitor.c.o
 [582/1878] Compiling C object libqemuutil.a.p/qapi_qmp-event.c.o
 [583/1878] Compiling C object libqemuutil.a.p/qobject_qnull.c.o
 [584/1878] Compiling C object libqemuutil.a.p/qapi_qmp-dispatch.c.o
-[585/1878] Compiling C object libqemuutil.a.p/qapi_qmp-registry.c.o
-[586/1878] Compiling C object libqemuutil.a.p/qobject_qnum.c.o
+[585/1878] Compiling C object libqemuutil.a.p/qobject_qnum.c.o
+[586/1878] Compiling C object libqemuutil.a.p/qapi_qmp-registry.c.o
 [587/1878] Compiling C object libqemuutil.a.p/qobject_qstring.c.o
 [588/1878] Compiling C object libqemuutil.a.p/qobject_qbool.c.o
 [589/1878] Compiling C object libqemuutil.a.p/qobject_qlist.c.o
@@ -614,46 +614,46 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [591/1878] Compiling C object libqemuutil.a.p/qobject_qlit.c.o
 [592/1878] Compiling C object libqemuutil.a.p/qobject_qobject.c.o
 [593/1878] Compiling C object libqemuutil.a.p/qobject_qjson.c.o
-[594/1878] Compiling C object libqemuutil.a.p/qobject_json-writer.c.o
-[595/1878] Compiling C object libqemuutil.a.p/qobject_json-lexer.c.o
+[594/1878] Compiling C object libqemuutil.a.p/qobject_json-lexer.c.o
+[595/1878] Compiling C object libqemuutil.a.p/qobject_json-writer.c.o
 [596/1878] Compiling C object libqemuutil.a.p/qobject_json-streamer.c.o
 [597/1878] Compiling C object libqemuutil.a.p/qobject_json-parser.c.o
 [598/1878] Compiling C object libqemuutil.a.p/qobject_block-qdict.c.o
-[599/1878] Compiling C object libqemuutil.a.p/util_unicode.c.o
-[600/1878] Compiling C object libqemuutil.a.p/util_osdep.c.o
+[599/1878] Compiling C object libqemuutil.a.p/util_osdep.c.o
+[600/1878] Compiling C object libqemuutil.a.p/util_unicode.c.o
 [601/1878] Compiling C object libqemuutil.a.p/util_qemu-timer-common.c.o
 [602/1878] Compiling C object libqemuutil.a.p/util_cutils.c.o
-[603/1878] Compiling C object libqemuutil.a.p/util_fdmon-epoll.c.o
-[604/1878] Compiling C object libqemuutil.a.p/util_fdmon-poll.c.o
+[603/1878] Compiling C object libqemuutil.a.p/util_fdmon-poll.c.o
+[604/1878] Compiling C object libqemuutil.a.p/util_fdmon-epoll.c.o
 [605/1878] Compiling C object libqemuutil.a.p/util_thread-context.c.o
-[606/1878] Compiling C object libqemuutil.a.p/util_compatfd.c.o
-[607/1878] Compiling C object libqemuutil.a.p/util_aio-posix.c.o
-[608/1878] Compiling C object libqemuutil.a.p/util_event_notifier-posix.c.o
-[609/1878] Compiling C object libqemuutil.a.p/util_mmap-alloc.c.o
-[610/1878] Compiling C object libqemuutil.a.p/util_memfd.c.o
-[611/1878] Compiling C object libqemuutil.a.p/util_defer-call.c.o
+[606/1878] Compiling C object libqemuutil.a.p/util_aio-posix.c.o
+[607/1878] Compiling C object libqemuutil.a.p/util_compatfd.c.o
+[608/1878] Compiling C object libqemuutil.a.p/util_mmap-alloc.c.o
+[609/1878] Compiling C object libqemuutil.a.p/util_event_notifier-posix.c.o
+[610/1878] Compiling C object libqemuutil.a.p/util_defer-call.c.o
+[611/1878] Compiling C object libqemuutil.a.p/util_memfd.c.o
 [612/1878] Compiling C object libqemuutil.a.p/util_qemu-thread-posix.c.o
 [613/1878] Compiling C object libqemuutil.a.p/util_oslib-posix.c.o
 [614/1878] Compiling C object libqemuutil.a.p/util_envlist.c.o
 [615/1878] Compiling C object libqemuutil.a.p/util_path.c.o
 [616/1878] Compiling C object libqemuutil.a.p/util_module.c.o
-[617/1878] Compiling C object libqemuutil.a.p/util_host-utils.c.o
-[618/1878] Compiling C object libqemuutil.a.p/util_bitops.c.o
+[617/1878] Compiling C object libqemuutil.a.p/util_bitops.c.o
+[618/1878] Compiling C object libqemuutil.a.p/util_host-utils.c.o
 [619/1878] Compiling C object libqemuutil.a.p/util_fifo8.c.o
 [620/1878] Compiling C object libqemuutil.a.p/util_bitmap.c.o
 [621/1878] Compiling C object libqemuutil.a.p/util_error.c.o
 [622/1878] Compiling C object libqemuutil.a.p/util_cacheflush.c.o
-[623/1878] Compiling C object libqemuutil.a.p/util_id.c.o
-[624/1878] Compiling C object libqemuutil.a.p/util_qemu-print.c.o
+[623/1878] Compiling C object libqemuutil.a.p/util_qemu-print.c.o
+[624/1878] Compiling C object libqemuutil.a.p/util_id.c.o
 [625/1878] Compiling C object libqemuutil.a.p/util_error-report.c.o
 [626/1878] Compiling C object libqemuutil.a.p/util_notify.c.o
 [627/1878] Compiling C object libqemuutil.a.p/util_qemu-progress.c.o
-[628/1878] Compiling C object libqemuutil.a.p/util_qemu-config.c.o
+[628/1878] Compiling C object libqemuutil.a.p/util_keyval.c.o
 [629/1878] Compiling C object libqemuutil.a.p/util_crc32c.c.o
-[630/1878] Compiling C object libqemuutil.a.p/util_keyval.c.o
+[630/1878] Compiling C object libqemuutil.a.p/util_qemu-config.c.o
 [631/1878] Compiling C object libqemuutil.a.p/util_qemu-option.c.o
-[632/1878] Compiling C object libqemuutil.a.p/util_uuid.c.o
-[633/1878] Compiling C object libqemuutil.a.p/util_getauxval.c.o
+[632/1878] Compiling C object libqemuutil.a.p/util_getauxval.c.o
+[633/1878] Compiling C object libqemuutil.a.p/util_uuid.c.o
 [634/1878] Compiling C object libqemuutil.a.p/util_rcu.c.o
 [635/1878] Compiling C object libqemuutil.a.p/util_log.c.o
 [636/1878] Compiling C object libqemuutil.a.p/util_qdist.c.o
@@ -663,8 +663,8 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [640/1878] Compiling C object libqemuutil.a.p/util_reserved-region.c.o
 [641/1878] Compiling C object libqemuutil.a.p/util_stats64.c.o
 [642/1878] Compiling C object libqemuutil.a.p/util_systemd.c.o
-[643/1878] Compiling C object libqemuutil.a.p/util_drm.c.o
-[644/1878] Compiling C object libqemuutil.a.p/util_transactions.c.o
+[643/1878] Compiling C object libqemuutil.a.p/util_transactions.c.o
+[644/1878] Compiling C object libqemuutil.a.p/util_drm.c.o
 [645/1878] Compiling C object libqemuutil.a.p/util_guest-random.c.o
 [646/1878] Compiling C object libqemuutil.a.p/util_int128.c.o
 [647/1878] Compiling C object libqemuutil.a.p/util_yank.c.o
@@ -692,17 +692,17 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [669/1878] Compiling C object libqemuutil.a.p/util_hbitmap.c.o
 [670/1878] Compiling C object libqemuutil.a.p/util_nvdimm-utils.c.o
 [671/1878] Compiling C object libqemuutil.a.p/util_iov.c.o
-[672/1878] Compiling C object libqemuutil.a.p/util_vhost-user-server.c.o
-[673/1878] Compiling C object libqemuutil.a.p/util_block-helpers.c.o
-[674/1878] Compiling C object libqemuutil.a.p/util_uri.c.o
+[672/1878] Compiling C object libqemuutil.a.p/util_block-helpers.c.o
+[673/1878] Compiling C object libqemuutil.a.p/util_uri.c.o
+[674/1878] Compiling C object libqemuutil.a.p/util_vhost-user-server.c.o
 [675/1878] Compiling C object libqemuutil.a.p/util_qemu-coroutine-sleep.c.o
 [676/1878] Compiling C object libqemuutil.a.p/util_qemu-co-shared-resource.c.o
 [677/1878] Compiling C object libqemuutil.a.p/util_qemu-co-timeout.c.o
 [678/1878] Compiling C object libqemuutil.a.p/util_readline.c.o
 [679/1878] Compiling C object libqemuutil.a.p/util_timed-average.c.o
 [680/1878] Compiling C object libqemuutil.a.p/util_throttle.c.o
-[681/1878] Compiling C object libqemuutil.a.p/util_filemonitor-inotify.c.o
-[682/1878] Compiling C object libqemuutil.a.p/util_cpuinfo-aarch64.c.o
+[681/1878] Compiling C object libqemuutil.a.p/util_cpuinfo-aarch64.c.o
+[682/1878] Compiling C object libqemuutil.a.p/util_filemonitor-inotify.c.o
 [683/1878] Compiling C object libqemuutil.a.p/crypto_init.c.o
 [684/1878] Compiling C object libqemuutil.a.p/util_vfio-helpers.c.o
 [685/1878] Compiling C object libqemuutil.a.p/crypto_sm4.c.o
@@ -719,16 +719,16 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [689/1878] Compiling C object libqemuutil.a.p/trace_qmp.c.o
 [690/1878] Compiling C object libqemuutil.a.p/trace_control.c.o
 [691/1878] Compiling C object libqemuutil.a.p/stubs_bdrv-next-monitor-owned.c.o
-[692/1878] Compiling C object libqemuutil.a.p/stubs_blk-exp-close-all.c.o
-[693/1878] Compiling C object libqemuutil.a.p/stubs_blk-commit-all.c.o
+[692/1878] Compiling C object libqemuutil.a.p/stubs_blk-commit-all.c.o
+[693/1878] Compiling C object libqemuutil.a.p/stubs_blk-exp-close-all.c.o
 [694/1878] Compiling C object libqemuutil.a.p/stubs_change-state-handler.c.o
 [695/1878] Compiling C object libqemuutil.a.p/stubs_blockdev-close-all-bdrv-states.c.o
 [696/1878] Compiling C object libqemuutil.a.p/stubs_cpu-get-clock.c.o
 [697/1878] Compiling C object libqemuutil.a.p/stubs_cmos.c.o
 [698/1878] Compiling C object libqemuutil.a.p/stubs_cpus-get-virtual-clock.c.o
 [699/1878] Compiling C object libqemuutil.a.p/stubs_qemu-timer-notify-cb.c.o
-[700/1878] Compiling C object libqemuutil.a.p/stubs_icount.c.o
-[701/1878] Compiling C object libqemuutil.a.p/stubs_dump.c.o
+[700/1878] Compiling C object libqemuutil.a.p/stubs_dump.c.o
+[701/1878] Compiling C object libqemuutil.a.p/stubs_icount.c.o
 [702/1878] Compiling C object libqemuutil.a.p/stubs_gdbstub.c.o
 [703/1878] Compiling C object libqemuutil.a.p/stubs_get-vm-name.c.o
 [704/1878] Compiling C object libqemuutil.a.p/stubs_error-printf.c.o
@@ -738,46 +738,46 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [708/1878] Compiling C object libqemuutil.a.p/stubs_iothread-lock-block.c.o
 [709/1878] Compiling C object libqemuutil.a.p/stubs_is-daemonized.c.o
 [710/1878] Compiling C object libqemuutil.a.p/stubs_isa-bus.c.o
-[711/1878] Compiling C object libqemuutil.a.p/stubs_migr-blocker.c.o
-[712/1878] Compiling C object libqemuutil.a.p/stubs_module-opts.c.o
+[711/1878] Compiling C object libqemuutil.a.p/stubs_module-opts.c.o
+[712/1878] Compiling C object libqemuutil.a.p/stubs_migr-blocker.c.o
 [713/1878] Compiling C object libqemuutil.a.p/stubs_physmem.c.o
-[714/1878] Compiling C object libqemuutil.a.p/stubs_monitor.c.o
-[715/1878] Compiling C object libqemuutil.a.p/stubs_memory_device.c.o
+[714/1878] Compiling C object libqemuutil.a.p/stubs_memory_device.c.o
+[715/1878] Compiling C object libqemuutil.a.p/stubs_monitor.c.o
 [716/1878] Compiling C object libqemuutil.a.p/stubs_monitor-core.c.o
-[717/1878] Compiling C object libqemuutil.a.p/stubs_qtest.c.o
-[718/1878] Compiling C object libqemuutil.a.p/stubs_qmp-command-available.c.o
+[717/1878] Compiling C object libqemuutil.a.p/stubs_qmp-command-available.c.o
+[718/1878] Compiling C object libqemuutil.a.p/stubs_qtest.c.o
 [719/1878] Compiling C object libqemuutil.a.p/stubs_ram-block.c.o
 [720/1878] Compiling C object libqemuutil.a.p/stubs_qmp-quit.c.o
 [721/1878] Compiling C object libqemuutil.a.p/stubs_ramfb.c.o
-[722/1878] Compiling C object libqemuutil.a.p/stubs_runstate-check.c.o
-[723/1878] Compiling C object libqemuutil.a.p/stubs_replay.c.o
+[722/1878] Compiling C object libqemuutil.a.p/stubs_replay.c.o
+[723/1878] Compiling C object libqemuutil.a.p/stubs_runstate-check.c.o
 [724/1878] Compiling C object libqemuutil.a.p/stubs_sysbus.c.o
 [725/1878] Compiling C object libqemuutil.a.p/stubs_target-get-monitor-def.c.o
 [726/1878] Compiling C object libqemuutil.a.p/stubs_target-monitor-defs.c.o
 [727/1878] Compiling C object libqemuutil.a.p/stubs_trace-control.c.o
-[728/1878] Compiling C object libqemuutil.a.p/stubs_uuid.c.o
-[729/1878] Compiling C object libqemuutil.a.p/stubs_colo-compare.c.o
+[728/1878] Compiling C object libqemuutil.a.p/stubs_colo-compare.c.o
+[729/1878] Compiling C object libqemuutil.a.p/stubs_uuid.c.o
 [730/1878] Compiling C object libqemuutil.a.p/stubs_vmstate.c.o
 [731/1878] Compiling C object libqemuutil.a.p/stubs_colo.c.o
-[732/1878] Compiling C object libqemuutil.a.p/stubs_vm-stop.c.o
-[733/1878] Compiling C object libqemuutil.a.p/stubs_win32-kbd-hook.c.o
+[732/1878] Compiling C object libqemuutil.a.p/stubs_win32-kbd-hook.c.o
+[733/1878] Compiling C object libqemuutil.a.p/stubs_vm-stop.c.o
 [734/1878] Compiling C object libqemuutil.a.p/stubs_cpu-synchronize-state.c.o
 [735/1878] Compiling C object libqemuutil.a.p/stubs_replay-tools.c.o
 [736/1878] Compiling C object libqemuutil.a.p/stubs_semihost.c.o
 [737/1878] Compiling C object libqemuutil.a.p/stubs_fw_cfg.c.o
 [738/1878] Compiling C object libqemuutil.a.p/stubs_pci-bus.c.o
 [739/1878] Compiling C object libqemuutil.a.p/stubs_semihost-all.c.o
-[740/1878] Compiling C object subprojects/dtc/libfdt/libfdt.a.p/fdt_empty_tree.c.o
-[741/1878] Compiling C object libqemuutil.a.p/stubs_usb-dev-stub.c.o
-[742/1878] Compiling C object libqemuutil.a.p/stubs_xen-hw-stub.c.o
-[743/1878] Compiling C object libqemuutil.a.p/stubs_virtio-md-pci.c.o
-[744/1878] Compiling C object subprojects/dtc/libfdt/libfdt.a.p/fdt_overlay.c.o
+[740/1878] Compiling C object libqemuutil.a.p/stubs_usb-dev-stub.c.o
+[741/1878] Compiling C object subprojects/dtc/libfdt/libfdt.a.p/fdt_empty_tree.c.o
+[742/1878] Compiling C object subprojects/dtc/libfdt/libfdt.a.p/fdt_overlay.c.o
+[743/1878] Compiling C object libqemuutil.a.p/stubs_xen-hw-stub.c.o
+[744/1878] Compiling C object libqemuutil.a.p/stubs_virtio-md-pci.c.o
 [745/1878] Compiling C object subprojects/dtc/libfdt/libfdt.a.p/fdt_strerror.c.o
-[746/1878] Compiling C object subprojects/dtc/libfdt/libfdt.a.p/fdt_rw.c.o
-[747/1878] Linking static target libqemuutil.a
-[748/1878] Compiling C object subprojects/dtc/libfdt/libfdt.a.p/fdt_ro.c.o
+[746/1878] Compiling C object subprojects/dtc/libfdt/libfdt.a.p/fdt_ro.c.o
+[747/1878] Compiling C object subprojects/dtc/libfdt/libfdt.a.p/fdt_sw.c.o
+[748/1878] Compiling C object subprojects/dtc/libfdt/libfdt.a.p/fdt_rw.c.o
 [749/1878] Compiling C object subprojects/dtc/libfdt/libfdt.a.p/fdt_wip.c.o
-[750/1878] Compiling C object subprojects/dtc/libfdt/libfdt.a.p/fdt_sw.c.o
+[750/1878] Linking static target libqemuutil.a
 [751/1878] Compiling C object libqom.fa.p/qom_container.c.o
 [752/1878] Compiling C object subprojects/libvduse/libvduse.a.p/libvduse.c.o
 [753/1878] Compiling C object gdbstub/libgdb_system.fa.p/system.c.o
@@ -803,18 +803,18 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [773/1878] Compiling C object libcrypto.fa.p/crypto_block-qcow.c.o
 [774/1878] Compiling C object libcrypto.fa.p/crypto_block.c.o
 [775/1878] Compiling C object tcg/libtcg_system.fa.p/tcg.c.o
-[776/1878] Compiling C object libcrypto.fa.p/crypto_cipher.c.o
-[777/1878] Compiling C object libcrypto.fa.p/crypto_block-luks.c.o
-[778/1878] Compiling C object libcrypto.fa.p/crypto_hash.c.o
-[779/1878] Compiling C object libcrypto.fa.p/crypto_der.c.o
+[776/1878] Compiling C object libcrypto.fa.p/crypto_block-luks.c.o
+[777/1878] Compiling C object libcrypto.fa.p/crypto_cipher.c.o
+[778/1878] Compiling C object libcrypto.fa.p/crypto_der.c.o
+[779/1878] Compiling C object libcrypto.fa.p/crypto_hash.c.o
 [780/1878] Compiling C object libcrypto.fa.p/crypto_hmac.c.o
 [781/1878] Compiling C object libcrypto.fa.p/crypto_ivgen-essiv.c.o
 [782/1878] Compiling C object libcrypto.fa.p/crypto_ivgen-plain.c.o
 [783/1878] Compiling C object libcrypto.fa.p/crypto_ivgen-plain64.c.o
 [784/1878] Compiling C object libcrypto.fa.p/crypto_ivgen.c.o
 [785/1878] Compiling C object libcrypto.fa.p/crypto_pbkdf.c.o
-[786/1878] Compiling C object libcrypto.fa.p/crypto_secret.c.o
-[787/1878] Compiling C object libcrypto.fa.p/crypto_tlscreds.c.o
+[786/1878] Compiling C object libcrypto.fa.p/crypto_tlscreds.c.o
+[787/1878] Compiling C object libcrypto.fa.p/crypto_secret.c.o
 [788/1878] Compiling C object libcrypto.fa.p/crypto_secret_common.c.o
 [789/1878] Compiling C object libcrypto.fa.p/crypto_tlscredsanon.c.o
 [790/1878] Compiling C object libcrypto.fa.p/crypto_tlssession.c.o
@@ -822,8 +822,8 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [792/1878] Compiling C object libcrypto.fa.p/crypto_rsakey.c.o
 [793/1878] Compiling C object libcrypto.fa.p/crypto_tlscredsx509.c.o
 [794/1878] Compiling C object libcrypto.fa.p/crypto_hash-glib.c.o
-[795/1878] Compiling C object libcrypto.fa.p/crypto_pbkdf-stub.c.o
-[796/1878] Compiling C object libcrypto.fa.p/crypto_hmac-glib.c.o
+[795/1878] Compiling C object libcrypto.fa.p/crypto_hmac-glib.c.o
+[796/1878] Compiling C object libcrypto.fa.p/crypto_pbkdf-stub.c.o
 [797/1878] Compiling C object libcrypto.fa.p/crypto_secret_keyring.c.o
 [798/1878] Compiling C object libio.fa.p/io_channel-buffer.c.o
 [799/1878] Compiling C object libio.fa.p/io_channel-command.c.o
@@ -843,8 +843,8 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [813/1878] Compiling C object libmigration.fa.p/migration_xbzrle.c.o
 [814/1878] Compiling C object libmigration.fa.p/migration_yank_functions.c.o
 [815/1878] Compiling C object libmigration.fa.p/migration_vmstate-types.c.o
-[816/1878] Compiling C object libmigration.fa.p/migration_qemu-file.c.o
-[817/1878] Compiling C object libmigration.fa.p/migration_vmstate.c.o
+[816/1878] Compiling C object libmigration.fa.p/migration_vmstate.c.o
+[817/1878] Compiling C object libmigration.fa.p/migration_qemu-file.c.o
 [818/1878] Compiling C object libblock.fa.p/meson-generated_.._block_block-gen.c.o
 [819/1878] Compiling C object libblock.fa.p/blockjob.c.o
 [820/1878] Compiling C object libblock.fa.p/job.c.o
@@ -852,23 +852,23 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [822/1878] Compiling C object libblock.fa.p/nbd_client-connection.c.o
 [823/1878] Compiling C object libblock.fa.p/qemu-io-cmds.c.o
 [824/1878] Compiling C object libblock.fa.p/nbd_client.c.o
-[825/1878] Compiling C object libblock.fa.p/scsi_utils.c.o
-[826/1878] Compiling C object libblock.fa.p/nbd_common.c.o
+[825/1878] Compiling C object libblock.fa.p/nbd_common.c.o
+[826/1878] Compiling C object libblock.fa.p/scsi_utils.c.o
 [827/1878] Compiling C object libblock.fa.p/scsi_pr-manager.c.o
-[828/1878] Compiling C object libblock.fa.p/block_aio_task.c.o
+[828/1878] Compiling C object libblock.fa.p/block.c.o
 [829/1878] Compiling C object libblock.fa.p/scsi_pr-manager-helper.c.o
-[830/1878] Compiling C object libblock.fa.p/block.c.o
+[830/1878] Compiling C object libblock.fa.p/block_aio_task.c.o
 [831/1878] Compiling C object libblock.fa.p/block_accounting.c.o
 [832/1878] Compiling C object libblock.fa.p/block_amend.c.o
 [833/1878] Compiling C object libblock.fa.p/block_backup.c.o
 [834/1878] Compiling C object libblock.fa.p/block_blklogwrites.c.o
 [835/1878] Compiling C object libblock.fa.p/block_blkdebug.c.o
 [836/1878] Compiling C object libblock.fa.p/block_blkverify.c.o
-[837/1878] Compiling C object libblock.fa.p/block_copy-before-write.c.o
-[838/1878] Compiling C object libblock.fa.p/block_commit.c.o
-[839/1878] Compiling C object libblock.fa.p/block_block-copy.c.o
-[840/1878] Compiling C object libblock.fa.p/block_copy-on-read.c.o
-[841/1878] Compiling C object libblock.fa.p/block_create.c.o
+[837/1878] Compiling C object libblock.fa.p/block_commit.c.o
+[838/1878] Compiling C object libblock.fa.p/block_block-copy.c.o
+[839/1878] Compiling C object libblock.fa.p/block_copy-before-write.c.o
+[840/1878] Compiling C object libblock.fa.p/block_create.c.o
+[841/1878] Compiling C object libblock.fa.p/block_copy-on-read.c.o
 [842/1878] Compiling C object libblock.fa.p/block_block-backend.c.o
 [843/1878] Compiling C object libblock.fa.p/block_crypto.c.o
 [844/1878] Compiling C object libblock.fa.p/block_filter-compress.c.o
@@ -878,8 +878,8 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [848/1878] Compiling C object libblock.fa.p/block_mirror.c.o
 [849/1878] Compiling C object libblock.fa.p/block_nbd.c.o
 [850/1878] Compiling C object libblock.fa.p/block_io.c.o
-[851/1878] Compiling C object libblock.fa.p/block_progress_meter.c.o
-[852/1878] Compiling C object libblock.fa.p/block_preallocate.c.o
+[851/1878] Compiling C object libblock.fa.p/block_preallocate.c.o
+[852/1878] Compiling C object libblock.fa.p/block_progress_meter.c.o
 [853/1878] Compiling C object libblock.fa.p/block_qapi.c.o
 [854/1878] Compiling C object libblock.fa.p/block_qcow2-cache.c.o
 [855/1878] Compiling C object libblock.fa.p/block_qcow2-bitmap.c.o
@@ -896,13 +896,13 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [866/1878] Compiling C object libblock.fa.p/block_throttle.c.o
 [867/1878] Compiling C object libblock.fa.p/block_write-threshold.c.o
 [868/1878] Compiling C object libblock.fa.p/block_throttle-groups.c.o
-[869/1878] Compiling C object libblock.fa.p/block_vdi.c.o
-[870/1878] Compiling C object libblock.fa.p/block_vhdx-endian.c.o
-[871/1878] Compiling C object libblock.fa.p/block_qcow.c.o
+[869/1878] Compiling C object libblock.fa.p/block_qcow.c.o
+[870/1878] Compiling C object libblock.fa.p/block_vdi.c.o
+[871/1878] Compiling C object libblock.fa.p/block_vhdx-endian.c.o
 [872/1878] Compiling C object libblock.fa.p/block_vhdx-log.c.o
 [873/1878] Compiling C object libblock.fa.p/block_vpc.c.o
-[874/1878] Compiling C object libblock.fa.p/block_cloop.c.o
-[875/1878] Compiling C object libblock.fa.p/block_vhdx.c.o
+[874/1878] Compiling C object libblock.fa.p/block_vhdx.c.o
+[875/1878] Compiling C object libblock.fa.p/block_cloop.c.o
 [876/1878] Compiling C object libblock.fa.p/block_vmdk.c.o
 [877/1878] Compiling C object libblock.fa.p/block_bochs.c.o
 [878/1878] Compiling C object libblock.fa.p/block_dmg.c.o
@@ -916,11 +916,11 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [886/1878] Compiling C object libblock.fa.p/block_parallels.c.o
 [887/1878] Compiling C object libblock.fa.p/block_replication.c.o
 [888/1878] Compiling C object libblock.fa.p/block_stream.c.o
-[889/1878] Compiling C object libblock.fa.p/block_monitor_bitmap-qmp-cmds.c.o
-[890/1878] Compiling C object libblock.fa.p/block_nvme.c.o
-[891/1878] Compiling C object libblock.fa.p/block_file-posix.c.o
-[892/1878] Compiling C object libblockdev.fa.p/block_export_virtio-blk-handler.c.o
-[893/1878] Compiling C object libblockdev.fa.p/block_export_export.c.o
+[889/1878] Compiling C object libblock.fa.p/block_nvme.c.o
+[890/1878] Compiling C object libblock.fa.p/block_file-posix.c.o
+[891/1878] Compiling C object libblock.fa.p/block_monitor_bitmap-qmp-cmds.c.o
+[892/1878] Compiling C object libblockdev.fa.p/block_export_export.c.o
+[893/1878] Compiling C object libblockdev.fa.p/block_export_virtio-blk-handler.c.o
 [894/1878] Compiling C object libblockdev.fa.p/block_export_vduse-blk.c.o
 [895/1878] Compiling C object libblockdev.fa.p/blockdev-nbd.c.o
 [896/1878] Compiling C object libblockdev.fa.p/iothread.c.o
@@ -931,8 +931,8 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [901/1878] Compiling C object libblockdev.fa.p/blockdev.c.o
 [902/1878] Compiling C object libqmp.fa.p/monitor_qmp.c.o
 [903/1878] Compiling C object libqmp.fa.p/monitor_monitor.c.o
-[904/1878] Compiling C object libqmp.fa.p/monitor_qmp-cmds-control.c.o
-[905/1878] Compiling C object libchardev.fa.p/chardev_char-file.c.o
+[904/1878] Compiling C object libchardev.fa.p/chardev_char-file.c.o
+[905/1878] Compiling C object libqmp.fa.p/monitor_qmp-cmds-control.c.o
 [906/1878] Compiling C object libchardev.fa.p/chardev_char-fe.c.o
 [907/1878] Compiling C object libchardev.fa.p/chardev_char-io.c.o
 [908/1878] Compiling C object libchardev.fa.p/chardev_char-null.c.o
@@ -946,45 +946,45 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [916/1878] Compiling C object libchardev.fa.p/chardev_char-fd.c.o
 [917/1878] Compiling C object libchardev.fa.p/chardev_char-pty.c.o
 [918/1878] Compiling C object libchardev.fa.p/chardev_char.c.o
-[919/1878] Compiling C object libchardev.fa.p/chardev_char-parallel.c.o
-[920/1878] Compiling C object libhwcore.fa.p/hw_core_bus.c.o
+[919/1878] Compiling C object libhwcore.fa.p/hw_core_bus.c.o
+[920/1878] Compiling C object libchardev.fa.p/chardev_char-parallel.c.o
 [921/1878] Compiling C object libhwcore.fa.p/hw_core_reset.c.o
 [922/1878] Compiling C object libhwcore.fa.p/hw_core_qdev-properties.c.o
-[923/1878] Compiling C object libhwcore.fa.p/hw_core_resettable.c.o
-[924/1878] Compiling C object libhwcore.fa.p/hw_core_vmstate-if.c.o
+[923/1878] Compiling C object libhwcore.fa.p/hw_core_vmstate-if.c.o
+[924/1878] Compiling C object libhwcore.fa.p/hw_core_resettable.c.o
 [925/1878] Compiling C object libhwcore.fa.p/hw_core_irq.c.o
-[926/1878] Compiling C object libhwcore.fa.p/hw_core_clock.c.o
-[927/1878] Compiling C object libhwcore.fa.p/hw_core_qdev.c.o
+[926/1878] Compiling C object libhwcore.fa.p/hw_core_qdev.c.o
+[927/1878] Compiling C object libhwcore.fa.p/hw_core_clock.c.o
 [928/1878] Compiling C object libhwcore.fa.p/hw_core_qdev-clock.c.o
-[929/1878] Compiling C object libhwcore.fa.p/hw_core_hotplug.c.o
-[930/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-neon-shared.c.inc'
-[931/1878] Generating arm-softmmu-gdbstub-xml.c with a custom command (wrapped by meson to capture output)
-[932/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-neon-ls.c.inc'
-[933/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-vfp-uncond.c.inc'
-[934/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-neon-dp.c.inc'
-[935/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-vfp.c.inc'
-[936/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-m-nocp.c.inc'
-[937/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-a32.c.inc'
-[938/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-a32-uncond.c.inc'
-[939/1878] Compiling C object libhwcore.fa.p/hw_core_qdev-hotplug.c.o
+[929/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-neon-shared.c.inc'
+[930/1878] Generating arm-softmmu-gdbstub-xml.c with a custom command (wrapped by meson to capture output)
+[931/1878] Compiling C object libhwcore.fa.p/hw_core_hotplug.c.o
+[932/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-neon-dp.c.inc'
+[933/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-neon-ls.c.inc'
+[934/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-vfp.c.inc'
+[935/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-m-nocp.c.inc'
+[936/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-vfp-uncond.c.inc'
+[937/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-a32-uncond.c.inc'
+[938/1878] Compiling C object libhwcore.fa.p/hw_core_qdev-hotplug.c.o
+[939/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-a32.c.inc'
 [940/1878] Linking static target subprojects/dtc/libfdt/libfdt.a
-[941/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-mve.c.inc'
-[942/1878] Linking static target subprojects/libvduse/libvduse.a
+[941/1878] Linking static target subprojects/libvduse/libvduse.a
+[942/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-mve.c.inc'
 [943/1878] Linking static target gdbstub/libgdb_system.fa
 [944/1878] Linking static target libqom.fa
 [945/1878] Linking static target libevent-loop-base.fa
 [946/1878] Linking static target tcg/libtcg_system.fa
 [947/1878] Linking static target libauthz.fa
 [948/1878] Linking static target libcrypto.fa
-[949/1878] Linking static target libio.fa
-[950/1878] Linking static target libmigration.fa
-[951/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-t16.c.inc'
+[949/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-t16.c.inc'
+[950/1878] Linking static target libio.fa
+[951/1878] Linking static target libmigration.fa
 [952/1878] Linking static target libblockdev.fa
 [953/1878] Linking static target libblock.fa
-[954/1878] Linking static target libqmp.fa
-[955/1878] Linking static target libchardev.fa
-[956/1878] Linking static target libhwcore.fa
-[957/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-t32.c.inc'
+[954/1878] Generating 'libqemu-arm-softmmu.fa.p/decode-t32.c.inc'
+[955/1878] Linking static target libqmp.fa
+[956/1878] Linking static target libchardev.fa
+[957/1878] Linking static target libhwcore.fa
 [958/1878] Generating qemu.syms with a custom command (wrapped by meson to capture output)
 [959/1878] Compiling C object libcommon.fa.p/gdbstub_syscalls.c.o
 [960/1878] Compiling C object libcommon.fa.p/page-vary-common.c.o
@@ -1029,11 +1029,11 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [986/1878] Compiling C object libcommon.fa.p/ui_vnc-enc-hextile.c.o
 [987/1878] Compiling C object libcommon.fa.p/ui_vnc-palette.c.o
 [988/1878] Compiling C object libcommon.fa.p/ui_vnc-auth-vencrypt.c.o
-[989/1878] Compiling C object libcommon.fa.p/ui_vnc-enc-tight.c.o
-[990/1878] Compiling C object libcommon.fa.p/ui_vnc-ws.c.o
+[989/1878] Compiling C object libcommon.fa.p/ui_vnc-ws.c.o
+[990/1878] Compiling C object libcommon.fa.p/ui_vnc-enc-tight.c.o
 [991/1878] Compiling C object libcommon.fa.p/ui_vnc.c.o
-[992/1878] Compiling C object libcommon.fa.p/ui_vnc-jobs.c.o
-[993/1878] Compiling C object libcommon.fa.p/ui_vnc-clipboard.c.o
+[992/1878] Compiling C object libcommon.fa.p/ui_vnc-clipboard.c.o
+[993/1878] Compiling C object libcommon.fa.p/ui_vnc-jobs.c.o
 [994/1878] Compiling C object libcommon.fa.p/hw_acpi_pci-bridge-stub.c.o
 [995/1878] Compiling C object libcommon.fa.p/hw_acpi_acpi_interface.c.o
 [996/1878] Compiling C object libcommon.fa.p/ui_vnc-enc-zrle.c.o
@@ -1043,16 +1043,16 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [1000/1878] Compiling C object libcommon.fa.p/hw_acpi_acpi-cpu-hotplug-stub.c.o
 [1001/1878] Compiling C object libcommon.fa.p/hw_acpi_pci.c.o
 [1002/1878] Compiling C object libcommon.fa.p/hw_acpi_aml-build.c.o
-[1003/1878] Compiling C object libcommon.fa.p/hw_acpi_nvdimm.c.o
-[1004/1878] Compiling C object libcommon.fa.p/hw_acpi_memory_hotplug.c.o
+[1003/1878] Compiling C object libcommon.fa.p/hw_acpi_memory_hotplug.c.o
+[1004/1878] Compiling C object libcommon.fa.p/hw_acpi_nvdimm.c.o
 [1005/1878] Compiling C object libcommon.fa.p/hw_acpi_generic_event_device.c.o
 [1006/1878] Compiling C object libcommon.fa.p/hw_acpi_cxl.c.o
 [1007/1878] Compiling C object libcommon.fa.p/hw_acpi_hmat.c.o
 [1008/1878] Compiling C object libcommon.fa.p/hw_acpi_acpi-pci-hotplug-stub.c.o
 [1009/1878] Compiling C object libcommon.fa.p/hw_acpi_ghes.c.o
 [1010/1878] Compiling C object libcommon.fa.p/hw_acpi_ipmi-stub.c.o
-[1011/1878] Compiling C object libcommon.fa.p/hw_acpi_viot.c.o
-[1012/1878] Compiling C object libcommon.fa.p/hw_acpi_acpi-x86-stub.c.o
+[1011/1878] Compiling C object libcommon.fa.p/hw_acpi_acpi-x86-stub.c.o
+[1012/1878] Compiling C object libcommon.fa.p/hw_acpi_viot.c.o
 [1013/1878] Compiling C object libcommon.fa.p/hw_acpi_tpm.c.o
 [1014/1878] Compiling C object libcommon.fa.p/hw_acpi_acpi-qmp-cmds.c.o
 [1015/1878] Compiling C object libcommon.fa.p/hw_adc_stm32f2xx_adc.c.o
@@ -1066,8 +1066,8 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [1023/1878] Compiling C object libcommon.fa.p/hw_audio_ac97.c.o
 [1024/1878] Compiling C object libcommon.fa.p/hw_audio_intel-hda.c.o
 [1025/1878] Compiling C object libcommon.fa.p/hw_audio_marvell_88w8618.c.o
-[1026/1878] Compiling C object libcommon.fa.p/hw_audio_lm4549.c.o
-[1027/1878] Compiling C object libcommon.fa.p/hw_audio_pl041.c.o
+[1026/1878] Compiling C object libcommon.fa.p/hw_audio_pl041.c.o
+[1027/1878] Compiling C object libcommon.fa.p/hw_audio_lm4549.c.o
 [1028/1878] Compiling C object libcommon.fa.p/hw_audio_hda-codec.c.o
 [1029/1878] Compiling C object libcommon.fa.p/hw_audio_wm8750.c.o
 [1030/1878] Compiling C object libcommon.fa.p/hw_block_block.c.o
@@ -1082,8 +1082,8 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [1039/1878] Compiling C object libcommon.fa.p/hw_block_m25p80_sfdp.c.o
 [1040/1878] Compiling C object libcommon.fa.p/hw_block_pflash_cfi02.c.o
 [1041/1878] Compiling C object libcommon.fa.p/hw_block_dataplane_virtio-blk.c.o
-[1042/1878] Compiling C object libcommon.fa.p/hw_block_m25p80.c.o
-[1043/1878] Compiling C object libcommon.fa.p/hw_char_cmsdk-apb-uart.c.o
+[1042/1878] Compiling C object libcommon.fa.p/hw_char_cmsdk-apb-uart.c.o
+[1043/1878] Compiling C object libcommon.fa.p/hw_block_m25p80.c.o
 [1044/1878] Compiling C object libcommon.fa.p/hw_char_cadence_uart.c.o
 [1045/1878] Compiling C object libcommon.fa.p/hw_char_imx_serial.c.o
 [1046/1878] Compiling C object libcommon.fa.p/hw_char_ipoctal232.c.o
@@ -1097,14 +1097,14 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [1054/1878] Compiling C object libcommon.fa.p/hw_char_digic-uart.c.o
 [1055/1878] Compiling C object libcommon.fa.p/hw_char_omap_uart.c.o
 [1056/1878] Compiling C object libcommon.fa.p/hw_char_exynos4210_uart.c.o
-[1057/1878] Compiling C object libcommon.fa.p/hw_char_stm32f2xx_usart.c.o
-[1058/1878] Compiling C object libcommon.fa.p/hw_char_bcm2835_aux.c.o
+[1057/1878] Compiling C object libcommon.fa.p/hw_char_bcm2835_aux.c.o
+[1058/1878] Compiling C object libcommon.fa.p/hw_char_stm32f2xx_usart.c.o
 [1059/1878] Compiling C object libcommon.fa.p/hw_core_generic-loader.c.o
 [1060/1878] Compiling C object libcommon.fa.p/hw_core_or-irq.c.o
 [1061/1878] Compiling C object libcommon.fa.p/hw_core_platform-bus.c.o
 [1062/1878] Compiling C object libcommon.fa.p/hw_core_guest-loader.c.o
-[1063/1878] Compiling C object libcommon.fa.p/hw_core_split-irq.c.o
-[1064/1878] Compiling C object libcommon.fa.p/hw_core_ptimer.c.o
+[1063/1878] Compiling C object libcommon.fa.p/hw_core_ptimer.c.o
+[1064/1878] Compiling C object libcommon.fa.p/hw_core_split-irq.c.o
 [1065/1878] Compiling C object libcommon.fa.p/hw_core_stream.c.o
 [1066/1878] Compiling C object libcommon.fa.p/hw_core_register.c.o
 [1067/1878] Compiling C object libcommon.fa.p/hw_core_fw-path-provider.c.o
@@ -1114,18 +1114,18 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [1071/1878] Compiling C object libcommon.fa.p/hw_core_machine-hmp-cmds.c.o
 [1072/1878] Compiling C object libcommon.fa.p/hw_core_machine-qmp-cmds.c.o
 [1073/1878] Compiling C object libcommon.fa.p/hw_core_nmi.c.o
-[1074/1878] Compiling C object libcommon.fa.p/hw_core_null-machine.c.o
-[1075/1878] Compiling C object libcommon.fa.p/hw_core_machine.c.o
+[1074/1878] Compiling C object libcommon.fa.p/hw_core_machine.c.o
+[1075/1878] Compiling C object libcommon.fa.p/hw_core_null-machine.c.o
 [1076/1878] Compiling C object libcommon.fa.p/hw_core_qdev-fw.c.o
 [1077/1878] Compiling C object libcommon.fa.p/hw_core_loader.c.o
 [1078/1878] Compiling C object libcommon.fa.p/hw_core_numa.c.o
 [1079/1878] Compiling C object libcommon.fa.p/hw_core_vm-change-state-handler.c.o
-[1080/1878] Compiling C object libcommon.fa.p/hw_core_qdev-properties-system.c.o
-[1081/1878] Compiling C object libcommon.fa.p/hw_core_sysbus.c.o
+[1080/1878] Compiling C object libcommon.fa.p/hw_core_sysbus.c.o
+[1081/1878] Compiling C object libcommon.fa.p/hw_core_qdev-properties-system.c.o
 [1082/1878] Compiling C object libcommon.fa.p/hw_core_clock-vmstate.c.o
 [1083/1878] Compiling C object libcommon.fa.p/hw_cpu_cluster.c.o
-[1084/1878] Compiling C object libcommon.fa.p/hw_cpu_core.c.o
-[1085/1878] Compiling C object libcommon.fa.p/hw_cpu_arm11mpcore.c.o
+[1084/1878] Compiling C object libcommon.fa.p/hw_cpu_arm11mpcore.c.o
+[1085/1878] Compiling C object libcommon.fa.p/hw_cpu_core.c.o
 [1086/1878] Compiling C object libcommon.fa.p/hw_cpu_realview_mpcore.c.o
 [1087/1878] Compiling C object libcommon.fa.p/hw_cxl_cxl-component-utils.c.o
 [1088/1878] Compiling C object libcommon.fa.p/hw_cxl_cxl-device-utils.c.o
@@ -1137,8 +1137,8 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [1094/1878] Compiling C object libcommon.fa.p/hw_cxl_switch-mailbox-cci.c.o
 [1095/1878] Compiling C object libcommon.fa.p/hw_display_edid-region.c.o
 [1096/1878] Compiling C object libcommon.fa.p/hw_display_edid-generate.c.o
-[1097/1878] Compiling C object libcommon.fa.p/hw_display_ramfb-standalone.c.o
-[1098/1878] Compiling C object libcommon.fa.p/hw_display_ramfb.c.o
+[1097/1878] Compiling C object libcommon.fa.p/hw_display_ramfb.c.o
+[1098/1878] Compiling C object libcommon.fa.p/hw_display_ramfb-standalone.c.o
 [1099/1878] Compiling C object libcommon.fa.p/hw_display_sii9022.c.o
 [1100/1878] Compiling C object libcommon.fa.p/hw_display_ssd0303.c.o
 [1101/1878] Compiling C object libcommon.fa.p/hw_display_ssd0323.c.o
@@ -1157,8 +1157,8 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [1114/1878] Compiling C object libcommon.fa.p/hw_display_vga.c.o
 [1115/1878] Compiling C object libcommon.fa.p/hw_display_ati_2d.c.o
 [1116/1878] Compiling C object libcommon.fa.p/hw_display_ati.c.o
-[1117/1878] Compiling C object libcommon.fa.p/hw_dma_pl080.c.o
-[1118/1878] Compiling C object libcommon.fa.p/hw_display_ati_dbg.c.o
+[1117/1878] Compiling C object libcommon.fa.p/hw_display_ati_dbg.c.o
+[1118/1878] Compiling C object libcommon.fa.p/hw_dma_pl080.c.o
 [1119/1878] Compiling C object libcommon.fa.p/hw_display_omap_lcdc.c.o
 [1120/1878] Compiling C object libcommon.fa.p/hw_dma_xlnx-zynq-devcfg.c.o
 [1121/1878] Compiling C object libcommon.fa.p/hw_dma_xilinx_axidma.c.o
@@ -1173,21 +1173,21 @@ Running postconf script '/home/runner/work/qemu-ios/qemu-ios/build-android/pyven
 [1130/1878] Compiling C object libcommon.fa.p/hw_gpio_zaurus.c.o
 [1131/1878] Compiling C object libcommon.fa.p/hw_gpio_pl061.c.o
 [1132/1878] Compiling C object libcommon.fa.p/hw_gpio_imx_gpio.c.o
-[1133/1878] Compiling C object libcommon.fa.p/hw_gpio_npcm7xx_gpio.c.o
-[1134/1878] Compiling C object libcommon.fa.p/hw_gpio_nrf51_gpio.c.o
+[1133/1878] Compiling C object libcommon.fa.p/hw_gpio_nrf51_gpio.c.o
+[1134/1878] Compiling C object libcommon.fa.p/hw_gpio_npcm7xx_gpio.c.o
 [1135/1878] Compiling C object libcommon.fa.p/hw_gpio_omap_gpio.c.o
 [1136/1878] Compiling C object libcommon.fa.p/hw_gpio_bcm2835_gpio.c.o
 [1137/1878] Compiling C object libcommon.fa.p/hw_i2c_core.c.o
 [1138/1878] Compiling C object libcommon.fa.p/hw_gpio_aspeed_gpio.c.o
-[1139/1878] Compiling C object libcommon.fa.p/hw_i2c_smbus_slave.c.o
-[1140/1878] Compiling C object libcommon.fa.p/hw_display_cirrus_vga.c.o
+[1139/1878] Compiling C object libcommon.fa.p/hw_display_cirrus_vga.c.o
+[1140/1878] Compiling C object libcommon.fa.p/hw_i2c_smbus_slave.c.o
 [1141/1878] Compiling C object libcommon.fa.p/hw_i2c_smbus_master.c.o
-[1142/1878] Compiling C object libcommon.fa.p/hw_i2c_bitbang_i2c.c.o
-[1143/1878] Compiling C object libcommon.fa.p/hw_i2c_exynos4210_i2c.c.o
+[1142/1878] Compiling C object libcommon.fa.p/hw_i2c_exynos4210_i2c.c.o
+[1143/1878] Compiling C object libcommon.fa.p/hw_i2c_bitbang_i2c.c.o
 [1144/1878] Compiling C object libcommon.fa.p/hw_i2c_imx_i2c.c.o
-[1145/1878] Compiling C object libcommon.fa.p/hw_i2c_microbit_i2c.c.o
-[1146/1878] Compiling C object libcommon.fa.p/hw_i2c_allwinner-i2c.c.o
-[1147/1878] Compiling C object libcommon.fa.p/hw_i2c_aspeed_i2c.c.o
+[1145/1878] Compiling C object libcommon.fa.p/hw_i2c_aspeed_i2c.c.o
+[1146/1878] Compiling C object libcommon.fa.p/hw_i2c_microbit_i2c.c.o
+[1147/1878] Compiling C object libcommon.fa.p/hw_i2c_allwinner-i2c.c.o
 [1148/1878] Compiling C object libcommon.fa.p/hw_i2c_arm_sbcon_i2c.c.o
 [1149/1878] Compiling C object libcommon.fa.p/hw_i2c_npcm7xx_smbus.c.o
 [1150/1878] Compiling C object libcommon.fa.p/hw_i2c_omap_i2c.c.o
@@ -1272,8 +1272,8 @@ In file included from ../hw/ide/atapi.c:30:
 [1161/1878] Compiling C object libcommon.fa.p/hw_ide_microdrive.c.o
 [1162/1878] Compiling C object libcommon.fa.p/hw_input_ads7846.c.o
 [1163/1878] Compiling C object libcommon.fa.p/hw_ide_core.c.o
-[1164/1878] Compiling C object libcommon.fa.p/hw_input_lm832x.c.o
-[1165/1878] Compiling C object libcommon.fa.p/hw_input_pl050.c.o
+[1164/1878] Compiling C object libcommon.fa.p/hw_input_pl050.c.o
+[1165/1878] Compiling C object libcommon.fa.p/hw_input_lm832x.c.o
 [1166/1878] Compiling C object libcommon.fa.p/hw_input_stellaris_gamepad.c.o
 [1167/1878] Compiling C object libcommon.fa.p/hw_input_ps2.c.o
 [1168/1878] Compiling C object libcommon.fa.p/hw_input_tsc2005.c.o
@@ -1292,8 +1292,8 @@ In file included from ../hw/ide/atapi.c:30:
 [1181/1878] Compiling C object libcommon.fa.p/hw_intc_arm_gicv3_dist.c.o
 [1182/1878] Compiling C object libcommon.fa.p/hw_intc_allwinner-a10-pic.c.o
 [1183/1878] Compiling C object libcommon.fa.p/hw_intc_arm_gicv3_redist.c.o
-[1184/1878] Compiling C object libcommon.fa.p/hw_intc_exynos4210_gic.c.o
-[1185/1878] Compiling C object libcommon.fa.p/hw_intc_aspeed_vic.c.o
+[1184/1878] Compiling C object libcommon.fa.p/hw_intc_aspeed_vic.c.o
+[1185/1878] Compiling C object libcommon.fa.p/hw_intc_exynos4210_gic.c.o
 [1186/1878] Compiling C object libcommon.fa.p/hw_intc_arm_gicv3_its.c.o
 [1187/1878] Compiling C object libcommon.fa.p/hw_intc_exynos4210_combiner.c.o
 [1188/1878] Compiling C object libcommon.fa.p/hw_intc_imx_gpcv2.c.o
@@ -1311,8 +1311,8 @@ In file included from ../hw/ide/atapi.c:30:
   408 |     SysBusDevice *sbd = SYS_BUS_DEVICE(obj);
       |                   ^~~
 3 warnings generated.
-[1193/1878] Compiling C object libcommon.fa.p/hw_intc_bcm2835_ic.c.o
-[1194/1878] Compiling C object libcommon.fa.p/hw_intc_bcm2836_control.c.o
+[1193/1878] Compiling C object libcommon.fa.p/hw_intc_bcm2836_control.c.o
+[1194/1878] Compiling C object libcommon.fa.p/hw_intc_bcm2835_ic.c.o
 [1195/1878] Compiling C object libcommon.fa.p/hw_intc_realview_gic.c.o
 [1196/1878] Compiling C object libcommon.fa.p/hw_intc_xilinx_intc.c.o
 [1197/1878] Compiling C object libcommon.fa.p/hw_ipack_ipack.c.o
@@ -1328,27 +1328,27 @@ In file included from ../hw/ide/atapi.c:30:
 [1207/1878] Compiling C object libcommon.fa.p/hw_misc_unimp.c.o
 [1208/1878] Compiling C object libcommon.fa.p/hw_misc_led.c.o
 [1209/1878] Compiling C object libcommon.fa.p/hw_misc_pci-testdev.c.o
-[1210/1878] Compiling C object libcommon.fa.p/hw_misc_arm_l2x0.c.o
-[1211/1878] Compiling C object libcommon.fa.p/hw_misc_pvpanic.c.o
+[1210/1878] Compiling C object libcommon.fa.p/hw_misc_pvpanic.c.o
+[1211/1878] Compiling C object libcommon.fa.p/hw_misc_arm_l2x0.c.o
 [1212/1878] Compiling C object libcommon.fa.p/hw_misc_arm_integrator_debug.c.o
 [1213/1878] Compiling C object libcommon.fa.p/hw_misc_a9scu.c.o
 [1214/1878] Compiling C object libcommon.fa.p/hw_misc_arm11scu.c.o
 [1215/1878] Compiling C object libcommon.fa.p/hw_misc_armv7m_ras.c.o
 [1216/1878] Compiling C object libcommon.fa.p/hw_misc_allwinner-a10-ccm.c.o
-[1217/1878] Compiling C object libcommon.fa.p/hw_misc_allwinner-sramc.c.o
-[1218/1878] Compiling C object libcommon.fa.p/hw_misc_allwinner-a10-dramc.c.o
+[1217/1878] Compiling C object libcommon.fa.p/hw_misc_allwinner-a10-dramc.c.o
+[1218/1878] Compiling C object libcommon.fa.p/hw_misc_allwinner-sramc.c.o
 [1219/1878] Compiling C object libcommon.fa.p/hw_misc_allwinner-h3-ccu.c.o
-[1220/1878] Compiling C object libcommon.fa.p/hw_misc_ivshmem.c.o
-[1221/1878] Compiling C object libcommon.fa.p/hw_misc_allwinner-h3-sysctrl.c.o
+[1220/1878] Compiling C object libcommon.fa.p/hw_misc_allwinner-h3-sysctrl.c.o
+[1221/1878] Compiling C object libcommon.fa.p/hw_misc_ivshmem.c.o
 [1222/1878] Compiling C object libcommon.fa.p/hw_misc_allwinner-h3-dramc.c.o
 [1223/1878] Compiling C object libcommon.fa.p/hw_misc_allwinner-r40-ccu.c.o
 [1224/1878] Compiling C object libcommon.fa.p/hw_misc_allwinner-sid.c.o
-[1225/1878] Compiling C object libcommon.fa.p/hw_misc_allwinner-r40-dramc.c.o
-[1226/1878] Compiling C object libcommon.fa.p/hw_misc_axp2xx.c.o
+[1225/1878] Compiling C object libcommon.fa.p/hw_misc_axp2xx.c.o
+[1226/1878] Compiling C object libcommon.fa.p/hw_misc_allwinner-r40-dramc.c.o
 [1227/1878] Compiling C object libcommon.fa.p/hw_misc_cbus.c.o
 [1228/1878] Compiling C object libcommon.fa.p/hw_misc_arm_sysctl.c.o
-[1229/1878] Compiling C object libcommon.fa.p/hw_misc_exynos4210_clk.c.o
-[1230/1878] Compiling C object libcommon.fa.p/hw_misc_exynos4210_pmu.c.o
+[1229/1878] Compiling C object libcommon.fa.p/hw_misc_exynos4210_pmu.c.o
+[1230/1878] Compiling C object libcommon.fa.p/hw_misc_exynos4210_clk.c.o
 [1231/1878] Compiling C object libcommon.fa.p/hw_misc_exynos4210_rng.c.o
 [1232/1878] Compiling C object libcommon.fa.p/hw_misc_imx25_ccm.c.o
 [1233/1878] Compiling C object libcommon.fa.p/hw_misc_imx31_ccm.c.o
@@ -1360,8 +1360,8 @@ In file included from ../hw/ide/atapi.c:30:
 [1239/1878] Compiling C object libcommon.fa.p/hw_misc_imx7_gpr.c.o
 [1240/1878] Compiling C object libcommon.fa.p/hw_misc_imx_ccm.c.o
 [1241/1878] Compiling C object libcommon.fa.p/hw_misc_imx7_snvs.c.o
-[1242/1878] Compiling C object libcommon.fa.p/hw_misc_mst_fpga.c.o
-[1243/1878] Compiling C object libcommon.fa.p/hw_misc_imx_rngc.c.o
+[1242/1878] Compiling C object libcommon.fa.p/hw_misc_imx_rngc.c.o
+[1243/1878] Compiling C object libcommon.fa.p/hw_misc_mst_fpga.c.o
 [1244/1878] Compiling C object libcommon.fa.p/hw_misc_npcm7xx_gcr.c.o
 [1245/1878] Compiling C object libcommon.fa.p/hw_misc_npcm7xx_clk.c.o
 [1246/1878] Compiling C object libcommon.fa.p/hw_misc_npcm7xx_mft.c.o
@@ -1369,15 +1369,15 @@ In file included from ../hw/ide/atapi.c:30:
 [1248/1878] Compiling C object libcommon.fa.p/hw_misc_npcm7xx_rng.c.o
 [1249/1878] Compiling C object libcommon.fa.p/hw_misc_omap_clk.c.o
 [1250/1878] Compiling C object libcommon.fa.p/hw_misc_omap_l4.c.o
-[1251/1878] Compiling C object libcommon.fa.p/hw_misc_omap_gpmc.c.o
-[1252/1878] Compiling C object libcommon.fa.p/hw_misc_omap_sdrc.c.o
+[1251/1878] Compiling C object libcommon.fa.p/hw_misc_omap_sdrc.c.o
+[1252/1878] Compiling C object libcommon.fa.p/hw_misc_omap_gpmc.c.o
 [1253/1878] Compiling C object libcommon.fa.p/hw_misc_omap_tap.c.o
 [1254/1878] Compiling C object libcommon.fa.p/hw_misc_bcm2835_mphi.c.o
 [1255/1878] Compiling C object libcommon.fa.p/hw_misc_bcm2835_mbox.c.o
 [1256/1878] Compiling C object libcommon.fa.p/hw_misc_bcm2835_rng.c.o
 [1257/1878] Compiling C object libcommon.fa.p/hw_misc_bcm2835_thermal.c.o
-[1258/1878] Compiling C object libcommon.fa.p/hw_misc_bcm2835_powermgt.c.o
-[1259/1878] Compiling C object libcommon.fa.p/hw_misc_bcm2835_property.c.o
+[1258/1878] Compiling C object libcommon.fa.p/hw_misc_bcm2835_property.c.o
+[1259/1878] Compiling C object libcommon.fa.p/hw_misc_bcm2835_powermgt.c.o
 [1260/1878] Compiling C object libcommon.fa.p/hw_misc_bcm2835_cprman.c.o
 [1261/1878] Compiling C object libcommon.fa.p/hw_misc_zynq_slcr.c.o
 [1262/1878] Compiling C object libcommon.fa.p/hw_misc_stm32f2xx_syscfg.c.o
@@ -1389,8 +1389,8 @@ In file included from ../hw/ide/atapi.c:30:
 [1268/1878] Compiling C object libcommon.fa.p/hw_misc_tz-msc.c.o
 [1269/1878] Compiling C object libcommon.fa.p/hw_misc_tz-ppc.c.o
 [1270/1878] Compiling C object libcommon.fa.p/hw_misc_iotkit-secctl.c.o
-[1271/1878] Compiling C object libcommon.fa.p/hw_misc_iotkit-sysinfo.c.o
-[1272/1878] Compiling C object libcommon.fa.p/hw_misc_iotkit-sysctl.c.o
+[1271/1878] Compiling C object libcommon.fa.p/hw_misc_iotkit-sysctl.c.o
+[1272/1878] Compiling C object libcommon.fa.p/hw_misc_iotkit-sysinfo.c.o
 [1273/1878] Compiling C object libcommon.fa.p/hw_misc_armsse-cpu-pwrctrl.c.o
 [1274/1878] Compiling C object libcommon.fa.p/hw_misc_armsse-cpuid.c.o
 [1275/1878] Compiling C object libcommon.fa.p/hw_misc_armsse-mhu.c.o
@@ -1400,14 +1400,14 @@ In file included from ../hw/ide/atapi.c:30:
 [1279/1878] Compiling C object libcommon.fa.p/hw_misc_aspeed_lpc.c.o
 [1280/1878] Compiling C object libcommon.fa.p/hw_misc_aspeed_sbc.c.o
 [1281/1878] Compiling C object libcommon.fa.p/hw_misc_aspeed_scu.c.o
-[1282/1878] Compiling C object libcommon.fa.p/hw_misc_aspeed_sdmc.c.o
-[1283/1878] Compiling C object libcommon.fa.p/hw_misc_aspeed_xdma.c.o
+[1282/1878] Compiling C object libcommon.fa.p/hw_misc_aspeed_xdma.c.o
+[1283/1878] Compiling C object libcommon.fa.p/hw_misc_aspeed_sdmc.c.o
 [1284/1878] Compiling C object libcommon.fa.p/hw_misc_aspeed_peci.c.o
-[1285/1878] Compiling C object libcommon.fa.p/hw_misc_msf2-sysreg.c.o
-[1286/1878] Compiling C object libcommon.fa.p/hw_misc_i2c-echo.c.o
+[1285/1878] Compiling C object libcommon.fa.p/hw_misc_i2c-echo.c.o
+[1286/1878] Compiling C object libcommon.fa.p/hw_misc_msf2-sysreg.c.o
 [1287/1878] Compiling C object libcommon.fa.p/hw_misc_nrf51_rng.c.o
-[1288/1878] Compiling C object libcommon.fa.p/hw_net_ne2000-pci.c.o
-[1289/1878] Compiling C object libcommon.fa.p/hw_net_ne2000.c.o
+[1288/1878] Compiling C object libcommon.fa.p/hw_net_ne2000.c.o
+[1289/1878] Compiling C object libcommon.fa.p/hw_net_ne2000-pci.c.o
 [1290/1878] Compiling C object libcommon.fa.p/hw_net_pcnet-pci.c.o
 [1291/1878] Compiling C object libcommon.fa.p/hw_net_eepro100.c.o
 [1292/1878] Compiling C object libcommon.fa.p/hw_net_pcnet.c.o
@@ -1436,18 +1436,17 @@ In file included from ../hw/ide/atapi.c:30:
 [1315/1878] Compiling C object libcommon.fa.p/hw_net_vhost_net-stub.c.o
 [1316/1878] Compiling C object libcommon.fa.p/hw_net_ftgmac100.c.o
 [1317/1878] Compiling C object libcommon.fa.p/hw_net_cadence_gem.c.o
-[1318/1878] Compiling C object libcommon.fa.p/hw_net_npcm7xx_emc.c.o
-[1319/1878] Compiling C object libcommon.fa.p/hw_net_rocker_rocker_fp.c.o
+[1318/1878] Compiling C object libcommon.fa.p/hw_net_rocker_rocker_fp.c.o
+[1319/1878] Compiling C object libcommon.fa.p/hw_net_npcm7xx_emc.c.o
 [1320/1878] Compiling C object libcommon.fa.p/hw_net_rocker_rocker_desc.c.o
 [1321/1878] Compiling C object libcommon.fa.p/hw_net_rocker_rocker_world.c.o
 [1322/1878] Compiling C object libcommon.fa.p/hw_net_rocker_rocker.c.o
 [1323/1878] Compiling C object libcommon.fa.p/hw_net_rocker_rocker-hmp-cmds.c.o
-[1324/1878] Compiling C object libcommon.fa.p/hw_net_can_can_sja1000.c.o
-[1325/1878] Compiling C object libcommon.fa.p/hw_net_rocker_rocker_of_dpa.c.o
+[1324/1878] Compiling C object libcommon.fa.p/hw_net_rocker_rocker_of_dpa.c.o
+[1325/1878] Compiling C object libcommon.fa.p/hw_net_can_can_sja1000.c.o
 [1326/1878] Compiling C object libcommon.fa.p/hw_net_can_can_kvaser_pci.c.o
 [1327/1878] Compiling C object libcommon.fa.p/hw_net_can_can_pcm3680_pci.c.o
-[1328/1878] Compiling C object libcommon.fa.p/hw_net_can_can_mioe3680_pci.c.o
-[1329/1878] Compiling C object libcommon.fa.p/hw_net_can_ctucan_core.c.o
+[1328/1878] Compiling C object libcommon.fa.p/hw_net_can_ctucan_core.c.o
 In file included from ../hw/net/can/ctucan_core.c:36:
 ../hw/net/can/ctucan_core.h:35:9: warning: '__LITTLE_ENDIAN_BITFIELD' macro redefined [-Wmacro-redefined]
    35 | #define __LITTLE_ENDIAN_BITFIELD 1
@@ -1456,6 +1455,7 @@ In file included from ../hw/net/can/ctucan_core.c:36:
    96 | #define __LITTLE_ENDIAN_BITFIELD
       |         ^
 1 warning generated.
+[1329/1878] Compiling C object libcommon.fa.p/hw_net_can_can_mioe3680_pci.c.o
 [1330/1878] Compiling C object libcommon.fa.p/hw_net_can_ctucan_pci.c.o
 In file included from ../hw/net/can/ctucan_pci.c:42:
 ../hw/net/can/ctucan_core.h:35:9: warning: '__LITTLE_ENDIAN_BITFIELD' macro redefined [-Wmacro-redefined]
@@ -1465,8 +1465,8 @@ In file included from ../hw/net/can/ctucan_pci.c:42:
    96 | #define __LITTLE_ENDIAN_BITFIELD
       |         ^
 1 warning generated.
-[1331/1878] Compiling C object libcommon.fa.p/hw_nvme_ns.c.o
-[1332/1878] Compiling C object libcommon.fa.p/hw_nvme_subsys.c.o
+[1331/1878] Compiling C object libcommon.fa.p/hw_nvme_subsys.c.o
+[1332/1878] Compiling C object libcommon.fa.p/hw_nvme_ns.c.o
 [1333/1878] Compiling C object libcommon.fa.p/hw_nvme_dif.c.o
 [1334/1878] Compiling C object libcommon.fa.p/hw_nvram_eeprom93xx.c.o
 [1335/1878] Compiling C object libcommon.fa.p/hw_nvram_fw_cfg-interface.c.o
@@ -1484,13 +1484,13 @@ In file included from ../hw/net/can/ctucan_pci.c:42:
 [1347/1878] Compiling C object libcommon.fa.p/hw_pci_pci-hmp-cmds.c.o
 [1348/1878] Compiling C object libcommon.fa.p/hw_pci_pci-qmp-cmds.c.o
 [1349/1878] Compiling C object libcommon.fa.p/hw_pci_pcie_sriov.c.o
-[1350/1878] Compiling C object libcommon.fa.p/hw_nvme_ctrl.c.o
-[1351/1878] Compiling C object libcommon.fa.p/hw_pci_shpc.c.o
-[1352/1878] Compiling C object libcommon.fa.p/hw_pci_slotid_cap.c.o
-[1353/1878] Compiling C object libcommon.fa.p/hw_pci_pcie.c.o
-[1354/1878] Compiling C object libcommon.fa.p/hw_pci_pcie_doe.c.o
-[1355/1878] Compiling C object libcommon.fa.p/hw_pci_pcie_aer.c.o
-[1356/1878] Compiling C object libcommon.fa.p/hw_pci-bridge_pci_bridge_dev.c.o
+[1350/1878] Compiling C object libcommon.fa.p/hw_pci_slotid_cap.c.o
+[1351/1878] Compiling C object libcommon.fa.p/hw_nvme_ctrl.c.o
+[1352/1878] Compiling C object libcommon.fa.p/hw_pci_shpc.c.o
+[1353/1878] Compiling C object libcommon.fa.p/hw_pci_pcie_doe.c.o
+[1354/1878] Compiling C object libcommon.fa.p/hw_pci-bridge_pci_bridge_dev.c.o
+[1355/1878] Compiling C object libcommon.fa.p/hw_pci_pcie.c.o
+[1356/1878] Compiling C object libcommon.fa.p/hw_pci_pcie_aer.c.o
 [1357/1878] Compiling C object libcommon.fa.p/hw_pci-bridge_i82801b11.c.o
 [1358/1878] Compiling C object libcommon.fa.p/hw_pci-bridge_ioh3420.c.o
 [1359/1878] Compiling C object libcommon.fa.p/hw_pci-bridge_pcie_root_port.c.o
@@ -1500,15 +1500,15 @@ In file included from ../hw/net/can/ctucan_pci.c:42:
 [1363/1878] Compiling C object libcommon.fa.p/hw_pci-bridge_xio3130_downstream.c.o
 [1364/1878] Compiling C object libcommon.fa.p/hw_pci-bridge_pci_expander_bridge.c.o
 [1365/1878] Compiling C object libcommon.fa.p/hw_pci-bridge_cxl_root_port.c.o
-[1366/1878] Compiling C object libcommon.fa.p/hw_pci-bridge_cxl_upstream.c.o
-[1367/1878] Compiling C object libcommon.fa.p/hw_pci-bridge_cxl_downstream.c.o
+[1366/1878] Compiling C object libcommon.fa.p/hw_pci-bridge_cxl_downstream.c.o
+[1367/1878] Compiling C object libcommon.fa.p/hw_pci-bridge_cxl_upstream.c.o
 [1368/1878] Compiling C object libcommon.fa.p/hw_pci-host_designware.c.o
 [1369/1878] Compiling C object libcommon.fa.p/hw_pci-host_gpex.c.o
 [1370/1878] Compiling C object libcommon.fa.p/hw_pcmcia_pcmcia.c.o
 [1371/1878] Compiling C object libcommon.fa.p/hw_pci-host_versatile.c.o
-[1372/1878] Compiling C object libcommon.fa.p/hw_pcmcia_pxa2xx.c.o
-[1373/1878] Compiling C object libcommon.fa.p/hw_pci-host_gpex-acpi.c.o
-[1374/1878] Compiling C object libcommon.fa.p/hw_rtc_ds1338.c.o
+[1372/1878] Compiling C object libcommon.fa.p/hw_pci-host_gpex-acpi.c.o
+[1373/1878] Compiling C object libcommon.fa.p/hw_rtc_ds1338.c.o
+[1374/1878] Compiling C object libcommon.fa.p/hw_pcmcia_pxa2xx.c.o
 [1375/1878] Compiling C object libcommon.fa.p/hw_rtc_m41t80.c.o
 [1376/1878] Compiling C object libcommon.fa.p/hw_rtc_pl031.c.o
 [1377/1878] Compiling C object libcommon.fa.p/hw_rtc_exynos4210_rtc.c.o
@@ -1780,64 +1780,64 @@ In file included from ../hw/scsi/mptsas.c:34:
 9 warnings generated.
 [1388/1878] Compiling C object libcommon.fa.p/hw_scsi_mptconfig.c.o
 [1389/1878] Compiling C object libcommon.fa.p/hw_scsi_lsi53c895a.c.o
-[1390/1878] Compiling C object libcommon.fa.p/hw_scsi_mptendian.c.o
-In file included from ../hw/scsi/mptendian.c:29:
+[1390/1878] Compiling C object libcommon.fa.p/hw_scsi_megasas.c.o
+In file included from ../hw/scsi/megasas.c:33:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:171:9: warning: 'CHECK_CONDITION' macro redefined [-Wmacro-redefined]
   171 | #define CHECK_CONDITION      0x02
       |         ^
 /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/scsi/sg.h:60:9: note: previous definition is here
    60 | #define CHECK_CONDITION 0x01
       |         ^
-In file included from ../hw/scsi/mptendian.c:29:
+In file included from ../hw/scsi/megasas.c:33:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:172:9: warning: 'CONDITION_GOOD' macro redefined [-Wmacro-redefined]
   172 | #define CONDITION_GOOD       0x04
       |         ^
 /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/scsi/sg.h:61:9: note: previous definition is here
    61 | #define CONDITION_GOOD 0x02
       |         ^
-In file included from ../hw/scsi/mptendian.c:29:
+In file included from ../hw/scsi/megasas.c:33:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:173:9: warning: 'BUSY' macro redefined [-Wmacro-redefined]
   173 | #define BUSY                 0x08
       |         ^
 /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/scsi/sg.h:62:9: note: previous definition is here
    62 | #define BUSY 0x04
       |         ^
-In file included from ../hw/scsi/mptendian.c:29:
+In file included from ../hw/scsi/megasas.c:33:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:174:9: warning: 'INTERMEDIATE_GOOD' macro redefined [-Wmacro-redefined]
   174 | #define INTERMEDIATE_GOOD    0x10
       |         ^
 /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/scsi/sg.h:63:9: note: previous definition is here
    63 | #define INTERMEDIATE_GOOD 0x08
       |         ^
-In file included from ../hw/scsi/mptendian.c:29:
+In file included from ../hw/scsi/megasas.c:33:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:175:9: warning: 'INTERMEDIATE_C_GOOD' macro redefined [-Wmacro-redefined]
   175 | #define INTERMEDIATE_C_GOOD  0x14
       |         ^
 /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/scsi/sg.h:64:9: note: previous definition is here
    64 | #define INTERMEDIATE_C_GOOD 0x0a
       |         ^
-In file included from ../hw/scsi/mptendian.c:29:
+In file included from ../hw/scsi/megasas.c:33:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:176:9: warning: 'RESERVATION_CONFLICT' macro redefined [-Wmacro-redefined]
   176 | #define RESERVATION_CONFLICT 0x18
       |         ^
 /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/scsi/sg.h:65:9: note: previous definition is here
    65 | #define RESERVATION_CONFLICT 0x0c
       |         ^
-In file included from ../hw/scsi/mptendian.c:29:
+In file included from ../hw/scsi/megasas.c:33:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:177:9: warning: 'COMMAND_TERMINATED' macro redefined [-Wmacro-redefined]
   177 | #define COMMAND_TERMINATED   0x22
       |         ^
 /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/scsi/sg.h:66:9: note: previous definition is here
    66 | #define COMMAND_TERMINATED 0x11
       |         ^
-In file included from ../hw/scsi/mptendian.c:29:
+In file included from ../hw/scsi/megasas.c:33:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:179:9: warning: 'ACA_ACTIVE' macro redefined [-Wmacro-redefined]
   179 | #define ACA_ACTIVE           0x30
       |         ^
 /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/scsi/sg.h:68:9: note: previous definition is here
    68 | #define ACA_ACTIVE 0x18
       |         ^
-In file included from ../hw/scsi/mptendian.c:29:
+In file included from ../hw/scsi/megasas.c:33:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:180:9: warning: 'TASK_ABORTED' macro redefined [-Wmacro-redefined]
   180 | #define TASK_ABORTED         0x40
       |         ^
@@ -1845,64 +1845,64 @@ In file included from ../hw/scsi/mptendian.c:29:
    69 | #define TASK_ABORTED 0x20
       |         ^
 9 warnings generated.
-[1391/1878] Compiling C object libcommon.fa.p/hw_scsi_megasas.c.o
-In file included from ../hw/scsi/megasas.c:33:
+[1391/1878] Compiling C object libcommon.fa.p/hw_scsi_mptendian.c.o
+In file included from ../hw/scsi/mptendian.c:29:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:171:9: warning: 'CHECK_CONDITION' macro redefined [-Wmacro-redefined]
   171 | #define CHECK_CONDITION      0x02
       |         ^
 /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/scsi/sg.h:60:9: note: previous definition is here
    60 | #define CHECK_CONDITION 0x01
       |         ^
-In file included from ../hw/scsi/megasas.c:33:
+In file included from ../hw/scsi/mptendian.c:29:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:172:9: warning: 'CONDITION_GOOD' macro redefined [-Wmacro-redefined]
   172 | #define CONDITION_GOOD       0x04
       |         ^
 /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/scsi/sg.h:61:9: note: previous definition is here
    61 | #define CONDITION_GOOD 0x02
       |         ^
-In file included from ../hw/scsi/megasas.c:33:
+In file included from ../hw/scsi/mptendian.c:29:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:173:9: warning: 'BUSY' macro redefined [-Wmacro-redefined]
   173 | #define BUSY                 0x08
       |         ^
 /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/scsi/sg.h:62:9: note: previous definition is here
    62 | #define BUSY 0x04
       |         ^
-In file included from ../hw/scsi/megasas.c:33:
+In file included from ../hw/scsi/mptendian.c:29:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:174:9: warning: 'INTERMEDIATE_GOOD' macro redefined [-Wmacro-redefined]
   174 | #define INTERMEDIATE_GOOD    0x10
       |         ^
 /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/scsi/sg.h:63:9: note: previous definition is here
    63 | #define INTERMEDIATE_GOOD 0x08
       |         ^
-In file included from ../hw/scsi/megasas.c:33:
+In file included from ../hw/scsi/mptendian.c:29:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:175:9: warning: 'INTERMEDIATE_C_GOOD' macro redefined [-Wmacro-redefined]
   175 | #define INTERMEDIATE_C_GOOD  0x14
       |         ^
 /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/scsi/sg.h:64:9: note: previous definition is here
    64 | #define INTERMEDIATE_C_GOOD 0x0a
       |         ^
-In file included from ../hw/scsi/megasas.c:33:
+In file included from ../hw/scsi/mptendian.c:29:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:176:9: warning: 'RESERVATION_CONFLICT' macro redefined [-Wmacro-redefined]
   176 | #define RESERVATION_CONFLICT 0x18
       |         ^
 /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/scsi/sg.h:65:9: note: previous definition is here
    65 | #define RESERVATION_CONFLICT 0x0c
       |         ^
-In file included from ../hw/scsi/megasas.c:33:
+In file included from ../hw/scsi/mptendian.c:29:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:177:9: warning: 'COMMAND_TERMINATED' macro redefined [-Wmacro-redefined]
   177 | #define COMMAND_TERMINATED   0x22
       |         ^
 /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/scsi/sg.h:66:9: note: previous definition is here
    66 | #define COMMAND_TERMINATED 0x11
       |         ^
-In file included from ../hw/scsi/megasas.c:33:
+In file included from ../hw/scsi/mptendian.c:29:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:179:9: warning: 'ACA_ACTIVE' macro redefined [-Wmacro-redefined]
   179 | #define ACA_ACTIVE           0x30
       |         ^
 /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/scsi/sg.h:68:9: note: previous definition is here
    68 | #define ACA_ACTIVE 0x18
       |         ^
-In file included from ../hw/scsi/megasas.c:33:
+In file included from ../hw/scsi/mptendian.c:29:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:180:9: warning: 'TASK_ABORTED' macro redefined [-Wmacro-redefined]
   180 | #define TASK_ABORTED         0x40
       |         ^
@@ -2053,8 +2053,8 @@ In file included from ../hw/scsi/vmw_pvscsi.c:34:
 [1404/1878] Compiling C object libcommon.fa.p/hw_sd_aspeed_sdhci.c.o
 [1405/1878] Compiling C object libcommon.fa.p/hw_sensor_tmp105.c.o
 [1406/1878] Compiling C object libcommon.fa.p/hw_sd_allwinner-sdhost.c.o
-[1407/1878] Compiling C object libcommon.fa.p/hw_sd_npcm7xx_sdhci.c.o
-[1408/1878] Compiling C object libcommon.fa.p/hw_sensor_tmp421.c.o
+[1407/1878] Compiling C object libcommon.fa.p/hw_sensor_tmp421.c.o
+[1408/1878] Compiling C object libcommon.fa.p/hw_sd_npcm7xx_sdhci.c.o
 [1409/1878] Compiling C object libcommon.fa.p/hw_sensor_dps310.c.o
 [1410/1878] Compiling C object libcommon.fa.p/hw_sensor_emc141x.c.o
 [1411/1878] Compiling C object libcommon.fa.p/hw_sensor_adm1266.c.o
@@ -2062,8 +2062,8 @@ In file included from ../hw/scsi/vmw_pvscsi.c:34:
 [1413/1878] Compiling C object libcommon.fa.p/hw_sensor_max34451.c.o
 [1414/1878] Compiling C object libcommon.fa.p/hw_sensor_lsm303dlhc_mag.c.o
 [1415/1878] Compiling C object libcommon.fa.p/hw_sensor_isl_pmbus_vr.c.o
-[1416/1878] Compiling C object libcommon.fa.p/hw_smbios_smbios_type_38-stub.c.o
-[1417/1878] Compiling C object libcommon.fa.p/hw_sensor_max31785.c.o
+[1416/1878] Compiling C object libcommon.fa.p/hw_sensor_max31785.c.o
+[1417/1878] Compiling C object libcommon.fa.p/hw_smbios_smbios_type_38-stub.c.o
 [1418/1878] Compiling C object libcommon.fa.p/hw_ssi_mss-spi.c.o
 [1419/1878] Compiling C object libcommon.fa.p/hw_ssi_npcm7xx_fiu.c.o
 [1420/1878] Compiling C object libcommon.fa.p/hw_ssi_aspeed_smc.c.o
@@ -2084,11 +2084,11 @@ In file included from ../hw/scsi/vmw_pvscsi.c:34:
 [1435/1878] Compiling C object libcommon.fa.p/hw_timer_cadence_ttc.c.o
 [1436/1878] Compiling C object libcommon.fa.p/hw_timer_aspeed_timer.c.o
 [1437/1878] Compiling C object libcommon.fa.p/hw_timer_cmsdk-apb-dualtimer.c.o
-[1438/1878] Compiling C object libcommon.fa.p/hw_timer_cmsdk-apb-timer.c.o
-[1439/1878] Compiling C object libcommon.fa.p/hw_timer_digic-timer.c.o
+[1438/1878] Compiling C object libcommon.fa.p/hw_timer_digic-timer.c.o
+[1439/1878] Compiling C object libcommon.fa.p/hw_timer_cmsdk-apb-timer.c.o
 [1440/1878] Compiling C object libcommon.fa.p/hw_timer_exynos4210_pwm.c.o
-[1441/1878] Compiling C object libcommon.fa.p/hw_timer_imx_epit.c.o
-[1442/1878] Compiling C object libcommon.fa.p/hw_timer_exynos4210_mct.c.o
+[1441/1878] Compiling C object libcommon.fa.p/hw_timer_exynos4210_mct.c.o
+[1442/1878] Compiling C object libcommon.fa.p/hw_timer_imx_epit.c.o
 [1443/1878] Compiling C object libcommon.fa.p/hw_timer_imx_gpt.c.o
 [1444/1878] Compiling C object libcommon.fa.p/hw_timer_mss-timer.c.o
 [1445/1878] Compiling C object libcommon.fa.p/hw_timer_omap_gptimer.c.o
@@ -2097,8 +2097,8 @@ In file included from ../hw/scsi/vmw_pvscsi.c:34:
 [1448/1878] Compiling C object libcommon.fa.p/hw_timer_omap_synctimer.c.o
 [1449/1878] Compiling C object libcommon.fa.p/hw_timer_bcm2835_systmr.c.o
 [1450/1878] Compiling C object libcommon.fa.p/hw_timer_pxa2xx_timer.c.o
-[1451/1878] Compiling C object libcommon.fa.p/hw_timer_sse-counter.c.o
-[1452/1878] Compiling C object libcommon.fa.p/hw_timer_sse-timer.c.o
+[1451/1878] Compiling C object libcommon.fa.p/hw_timer_sse-timer.c.o
+[1452/1878] Compiling C object libcommon.fa.p/hw_timer_sse-counter.c.o
 [1453/1878] Compiling C object libcommon.fa.p/hw_timer_stellaris-gptm.c.o
 [1454/1878] Compiling C object libcommon.fa.p/hw_timer_stm32f2xx_timer.c.o
 [1455/1878] Compiling C object libcommon.fa.p/hw_timer_xilinx_timer.c.o
@@ -2106,7 +2106,8 @@ In file included from ../hw/scsi/vmw_pvscsi.c:34:
 [1457/1878] Compiling C object libcommon.fa.p/hw_tpm_tpm_tis_common.c.o
 [1458/1878] Compiling C object libcommon.fa.p/hw_tpm_tpm_ppi.c.o
 [1459/1878] Compiling C object libcommon.fa.p/hw_tpm_tpm_tis_i2c.c.o
-[1460/1878] Compiling C object libcommon.fa.p/hw_ufs_lu.c.o
+[1460/1878] Compiling C object libcommon.fa.p/hw_usb_combined-packet.c.o
+[1461/1878] Compiling C object libcommon.fa.p/hw_ufs_lu.c.o
 In file included from ../hw/ufs/lu.c:16:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:171:9: warning: 'CHECK_CONDITION' macro redefined [-Wmacro-redefined]
   171 | #define CHECK_CONDITION      0x02
@@ -2171,7 +2172,6 @@ In file included from ../hw/ufs/lu.c:16:
    69 | #define TASK_ABORTED 0x20
       |         ^
 9 warnings generated.
-[1461/1878] Compiling C object libcommon.fa.p/hw_usb_combined-packet.c.o
 [1462/1878] Compiling C object libcommon.fa.p/hw_usb_bus.c.o
 [1463/1878] Compiling C object libcommon.fa.p/hw_ufs_ufs.c.o
 [1464/1878] Compiling C object libcommon.fa.p/hw_usb_core.c.o
@@ -2197,10 +2197,11 @@ In file included from ../hw/ufs/lu.c:16:
 [1484/1878] Compiling C object libcommon.fa.p/hw_usb_dev-hub.c.o
 [1485/1878] Compiling C object libcommon.fa.p/hw_usb_dev-wacom.c.o
 [1486/1878] Compiling C object libcommon.fa.p/hw_usb_dev-storage-bot.c.o
-[1487/1878] Compiling C object libcommon.fa.p/hw_usb_dev-storage.c.o
-[1488/1878] Compiling C object libcommon.fa.p/hw_usb_dev-storage-classic.c.o
+[1487/1878] Compiling C object libcommon.fa.p/hw_usb_dev-storage-classic.c.o
+[1488/1878] Compiling C object libcommon.fa.p/hw_usb_dev-storage.c.o
 [1489/1878] Compiling C object libcommon.fa.p/hw_usb_dev-audio.c.o
-[1490/1878] Compiling C object libcommon.fa.p/hw_usb_dev-uas.c.o
+[1490/1878] Compiling C object libcommon.fa.p/hw_usb_dev-network.c.o
+[1491/1878] Compiling C object libcommon.fa.p/hw_usb_dev-uas.c.o
 In file included from ../hw/usb/dev-uas.c:26:
 /home/runner/work/qemu-ios/qemu-ios/include/scsi/constants.h:171:9: warning: 'CHECK_CONDITION' macro redefined [-Wmacro-redefined]
   171 | #define CHECK_CONDITION      0x02
@@ -2265,7 +2266,6 @@ In file included from ../hw/usb/dev-uas.c:26:
    69 | #define TASK_ABORTED 0x20
       |         ^
 9 warnings generated.
-[1491/1878] Compiling C object libcommon.fa.p/hw_usb_dev-network.c.o
 [1492/1878] Compiling C object libcommon.fa.p/hw_usb_dev-serial.c.o
 [1493/1878] Compiling C object libcommon.fa.p/hw_usb_u2f.c.o
 [1494/1878] Compiling C object libcommon.fa.p/hw_usb_dev-smartcard-reader.c.o
@@ -2279,16 +2279,16 @@ In file included from ../hw/usb/dev-uas.c:26:
 [1502/1878] Compiling C object libcommon.fa.p/hw_virtio_virtio-iommu.c.o
 [1503/1878] Compiling C object libcommon.fa.p/hw_virtio_virtio-hmp-cmds.c.o
 [1504/1878] Compiling C object libcommon.fa.p/hw_watchdog_watchdog.c.o
-[1505/1878] Compiling C object libcommon.fa.p/hw_virtio_vhost-vdpa.c.o
-[1506/1878] Compiling C object libcommon.fa.p/hw_watchdog_allwinner-wdt.c.o
-[1507/1878] Compiling C object libcommon.fa.p/hw_watchdog_cmsdk-apb-watchdog.c.o
-[1508/1878] Compiling C object libcommon.fa.p/hw_virtio_vhost.c.o
-[1509/1878] Compiling C object libcommon.fa.p/hw_watchdog_wdt_aspeed.c.o
-[1510/1878] Compiling C object libcommon.fa.p/hw_watchdog_wdt_i6300esb.c.o
-[1511/1878] Compiling C object libcommon.fa.p/hw_watchdog_wdt_imx2.c.o
-[1512/1878] Compiling C object libcommon.fa.p/hw_arm_exynos4_boards.c.o
-[1513/1878] Compiling C object libcommon.fa.p/hw_arm_tosa.c.o
-[1514/1878] Compiling C object libcommon.fa.p/hw_arm_smmu-common.c.o
+[1505/1878] Compiling C object libcommon.fa.p/hw_watchdog_allwinner-wdt.c.o
+[1506/1878] Compiling C object libcommon.fa.p/hw_virtio_vhost-vdpa.c.o
+[1507/1878] Compiling C object libcommon.fa.p/hw_virtio_vhost.c.o
+[1508/1878] Compiling C object libcommon.fa.p/hw_watchdog_cmsdk-apb-watchdog.c.o
+[1509/1878] Compiling C object libcommon.fa.p/hw_watchdog_wdt_imx2.c.o
+[1510/1878] Compiling C object libcommon.fa.p/hw_watchdog_wdt_aspeed.c.o
+[1511/1878] Compiling C object libcommon.fa.p/hw_watchdog_wdt_i6300esb.c.o
+[1512/1878] Compiling C object libcommon.fa.p/hw_arm_smmu-common.c.o
+[1513/1878] Compiling C object libcommon.fa.p/hw_arm_exynos4_boards.c.o
+[1514/1878] Compiling C object libcommon.fa.p/hw_arm_tosa.c.o
 [1515/1878] Compiling C object libcommon.fa.p/hw_arm_bcm2835_peripherals.c.o
 [1516/1878] Compiling C object libcommon.fa.p/audio_noaudio.c.o
 [1517/1878] Compiling C object libcommon.fa.p/audio_audio-hmp-cmds.c.o
@@ -2307,18 +2307,18 @@ In file included from ../hw/usb/dev-uas.c:26:
 [1530/1878] Compiling C object libcommon.fa.p/block_blkreplay.c.o
 [1531/1878] Compiling C object libcommon.fa.p/block_block-ram-registrar.c.o
 [1532/1878] Compiling C object libcommon.fa.p/block_qapi-sysemu.c.o
-[1533/1878] Compiling C object libcommon.fa.p/system_balloon.c.o
-[1534/1878] Compiling C object libcommon.fa.p/dump_dump.c.o
+[1533/1878] Compiling C object libcommon.fa.p/dump_dump.c.o
+[1534/1878] Compiling C object libcommon.fa.p/system_balloon.c.o
 [1535/1878] Compiling C object libcommon.fa.p/system_cpu-throttle.c.o
 [1536/1878] Compiling C object libcommon.fa.p/block_monitor_block-hmp-cmds.c.o
 [1537/1878] Compiling C object libcommon.fa.p/system_bootdevice.c.o
 [1538/1878] Compiling C object libcommon.fa.p/system_datadir.c.o
-[1539/1878] Compiling C object libcommon.fa.p/system_cpus.c.o
-[1540/1878] Compiling C object libcommon.fa.p/system_cpu-timers.c.o
+[1539/1878] Compiling C object libcommon.fa.p/system_cpu-timers.c.o
+[1540/1878] Compiling C object libcommon.fa.p/system_cpus.c.o
 [1541/1878] Compiling C object libcommon.fa.p/system_memory_mapping.c.o
 [1542/1878] Compiling C object libcommon.fa.p/system_globals.c.o
-[1543/1878] Compiling C object libcommon.fa.p/system_dma-helpers.c.o
-[1544/1878] Compiling C object libcommon.fa.p/system_dirtylimit.c.o
+[1543/1878] Compiling C object libcommon.fa.p/system_dirtylimit.c.o
+[1544/1878] Compiling C object libcommon.fa.p/system_dma-helpers.c.o
 [1545/1878] Compiling C object libcommon.fa.p/system_runstate-action.c.o
 [1546/1878] Compiling C object libcommon.fa.p/system_rtc.c.o
 [1547/1878] Compiling C object libcommon.fa.p/system_runstate-hmp-cmds.c.o
@@ -2329,21 +2329,21 @@ In file included from ../hw/usb/dev-uas.c:26:
 [1552/1878] Compiling C object libcommon.fa.p/system_runstate.c.o
 [1553/1878] Compiling C object libcommon.fa.p/system_async-teardown.c.o
 [1554/1878] Compiling C object libcommon.fa.p/backends_cryptodev-builtin.c.o
-[1555/1878] Compiling C object libcommon.fa.p/backends_cryptodev-hmp-cmds.c.o
-[1556/1878] Compiling C object libcommon.fa.p/system_device_tree.c.o
+[1555/1878] Compiling C object libcommon.fa.p/system_device_tree.c.o
+[1556/1878] Compiling C object libcommon.fa.p/backends_cryptodev-hmp-cmds.c.o
 [1557/1878] Compiling C object libcommon.fa.p/backends_hostmem-ram.c.o
-[1558/1878] Compiling C object libcommon.fa.p/system_vl.c.o
-[1559/1878] Compiling C object libcommon.fa.p/backends_cryptodev.c.o
+[1558/1878] Compiling C object libcommon.fa.p/backends_cryptodev.c.o
+[1559/1878] Compiling C object libcommon.fa.p/system_vl.c.o
 [1560/1878] Compiling C object libcommon.fa.p/backends_hostmem.c.o
-[1561/1878] Compiling C object libcommon.fa.p/backends_confidential-guest-support.c.o
-[1562/1878] Compiling C object libcommon.fa.p/backends_rng-builtin.c.o
+[1561/1878] Compiling C object libcommon.fa.p/backends_rng-builtin.c.o
+[1562/1878] Compiling C object libcommon.fa.p/backends_confidential-guest-support.c.o
 [1563/1878] Compiling C object libcommon.fa.p/backends_rng-egd.c.o
 [1564/1878] Compiling C object libcommon.fa.p/backends_rng.c.o
 [1565/1878] Compiling C object libcommon.fa.p/backends_rng-random.c.o
-[1566/1878] Compiling C object libcommon.fa.p/backends_hostmem-file.c.o
-[1567/1878] Compiling C object libcommon.fa.p/backends_hostmem-memfd.c.o
-[1568/1878] Compiling C object libcommon.fa.p/backends_cryptodev-vhost.c.o
-[1569/1878] Compiling C object libcommon.fa.p/backends_tpm_tpm_backend.c.o
+[1566/1878] Compiling C object libcommon.fa.p/backends_tpm_tpm_backend.c.o
+[1567/1878] Compiling C object libcommon.fa.p/backends_hostmem-file.c.o
+[1568/1878] Compiling C object libcommon.fa.p/backends_hostmem-memfd.c.o
+[1569/1878] Compiling C object libcommon.fa.p/backends_cryptodev-vhost.c.o
 [1570/1878] Compiling C object libcommon.fa.p/backends_tpm_tpm_passthrough.c.o
 [1571/1878] Compiling C object libcommon.fa.p/backends_tpm_tpm_util.c.o
 [1572/1878] Compiling C object libcommon.fa.p/disas_disas-mon.c.o
@@ -2353,8 +2353,8 @@ In file included from ../hw/usb/dev-uas.c:26:
 [1576/1878] Compiling C object libcommon.fa.p/migration_block-dirty-bitmap.c.o
 [1577/1878] Compiling C object libcommon.fa.p/migration_exec.c.o
 [1578/1878] Compiling C object libcommon.fa.p/migration_dirtyrate.c.o
-[1579/1878] Compiling C object libcommon.fa.p/migration_fd.c.o
-[1580/1878] Compiling C object libcommon.fa.p/migration_file.c.o
+[1579/1878] Compiling C object libcommon.fa.p/migration_file.c.o
+[1580/1878] Compiling C object libcommon.fa.p/migration_fd.c.o
 [1581/1878] Compiling C object libcommon.fa.p/migration_global_state.c.o
 [1582/1878] Compiling C object libcommon.fa.p/migration_migration-hmp-cmds.c.o
 [1583/1878] Compiling C object libcommon.fa.p/migration_multifd-zlib.c.o
@@ -2390,18 +2390,18 @@ In file included from ../hw/usb/dev-uas.c:26:
 [1613/1878] Compiling C object libcommon.fa.p/net_util.c.o
 [1614/1878] Compiling C object libcommon.fa.p/net_dgram.c.o
 [1615/1878] Compiling C object libcommon.fa.p/net_colo.c.o
-[1616/1878] Compiling C object libcommon.fa.p/net_filter-rewriter.c.o
-[1617/1878] Compiling C object libcommon.fa.p/net_filter-replay.c.o
+[1616/1878] Compiling C object libcommon.fa.p/net_filter-replay.c.o
+[1617/1878] Compiling C object libcommon.fa.p/net_filter-rewriter.c.o
 [1618/1878] Compiling C object libcommon.fa.p/net_l2tpv3.c.o
 [1619/1878] Compiling C object libcommon.fa.p/net_colo-compare.c.o
 [1620/1878] Compiling C object libcommon.fa.p/net_tap-linux.c.o
-[1621/1878] Compiling C object libcommon.fa.p/net_can_can_socketcan.c.o
-[1622/1878] Compiling C object libcommon.fa.p/net_tap.c.o
-[1623/1878] Compiling C object libcommon.fa.p/net_can_can_core.c.o
+[1621/1878] Compiling C object libcommon.fa.p/net_can_can_core.c.o
+[1622/1878] Compiling C object libcommon.fa.p/net_can_can_socketcan.c.o
+[1623/1878] Compiling C object libcommon.fa.p/net_tap.c.o
 [1624/1878] Compiling C object libcommon.fa.p/net_can_can_host.c.o
 [1625/1878] Compiling C object libcommon.fa.p/replay_replay-time.c.o
-[1626/1878] Compiling C object libcommon.fa.p/replay_replay-internal.c.o
-[1627/1878] Compiling C object libcommon.fa.p/replay_replay.c.o
+[1626/1878] Compiling C object libcommon.fa.p/replay_replay.c.o
+[1627/1878] Compiling C object libcommon.fa.p/replay_replay-internal.c.o
 [1628/1878] Compiling C object libcommon.fa.p/replay_replay-events.c.o
 [1629/1878] Compiling C object libcommon.fa.p/replay_replay-input.c.o
 [1630/1878] Compiling C object libcommon.fa.p/replay_replay-char.c.o
@@ -2409,8 +2409,8 @@ In file included from ../hw/usb/dev-uas.c:26:
 [1632/1878] Compiling C object libcommon.fa.p/replay_replay-snapshot.c.o
 [1633/1878] Compiling C object libcommon.fa.p/replay_replay-audio.c.o
 [1634/1878] Compiling C object libcommon.fa.p/replay_replay-random.c.o
-[1635/1878] Compiling C object libcommon.fa.p/stats_stats-qmp-cmds.c.o
-[1636/1878] Compiling C object libcommon.fa.p/replay_replay-debugging.c.o
+[1635/1878] Compiling C object libcommon.fa.p/replay_replay-debugging.c.o
+[1636/1878] Compiling C object libcommon.fa.p/stats_stats-qmp-cmds.c.o
 [1637/1878] Compiling C object libcommon.fa.p/stats_stats-hmp-cmds.c.o
 [1638/1878] Compiling C object libcommon.fa.p/accel_accel-system.c.o
 [1639/1878] Compiling C object libcommon.fa.p/accel_accel-blocker.c.o
@@ -2419,8 +2419,8 @@ In file included from ../hw/usb/dev-uas.c:26:
 [1642/1878] Compiling C object libcommon.fa.p/accel_dummy-cpus.c.o
 [1643/1878] Compiling C object libcommon.fa.p/accel_tcg_monitor.c.o
 [1644/1878] Compiling C object libcommon.fa.p/ui_sdl2-2d.c.o
-[1645/1878] Compiling C object libcommon.fa.p/hw_display_virtio-gpu-base.c.o
-[1646/1878] Compiling C object libcommon.fa.p/ui_sdl2-input.c.o
+[1645/1878] Compiling C object libcommon.fa.p/ui_sdl2-input.c.o
+[1646/1878] Compiling C object libcommon.fa.p/hw_display_virtio-gpu-base.c.o
 [1647/1878] Compiling C object libcommon.fa.p/ui_sdl2.c.o
 [1648/1878] Compiling C object libcommon.fa.p/hw_display_virtio-gpu-udmabuf.c.o
 [1649/1878] Compiling C object libcommon.fa.p/hw_display_virtio-gpu-pci.c.o
@@ -2440,34 +2440,34 @@ In file included from ../hw/usb/dev-uas.c:26:
 [1663/1878] Compiling C object libqemu-arm-softmmu.fa.p/meson-generated_.._qapi_qapi-commands.c.o
 [1664/1878] Compiling C object libqemu-arm-softmmu.fa.p/meson-generated_.._qapi_qapi-emit-events.c.o
 [1665/1878] Compiling C object libqemu-arm-softmmu.fa.p/meson-generated_.._qapi_qapi-introspect.c.o
-[1666/1878] Compiling C object libqemu-arm-softmmu.fa.p/meson-generated_.._qapi_qapi-events.c.o
-[1667/1878] Compiling C object libqemu-arm-softmmu.fa.p/meson-generated_.._qapi_qapi-init-commands.c.o
+[1666/1878] Compiling C object libqemu-arm-softmmu.fa.p/meson-generated_.._qapi_qapi-init-commands.c.o
+[1667/1878] Compiling C object libqemu-arm-softmmu.fa.p/meson-generated_.._qapi_qapi-events.c.o
 [1668/1878] Compiling C object libqemu-arm-softmmu.fa.p/target_arm_arch_dump.c.o
 [1669/1878] Compiling C object libqemu-arm-softmmu.fa.p/target_arm_arm-powerctl.c.o
 [1670/1878] Compiling C object libqemu-arm-softmmu.fa.p/target_arm_cortex-regs.c.o
-[1671/1878] Compiling C object libqemu-arm-softmmu.fa.p/target_arm_machine.c.o
-[1672/1878] Compiling C object libqemu-arm-softmmu.fa.p/target_arm_arm-qmp-cmds.c.o
+[1671/1878] Compiling C object libqemu-arm-softmmu.fa.p/target_arm_arm-qmp-cmds.c.o
+[1672/1878] Compiling C object libqemu-arm-softmmu.fa.p/target_arm_machine.c.o
 [1673/1878] Compiling C object libqemu-arm-softmmu.fa.p/target_arm_tcg_psci.c.o
 [1674/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_boot.c.o
 [1675/1878] Compiling C object libqemu-arm-softmmu.fa.p/target_arm_ptw.c.o
 [1676/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_virt-acpi-build.c.o
 [1677/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_digic_boards.c.o
 [1678/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_msf2-som.c.o
-[1679/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_virt.c.o
-[1680/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_highbank.c.o
-[1681/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_mainstone.c.o
-[1682/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_integratorcp.c.o
+[1679/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_highbank.c.o
+[1680/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_integratorcp.c.o
+[1681/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_virt.c.o
+[1682/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_mainstone.c.o
 [1683/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_microbit.c.o
 [1684/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_netduino2.c.o
 [1685/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_netduinoplus2.c.o
 [1686/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_musicpal.c.o
 [1687/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_olimex-stm32-h405.c.o
-[1688/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_npcm7xx_boards.c.o
-[1689/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_npcm7xx.c.o
-[1690/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_omap_sx1.c.o
-[1691/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_nseries.c.o
-[1692/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_gumstix.c.o
-[1693/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_palm.c.o
+[1688/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_npcm7xx.c.o
+[1689/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_npcm7xx_boards.c.o
+[1690/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_nseries.c.o
+[1691/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_omap_sx1.c.o
+[1692/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_palm.c.o
+[1693/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_gumstix.c.o
 [1694/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_z2.c.o
 [1695/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_spitz.c.o
 [1696/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_realview.c.o
@@ -2475,8 +2475,8 @@ In file included from ../hw/usb/dev-uas.c:26:
 [1698/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_stellaris.c.o
 [1699/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_collie.c.o
 [1700/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_versatilepb.c.o
-[1701/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_vexpress.c.o
-[1702/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_xilinx_zynq.c.o
+[1701/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_xilinx_zynq.c.o
+[1702/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_vexpress.c.o
 [1703/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_sabrelite.c.o
 [1704/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_armv7m.c.o
 [1705/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_pxa2xx_gpio.c.o
@@ -2498,20 +2498,20 @@ In file included from ../hw/usb/dev-uas.c:26:
 [1721/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_stm32f100_soc.c.o
 [1722/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_stm32f205_soc.c.o
 [1723/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_stm32f405_soc.c.o
-[1724/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_fsl-imx31.c.o
-[1725/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_imx25_pdk.c.o
-[1726/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_fsl-imx25.c.o
+[1724/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_fsl-imx25.c.o
+[1725/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_fsl-imx31.c.o
+[1726/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_imx25_pdk.c.o
 [1727/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_kzm.c.o
 [1728/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_aspeed_soc_common.c.o
 [1729/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_fsl-imx6.c.o
-[1730/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_aspeed.c.o
-[1731/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_aspeed_ast2400.c.o
+[1730/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_aspeed_ast2400.c.o
+[1731/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_aspeed.c.o
 [1732/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_aspeed_eeprom.c.o
-[1733/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_aspeed_ast10x0.c.o
-[1734/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_aspeed_ast2600.c.o
+[1733/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_aspeed_ast2600.c.o
+[1734/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_aspeed_ast10x0.c.o
 [1735/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_fby35.c.o
-[1736/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_msf2-soc.c.o
-[1737/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_mps2.c.o
+[1736/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_mps2.c.o
+[1737/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_msf2-soc.c.o
 [1738/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_musca.c.o
 [1739/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_armsse.c.o
 [1740/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_mps2-tz.c.o
@@ -2554,8 +2554,7 @@ In file included from ../hw/usb/dev-uas.c:26:
       |                                      ~~~~               ^~~~
       |                                      %08lx
 2 warnings generated.
-[1750/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_ipod_touch_sysic.c.o
-[1751/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_ipod_touch_2g.c.o
+[1750/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_ipod_touch_2g.c.o
 ../hw/arm/ipod_touch_2g.c:186:10: warning: unused variable 'do_irq' [-Wunused-variable]
   186 |     bool do_irq = false;
       |          ^~~~~~
@@ -2584,6 +2583,7 @@ In file included from ../hw/usb/dev-uas.c:26:
   463 |     I2CSlave *cd327mikey = i2c_slave_create_simple(i2c_state->bus, "cd3272mikey", 0x39);
       |               ^~~~~~~~~~
 7 warnings generated.
+[1751/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_ipod_touch_sysic.c.o
 [1752/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_ipod_touch_timer.c.o
 [1753/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_ipod_touch_usb_phys.c.o
 ../hw/arm/ipod_touch_usb_phys.c:21:64: warning: format specifies type 'unsigned int' but the argument has type 'hwaddr' (aka 'unsigned long') [-Wformat]
@@ -2595,7 +2595,8 @@ In file included from ../hw/usb/dev-uas.c:26:
       |                                              ~~~~                ^~~~
       |                                              %08lx
 2 warnings generated.
-[1754/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_ipod_touch_usb_otg.c.o
+[1754/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_ipod_touch_nor_spi.c.o
+[1755/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_ipod_touch_usb_otg.c.o
 ../hw/arm/ipod_touch_usb_otg.c:272:53: warning: format specifies type 'unsigned int' but the argument has type 'hwaddr' (aka 'unsigned long') [-Wformat]
   272 |                 hw_error("USB: Unhandled read address 0x%08x!\n", _addr);
       |                                                         ~~~~      ^~~~~
@@ -2614,8 +2615,7 @@ In file included from ../hw/usb/dev-uas.c:26:
    33 | static inline size_t synopsys_usb_tx_fifo_size(synopsys_usb_state *_state, uint32_t _fifo)
       |                      ^~~~~~~~~~~~~~~~~~~~~~~~~
 5 warnings generated.
-[1755/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_ipod_touch_spi.c.o
-[1756/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_ipod_touch_nor_spi.c.o
+[1756/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_ipod_touch_spi.c.o
 [1757/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_arm_ipod_touch_sha1.c.o
 ../hw/arm/ipod_touch_sha1.c:57:17: warning: 'SHA1_Init' is deprecated [-Wdeprecated-declarations]
    57 |                 SHA1_Init(&ctx);
@@ -2823,8 +2823,8 @@ In file included from ../hw/usb/dev-uas.c:26:
 [1797/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_hyperv_hv-balloon-stub.c.o
 [1798/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_cpu_a15mpcore.c.o
 [1799/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_intc_arm_gicv3_cpuif_common.c.o
-[1800/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_intc_arm_gicv3_cpuif.c.o
-[1801/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_intc_armv7m_nvic.c.o
+[1800/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_intc_armv7m_nvic.c.o
+[1801/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_intc_arm_gicv3_cpuif.c.o
 [1802/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_misc_allwinner-cpucfg.c.o
 [1803/1878] Compiling C object libqemu-arm-softmmu.fa.p/target_arm_tcg_vec_helper.c.o
 [1804/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_scsi_virtio-scsi.c.o
@@ -2897,18 +2897,18 @@ In file included from ../hw/scsi/virtio-scsi.c:29:
 [1807/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_vfio_spapr.c.o
 [1808/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_vfio_container.c.o
 [1809/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_vfio_common.c.o
-[1810/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_vfio_display.c.o
-[1811/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_vfio_migration.c.o
-[1812/1878] Compiling C object libqemu-arm-softmmu.fa.p/target_arm_tcg_mve_helper.c.o
-[1813/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_vfio_pci-quirks.c.o
+[1810/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_vfio_migration.c.o
+[1811/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_vfio_display.c.o
+[1812/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_vfio_pci-quirks.c.o
+[1813/1878] Compiling C object libqemu-arm-softmmu.fa.p/target_arm_tcg_mve_helper.c.o
 [1814/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_vfio_platform.c.o
 [1815/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_vfio_calxeda-xgmac.c.o
 [1816/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_vfio_amd-xgbe.c.o
 [1817/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_virtio_virtio-config-io.c.o
 [1818/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_virtio_virtio-qmp.c.o
 [1819/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_virtio_vhost-backend.c.o
-[1820/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_virtio_vhost-iova-tree.c.o
-[1821/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_vfio_pci.c.o
+[1820/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_vfio_pci.c.o
+[1821/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_virtio_vhost-iova-tree.c.o
 [1822/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_virtio_vhost-shadow-virtqueue.c.o
 [1823/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_virtio_virtio-rng.c.o
 [1824/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_virtio_virtio.c.o
@@ -2926,10 +2926,10 @@ In file included from ../hw/scsi/virtio-scsi.c:29:
 [1836/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_virtio_virtio-iommu-pci.c.o
 [1837/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_virtio_virtio-mem-pci.c.o
 [1838/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_virtio_vdpa-dev-pci.c.o
-[1839/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_virtio_virtio-md-pci.c.o
-[1840/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_i386_kvm_xen-stubs.c.o
-[1841/1878] Compiling C object libqemu-arm-softmmu.fa.p/dump_win_dump.c.o
-[1842/1878] Compiling C object libqemu-arm-softmmu.fa.p/system_arch_init.c.o
+[1839/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_i386_kvm_xen-stubs.c.o
+[1840/1878] Compiling C object libqemu-arm-softmmu.fa.p/hw_virtio_virtio-md-pci.c.o
+[1841/1878] Compiling C object libqemu-arm-softmmu.fa.p/system_arch_init.c.o
+[1842/1878] Compiling C object libqemu-arm-softmmu.fa.p/dump_win_dump.c.o
 [1843/1878] Compiling C object libqemu-arm-softmmu.fa.p/cpu-target.c.o
 [1844/1878] Compiling C object libqemu-arm-softmmu.fa.p/system_ioport.c.o
 [1845/1878] Compiling C object libqemu-arm-softmmu.fa.p/system_watchpoint.c.o
@@ -2937,11 +2937,10 @@ In file included from ../hw/scsi/virtio-scsi.c:29:
 [1847/1878] Compiling C object libqemu-arm-softmmu.fa.p/migration_target.c.o
 [1848/1878] Compiling C object libqemu-arm-softmmu.fa.p/monitor_hmp-cmds-target.c.o
 [1849/1878] Compiling C object libqemu-arm-softmmu.fa.p/system_memory.c.o
-[1850/1878] Compiling C object libqemu-arm-softmmu.fa.p/semihosting_guestfd.c.o
-[1851/1878] Compiling C object libqemu-arm-softmmu.fa.p/system_physmem.c.o
+[1850/1878] Compiling C object libqemu-arm-softmmu.fa.p/system_physmem.c.o
+[1851/1878] Compiling C object libqemu-arm-softmmu.fa.p/semihosting_guestfd.c.o
 [1852/1878] Compiling C object libqemu-arm-softmmu.fa.p/monitor_hmp-target.c.o
-[1853/1878] Compiling C object libqemu-arm-softmmu.fa.p/migration_ram.c.o
-[1854/1878] Compiling C object libqemu-arm-softmmu.fa.p/semihosting_config.c.o
+[1853/1878] Compiling C object libqemu-arm-softmmu.fa.p/semihosting_config.c.o
 ../semihosting/config.c:122:17: warning: 'strtok' is deprecated: strtok() is not thread-safe; use strtok_r() instead [-Wdeprecated-declarations]
   122 |     cmd_token = strtok(cmd_dup, " ");
       |                 ^
@@ -2955,6 +2954,7 @@ In file included from ../hw/scsi/virtio-scsi.c:29:
   125 |     __attribute__((__deprecated__("strtok() is not thread-safe; use strtok_r() instead")));
       |                    ^
 2 warnings generated.
+[1854/1878] Compiling C object libqemu-arm-softmmu.fa.p/migration_ram.c.o
 [1855/1878] Compiling C object libqemu-arm-softmmu.fa.p/semihosting_console.c.o
 [1856/1878] Compiling C object libqemu-arm-softmmu.fa.p/semihosting_syscalls.c.o
 [1857/1878] Compiling C object libqemu-arm-softmmu.fa.p/semihosting_uaccess.c.o
@@ -2975,26 +2975,26 @@ In file included from ../hw/scsi/virtio-scsi.c:29:
       |                ^
 1 warning generated.
 [1867/1878] Compiling C object libqemu-arm-softmmu.fa.p/accel_stubs_xen-stub.c.o
-[1868/1878] Compiling C object libqemu-arm-softmmu.fa.p/accel_tcg_tcg-runtime-gvec.c.o
-[1869/1878] Compiling C object libqemu-arm-softmmu.fa.p/accel_stubs_kvm-stub.c.o
+[1868/1878] Compiling C object libqemu-arm-softmmu.fa.p/accel_stubs_kvm-stub.c.o
+[1869/1878] Compiling C object libqemu-arm-softmmu.fa.p/accel_tcg_tcg-runtime-gvec.c.o
 [1870/1878] Compiling C object libqemu-arm-softmmu.fa.p/accel_tcg_tcg-accel-ops.c.o
 [1871/1878] Compiling C object libqemu-arm-softmmu.fa.p/accel_tcg_tcg-accel-ops-mttcg.c.o
 [1872/1878] Compiling C object libqemu-arm-softmmu.fa.p/accel_tcg_tcg-accel-ops-icount.c.o
 [1873/1878] Compiling C object libqemu-arm-softmmu.fa.p/accel_tcg_tcg-accel-ops-rr.c.o
 [1874/1878] Compiling C object libqemu-arm-softmmu.fa.p/accel_qtest_qtest.c.o
-[1875/1878] Compiling C object libqemu-arm-softmmu.fa.p/fpu_softfloat.c.o
-[1876/1878] Compiling C object qemu-system-arm.p/system_main.c.o
+[1875/1878] Compiling C object qemu-system-arm.p/system_main.c.o
+[1876/1878] Compiling C object libqemu-arm-softmmu.fa.p/fpu_softfloat.c.o
 [1877/1878] Compiling C object libqemu-arm-softmmu.fa.p/accel_tcg_cputlb.c.o
 [1878/1878] Linking target qemu-system-arm
 aarch64-linux-android29-clang  -shared -Wl,-soname,libmain.so -o libmain.so libcommon.fa.p/hw_core_cpu-common.c.o libcommon.fa.p/hw_core_machine-smp.c.o libcommon.fa.p/gdbstub_syscalls.c.o libcommon.fa.p/cpu-common.c.o libcommon.fa.p/page-vary-common.c.o libcommon.fa.p/disas_disas.c.o libcommon.fa.p/accel_tcg_cpu-exec-common.c.o libcommon.fa.p/trace_trace-hmp-cmds.c.o libcommon.fa.p/qom_qom-hmp-cm ...
 total 35464
-drwxr-xr-x 2 runner runner     4096 Oct 22 04:12 .
-drwxr-xr-x 6 runner runner     4096 Oct 22 04:12 ..
--rw-r--r-- 1 runner runner  5983368 Oct 22 04:12 libSDL2.so
--rwxr-xr-x 1 runner runner 30319944 Oct 22 04:12 libmain.so
+drwxr-xr-x 2 runner runner     4096 Oct 22 04:43 .
+drwxr-xr-x 6 runner runner     4096 Oct 22 04:43 ..
+-rw-r--r-- 1 runner runner  5983368 Oct 22 04:43 libSDL2.so
+-rwxr-xr-x 1 runner runner 30319912 Oct 22 04:43 libmain.so
  0x0000000000000001 (NEEDED)             Shared library: [libm.so]
  0x0000000000000001 (NEEDED)             Shared library: [libSDL2.so]
  0x0000000000000001 (NEEDED)             Shared library: [libdl.so]
  0x0000000000000001 (NEEDED)             Shared library: [libc.so]
-0000000000c6bb7c T SDL_main
-0000000000c6bc74 T main
+0000000000c6bbd4 T SDL_main
+0000000000c6bccc T main
