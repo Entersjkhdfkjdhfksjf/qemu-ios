@@ -1,6 +1,12 @@
 package app.ipodtouch.emulator;
 
 import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -67,6 +73,8 @@ public class QemuActivity extends SDLActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         // Read by SDL when the SDL thread starts: don't block the main loop while paused.
         nativeSetenv("SDL_ANDROID_BLOCK_ON_PAUSE", "0");
+        // An accidental back gesture would kill QEMU mid-write; swipe the app away to quit instead.
+        nativeSetenv("SDL_ANDROID_TRAP_BACK_BUTTON", "1");
 
         stderrLog = new File(LauncherActivity.ipodDir(this), "qemu-stderr.log");
         hud = new TextView(this);
@@ -81,7 +89,104 @@ public class QemuActivity extends SDLActivity {
         lp.addRule(RelativeLayout.ALIGN_PARENT_TOP);
         lp.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
         mLayout.addView(hud, lp);
+        buildControls();
         h.post(tick);
+    }
+
+    // ---- on-screen iPod buttons -------------------------------------------------------------
+
+    private int dp(int v) { return (int) (v * getResources().getDisplayMetrics().density + 0.5f); }
+
+    private int lastW, lastH, lastTop;
+
+    private void buildControls() {
+        final int barH = dp(88);
+        LinearLayout bar = new LinearLayout(this);
+        bar.setOrientation(LinearLayout.HORIZONTAL);
+        bar.setGravity(Gravity.CENTER);
+        bar.setBackgroundColor(Color.BLACK);
+        RelativeLayout.LayoutParams bp = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.MATCH_PARENT, barH);
+        bp.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+        mLayout.addView(bar, bp);
+
+        bar.addView(pill("Power", KeyEvent.KEYCODE_P));
+        bar.addView(pill("Vol \u2212", KeyEvent.KEYCODE_MINUS));
+        bar.addView(homeButton());
+        bar.addView(pill("Vol +", KeyEvent.KEYCODE_EQUALS));
+        Button info = pill("HUD", -1);
+        info.setOnClickListener(v -> hud.setVisibility(hud.getVisibility() == View.VISIBLE ? View.INVISIBLE : View.VISIBLE));
+        bar.addView(info);
+
+        // Keep the iPod's 2:3 aspect ratio: size the SDL surface to a centred 2:3 box above the bar.
+        mLayout.addOnLayoutChangeListener((v, l, t, r, b, ol, ot, orr, ob) -> {
+            int W = r - l, H = b - t;
+            if (W <= 0 || H <= 0) return;
+            int availH = H - barH;
+            int w = Math.min(W, availH * 2 / 3), hh = w * 3 / 2, top = Math.max(0, (availH - hh) / 2);
+            if (w == lastW && hh == lastH && top == lastTop) return;
+            lastW = w; lastH = hh; lastTop = top;
+            RelativeLayout.LayoutParams sp = new RelativeLayout.LayoutParams(w, hh);
+            sp.addRule(RelativeLayout.ALIGN_PARENT_TOP);
+            sp.addRule(RelativeLayout.CENTER_HORIZONTAL);
+            sp.topMargin = top;
+            mSurface.setLayoutParams(sp);
+        });
+    }
+
+    private void bindKey(View v, final int keycode) {
+        v.setOnTouchListener((view, ev) -> {
+            switch (ev.getActionMasked()) {
+                case MotionEvent.ACTION_DOWN:
+                    view.setAlpha(0.55f);
+                    view.performHapticFeedback(android.view.HapticFeedbackConstants.VIRTUAL_KEY);
+                    onNativeKeyDown(keycode);
+                    return true;
+                case MotionEvent.ACTION_UP:
+                case MotionEvent.ACTION_CANCEL:
+                    view.setAlpha(1f);
+                    onNativeKeyUp(keycode);
+                    return true;
+                default:
+                    return true;
+            }
+        });
+    }
+
+    private Button pill(String label, int keycode) {
+        Button bt = new Button(this);
+        bt.setText(label);
+        bt.setAllCaps(false);
+        bt.setTextColor(Color.WHITE);
+        bt.setTextSize(13);
+        bt.setMinWidth(0); bt.setMinimumWidth(0);
+        GradientDrawable g = new GradientDrawable();
+        g.setColor(0xFF2C2C2E);
+        g.setCornerRadius(dp(14));
+        bt.setBackground(g);
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(dp(64), dp(44));
+        lp.setMargins(dp(6), 0, dp(6), 0);
+        bt.setLayoutParams(lp);
+        if (keycode >= 0) bindKey(bt, keycode);
+        return bt;
+    }
+
+    private View homeButton() {
+        TextView hb = new TextView(this);
+        hb.setText("\u25A2");
+        hb.setTextSize(24);
+        hb.setTextColor(0xFFB0B0B5);
+        hb.setGravity(Gravity.CENTER);
+        GradientDrawable g = new GradientDrawable();
+        g.setShape(GradientDrawable.OVAL);
+        g.setColor(0xFF1C1C1E);
+        g.setStroke(dp(3), 0xFF8E8E93);
+        hb.setBackground(g);
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(dp(64), dp(64));
+        lp.setMargins(dp(14), 0, dp(14), 0);
+        hb.setLayoutParams(lp);
+        bindKey(hb, KeyEvent.KEYCODE_H);
+        return hb;
     }
 
     @Override protected void onPause()  { paused = true;  super.onPause(); }
