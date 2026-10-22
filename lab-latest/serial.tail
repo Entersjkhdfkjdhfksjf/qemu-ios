@@ -1,0 +1,1500 @@
++ AppleMPVDDriver[0xc0b60240]::start(provider 0xc0bcec40)
+config(e02f4860): starting on prng, 10
+config(e02f4860): starting on spi0, 10
+AppleS5L8900XSPIController::attach(spi0)
+AppleS5L8900XSPIController::probe(spi0)
+AppleS5L8900XSPIController::detach(spi0)
+AppleS5L8900XSPIController::start(spi0) <1>
+AppleS5L8900XSPIController::attach(spi0)
+AppleS5L8900XSPIController::start: spi0: _spiBaseAddress = 0xe9679000, _spiVersion = 1
+config(e02f4450): starting on spi1, 10
+AppleS5L8900XSPIController::attach(spi1)
+AppleS5L8900XSPIController::probe(spi1)
+AppleS5L8900XSPIController::detach(spi1)
+AppleS5L8900XSPIController::start(spi1) <1>
+AppleS5L8900XSPIController::attach(spi1)
+AppleS5L8900XSPIController::start: spi1: _spiBaseAddress = 0xe967a000, _spiVersion = 1
+config(e02f4040): starting on spi4, 10
+AppleS5L8900XSPIController::attach(spi4)
+AppleS5L8900XSPIController::probe(spi4)
+AppleS5L8900XSPIController::detach(spi4)
+AppleS5L8900XSPIController::start(spi4) <1>
+AppleS5L8900XSPIController::attach(spi4)
+AppleS5L8900XSPIController::start: spi4: _spiBaseAddress = 0xea5c5000, _spiVersion = 1
+config(e02f3c30): starting on otgphyctrl, 10
+AppleS5L8720XUSBPhy::attach(otgphyctrl)
+AppleS5L8720XUSBPhy::probe(otgphyctrl)
+AppleS5L8720XUSBPhy::detach(otgphyctrl)
+AppleS5L8720XUSBPhy::start(otgphyctrl) <1>
+AppleS5L8720XUSBPhy::attach(otgphyctrl)
+AppleS5L8720XUSBPhy:: : registers at 0x4Registering: ../arm-io/AppleS5L8720XIO/otgphyctrl@4400000/AppleS5L8720XUSBPhy
+config(e02f3c30): starting on i2c0, 10
+AppleS5L8900XI2CController::attach(i2c0)
+AppleS5L8900XI2CController::probe(i2c0)
+AppleS5L8900XI2CController::detach(i2c0)
+AppleARMSoftIICController::attach(i2c0)
+AppleARMSoftIICController::probe(i2c0)
+AppleARMSoftIICController::detach(i2c0)
+AppleS5L8900XI2CController::start(i2c0) <1>
+AppleS5L8900XI2CController::attach(i2c0)
+AppleS5L8900XI2CController::start: i2c0 _i2cBaseAddress: 0xea5cd000
+config(e02f3820): starting on i2c1, 10
+AppleS5L8900XI2CController::attach(i2c1)
+AppleS5L8900XI2CController::probe(i2c1)
+AppleS5L8900XI2CController::detach(i2c1)
+AppleARMSoftIICController::attach(i2c1)
+AppleARMSoftIICController::probe(i2c1)
+AppleARMSoftIICController::detach(i2c1)
+AppleS5L8900XI2CController::start(i2c1) <1>
+AppleS5L8900XI2CController::attach(i2c1)
+AppleS5L8900XI2CController::start: i2c1 _i2cBaseAddress: 0xea5ce000
+config(e02f3410): starting on timer, 10
+AppleS5L8900XTimer::attach(timer)
+AppleS5L8900XTimer::probe(timer)
+AppleS5L8900XTimer::detach(timer)
+AppleS5L8900XTimer::start(timer) <1>
+AppleS5L8900XTimer::attach(timer)
+AppleS5L8900XTimer::start: _timerBaseAddress: 0xea5d5000
+config(e02f3410): starting on wdt, 10
+AppleS5L8900XWatchDogTimer::attach(wdt)
+AppleS5L8900XWatchDogTimer::probe(wdt)
+AppleS5L8900XWatchDogTimer::detach(wdt)
+AppleS5L8900XWatchDogTimer::start(wdt) <1>
+AppleS5L8900XWatchDogTimer::attach(wdt)
+AppleS5L8900XWatchDogTimer::start: _wdtBaseAddress: 0xea5d6000
+AppleARMWatchDogTimer installing handlePEHaltRestart handler
+Registering: ../arm-io/AppleS5L8720XIO/wdt@4800000/AppleS5L8900XWatchDogTimer
+config(e02f3000): starting on i2s0, 10
+AppleS5L8900XI2SController::attach(i2s0)
+AppleS5L8900XI2SController::probe(i2s0)
+AppleS5L8900XI2SController::detach(i2s0)
+AppleS5L8900XI2SController::start(i2s0) <1>
+AppleS5L8900XI2SController::attach(i2s0)
+AppleS5L8900XI2SController::start: i2s0 i2sBaseAddress: 0xea5dd000
+config(e030f920): starting on uart0, 10
+AppleS5L8900XSerial::attach(uart0)
+AppleS5L8900XSerial::probe(uart0)
+AppleS5L8900XSerial::detach(uart0)
+AppleS5L8900XSerial::start(uart0) <1>
+AppleS5L8900XSerial::attach(uart0)
+config(e030f510): starting on uart1, 10
+AppleS5L8900XSerial::attach(uart1)
+AppleS5L8900XSerial::probe(uart1)
+AppleS5L8900XSerial::detach(uart1)
+AppleS5L8900XSerial::start(uart1) <1>
+AppleS5L8900XSerial::attach(uart1)
+config(e030f100): starting on pke, 10
+AppleS5L8900XPKE::attach(pke)
+AppleS5L8900XPKE::probe(pke)
+AppleS5L8900XPKE::detach(pke)
+AppleS5L8900XPKE::start(pke) <1>
+AppleS5L8900XPKE::attach(pke)
+Registering: ../AppleARMPE/arm-io/AppleS5L8720XIO/pke@5000000/AppleS5L8900XPKE
+config(e030ecf0): starting on mipi-dsim, 10
+AppleS5L8720XMIPIDSIController::attach(mipi-dsim)
+AppleS5L8720XMIPIDSIController::probe(mipi-dsim)
+AppleS5L8720XMIPIDSIController::detach(mipi-dsim)
+AppleS5L8720XMIPIDSIController::start(mipi-dsim) <1>
+AppleS5L8720XMIPIDSIController::attach(mipi-dsim)
+AppleS5L8900XSPIController::start: _spiBaseAddress = 0xea5e5000
+lcd::attach(AppleS5L8720XMIPIDSIController)
+Registering: ../mipi-dsim@5800000/AppleS5L8720XMIPIDSIController/lcd
+config(e030ecf0): starting on swi, 10
+AppleS5L8720XSWI::attach(swi)
+AppleS5L8720XSWI::probe(swi)
+AppleS5L8720XSWI::detach(swi)
+AppleS5L8720XSWI::start(swi) <1>
+AppleS5L8720XSWI::attach(swi)
+AppleS5L8720XSWI::start: _swiBaseAddress: 0xea5e6000
+config(e030e8e0): starting on AppleAMCDriver_r2, 10
+config(e030e8e0): starting on IOAudio2TransformerStream, 10
+config(e030e8e0): starting on IOAudio2TransformerStream, 10
+config(e030e8e0): starting on AppleMBXController, 10
+AppleMBXDevice(0xc0d10c40): Init
+AppleMBXDevice::attach(AppleMBXController)
+AppleMBXDevice::probe(AppleMBXController)
+AppleMBXDevice::detach(AppleMBXController)
+AppleMBXDevice::start(AppleMBXController) <1>
+AppleMBXDevice::attach(AppleMBXController)
+ERROR:   redundant setPowerState() call (power state = 1)
+config(e0227820): starting on AppleS5L8720XUSBPhy, 10
+config(e0227820): starting on AppleS5L8900XWatchDogTimer, 10
+config(e0227820): starting on AppleS5L8900XPKE, 10
+config(e0227820): starting on lcd, 10
+ApplePinotLCD::attach(lcd)
+ApplePinotLCD::probe(lcd)
+ApplePinotLCD::detach(lcd)
+ApplePinotLCD::start(lcd) <1>
+ApplePinotLCD::attach(lcd)
+config(e030f100): terminating
+Registering: ../AppleARMPE/arm-io/AppleS5L8720XIO/swi@5E00000/AppleS5L8720XSWI
+config(31): creating
+config(e030ecf0): terminating
+config(e038bcb0): starting on AppleS5L8720XSWI, 10
+config(e038bcb0): terminating
+config(e02f6cf0): terminating
+config(e02f7100): terminating
+Registering: ../arm-io/AppleS5L8720XIO/dmac0@200000/IODMAController001079C0
+config(e0227c30): terminating
+Registering: ../arm-io/AppleS5L8720XIO/dmac1@700000/IODMAController00107EC0
+config(e0228040): terminating
+Registering: ../AppleS5L8720XIO/flash-controller0@A00000/AppleS5L8720XFMSS
+config(26): creating
+config(e038bcb0): starting on AppleS5L8720XFMSS, 10
+config(e038bcb0): terminating
+nor-flash::attach(AppleS5L8900XSPIController)
+Registering: ../spi0@4300000/AppleS5L8900XSPIController/nor-flash@0
+config(26): creating
+config(e02f4860): terminating
+config(e030f100): starting on nor-flash, 10
+AppleARMSPIFlashController::attach(nor-flash)
+AppleARMSPIFlashController::probe(nor-flash)
+AppleARMSPIFlashController::detach(nor-flash)
+AppleARMSPIFlashController::start(nor-flash) <1>
+AppleARMSPIFlashController::attach(nor-flash)
+nor-flash::attach(AppleS5L8900XSPIController)
+Registering: ../spi1@4E00000/AppleS5L8900XSPIController/nor-flash@0
+config(26): creating
+config(e02f4450): terminating
+config(e038b8a0): starting on nor-flash, 10
+AppleARMSPIFlashController::attach(nor-flash)
+AppleARMSPIFlashController::probe(nor-flash)
+AppleARMSPIFlashController::detach(nor-flash)
+AppleARMSPIFlashController::start(nor-flash) <1>
+AppleARMSPIFlashController::attach(nor-flash)
+AppleARMPL080DMAC::_initDMAChannel: index: 3, bufPA: 0x8d1c000, bufLA: 0xea5fd000
+multi-touch::attach(AppleS5L8900XSPIController)
+Registering: ../spi4@6100000/AppleS5L8900XSPIController/multi-touch@0
+config(26): creating
+config(e02f4040): terminating
+config(e038b490): starting on multi-touch, 10
+AppleMultitouchZ2SPI::attach(multi-touch)
+AppleMultitouchZ2SPI::probe(multi-touch)
+AppleMultitouchZ2SPI::detach(multi-touch)
+AppleMultitouchZ2SPI::start(multi-touch) <1>
+AppleMultitouchZ2SPI::attach(multi-touch)
+accelerometer::attach(AppleS5L8900XI2CController)
+Registering: ../i2c0@4600000/AppleS5L8900XI2CController/accelerometer@1D
+config(26): creating
+pmu::attach(AppleS5L8900XI2CController)
+Registering: ../AppleS5L8720XIO/i2c0@4600000/AppleS5L8900XI2CController/pmu@73
+config(27): creating
+audio0::attach(AppleS5L8900XI2CController)
+Registering: ../i2c0@4600000/AppleS5L8900XI2CController/audio0@4A
+config(28): creating
+spkr-amp::attach(AppleS5L8900XI2CController)
+Registering: ../i2c0@4600000/AppleS5L8900XI2CController/spkr-amp@76
+config(29): creating
+tethered::attach(AppleS5L8900XI2CController)
+Registering: ../i2c0@4600000/AppleS5L8900XI2CController/tethered@29
+config(30): creating
+match category exists, skipping AppleARMSoftIICController::start(i2c0) <1>
+config(e02f3c30): terminating
+config(e038b080): starting on accelerometer, 10
+AppleLIS302DL::attach(accelerometer)
+AppleLIS302DL::probe(accelerometer)
+AppleLIS302DL::detach(accelerometer)
+AppleLIS302DL::start(accelerometer) <1>
+AppleLIS302DL::attach(accelerometer)
+Registering: ../AppleS5L8900XI2CController/accelerometer@1D/AppleLIS302DL
+IOHIDUserClientIniter::attach(AppleLIS302DL)
+IOHIDUserClientIniter::probe(AppleLIS302DL)
+IOHIDUserClientIniter::detach(AppleLIS302DL)
+IOHIDUserClientIniter::start(AppleLIS302DL) <1>
+IOHIDUserClientIniter::attach(AppleLIS302DL)
+config(e038b080): terminating
+config(e038ac70): starting on pmu, 10
+AppleD1759PMU::attach(pmu)
+AppleD1759PMU::probe(pmu)
+AppleD1759PMU::detach(pmu)
+AppleD1759PMU::start(pmu) <1>
+AppleD1759PMU::attach(pmu)
+AppleD1759PMU::start: pmu _pmuIICNub: 0xc0d1dd40
+AppleD1759PMU::start: reading DOWN converter voltages
+AppleD1759PMU::start: DOWN0: 725mV
+AppleD1759PMU::start: DOWN1: 725mV
+AppleD1759PMU::start: DOWN2: 725mV
+Registering: ../i2c0@4600000/AppleS5L8900XI2CController/pmu@73/AppleD1759PMU
+config(29): creating
+config(e038ac70): terminating
+config(e038a860): starting on audio0, 10
+AppleCS42L58Audio::attach(audio0)
+AppleCS42L58Audio::probe(audio0)
+AppleCS42L58Audio::detach(audio0)
+AppleCS42L58Audio::start(audio0) <1>
+AppleCS42L58Audio::attach(audio0)
+config(e038a450): starting on spkr-amp, 10
+AppleLM48821Amp::attach(spkr-amp)
+AppleLM48821Amp::probe(spkr-amp)
+AppleLM48821Amp::detach(spkr-amp)
+AppleLM48821Amp::start(spkr-amp) <1>
+AppleLM48821Amp::attach(spkr-amp)
+Registering: ../AppleS5L8900XI2CController/spkr-amp@76/AppleLM48821Amp
+config(29): creating
+config(e038a450): terminating
+config(e038a040): starting on tethered, 10
+AppleTetheredDevice::attach(tethered)
+AppleTetheredDevice::probe(tethered)
+AppleTetheredDevice::detach(tethered)
+AppleTetheredDevice::start(tethered) <1>
+AppleTetheredDevice::attach(tethered)
+Registering: ../AppleS5L8900XI2CController/tethered@29/AppleTetheredDevice
+config(29): creating
+config(e038a040): terminating
+config(e0389410): starting on AppleD1759PMU, 10
+AppleD1759PMUPowerSource::attach(AppleD1759PMU)
+AppleD1759PMUPowerSource::probe(AppleD1759PMU)
+AppleD1759PMUPowerSource::detach(AppleD1759PMU)
+AppleD1759PMUBacklight::attach(AppleD1759PMU)
+AppleD1759PMUBacklight::probe(AppleD1759PMU)
+AppleD1759PMUBacklight::detach(AppleD1759PMU)
+AppleD1759PMURTC::attach(AppleD1759PMU)
+AppleD1759PMURTC::probe(AppleD1759PMU)
+AppleD1759PMURTC::detach(AppleD1759PMU)
+AppleD1759PMUPowerSource::start(AppleD1759PMU) <1>
+AppleD1759PMUPowerSource::attach(AppleD1759PMU)
+IOResources: family specific matching fails
+Registering: ../pmu@73/AppleD1759PMU/AppleD1759PMUPowerSource
+config(29): creating
+AppleD1759PMUBacklight::start(AppleD1759PMU) <1>
+AppleD1759PMUBacklight::attach(AppleD1759PMU)
+AppleD1759PMUBacklight::start: have SWI function (disabled by default)
+Registering: ../pmu@73/AppleD1759PMU/AppleD1759PMUBacklight
+config(30): creating
+AppleD1759PMURTC::start(AppleD1759PMU) <1>
+AppleD1759PMURTC::attach(AppleD1759PMU)
+Registering: ../pmu@73/AppleD1759PMU/AppleD1759PMURTC
+config(31): creating
+config(e0389410): terminating
+config(e0389000): starting on AppleLM48821Amp, 10
+config(e0389000): terminating
+config(e03ae920): starting on AppleTetheredDevice, 10
+AppleTetheredDeviceUserClient::attach(AppleTetheredDevice)
+AppleTetheredDeviceUserClient::probe(AppleTetheredDevice)
+AppleTetheredDeviceUserClient::detach(AppleTetheredDevice)
+AppleTetheredDeviceUserClient::start(AppleTetheredDevice) <1>
+AppleTetheredDeviceUserClient::attach(AppleTetheredDevice)
+config(e03ae920): terminating
+config(e03ae100): starting on AppleD1759PMUPowerSource, 10
+config(e03ae100): terminating
+config(e03adcf0): starting on AppleD1759PMUBacklight, 10
+config(e03adcf0): terminating
+config(e03ad8e0): starting on AppleD1759PMURTC, 10
+config(e03ad8e0): terminating
+als::attach(AppleS5L8900XI2CController)
+Registering: ../AppleS5L8720XIO/i2c1@4900000/AppleS5L8900XI2CController/als@44
+config(26): creating
+mikey::attach(AppleS5L8900XI2CController)
+Registering: ../i2c1@4900000/AppleS5L8900XI2CController/mikey@39
+config(27): creating
+match category exists, skipping AppleARMSoftIICController::start(i2c1) <1>
+config(e02f3820): terminating
+config(e03ad4d0): starting on als, 10
+AppleISL29003::attach(als)
+AppleISL29003::probe(als)
+AppleISL29003::detach(als)
+AppleISL29003::start(als) <1>
+AppleISL29003::attach(als)
+Registering: ../i2c1@4900000/AppleS5L8900XI2CController/als@44/AppleISL29003
+IOHIDUserClientIniter::attach(AppleISL29003)
+IOHIDUserClientIniter::probe(AppleISL29003)
+IOHIDUserClientIniter::detach(AppleISL29003)
+IOHIDUserClientIniter::start(AppleISL29003) <1>
+IOHIDUserClientIniter::attach(AppleISL29003)
+config(e03ad4d0): terminating
+config(e03ad0c0): starting on mikey, 10
+AppleCD3272Mikey::attach(mikey)
+AppleCD3272Mikey::probe(mikey)
+AppleCD3272Mikey::detach(mikey)
+AppleCD3272Mikey::start(mikey) <1>
+AppleCD3272Mikey::attach(mikey)
+Registering: ../AppleS5L8900XI2CController/mikey@39/AppleCD3272Mikey
+config(26): creating
+Registering: ../AppleS5L8900XI2CController/mikey@39/AppleCD3272Mikey
+config(e03ad0c0): terminating
+config(e03ac490): starting on AppleCD3272Mikey, 10
+IOHIDUserClientIniter::attach(AppleCD3272Mikey)
+IOHIDUserClientIniter::probe(AppleCD3272Mikey)
+IOHIDUserClientIniter::detach(AppleCD3272Mikey)
+IOHIDUserClientIniter::start(AppleCD3272Mikey) <1>
+IOHIDUserClientIniter::attach(AppleCD3272Mikey)
+config(e03ac490): terminating
+Registering: IOService:/AppleARMPE/cpu0@0/AppleARMCPU
+config(25): creating
+config(e03ac080): starting on AppleARMCPU, 10
+config(e03ac080): terminating
+config(e0228860): terminating
+AppleARMPL080DMAC::_initDMAChannel: index: 5, bufPA: 0x8d18000, bufLA: 0xea5fe000
+AppleARMPL080DMAC::_initDMAChannel: index: 4, bufPA: 0x8d39000, bufLA: 0xea605000
+audio0::attach(AppleS5L8900XI2SController)
+Registering: ../i2s0@4A00000/AppleS5L8900XI2SController/audio0@0
+config(24): creating
+config(e02f3000): terminating
+config(e0228860): starting on audio0, 10
+config(e0228860): terminating
+AppleARMPL080DMAC::_initDMAChannel: index: 3, bufPA: 0x8d3a000, bufLA: 0xea606000
+iap::attach(AppleS5L8900XSerial)
+AppleS5L8900XSerial: Identified Serial Port on ARM Device=uart0 at 0x3cc00000(0xea60d000)
+Registering: ../arm-io/AppleS5L8720XIO/uart0@4C00000/AppleS5L8900XSerial/iap
+config(23): creating
+config(e030f920): terminating
+config(e03ac080): starting on iap, 10
+IOSerialBSDClient::attach(iap)
+IOSerialBSDClient::probe(iap)
+IOSerialBSDClient::detach(iap)
+AppleOnboardSerialBSDClient::attach(iap)
+AppleOnboardSerialBSDClient::probe(iap)
+AppleOnboardSerialBSDClient::detach(iap)
+AppleReliableSerialLayer::attach(iap)
+AppleReliableSerialLayer::probe(iap)
+AppleReliableSerialLayer::detach(iap)
+IOAccessoryPortSerial::attach(iap)
+IOAccessoryPortSerial::probe(iap)
+IOAccessoryPortSerial::detach(iap)
+IOSerialBSDClient::start(iap) <1>
+IOSerialBSDClient::attach(iap)
+config(e03ac080): stalling IOSerialBSDClient
+AppleARMPL080DMAC::_initDMAChannel: index: 2, bufPA: 0x8d42000, bufLA: 0xea615000
+bluetooth::attach(AppleS5L8900XSerial)
+AppleS5L8900XSerial: Identified Serial Port on ARM Device=uart1 at 0x3db00000(0xea616000)
+Registering: ../AppleS5L8720XIO/uart1@5B00000/AppleS5L8900XSerial/bluetooth
+config(23): creating
+config(e030f510): terminating
+config(e03ac490): starting on bluetooth, 10
+IOSerialBSDClient::attach(bluetooth)
+IOSerialBSDClient::probe(bluetooth)
+IOSerialBSDClient::detach(bluetooth)
+AppleOnboardSerialBSDClient::attach(bluetooth)
+AppleOnboardSerialBSDClient::probe(bluetooth)
+AppleOnboardSerialBSDClient::detach(bluetooth)
+AppleReliableSerialLayer::attach(bluetooth)
+AppleReliableSerialLayer::probe(bluetooth)
+AppleReliableSerialLayer::detach(bluetooth)
+BTReset::attach(bluetooth)
+BTReset::probe(bluetooth)
+BTReset::detach(bluetooth)
+IOSerialBSDClient::start(bluetooth) <1>
+IOSerialBSDClient::attach(bluetooth)
+config(e03ac490): stalling IOSerialBSDClient
+config(e02f7920): terminating
+AppleS5L8900XSDIO: registers @ vaddr 0xea61d000, paddr 0x38d00000
+config(e02f5cb0): terminating
+Registering: IOService:/AppleARMPE/buttons/AppleM68Buttons
+IOHIDUserClientIniter::attach(AppleM68Buttons)
+IOHIDUserClientIniter::probe(AppleM68Buttons)
+IOHIDUserClientIniter::detach(AppleM68Buttons)
+IOHIDUserClientIniter::start(AppleM68Buttons) <1>
+IOHIDUserClientIniter::attach(AppleM68Buttons)
+config(e0227410): terminating
+Registering: ../AppleS5L8720XMIPIDSIController/lcd/ApplePinotLCD
+config(20): creating
+ApplePinotLCD: _lcdPanelID: 0x3cd1a1
+config(e0227820): terminating
+config(e03ad4d0): starting on ApplePinotLCD, 10
+config(e03ad4d0): terminating
+AppleMultitouchZ2SPI: successfully started
+AppleMultitouchZ2SPI: using DMA for bootloading
+AppleMultitouchZ2SPI: Logging is ENABLED
+Registering: IOService:/IOResources/IOCoreSurfaceRoot
+config(19): creating
+AppleSerialKDP::start(IOResources) <1>
+AppleSerialKDP::attach(IOResources)
+AppleSerialKDP::start registering as KDP debugger
+CHUDKernLib::start(IOResources) <1>
+CHUDKernLib::attach(IOResources)
+Registering: IOService:/IOResources/CHUDKernLib
+config(20): creating
+CHUDProf::start(IOResources) <1>
+CHUDProf::attach(IOResources)
+Registering: IOService:/IOResources/CHUDProf
+config(21): creating
+IOHDIXController::start(IOResources) <1>
+IOHDIXController::attach(IOResources)
+Registering: IOService:/IOResources/IOHDIXController
+config(22): creating
+config(e03ad8e0): starting on IOCoreSurfaceRoot, 10
+config(e03ad8e0): terminating
+config(e03adcf0): starting on CHUDKernLib, 10
+config(e03adcf0): terminating
+config(e03ae100): starting on CHUDProf, 10
+config(e03ae100): terminating
+config(e0389000): starting on IOHDIXController, 10
+config(e0389000): terminating
+AppleCS42L58Audio::start: 0xc0d1d640, audio0 _wmIICNub: 0xc0a42340, _wmIISNub: 0xc0d2f140
+AppleEmbeddedAudioDevice::attach(AppleCS42L58Audio)
+Registering: ../nor-flash@0/AppleARMSPIFlashController
+config(19): creating
+diagnostic-data::attach(AppleARMSPIFlashController)
+Registering: ../nor-flash@0/AppleARMSPIFlashController/diagnostic-data@6000
+config(20): creating
+nvram::attach(AppleARMSPIFlashController)
+Registering: ../nor-flash@0/AppleARMSPIFlashController/nvram@FC000
+config(21): creating
+raw-device::attach(AppleARMSPIFlashController)
+Registering: ../nor-flash@0/AppleARMSPIFlashController/raw-device@8000
+config(22): creating
+config(e030f100): terminating
+config(e03ae100): starting on AppleARMSPIFlashController, 10
+config(e03ae100): terminating
+config(e03adcf0): starting on diagnostic-data, 10
+config(e03adcf0): terminating
+config(e03ad8e0): starting on nvram, 10
+AppleARMCHRPNVRAM::attach(nvram)
+AppleARMCHRPNVRAM::probe(nvram)
+AppleARMCHRPNVRAM::detach(nvram)
+AppleARMCHRPNVRAM::start(nvram) <1>
+AppleARMCHRPNVRAM::attach(nvram)
+config(e03ad4d0): starting on raw-device, 10
+AppleImage3NORAccess::attach(raw-device)
+AppleImage3NORAccess::probe(raw-device)
+AppleImage3NORAccess::detach(raw-device)
+AppleImage3NORAccess::start(raw-device) <1>
+AppleImage3NORAccess::attach(raw-device)
+AppleARMSPIFlashController::detach(nor-flash)
+AppleARMSPIFlashController::start(nor-flash) <1> failed
+config(e038b8a0): terminating
+Registering: ../arm-io/AppleS5L8720XIO/h264decoder@F00000/AppleM2H264MPDDriver
+config(19): creating
+- AppleM2H264MPDDriver::start
+config(e02f58a0): terminating
+config(e0227410): starting on AppleM2H264MPDDriver, 10
+config(e0227410): terminating
++ AppleMPVDDriver[0xc0b60240]::setPowerStateGated()
+
+Registering: ../AppleARMPE/arm-io/AppleS5L8720XIO/mpvd@1600000/AppleMPVDDriver
+config(18): creating
+cconfig(e030f510): starting on AppleMPVDDriver, 10
+config(e030f510): terminating
+onfig(e02f4c70): terminating
+AppleMBX: Detected mbx,s5l8720x.  SupportsWriteCombining: true
+AppleARMPL080DMAC::_initDMAChannel: index: 5, bufPA: 0x8da2000, bufLA: 0xeb25d000
+AppleMBXDevice(0xc0d10c40)::start: Using DMAEventSource
+virtual IOReturn IOSDIOController::enumerateSlot(UInt8, bool): Searching for SDIO device in slot: 0
+Registering: ../AppleS5L8720XIO/mbx@3000000/AppleMBXController/AppleMBXDevice
+config(17): creating
+AppleMBXDevice(0xc0d10c40)::setPowerState(1)
+AppleMBXDevice(0xc0d10c40)::changePowerStateGated(1)
+config(e0228860): starting on AppleMBXDevice, 10
+config(e030e8e0): terminating
+config(e0228860): terminating
+IOResources: family specific matching fails
+IOResources: family specific matching fails
+IOResources: match category com_apple_platform_AppleKernelStorage exists
+IOResources: match category IOCoreSurfaceRoot exists
+IOResources: family specific matching fails
+IOResources: match category com.apple.driver.AppleSerialKDP exists
+IOResources: match category CHUDKernLib exists
+IOResources: match category CHUDProf exists
+IOResources: match category IOHDIXController exists
+IOResources: family specific matching fails
+IOResources: family specific matching fails
+IOResources: family specific matching fails
+IOResources: family specific matching fails
+IOResources: family specific matching fails
+config(16): creating
+From path: "<dict><key>IOProviderClass</key><string>IOMedia</string><key>IOPropertyMatch</key><dict><key>Partition ID</key><integer>1</integer></dict></dict>", Waiting on <dict ID="0"><key>IOProviderClass</key><string ID="1">IOMedia</string><key>IOPropertyMatch</key><dict ID="2"><key>Partition ID</key><integer size="64" ID="3">0x1</integer></dict></dict>
+config(e02f3c30): starting on IOResources, 10
+IOResources: family specific matching fails
+IOResources: match category com_apple_platform_AppleKernelStorage exists
+IOResources: match category IOCoreSurfaceRoot exists
+IOResources: match category com.apple.driver.AppleSerialKDP exists
+IOResources: match category CHUDKernLib exists
+IOResources: match category CHUDProf exists
+IOResources: match category IOHDIXController exists
+IONetworkStack::attach(IOResources)
+IONetworkStack::probe(IOResources)
+IONetworkStack::detach(IOResources)
+AppleMobileFileIntegrity::attach(IOResources)
+AppleMobileFileIntegrity::probe(IOResources)
+AppleMobileFileIntegrity::detach(IOResources)
+AppleFairplayTextCrypter::attach(IOResources)
+AppleFairplayTextCrypter::probe(IOResources)
+AppleFairplayTextCrypter::detach(IOResources)
+AppleNullTextCrypter::attach(IOResources)
+AppleNullTextCrypter::probe(IOResources)
+AppleNullTextCrypter::detach(IOResources)
+IONetworkStack::start(IOResources) <1>
+IONetworkStack::attach(IOResources)
+Registering: IOService:/IOResources/IONetworkStack
+config(17): creating
+AppleMobileFileIntegrity::start(IOResources) <1>
+AppleMobileFileIntegrity::attach(IOResources)
+virtual bool AppleMobileFileIntegrity::start(IOServiconfig(e02f4040): starting on IONetworkStack, 10
+config(e02f4040): terminating
+ce*): built Sep  4 2008 13:54:29
+virtual bool AppleMobileFileIntegrity::start(IOService*): signature enforcement disabled by boot-arg
+Registering: IOService:/IOResources/AppleMobileFileIntegrity
+config(17): creating
+AppleFairplayTextCrypter::start(IOResources) <1>
+AppleFairplayTextCrypter::attach(IOResources)
+config(e02f4450): starting on AppleMobileFileIntegrity, 10
+AppleNullTextCrypter::start(IOResources) <1>
+AppleNullTextCrypter::attach(IOResources)
+config(e02f3c30): terminating
+config(e0229490): terminating
+AppleS5L8720XFMSS::newDeviceWithRegistryEntry: Read NAND Chip ID[0]: 0xB614D5AD
+AppleS5L8720XFMSS::newDeviceWithRegistryEntry: Read NAND Chip ID[1]: 0xB614D5AD
+AppleS5L8720XFMSS::newDeviceWithRegistryEntry: Read NAND Chip ID[2]: 0xB614D5AD
+AppleS5L8720XFMSS::newDeviceWithRegistryEntry: Read NAND Chip ID[3]: 0xB614D5AD
+AppleS5L8720XFMSS::newDeviceWithRegistryEntry: Read NAND Chip ID[4]: 0x00000000
+AppleS5L8720XFMSS::newDeviceWithRegistryEntry: Read NAND Chip ID[5]: 0x00000000
+AppleS5L8720XFMSS::newDeviceWithRegistryEntry: Read NAND Chip ID[6]: 0x00000000
+AppleS5L8720XFMSS::newDeviceWithRegistryEntry: Read NAND Chip ID[7]: 0x00000000
+AppleS5L8720XFMSS::newDeviceWithRegistryEntry: PhysBanks: 0x0000000F  ReadID: 0xB614D5AD csBitmap: 0x0000000F
+disk::attach(AppleS5L8720XFMSS)
+Registering: ../flash-controller0@A00000/AppleS5L8720XFMSS/disk@FF
+config(16): creating
+config(e022a0c0): terminconfig(e0229490): starting on disk, 10
+AppleNANDFTL::attach(disk)
+AppleNANDFTL::probe(disk)
+AppleNANDFTL::detach(disk)
+AppleNANDFTL::start(disk) <1>
+AppleNANDFTL::attach(disk)
+Using XML tables to get the NAND device information
+AppleS5L8720XFMSS::_fmssInitCmdsAndCEMaskCtrl: VendorSpecific: VS_CMD_SAMSUNG_2P
+AppleS5L8720XFMSS::_fmssCalcTimingInfo: NAND Bus Timing - Setup: 14 Hold: 14 EDO: 21 HCLK: 133 FMCTRL0: 0x20011000
+AppleS5L8720XFMSS::_fmssCalcTimingInfo: NAND Bus Timing - Setup: 14 Hold: 14 EDO: 21 HCLK: 133 FMCTRL0: 0x20011000
+ating
+Registering: ../AppleARMPE/arm-io/AppleS5L8720XIO/clcd@900000/AppleM2CLCD
+config(16): creating
+AppleM2CLCD::start took 504 ms
+config(e0229080): terminating
+config(e02f3c30): starting on AppleM2CLCD, 10
+AppleMBX: Added swap device: AppleM2CLCD  id: c0b23040
+AppleMBX: Using AppleM2CLCD as legacy swap device
+config(e02f3c30): terminating
+config(e02f3410): terminating
+config(e02f4450): terminating
+Registering: ../AppleARMPE/arm-io/AppleS5L8720XIO/sha1@0/AppleS5L8900XSHA1
+config(13): creating
+config(e02f4040): starting on AppleS5L8900XSHA1, 10
+AppleS5L8900XSHA1::start took 569 ms
+config(e03ac080): waking
+Registering: ../uart0@4C00000/AppleS5L8900XSerial/iap/IOSerialBSDClient
+config(14): creating
+AppleOnboardSerialBSDClient::start(iap) <1>
+AppleOnboardSerialBSDClient::attach(iap)
+AppleReliableSerialLayer::start(iconfig(e0228860): starting on IOSerialBSDClient, 10
+config(e0228860): terminating
+ap) <1>
+AppleReliableSerialLayer::attach(iap)
+AppleReliableSerialLayer::detach(iap)
+AppleReliableSerialLayer::start(iap) <1> failed
+IOAccessoryPortSerial::start(iap) <1>
+IOAccessoryPortSerial::attach(iap)
+config(e03ac490): waking
+Registering: ../uart1@5B00000/AppleS5L8900XSerial/bluetooth/IOSerialBSDClient
+config(14): creating
+AppleOnboardSerialBSDClient::start(bluetooth) <1>
+AppleOnboardSerialBSDClient::attach(bluetooth)
+AppleReliableSerialLayer::start(bluetooth) <1>
+AppleReliableSerialLayer::attach(bluetooth)
+config(e030e8e0): starting on IOSerialBSDClient, 10
+config(e030e8e0): terminating
+AppleReliableSerialLayer::detach(bluetooth)
+AppleReliableSerialLayer::start(bluetooth) <1> failed
+BTReset::start(bluetooth) <1>
+BTReset::attach(bluetooth)
+config(e03ac490): terminating
+Registering: IOService:/AppleARMPE/dock/IOAccessoryManager
+config(13): creating
+Regunexpected CLCD interrupt: 00000001
+config(e03ac490): starting on IOAccessoryManager, 10
+config(e03ac490): terminating
+istering: IOService:/AppleARMPE/dock/IOAccessoryManager
+config(13): creating
+config(14): creating
+IOAccessoryManager::start took 695 ms
+config(e0227000): terminating
+config(e030config(e0228860): starting on IOResources, 10
+virtual IOReturn IOSDIOController::enumerateSlot(UInt8, bool): Timed out waiting for card to become ready
+virtual void AppleS5L8900XSDIO::enumerateCards(): Unable to communicate with SDIO device
+IOResources: match category IONetworkStack exists
+IOResources: match category com_apple_platform_AppleKernelStorage exists
+IOResources: match category IOCoreSurfaceRoot exists
+IOResources: match category AppleMobileFileIntegrity exists
+IOResources: match category com.apple.driver.AppleSerialKDP exists
+IOResources: match category CHUDKernLib exists
+IOResources: match category CHUDProf exists
+IOResources: match category IOHDIXController exists
+IOResources: match category AppleFairplayTextCrypter exists
+IOResources: match category AppleNullTextCrypter exists
+config(e0228860): terminating
+e8e0): starting on IOAccessoryManager, 10
+config(e030e8e0): terminating
+Registering: ../arm-io/AppleS5L8720XIO/scaler@1000000/AppleM2ScalerCSCDriver
+config(12): creating
+AppleM2ScalerCSCDriver::start took 535 ms
+config(e02f5490): terminating
+config(e02f4450): starting on AppleM2ScalerCSCDriver, 10
+config(e02f4450): terminating
+config(e0228450): terminating
+IOResources: family specific matching fails
+Registering: ../arm-io/AppleS5L8720XIO/usb-otg@400000/AppleSynopsysOTG2
+config(10): creating
+AppleSynopsysOTG2::start took 614 ms
+config(e0228c70): terminating
+config(e02f3410): starting on AppleSynopsysOTG2, 10
+IOIpodUSBDevice::attach(AppleSynopsysOTG2)
+IOIpodUSBDevice::probe(AppleSynopsysOTG2)
+IOIpodUSBDevice::detach(AppleSynopsysOTG2)
+IOIpodUSBDevice::start(AppleSynopsysOTG2) <1>
+IOIpodUSBDevice::attach(AppleSynopsysOTG2)
+Registering: ../usb-otg@400000/AppleSynopsysOTG2/IOIpodUSBDevice
+config(10): creating
+config(e02f3410): terminating
+config(e0229080): starting on IOIpodUSBDevice, 10
+config(e0229080): terminating
+IOAccessoryPortSerial::start: could not set up serial port: device is offline
+IOAccessoryPortSerial::detach(iap)
+IOAccessoryPortSerial::start(iap) <1> failed
+config(e03ac080): terminating
+config(e02f4040): terminating
+AppleS5L8720XFMSS::handleOpen: FMSS Ready
+AppleNANDFTL::_FILInit: driver advertises ReadMultiple
+AppleNANDFTL::_FILInit: driver advertises ReadScattered
+AppleNANDFTL::_FILInit: driver advertises WriteMultiple
+default-ftl-version was found and it's set to 1
+[FTL:MSG] Apple NAND Driver (AND) RW
+[FTL:MSG] FIL_Init            [OK]
+[FTL:MSG] BUF_Init            [OK]
+[FTL:MSG] FPart Init          [OK]
+config(7): creating
+config(e03ad8e0): terminating
+config(e02f4040): starting on IOResources, 10
+IOResources: family specific matching fails
+IOResources: match category IONetworkStack exists
+IOResources: match category com_apple_platform_AppleKernelStorage exists
+IOResources: match category IOCoreSurfaceRoot exists
+IOResources: match category AppleMobileFileIntegrity exists
+IOResources: match category com.apple.driver.AppleSerialKDP exists
+IOResources: match category CHUDKernLib exists
+IOResources: match category CHUDProf exists
+IOResources: match category IOHDIXController exists
+IOResources: match category AppleFairplayTextCrypter exists
+IOResources: match category AppleNullTextCrypter exists
+config(e02f4040): terminating
+read new style signature 0x43313131 (line:281)
+[FTL:MSG] VSVFL Register  [OK]
+[FTL:MSG] VFL Init            [OK]
+AppleSimpleNORAccess::start imageVersion: 3
+Registering: ../raw-device@8000/AppleImage3NORAccess
+config(6): creating
+config(e03ad4d0): terminating
+config(e02f4040): starting on AppleImage3NORAccess, 10
+AppleImage3NORAccessUserClient::attach(AppleImage3NORAccess)
+AppleImage3NORAccessUserClient::probe(AppleImage3NORAccess)
+AppleImage3NORAccessUserClient::detach(AppleImage3NORAccess)
+AppleImage3NORAccessUserClient::start(AppleImage3NORAccess) <1>
+AppleImage3NORAccessUserClient::attach(AppleImage3NORAccess)
+config(e02f4040): terminating
+AppleMultitouchZ2SPI: detected HBPP. driver will be kept alive
+Registering: ../audio0@4A/AppleCS42L58Audio/AppleEmbeddedAudioDevice
+config(5): creating
+Registering: ../AppleS5L8900XI2CController/audio0@4A/AppleCS42L58Audio
+config(6): creating
+config(e038a860): terminating
+config(e02f4040): starting on AppleEmbeddedAudioDevice, 10
+config(e02f4040): terminating
+config(e03ad4d0): starting on AppleCS42L58Audio, 10
+config(e03ad4d0): terminating
+Registering: ../AppleS5L8900XSPIController/multi-touch@0/AppleMultitouchZ2SPI
+config(4): creating
+config(e038b490): terminating
+config(e03ad4d0): starting on AppleMultitouchZ2SPI, 10
+config(e03ad4d0): terminating
+AppleMultitouchZ2SPI: enabled power, scheduled bootloading
+AppleMultitouchZ2SPI: downloaded 128 bytes of prox calibration data ("built-in")
+AppleMultitouchZ2SPI: downloaded 256 bytes of calibration data ("built-in")
+Registering: ../AppleARMPE/arm-io/AppleS5L8720XIO/tv-out@1300000/AppleM2TVOut
+config(3): creating
+AppleM2TVOut::start took 631 ms
+config(e02f5080): terminating
+config(e03ad4d0): starting on AppleM2TVOut, 10
+AppleMBX: Added swap device: AppleM2TVOut  id: c0c91440
+config(e03ad4d0): terminating
+AppleS5L8720XFMSS::_fmssInitCmdsAndCEMaskCtrl: VendorSpecific: VS_CMD_SAMSUNG_2P
+AppleS5L8720XFMSS::_fmssInitCmdsAndCEMaskCtrl: VendorSpecific: VS_CMD_SAMSUNG_2P
+[FTL:MSG] VFL_Open            [OK]
+[FTL:MSG] FTL Register    [OK]
+[FTL:MSG] FTL_Open            [OK]
+IOFlashBlockDevice::attach(AppleNANDFTL)
+Registering: ../AppleS5L8720XFMSS/disk@FF/AppleNANDFTL
+config(2): creating
+Registering: ../AppleS5L8720XFMSS/disk@FF/AppleNANDFTL/IOFlashBlockDevice
+config(3): creating
+AppleNANDFTL::start: block device created, ready for work
+config(e0229490): terminating
+config(e038b490): starting on AppleNANDFTL, 10
+AppleD1759PMUPowerSource: status 0x00000000
+config(e02f4040): starting on IOFlashBlockDevice, 10
+IOBlockStorageDriver::attach(IOFlashBlockDevice)
+IOBlockStorageDriver::probe(IOFlashBlockDevice)
+IOBlockStorageDriver::detach(IOFlashBlockDevice)
+IOBlockStorageDriver::start(IOFlashBlockDevice) <1>
+IOBlockStorageDriver::attach(IOFlashBlockDevice)
+unknown vendor unknown product Media::attach(IOBlockStorageDriver)
+Registering: ../IOBlockStorageDriver/unknown vendor unknown product Media
+config(3): creating
+Registering: ../disk@FF/AppleNANDFTL/IOFlashBlockDevice/IOBlockStorageDriver
+config(4): creating
+config(e02f4040): terminating
+config(e038a860): starting on unknown vendor unknown product Media, 10
+IOMediaBSDClient::attach(unknown vendor unknown product Media)
+IOMediaBSDClient::probe(unknown vendor unknown product Media)
+IOMediaBSDClient::detach(unknown vendor unknown product Media)
+IOGUIDPartitionScheme::attach(unknown vendor unknown product Media)
+IOGUIDPartitionScheme::probe(unknown vendor unknown product Media)
+config(e03ad8e0): starting on IOBlockStorageDriver, 10
+config(e03ad8e0): terminating
+config(e038b490): terminating
+IOGUIDPartitionScheme::detach(unknown vendor unknown product Media)
+IOFDiskPartitionScheme::attach(unknown vendor unknown product Media)
+IOFDiskPartitionScheme::probe(unknown vendor unknown product Media)
+IOFDiskPartitionScheme::detach(unknown vendor unknown product Media)
+IOMediaBSDClient::start(unknown vendor unknown product Media) <1>
+IOMediaBSDClient::attach(unknown vendor unknown product Media)
+Registering: ../unknown vendor unknown product Media/IOMediaBSDClient
+config(2): creating
+IOGUIDPartitionScheme::start(unknown vendor unknown product Media) <1>
+IOGUIDPartitionScheme::attach(unknown vendor unknown product Media)
+Untitled 1::attach(IOGUIDPartitionScheme)
+Registering: ../IOGUIDPartitionScheme/Untitled 1@1
+config(3): creating
+match category exists, skipping IOFDiskPartitionScheme::start(unknown vendor unknown product Media) <1>
+config(e038a860): terminating
+config(e038b490): starting on IOMediaBSDClient, 10
+config(e038b490): terminating
+config(e03ad8e0): starting on Untitled 1, 10
+IOMediaBSDClient::attach(Untitled 1)
+IOMediaBSDClient::probe(Untitled 1)
+IOMediaBSDClient::detach(Untitled 1)
+IOMediaBSDClient::start(Untitled 1) <1>
+IOMediaBSDClient::attach(Untitled 1)
+Registering: ../IOGUIDPartitionScheme/Untitled 1@1/IOMediaBSDClient
+config(2): creating
+config(e02f4040): starting on IOMediaBSDClient, 10
+Got boot device = IOService:/AppleARMPE/arm-io/AppleS5L8720XIO/flash-controller0@A00000/AppleS5L8720XFMSS/disk@FF/AppleNANDFTL/IOFlashBlockDevice/IOBlockStorageDriver/unknown vendor unknown product Media/IOGUIDPartitionScheme/Untitled 1@1
+BSD root: disk0s1, major 14, minor 1
+config(e03ad8e0): terminating
+config(e02f4040): terminating
+Registering: ../AppleARMPE/arm-io/AppleS5L8720XIO/aes@C00000/AppleS5L8900XAES
+config(1): cJettisoning kernel linker.
+AppleMultitouchZ2SPI: downloaded 48612 bytes of firmware data ("0x0051.bin") in 117ms.
+reating
+AppleS5L8900XAES::start took 758 ms
+config(e02f60c0): terminating
+config(e03ac080): starting on AppleS5L8900XAES, 10
+config(e03ac080): terminating
+AppleD1759PMUPowerSource: _powerSupplyType 1, _usbConnectType 1
+AppleD1759PMUPowerSource: enabling idle sleep
+AppleD1759PMUPowerSource: cap -1, ext 0, chrgCap 0, chrg 0 (0 mA, cyc 0, kind 0), warn 0, crit 0
+AppleD1759PMUPowerSource: AppleUSBCableDetect 0
+config(0): creating
+config(e02f60c0): starting on IOResources, 10
+IOResources: match category IONetworkStack exists
+IOResources: match category com_apple_platform_AppleKernelStorage exists
+IOResources: match category IOCoreSurfaceRoot exists
+IOResources: match category AppleMobileFileIntegrity exists
+IOResources: match category com.apple.driver.AppleSerialKDP exists
+IOResources: match category CHUDKernLib exists
+IOResources: match category CHUDProf exists
+IOResources: match category IOHDIXController exists
+IOResources: match category AppleFairplayTextCrypter exists
+IOResources: match category AppleNullTextCrypter exists
+config(e02f60c0): terminating
+AppleD1759PMUPowerSource: cap 75, ext 0, chrgCap 0, chrg 0 (0 mA, cyc 0, kind 0), warn 0, crit 0
+Registering: ../IOGUIDPartitionScheme/Untitled 1@1
+config(0): creating
+config(e0228450): starting on Untitled 1, 10
+Untitled 1: match category IOMediaBSDClient exists
+config(e0228450): terminating
+Wed Dec 31 16:00:04 localhost configd[9] <Debug>: loading com.apple.SystemConfiguration.MobileWatchdog
+Wed Dec 31 16:00:04 localhost configd[9] <Debug>: loading com.apple.configd.usbdeviceconfig
+Wed Dec 31 16:00:04 localhost configd[9] <Debug>: loading com.apple.SystemConfiguration.PowerManagement
+Wed Dec 31 16:00:04 localhost configd[9] <Debug>: adding  com.apple.SystemConfiguration.NetworkIdentification
+Wed Dec 31 16:00:04 localhost configd[9] <Debug>: adding  com.apple.SystemConfiguration.InterfaceNamer
+Wed Dec 31 16:00:04 localhost configd[9] <Debug>: loading com.apple.configd.aeropuerto
+Wed Dec 31 16:00:04 localhost configd[9] <Debug>: adding  com.apple.SystemConfiguration.KernelEventMonitor
+Wed Dec 31 16:00:04 localhost configd[9] <Debug>: adding  com.apple.SystemConfiguration.LinkConfiguration
+Wed Dec 31 16:00:04 localhost configd[9] <Debug>: adding  com.apple.SystemConfiguration.PreferencesMonitor
+Wed Dec 31 16:00:04 localhost configd[9] <Debug>: loading com.apple.SystemConfiguration.EAPOLController
+Wed Dec 31 16:00:04 localhost configd[9] <Debug>: loading com.apple.SystemConfiguration.IPConfiguration
+Wed Dec 31 16:00:04 localhost configd[9] <Debug>: adding  com.apple.SystemConfiguration.IPMonitor
+Wed Dec 31 16:00:04 localhost configd[9] <Debug>: loading com.apple.SystemConfiguration.PPPController
+Wed Dec 31 16:00:04 localhost configd[9] <Debug>: adding  com.apple.SystemConfiguration.ThermalMonitor
+Wed Dec 31 16:00:05 localhost configd[9] <Notice>: watchdog: disabled by driver
+com_apple_driver_FairPlayIOKitUserClient::attach(com_apple_driver_FairPlayIOKit)
+RootDomainUserClient::attach(IOPMrootDomain)
+IOMobileFramebufferUserClient::attach(AppleM2CLCD)
+AppleTetheredDeviceUserClient::attach(AppleTetheredDevice)
+IONetworkStackUserClient::attach(IONetworkStack)
+Wed Dec 31 16:00:05 localhost configd[9] <Error>: InterfaceNamer: no network interfaces, could not update platform UUID
+TTY.iap: doesn't have a IOModemSerialStream interface
+IOSerialBSDClient: family specific matching fails
+TTY.bluetooth: doesn't have a IOModemSerialStream interface
+IOSerialBSDClient: family specific matching fails
+Wed Dec 31 16:00:06 localhost configd[9] <Error>: Could not establish network configuration: Success!
+Wed Dec 31 16:00:06 localhost configd[9] <Notice>: CLTM: No thermal sensors detected, not registering for notifications
+RootDomainUserClient::attach(IOPMrootDomain)
+RootDomainUserClient::attach(IOPMrootDomain)
+RootDomainUserClient::detach(IOPMrootDomain)
+RootDomainUserClient::detach(IOPMrootDomain)
+RootDomainUserClient::attach(IOPMrootDomain)
+RootDomainUserClient::attach(IOPMrootDomain)
+IOResources: family specific matching fails
+Wed Dec 31 16:00:07 localhost configd[9] <Info>: hostname (prefs) = iPod-touch
+Wed Dec 31 16:00:07 iPod-touch configd[9] <Notice>: setting hostname to "iPod-touch"
+AppleSynopsysOTG2 - Configuration: PTP
+AppleSynopsysOTG2          Interface: PTP
+AppleSynopsysOTG2 - Configuration: iPod USB Interface
+AppleSynopsysOTG2          Interface: USBAudioControl
+AppleSynopsysOTG2          Interface: USBAudioStreaming
+AppleSynopsysOTG2          Interface: IapOverUsbHid
+AppleSynopsysOTG2 - Configuration: PTP + Apple Mobile Device
+AppleSynopsysOTG2          Interface: PTP
+AppleSynopsysOTG2          Interface: AppleUSBMux
+IOUSBDeviceInterface::attach(AppleSynopsysOTG2)
+Registering: ../usb-otg@400000/AppleSynopsysOTG2/IOUSBDeviceInterface@0
+config(0): creating
+IOUSBDeviceInterface::attach(AppleSynopsysOTG2)
+Registering: ../usb-otg@400000/AppleSynopsysOTG2/IOUSBDeviceInterface@1
+config(1): creating
+IOUSBDeviceInterface::attach(AppleSynopsysOTG2)
+Registering: ../usb-otg@400000/AppleSynopsysOTG2/IOUSBDeviceInterface@2
+config(2): creating
+IOUSBDeviceInterface::attach(AppleSynopsysOTG2)
+Registering: ../usb-otg@400000/AppleSynopsysOTG2/IOUSBDeviceInterface@3
+config(3): creating
+IOUSBDeviceInterface::attach(AppleSynopsysOTG2)
+Registering: ../usb-otg@400000/AppleSynopsysOTG2/IOUSBDeviceInterface@4
+config(4): creating
+config(e0227410): starting on IOUSBDeviceInterface, 10
+IOUSBDeviceUserClientIniter::attach(IOUSBDeviceInterface)
+IOUSBDeviceUserClientIniter::probe(IOUSBDeviceInterface)
+IOUSBDeviceUserClientIniter::detach(IOUSBDeviceInterface)
+IOUSBDeviceUserClientIniter::start(IOUSBDeviceInterface) <1>
+IOUSBDeviceUserClientIniter::attach(IOUSBDeviceInterface)
+Registering: ../usb-otg@400000/AppleSynopsysOTG2/IOUSBDeviceInterface@0
+IOUSBDeviceInterface: match category IOUSBDeviceUserClientIniter exists
+config(e0227410): terminating
+config(e03ae100): starting on IOUSBDeviceInterface, 10
+AppleUSBMike::attach(IOUSBDeviceInterface)
+AppleUSBMike::probe(IOUSBDeviceInterface)
+AppleUSBMike::detach(IOUSBDeviceInterface)
+AppleUSBMike::start(IOUSBDeviceInterface) <2>
+AppleUSBMike::attach(IOUSBDeviceInterface)
+AppleSynopsysOTG2::gated_registerFunction Register function USBAudioControl
+config(e03ae100): terminating
+config(e03adcf0): starting on IOUSBDeviceInterface, 10
+AppleUSBMike::attach(IOUSBDeviceInterface)
+AppleUSBMike::probe(IOUSBDeviceInterface)
+AppleUSBMike::detach(IOUSBDeviceInterface)
+AppleUSBMike::start(IOUSBDeviceInterface) <3>
+AppleUSBMike::attach(IOUSBDeviceInterface)
+config(e038b8a0): starting on IOUSBDeviceInterface, 10
+IOAccessoryPortUSB::attach(IOUSBDeviceInterface)
+IOAccessoryPortUSB::probe(IOUSBDeviceInterface)
+IOAccessoryPortUSB::detach(IOUSBDeviceInterface)
+IOAccessoryPortUSB::start(IOUSBDeviceInterface) <1>
+IOAccessoryPortUSB::attach(IOUSBDeviceInterface)
+IOAccessoryPortUSB::start
+AppleSynopsysOTG2::gated_registerFunction Register function IapOverUsbHid
+Registering: ../AppleSynopsysOTG2/IOUSBDeviceInterface@3/IOAccessoryPortUSB
+config(3): creating
+config(e038b8a0): terminating
+config(e02f4860): starting on IOUSBDeviceInterface, 10
+AppleUSBDeviceMux::attach(IOUSBDeviceInterface)
+AppleUSBDeviceMux::probe(IOUSBDeviceInterface)
+AppleUSBDeviceMux::detach(IOUSBDeviceInterface)
+AppleUSBDeviceMux::start(IOUSBDeviceInterface) <1>
+AppleUSBDeviceMux::attach(IOUSBDeviceInterface)
+virtual bool AppleUSBDeviceMux::start(IOService*) build: Aug 10 2008 22:34:20
+config(e02f58a0): starting on IOAccessoryPortUSB, 10
+config(e02f58a0): terminating
+Registering: ../AppleSynopsysOTG2/IOUSBDeviceInterface@1/AppleUSBMike
+config(2): creating
+AppleSynopsysOTG2::gated_registerFunction Register function USBAconfig(e02f58a0): starting on AppleUSBMike, 10
+config(e02f58a0): terminating
+udioStreaming
+config(e03adcf0): terminating
+init_waste
+AppleSynopsysOTG2::gated_registerFunction Register function AppleUSBMux
+Registering: ../AppleSynopsysOTG2/IOUSBDeviceInterface@4/AppleUSBDeviceMux
+config(1): creating
+config(e02f4860): terminating
+config(e03adcf0): starting on AppleUSBDeviceMux, 10
+config(e03adcf0): terminating
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+AppleSynopsysOTG2::start : Base Address - 0xeb2ed000 
+ AppleSynopsysOTG2::start : waitForService complete for PHY 
+ AppleSynopsysOTG2::_setMaxEndpoints : EP 1 BIDIR 
+ AppleSynopsysOTG2::_setMaxEndpoints : EP 2 BIDIR 
+ AppleSynopsysOTG2::_setMaxEndpoints : EP 3 BIDIR 
+ AppleSynopsysOTG2::_setMaxEndpoints : EP 4 BIDIR 
+ AppleSynopsysOTG2::_setMaxEndpoints : in EPs: 4 out, EPs: 4, max_endpoint: 4, num_endpoints: 10 
+ AppleSynopsysOTG2::start : readyForHost called 
+ AppleSynopsysOTG2::setPowerState : state = 1
+ AppleSynopsysOTG2::_pmuCableStateChangeHandler : _pmuCableState: 0 
+ AppleSynopsysOTG2::_handleCableChangeInterrupt : pmuCableState: 0, cableIsConnected: 0 
+ IOMobileFramebufferUserClient::attach(AppleM2CLCD)
+IOCoreSurfaceRootUserClient::attach(IOCoreSurfaceRoot)
+AppleMBXShared::attach(AppleMBXDevice)
+AppleMBXUserClient::attach(AppleMBXDevice)
+Registering: ../AppleMBXController/AppleMBXDevice/AppleMBXUserClient
+config(0): creating
+config(e02f4860): starting on AppleMBXUserClient, 10
+config(e02f4860): terminating
+IOMobileFramebufferUserClient::attach(AppleM2TVOut)
+IOMobileFramebufferUserClient::detach(AppleM2TVOut)
+IOHIDEventServiceUserClient::attach(AppleM68Buttons)
+IOHIDEventServiceUserClient::attach(AppleCD3272Mikey)
+IOHIDEventServiceUserClient::attach(AppleISL29003)
+IOHIDEventServiceUserClient::attach(AppleLIS302DL)
+AppleMultitouchSPIUserClient::attach(AppleMultitouchZ2SPI)
+AppleMultitouchSPIUserClient::terminatePhase1(00000004)
+AppleMultitouchSPIUserClient::finalize(00000005)
+AppleMultitouchSPIUserClient::scheduleStop(AppleMultitouchZ2SPI)
+AppleMultitouchSPIUserClient::stop(AppleMultitouchZ2SPI)
+AppleMultitouchSPIUserClient::detach(AppleMultitouchZ2SPI)
+AppleMultitouchSPIUserClient::detach(AppleMultitouchZ2SPI)
+iokit terminate done, 0 stops remain
+AppleMultitouchSPIUserClient::attach(AppleMultitouchZ2SPI)
+AppleMultitouchSPIUserClient::terminatePhase1(00000004)
+AppleMultitouchSPIUserClient::finalize(00000005)
+AppleMultitouchSPIUserClient::scheduleStop(AppleMultitouchZ2SPI)
+AppleMultitouchSPIUserClient::stop(AppleMultitouchZ2SPI)
+AppleMultitouchSPIUserClient::detach(AppleMultitouchZ2SPI)
+AppleMultitouchSPIUserClient::detach(AppleMultitouchZ2SPI)
+iokit terminate done, 0 stops remain
+AppleMultitouchSPIUserClient::attach(AppleMultitouchZ2SPI)
+AppleMultitouchSPIUserClient::terminatePhase1(00000004)
+AppleMultitouchSPIUserClient::finalize(00000005)
+AppleMultitouchSPIUserClient::scheduleStop(AppleMultitouchZ2SPI)
+AppleMultitouchSPIUserClient::stop(AppleMultitouchZ2SPI)
+AppleMultitouchSPIUserClient::detach(AppleMultitouchZ2SPI)
+AppleMultitouchSPIUserClient::detach(AppleMultitouchZ2SPI)
+iokit terminate done, 0 stops remain
+AppleMultitouchSPIUserClient::attach(AppleMultitouchZ2SPI)
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+RootDomainUserClient::attach(IOPMrootDomain)
+RootDomainUserClient::attach(IOPMrootDomain)
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+unexpected CLCD interrupt: 00000001
+unexpected CLCD interrupt: 00000001
+Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: processing command "AUTH" w/data
+Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: sending status 0
+Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: processing command "PREFS open" w/data
+Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: sending status 0
+Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: processing command "PREFS lock/wait"
+Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: sending status 0
+Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: processing command "PREFS unlock"
+Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: sending status 0
+Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: processing command "PREFS close"
+Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: processing command "EXIT"
+Wed Dec 31 16:00:09 iPod-touch SCHelper[14] <Debug>: per-session socket : invalidate fd 6
+unexpected CLCD interrupt: 00000001
+unexpected CLCD interrupt: 00000001
+unexpected CLCD interrupt: 00000001
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: processing command "AUTH" w/data
+Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: sending status 0
+Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: processing command "PREFS open" w/data
+Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: sending status 0
+Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: processing command "PREFS lock/wait"
+Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: sending status 0
+Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: processing command "PREFS commit" w/data
+Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: sending status 0 w/reply
+Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: processing command "PREFS unlock"
+Wed Dec 31 16:00:12 iPod-touch SCHelper[14] <Debug>: sending status 0
+Wed Dec 31 16:00:13 iPod-touch SCHelper[14] <Debug>: processing command "PREFS close"
+Wed Dec 31 16:00:13 iPod-touch SCHelper[14] <Debug>: processing command "EXIT"
+Wed Dec 31 16:00:13 iPod-touch SCHelper[14] <Debug>: per-session socket : invalidate fd 6
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+unexpected CLCD interrupt: 00000001
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+unexpected CLCD interrupt: 00000001
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+Wed Dec 31 16:02:09 iPod-touch configd[9] <Notice>: WiFi: Display off.  Adjusting scan intervals for dim screen.
+Wed Dec 31 16:02:09 iPod-touch configd[9] <Notice>: 
+unexpected CLCD interrupt: 00000001
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+      Kernel loadable modules in backtrace (with dependencies):
+         com.apple.iokit.IOHIDFamily(1.5.2)@0xc03b6000->0xc03d1fff
+ApplePinotLCD::_lcdEnable: enable: 0
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+
+GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
+DCFG=00000000 DCTL=00000000 DSTS=00000000 
+EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
+EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
+EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
+
+Registering: IOService:/AppleARMPE/dock/IOAccessoryManager
+config(0): creating
++ AppleMPVDDriver[0xc0b60240]::setPowerStateGated()
+
+kernel abort type 4: fault_type=0x3, fault_addr=0xec3fd01c
+r0: 0xc0d77f40  r1: 0x00000000  r2: 0xec3fd000  r3: 0xffffffff
+r4: 0xc05026fc  r5: 0x00000000  r6: 0xc0d36460  r7: 0xeb243ec4
+r8: 0xc04ff6f0  r9: 0xe02f7920 r10: 0x00000000 r11: 0xc0b60240
+12: 0xc018be50  sp: 0xc0d36460  lr: 0xc04ff6b0  pc: 0xc04fef28
+cpsr: 0x60070113 fsr: 0x00000808 far: 0xec3fd01c
+
+Debugger message: Fatal Exception
+OS version: 5F138
+Kernel version: Darwin Kernel Version 9.4.1: Sun Aug 10 21:25:25 PDT 2008; root:xnu-1228.7.27~12/RELEASE_ARM_S5L8720X
+iBoot version: iBoot-385.22
+secure boot?: NO
+Paniclog version: 1
+Task 0xc09d6ce8: 1997 pages, 62 threads: pid 0: kernel_task
+	thread 0xe02f7920
+		kernel backtrace: eb243d98
+		  lr: 0xc00670b5  fp: 0xeb243dc8
+		  lr: 0xc00687bc  fp: 0xeb243dd4
+		  lr: 0xc0068cc8  fp: 0xeb243e68
+		  lr: 0xc006539c  fp: 0xeb243ec4
+		  lr: 0xc04ff6b0  fp: 0xeb243ed4
+		  lr: 0xc04ff734  fp: 0xeb243ee4
+		  lr: 0xc016009b  fp: 0xeb243f08
+		  lr: 0xc05009e0  fp: 0xeb243f28
+		  lr: 0xc0158fe9  fp: 0xeb243f64
+		  lr: 0xc01591e7  fp: 0xeb243f80
+		  lr: 0xc00296e7  fp: 0xeb243fa8
+		  lr: 0xc00659f8  fp: 0x00000000
+
+Task 0xc09d6b10: 114 pages, 3 threads: pid 1: launchd
+Task 0xc09d6760: 362 pages, 3 threads: pid 8: lockdownd
+Task 0xc09d6588: 446 pages, 4 threads: pid 9: configd
+Task 0xc09d61d8: 2312 pages, 10 threads: pid 10: SpringBoard
+Task 0xc09d6000: 94 pages, 2 threads: pid 11: notifyd
+Memory access exception (1,0,0)
+ethernet MAC address: 73:65:72:69:61:6c
+ip address: 190.186.173.171
+
+Waiting for remote debugger connection.
+
+Please run: ~luna/bin/panicDebug -a arm localhost
+

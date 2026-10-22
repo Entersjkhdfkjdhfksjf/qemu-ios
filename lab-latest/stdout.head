@@ -1,0 +1,300 @@
+s5l8900_gpio_read: read from location 0x00000164
+s5l8900_gpio_read: read from location 0x00000184
+s5l8900_gpio_read: read from location 0x00000064
+s5l8900_gpio_read: read from location 0x00000064
+s5l8900_gpio_read: read from location 0x00000064
+s5l8900_gpio_read: read from location 0x00000064
+s5l8900_gpio_read: read from location 0x00000064
+s5l8900_gpio_read: read from location 0x00000064
+In size: 16, out size: 16, in addr: 0x22025800, in buf: 0x335b1fdb, out addr: 0x22025800, 0
+In size: 128, out size: 128, in addr: 0x220100ac, in buf: 0xdd5a2365, out addr: 0x220100ac, 0
+In size: 32, out size: 32, in addr: 0x22025800, in buf: 0x703346ce, out addr: 0x22025800, 0
+In size: 65536, out size: 65536, in addr: 0x22000020, in buf: 0xe3969c0b, out addr: 0x22000020, 1
+Writing PMU register cmd 2 reg 0
+Reading PMU register 2
+Writing PMU register cmd 3 reg 7
+Writing PMU register cmd 255 reg 7
+Writing PMU register cmd 255 reg 7
+Reading PMU register 255
+Writing PMU register cmd 256 reg 8
+Writing PMU register cmd 255 reg 8
+Writing PMU register cmd 255 reg 8
+Reading PMU register 255
+Writing PMU register cmd 256 reg 9
+Writing PMU register cmd 255 reg 9
+Writing PMU register cmd 255 reg 9
+Reading PMU register 255
+Writing PMU register cmd 256 reg 18
+Writing PMU register cmd 0 reg 18
+Writing PMU register cmd 0 reg 18
+Reading PMU register 0
+Writing PMU register cmd 1 reg 19
+Writing PMU register cmd 33 reg 19
+Writing PMU register cmd 33 reg 19
+Reading PMU register 33
+Writing PMU register cmd 34 reg 20
+Writing PMU register cmd 19 reg 20
+Writing PMU register cmd 19 reg 20
+Reading PMU register 19
+Writing PMU register cmd 20 reg 21
+Writing PMU register cmd 15 reg 21
+Writing PMU register cmd 15 reg 21
+Reading PMU register 15
+Writing PMU register cmd 16 reg 22
+Writing PMU register cmd 15 reg 22
+Writing PMU register cmd 15 reg 22
+Reading PMU register 15
+Writing PMU register cmd 16 reg 23
+Writing PMU register cmd 15 reg 23
+Writing PMU register cmd 15 reg 23
+Reading PMU register 15
+Writing PMU register cmd 16 reg 24
+Writing PMU register cmd 13 reg 24
+Writing PMU register cmd 13 reg 24
+Reading PMU register 13
+Writing PMU register cmd 14 reg 34
+Writing PMU register cmd 5 reg 34
+Writing PMU register cmd 5 reg 34
+Reading PMU register 5
+Writing PMU register cmd 6 reg 35
+Writing PMU register cmd 180 reg 35
+Writing PMU register cmd 180 reg 35
+Reading PMU register 180
+Writing PMU register cmd 181 reg 48
+Writing PMU register cmd 0 reg 48
+Writing PMU register cmd 0 reg 48
+Reading PMU register 0
+Writing PMU register cmd 1 reg 49
+Writing PMU register cmd 0 reg 49
+Writing PMU register cmd 0 reg 49
+Reading PMU register 0
+Writing PMU register cmd 1 reg 50
+Writing PMU register cmd 0 reg 50
+Writing PMU register cmd 0 reg 50
+Reading PMU register 0
+Writing PMU register cmd 1 reg 64
+Writing PMU register cmd 0 reg 64
+Writing PMU register cmd 0 reg 64
+Reading PMU register 0
+Writing PMU register cmd 1 reg 68
+Writing PMU register cmd 102 reg 68
+Writing PMU register cmd 102 reg 68
+Reading PMU register 102
+Writing PMU register cmd 103 reg 69
+Writing PMU register cmd 93 reg 69
+Writing PMU register cmd 93 reg 69
+Reading PMU register 93
+Writing PMU register cmd 94 reg 1
+Reading PMU register 94
+Reading PMU register 95
+Reading PMU register 96
+Writing PMU register cmd 97 reg 4
+Reading PMU register 97
+Reading PMU register 98
+Reading PMU register 99
+Writing PMU register cmd 100 reg 111
+Reading PMU register 100
+Writing PMU register cmd 101 reg 10
+Writing PMU register cmd 0 reg 10
+Writing PMU register cmd 0 reg 10
+Reading PMU register 0
+Writing PMU register cmd 1 reg 11
+Writing PMU register cmd 119 reg 11
+Writing PMU register cmd 119 reg 11
+Reading PMU register 119
+Writing PMU register cmd 120 reg 12
+Writing PMU register cmd 4 reg 12
+Writing PMU register cmd 4 reg 12
+Reading PMU register 4
+Writing PMU register cmd 5 reg 13
+Writing PMU register cmd 119 reg 13
+Writing PMU register cmd 119 reg 13
+Reading PMU register 119
+Writing PMU register cmd 120 reg 14
+Writing PMU register cmd 194 reg 14
+Writing PMU register cmd 194 reg 14
+Reading PMU register 194
+Writing PMU register cmd 195 reg 51
+Writing PMU register cmd 236 reg 51
+Writing PMU register cmd 236 reg 51
+Reading PMU register 236
+Writing PMU register cmd 237 reg 52
+Writing PMU register cmd 87 reg 52
+Writing PMU register cmd 87 reg 52
+Reading PMU register 87
+Writing PMU register cmd 88 reg 53
+Writing PMU register cmd 0 reg 53
+Writing PMU register cmd 0 reg 53
+Reading PMU register 0
+Writing PMU register cmd 1 reg 86
+Writing PMU register cmd 0 reg 86
+Writing PMU register cmd 0 reg 86
+Reading PMU register 0
+Writing PMU register cmd 1 reg 87
+Writing PMU register cmd 0 reg 87
+Writing PMU register cmd 0 reg 87
+Reading PMU register 0
+Writing PMU register cmd 1 reg 88
+Writing PMU register cmd 1 reg 88
+Writing PMU register cmd 1 reg 88
+Reading PMU register 1
+Writing PMU register cmd 2 reg 89
+Writing PMU register cmd 1 reg 89
+Writing PMU register cmd 1 reg 89
+Reading PMU register 1
+Writing PMU register cmd 2 reg 90
+Writing PMU register cmd 0 reg 90
+Writing PMU register cmd 0 reg 90
+Reading PMU register 0
+Writing PMU register cmd 1 reg 20
+Writing PMU register cmd 19 reg 20
+Writing PMU register cmd 19 reg 20
+Reading PMU register 19
+Writing PMU register cmd 20 reg 25
+Writing PMU register cmd 20 reg 25
+Writing PMU register cmd 20 reg 25
+Reading PMU register 20
+Writing PMU register cmd 21 reg 26
+Writing PMU register cmd 6 reg 26
+Writing PMU register cmd 6 reg 26
+Reading PMU register 6
+Writing PMU register cmd 7 reg 27
+Writing PMU register cmd 18 reg 27
+Writing PMU register cmd 18 reg 27
+Reading PMU register 18
+Writing PMU register cmd 19 reg 28
+Writing PMU register cmd 6 reg 28
+Writing PMU register cmd 6 reg 28
+Reading PMU register 6
+Writing PMU register cmd 7 reg 29
+Writing PMU register cmd 18 reg 29
+Writing PMU register cmd 18 reg 29
+Reading PMU register 18
+Writing PMU register cmd 19 reg 30
+Writing PMU register cmd 16 reg 30
+Writing PMU register cmd 16 reg 30
+Reading PMU register 16
+Writing PMU register cmd 17 reg 31
+Writing PMU register cmd 20 reg 31
+Writing PMU register cmd 20 reg 31
+Reading PMU register 20
+Writing PMU register cmd 21 reg 32
+Writing PMU register cmd 26 reg 32
+Writing PMU register cmd 26 reg 32
+Reading PMU register 26
+Writing PMU register cmd 27 reg 33
+Writing PMU register cmd 6 reg 33
+Writing PMU register cmd 6 reg 33
+Reading PMU register 6
+Writing PMU register cmd 7 reg 16
+Writing PMU register cmd 127 reg 16
+Writing PMU register cmd 127 reg 16
+Reading PMU register 127
+Writing PMU register cmd 128 reg 17
+Writing PMU register cmd 7 reg 17
+Writing PMU register cmd 7 reg 17
+Reading PMU register 7
+Writing PMU register cmd 8 reg 10
+Reading PMU register 8
+Writing PMU register cmd 9 reg 52
+Reading PMU register 9
+Writing PMU register cmd 10 reg 10
+Writing PMU register cmd 0 reg 10
+Writing PMU register cmd 0 reg 10
+Reading PMU register 0
+Writing PMU register cmd 1 reg 51
+Writing PMU register cmd 0 reg 51
+Writing PMU register cmd 128 reg 51
+Writing PMU register cmd 128 reg 2
+Reading PMU register 128
+Writing PMU register cmd 129 reg 64
+Writing PMU register cmd 20 reg 64
+Writing PMU register cmd 20 reg 2
+Reading PMU register 20
+Writing PMU register cmd 21 reg 10
+Reading PMU register 21
+Writing PMU register cmd 22 reg 52
+Reading PMU register 22
+Writing PMU register cmd 23 reg 177
+Reading PMU register 23
+Writing PMU register cmd 24 reg 10
+Writing PMU register cmd 0 reg 10
+Writing PMU register cmd 0 reg 10
+Reading PMU register 0
+Writing PMU register cmd 1 reg 51
+Writing PMU register cmd 0 reg 51
+Writing PMU register cmd 128 reg 51
+Writing PMU register cmd 128 reg 4
+Reading PMU register 128
+Reading PMU register 129
+Reading PMU register 130
+Writing PMU register cmd 131 reg 4
+Reading PMU register 131
+Reading PMU register 132
+Reading PMU register 133
+Writing PMU register cmd 134 reg 10
+Reading PMU register 134
+Writing PMU register cmd 135 reg 52
+Reading PMU register 135
+Writing PMU register cmd 136 reg 10
+Writing PMU register cmd 0 reg 10
+Writing PMU register cmd 0 reg 10
+Reading PMU register 0
+Writing PMU register cmd 1 reg 51
+Writing PMU register cmd 0 reg 51
+Writing PMU register cmd 128 reg 51
+Writing PMU register cmd 128 reg 109
+Writing PMU register cmd 199 reg 109
+Writing PMU register cmd 199 reg 109
+Reading PMU register 199
+Writing PMU register cmd 200 reg 110
+Writing PMU register cmd 9 reg 110
+Writing PMU register cmd 9 reg 110
+Reading PMU register 9
+Writing PMU register cmd 10 reg 4
+Reading PMU register 10
+Reading PMU register 11
+Reading PMU register 12
+Writing PMU register cmd 13 reg 97
+Reading PMU register 13
+Writing PMU register cmd 14 reg 4
+Reading PMU register 14
+Reading PMU register 15
+Reading PMU register 16
+Writing PMU register cmd 17 reg 97
+Writing PMU register cmd 16 reg 97
+Writing PMU register cmd 16 reg 96
+Reading PMU register 16
+Writing PMU register cmd 17 reg 4
+Reading PMU register 17
+Reading PMU register 18
+Reading PMU register 19
+Writing PMU register cmd 20 reg 4
+Reading PMU register 20
+Reading PMU register 21
+Reading PMU register 22
+Writing PMU register cmd 23 reg 14
+Reading PMU register 23
+Writing PMU register cmd 24 reg 14
+Writing PMU register cmd 6 reg 14
+Writing PMU register cmd 6 reg 14
+Reading PMU register 6
+In size: 16, out size: 16, in addr: 0x2200f6e0, in buf: 0x335b1fdb, out addr: 0x2200f6e0, 1
+In size: 128, out size: 128, in addr: 0x0ff290ac, in buf: 0xe4effe87, out addr: 0x0ff290ac, 1
+In size: 32, out size: 32, in addr: 0x2200f6e0, in buf: 0x21a2a43c, out addr: 0x2200f6e0, 1
+In size: 167936, out size: 167936, in addr: 0x0ff00020, in buf: 0xa32c74d2, out addr: 0x0ff00020, 2
+Writing PMU register cmd 7 reg 4
+Reading PMU register 7
+Reading PMU register 8
+Reading PMU register 9
+Writing PMU register cmd 10 reg 97
+Writing PMU register cmd 31 reg 97
+Writing PMU register cmd 31 reg 111
+Reading PMU register 31
+Writing PMU register cmd 32 reg 110
+Reading PMU register 32
+Writing PMU register cmd 33 reg 109
+Reading PMU register 33
+Writing PMU register cmd 34 reg 4
+Reading PMU register 34
+Reading PMU register 35
