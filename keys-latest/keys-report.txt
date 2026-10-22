@@ -1,0 +1,70 @@
+=================== ipod2_1_2.1.1_5F138
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 28  269M   28 76.3M    0     0  71.1M      0  0:00:03  0:00:01  0:00:02 71.1M 48  269M   48  131M    0     0  63.5M      0  0:00:04  0:00:02  0:00:02 63.5M 92  269M   92  250M    0     0  81.3M      0  0:00:03  0:00:03 --:--:-- 81.3M100  269M  100  269M    0     0  83.8M      0  0:00:03  0:00:03 --:--:-- 83.8M
+IPSW url: https://secure-appldnld.apple.com/iPod/SBML/osx/bundles/061-5494.20080909.8i9o0/iPod2,1_2.1.1_5F138_Restore.ipsw
+IPSW members (top level + all_flash):
+   018-4160-1.dmg 226422784
+   018-4166-1.dmg 25319596
+   018-4177-1.dmg 25315500
+   Firmware/all_flash/ 0
+   Firmware/all_flash/all_flash.n72ap.production/ 0
+   Firmware/all_flash/all_flash.n72ap.production/applelogo.s5l8720x.img3 9480
+   Firmware/all_flash/all_flash.n72ap.production/batterylow0.s5l8720x.img3 56656
+   Firmware/all_flash/all_flash.n72ap.production/batterylow1.s5l8720x.img3 65184
+   Firmware/all_flash/all_flash.n72ap.production/DeviceTree.n72ap.img3 35988
+   Firmware/all_flash/all_flash.n72ap.production/glyphcharging.s5l8720x.img3 37092
+   Firmware/all_flash/all_flash.n72ap.production/glyphplugin.s5l8720x.img3 35972
+   Firmware/all_flash/all_flash.n72ap.production/iBoot.n72ap.RELEASE.img3 170200
+   Firmware/all_flash/all_flash.n72ap.production/LLB.n72ap.RELEASE.img3 67800
+   Firmware/all_flash/all_flash.n72ap.production/manifest 253
+   Firmware/all_flash/all_flash.n72ap.production/needservice.s5l8720x.img3 20324
+   Firmware/all_flash/all_flash.n72ap.production/recoverymode.s5l8720x.img3 47764
+   kernelcache.release.s5l8720x 4353720
+   Restore.plist 1669
+[llb] LLB.n72ap.RELEASE.img3: size=65536 first16=0e0000ea18f09fe518f09fe518f09fe5 -> KEY OK
+[iboot] iBoot.n72ap.RELEASE.img3: size=167936 first16=0e0000ea18f09fe518f09fe518f09fe5 -> KEY OK
+   iBoot string offsets (address = 0x0ff00000 + offset if loaded at IBOOT_MEM_BASE):
+     off 0x000280 (addr 0x0ff00280): iBoot-385.22
+     off 0x01dc94 (addr 0x0ff1dc94): boot kernelcache from filesystem
+     off 0x01dd9c (addr 0x0ff1dd9c): Attempting to validate kernelcache @ 0x%08x
+     off 0x01ddcc (addr 0x0ff1ddcc): error loading kernelcache
+     off 0x01dde8 (addr 0x0ff1dde8): kernelcache prepped at address 0x%08x
+     off 0x01de94 (addr 0x0ff1de94): root filesystem mount failed
+     off 0x01df84 (addr 0x0ff1df84): debug-uarts
+     off 0x01e670 (addr 0x0ff1e670): iBootDebug
+     off 0x021690 (addr 0x0ff21690): invalid uart
+     off 0x0216a0 (addr 0x0ff216a0): uart_set_mode: port %d, mode %d
+     off 0x0216c4 (addr 0x0ff216c4): uart_set_baud_rate: port %d, baud %d, sample %d, divider %d, actual baud %d
+     off 0x021714 (addr 0x0ff21714): uart_set_flow_control
+     off 0x02172c (addr 0x0ff2172c): %s: uart 0 does not support flow control
+     off 0x021758 (addr 0x0ff21758): uart reader
+     off 0x021764 (addr 0x0ff21764): uart_write
+     off 0x021770 (addr 0x0ff21770): uart_write: unhandled mode
+     off 0x02178c (addr 0x0ff2178c): uart_read
+     off 0x021798 (addr 0x0ff21798): uart_read: unhandled mode
+     off 0x021808 (addr 0x0ff21808): devicetree
+     off 0x021b74 (addr 0x0ff21b74): Kernelcache image corrupt
+     off 0x021b90 (addr 0x0ff21b90): Kernelcache too large
+     off 0x021ba8 (addr 0x0ff21ba8): Kernelcache image not valid
+     off 0x021bc8 (addr 0x0ff21bc8): unknown kernelcache signature
+     off 0x021be8 (addr 0x0ff21be8): unknown kernelcache compression type
+     off 0x021cfc (addr 0x0ff21cfc): rd=md0 nand-enable-reformat=1 -progress
+     off 0x021d70 (addr 0x0ff21d70): debug=
+     off 0x021d98 (addr 0x0ff21d98): DeviceTree
+     off 0x021e10 (addr 0x0ff21e10): UpdateDeviceTree: failed to find the /chosen node
+     off 0x021e44 (addr 0x0ff21e44): debug-enabled
+     off 0x021ee4 (addr 0x0ff21ee4): iBoot-385.22
+     off 0x021f24 (addr 0x0ff21f24): root-matching
+     off 0x02206c (addr 0x0ff2206c): arm-io/uart3/bluetooth
+     off 0x022098 (addr 0x0ff22098): arm-io/uart1/baseband
+     off 0x022140 (addr 0x0ff22140): debug-wait-start
+     off 0x023090 (addr 0x0ff23090): /System/Library/Caches/com.apple.kernelcaches/kernelcache.s5l8720x
+     off 0x025b8e (addr 0x0ff25b8e): Apple Root CA0
+     off 0x025c12 (addr 0x0ff25c12): Apple Root CA0
+[applelogo] applelogo.s5l8720x.img3: size=7226 first16=69426f6f74496d0062ab373c73737a6c -> KEY LOOKS WRONG
+[dtree] DeviceTree.n72ap.img3: size=33724 first16=0d0000000b0000007365637572652d72 -> KEY OK
+[kernelcache] kernelcache.release.s5l8720x: size=4351497 first16=636f6d706c7a7373aff68717007ed3f4 -> KEY OK
+   complzss header: adler=0xaff68717 uncompressed=8311796 compressed=4351113
+=================== ipod2_1_3.1.3_7E18
+no IPSW for build 7E18
