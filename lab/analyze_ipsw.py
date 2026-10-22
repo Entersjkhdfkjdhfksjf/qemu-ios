@@ -11,8 +11,9 @@ os.makedirs(work, exist_ok=True)
 def find_url():
     data = json.load(urllib.request.urlopen("https://api.ipsw.me/v4/device/iPod2,1?type=ipsw", timeout=60))
     for fw in data["firmwares"]:
-        if fw["buildid"] == build:
+        if fw["buildid"].lower() == build.lower():
             return fw["url"]
+    print("builds known to ipsw.me for iPod2,1:", sorted((f["version"], f["buildid"]) for f in data["firmwares"]))
     raise SystemExit("no IPSW for build " + build)
 
 ipsw = os.path.join(work, "fw.ipsw")
@@ -77,7 +78,7 @@ for key, sub in want.items():
     out = dec(data, k["iv"], k["key"])
     head = out[:16].hex()
     ok = {"iboot": b"iBoot" in out[:0x400] or b"iBoot" in out, "llb": b"iBoot" in out or b"LLB" in out,
-          "kernelcache": out[:8] == b"complzss", "applelogo": out[:8] == b"complzss",
+          "kernelcache": out[:8] == b"complzss", "applelogo": out[:8] in (b"complzss", b"iBootIm\x00"[:8]),
           "dtree": b"compatible" in out[:0x2000] or b"device-tree" in out[:0x4000]}[key]
     print(f"[{key}] {base}: size={len(data)} first16={head} -> {'KEY OK' if ok else 'KEY LOOKS WRONG'}")
     if key == "iboot":
