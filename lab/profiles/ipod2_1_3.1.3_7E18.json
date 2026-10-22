@@ -1,0 +1,13 @@
+{
+  "name": "iPod touch 2G (iPod2,1) iPhone OS 3.1.3",
+  "build": "7E18",
+  "source": "keys published on The Apple Wiki (Keys:SUNorthstarTwo 7E18 (iPod2,1)), supplied by the project owner",
+  "rootfs_key": "2360d83b606481a5ca080fe7a6fc64f8d5a5556413dfcf3e1277fe564734ee0b188798b8",
+  "images": {
+    "llb":         {"iv": "91ab08f4458028dd5d1443144ccdd1e3", "key": "7d2c252e593eee290fd95fd606334217"},
+    "iboot":       {"iv": "7c090ab8c8a0cbc95db1007b322fe960", "key": "ca3893d43d9446cd2f9f3fd5371d02e9"},
+    "applelogo":   {"iv": "f246cfefd363c2ec38927473be6f6d45", "key": "afa37377de73fdf1e2ad6b0117cd2847"},
+    "dtree":       {"iv": "6efb1ebfa5b73ab29ec5e070c78f1aad", "key": "f6bc717e5d5963fe15a7072ef9f914a5"},
+    "kernelcache": {"iv": "ec772f88c3587c39bb293858554e545d", "key": "19a5d7ebc718322c1e6d6324fb93e324"}
+  }
+}

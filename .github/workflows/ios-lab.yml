@@ -12,8 +12,26 @@ defaults:
     shell: bash
 
 jobs:
-  lab:
+  keys:
     runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify firmware keys and map iBoot strings (reports only, nothing stored)
+        run: |
+          mkdir -p lab/out
+          for p in ipod2_1_2.1.1_5F138 ipod2_1_3.1.3_7E18; do
+            echo "=================== $p"
+            python3 lab/analyze_ipsw.py lab/profiles/$p.json /tmp/ipsw-$p 2>&1
+          done | tee lab/out/keys-report.txt
+      - name: Publish report
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: bash lab/publish.sh keys-latest lab/out/keys-report.txt
+
+  lab:
+    runs-on: ubuntu-24.04-arm
     timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
@@ -22,14 +40,14 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y ninja-build pkg-config python3-venv libssl-dev libsdl2-dev \
-            libpixman-1-dev libglib2.0-dev ccache unzip dmg2img clang
+            libpixman-1-dev libglib2.0-dev ccache unzip clang
 
       - name: ccache
         uses: hendrikmuhs/ccache-action@v1.2
         with:
-          key: ios-lab
+          key: ios-lab-arm
 
-      - name: Build QEMU (native, arm-softmmu)
+      - name: Build QEMU (native arm64, clang, arm-softmmu)
         run: |
           mkdir -p build-lab && cd build-lab
           ../configure --enable-sdl --target-list=arm-softmmu --disable-capstone --disable-slirp \
@@ -40,21 +58,15 @@ jobs:
       - name: Run lab
         run: bash lab/run-lab.sh
 
-      - name: Publish lab logs to ci-logs branch
+      - name: Publish lab logs
         if: always()
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
-          set +e
           mkdir -p /tmp/out
           [ -f lab/out/summary.txt ] && cp lab/out/summary.txt /tmp/out/
           for f in serial stdout stderr unimp; do
             [ -f lab/out/$f.log ] && { head -n 300 lab/out/$f.log > /tmp/out/$f.head; tail -n 1500 lab/out/$f.log > /tmp/out/$f.tail; }
           done
-          URL="https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
-          git clone --depth 1 --branch ci-logs "$URL" /tmp/cil 2>/dev/null || {
-            mkdir /tmp/cil; git -C /tmp/cil init -q -b ci-logs; git -C /tmp/cil remote add origin "$URL"; }
-          rm -rf /tmp/cil/lab-latest; mkdir -p /tmp/cil/lab-latest
-          cp /tmp/out/* /tmp/cil/lab-latest/ 2>/dev/null
-          echo "run ${{ github.run_id }} sha ${{ github.sha }}" > /tmp/cil/lab-latest/RUN
-          cat lab/config.env >> /tmp/cil/lab-latest/RUN
-          cd /tmp/cil && git add -A && git -c user.name=ci -c user.email=ci@users.noreply.github.com commit -q -m "lab logs run ${{ github.run_id }}"
-          git push origin HEAD:ci-logs
+          cp lab/config.env /tmp/out/config.env
+          bash lab/publish.sh lab-latest /tmp/out/*

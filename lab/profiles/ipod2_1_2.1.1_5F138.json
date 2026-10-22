@@ -1,0 +1,11 @@
+{
+  "name": "iPod touch 2G (iPod2,1) iPhone OS 2.1.1 (control; keys are the ones hardcoded in hw/arm/ipod_touch_aes.c)",
+  "build": "5F138",
+  "images": {
+    "llb":         {"iv": "ce97a7c82ef864675ed3680597ec2aef", "key": "27732a6bbfb14a07250a2e4682bf3cba"},
+    "iboot":       {"iv": "b3633afbe02e0e9ba4d7366c47abe5a8", "key": "2d916dabb6dfd4594dbe3635b4c71662"},
+    "applelogo":   {"iv": "64238fb03291422522b5dd283fc3895c", "key": "859fd4d382b8385156fc581a7f1d9722"},
+    "kernelcache": {"iv": "a191291290d487ff0731969c5fc8d918", "key": "0e4d23fa675999d5959dd10c8dd73d20"},
+    "dtree":       {"iv": "ccff634ee12735f01916c4a6b20ff145", "key": "e17bcd568df1cddc8fecbf5487d5c3ce"}
+  }
+}
