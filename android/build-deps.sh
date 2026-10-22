@@ -113,7 +113,7 @@ if ! done_ openssl; then
   fetch "https://github.com/openssl/openssl/releases/download/openssl-$OPENSSL_VER/openssl-$OPENSSL_VER.tar.gz"
   ( cd "$WORK/src/openssl-$OPENSSL_VER" && export ANDROID_NDK_ROOT="$NDK" \
     && env -u CC -u CXX -u AR -u RANLIB -u NM -u STRIP -u CFLAGS -u CXXFLAGS \
-       ./Configure android-arm64 -D__ANDROID_API__=$API no-shared no-tests no-apps no-docs \
+       ./Configure android-arm64 -D__ANDROID_API__=$API no-shared no-tests \
          --prefix="$PREFIX" --openssldir="$PREFIX/ssl" --libdir=lib -fPIC \
     && env -u CC -u CXX -u AR -u RANLIB -u NM -u STRIP -u CFLAGS -u CXXFLAGS make -j"$JOBS" build_libs \
     && env -u CC -u CXX -u AR -u RANLIB -u NM -u STRIP -u CFLAGS -u CXXFLAGS make install_dev )
