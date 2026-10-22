@@ -1,0 +1,60 @@
+name: iOS lab (headless)
+
+on:
+  push:
+    branches: [ios-lab]
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  lab:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Host packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ninja-build pkg-config python3-venv libssl-dev libsdl2-dev \
+            libpixman-1-dev libglib2.0-dev ccache unzip dmg2img
+
+      - name: ccache
+        uses: hendrikmuhs/ccache-action@v1.2
+        with:
+          key: ios-lab
+
+      - name: Build QEMU (native, arm-softmmu)
+        run: |
+          mkdir -p build-lab && cd build-lab
+          ../configure --enable-sdl --target-list=arm-softmmu --disable-capstone --disable-slirp \
+            --disable-werror --disable-docs --extra-cflags=-I/usr/include/openssl --extra-ldflags=-lcrypto \
+            --cc="ccache gcc" 2>&1 | tail -15
+          ninja -j"$(nproc)" qemu-system-arm 2>&1 | tail -5
+
+      - name: Run lab
+        run: bash lab/run-lab.sh
+
+      - name: Publish lab logs to ci-logs branch
+        if: always()
+        run: |
+          set +e
+          mkdir -p /tmp/out
+          [ -f lab/out/summary.txt ] && cp lab/out/summary.txt /tmp/out/
+          for f in serial stdout stderr unimp; do
+            [ -f lab/out/$f.log ] && { head -n 300 lab/out/$f.log > /tmp/out/$f.head; tail -n 1500 lab/out/$f.log > /tmp/out/$f.tail; }
+          done
+          URL="https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          git clone --depth 1 --branch ci-logs "$URL" /tmp/cil 2>/dev/null || {
+            mkdir /tmp/cil; git -C /tmp/cil init -q -b ci-logs; git -C /tmp/cil remote add origin "$URL"; }
+          rm -rf /tmp/cil/lab-latest; mkdir -p /tmp/cil/lab-latest
+          cp /tmp/out/* /tmp/cil/lab-latest/ 2>/dev/null
+          echo "run ${{ github.run_id }} sha ${{ github.sha }}" > /tmp/cil/lab-latest/RUN
+          cat lab/config.env >> /tmp/cil/lab-latest/RUN
+          cd /tmp/cil && git add -A && git -c user.name=ci -c user.email=ci@users.noreply.github.com commit -q -m "lab logs run ${{ github.run_id }}"
+          git push origin HEAD:ci-logs
