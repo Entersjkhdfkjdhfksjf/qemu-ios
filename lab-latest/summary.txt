@@ -1,11 +1,11 @@
 == running baseline for 240s
 qemu exit code: 137
 --- sizes
- 98347 /home/runner/work/qemu-ios/qemu-ios/lab/out/serial.log
+ 98348 /home/runner/work/qemu-ios/qemu-ios/lab/out/serial.log
   5180 /home/runner/work/qemu-ios/qemu-ios/lab/out/stderr.log
-186679 /home/runner/work/qemu-ios/qemu-ios/lab/out/stdout.log
+186785 /home/runner/work/qemu-ios/qemu-ios/lab/out/stdout.log
      0 /home/runner/work/qemu-ios/qemu-ios/lab/out/unimp.log
-290206 total
+290313 total
 --- serial.log (last 60 lines)
 EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
 EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
@@ -26,10 +26,10 @@ qemu exit code: 137
 + AppleMPVDDriver[0xc0b60240]::setPowerStateGated()
 
 kernel abort type 4: fault_type=0x3, fault_addr=0xec3fd01c
-r0: 0xc0d77f40  r1: 0x00000000  r2: 0xec3fd000  r3: 0xffffffff
-r4: 0xc05026fc  r5: 0x00000000  r6: 0xc0d36460  r7: 0xeb273ec4
+r0: 0xc0d746c0  r1: 0x00000000  r2: 0xec3fd000  r3: 0xffffffff
+r4: 0xc05026fc  r5: 0x00000000  r6: 0xc0d365b0  r7: 0xeb25bec4
 r8: 0xc04ff6f0  r9: 0xe02f7920 r10: 0x00000000 r11: 0xc0b60240
-12: 0xc018be50  sp: 0xc0d36460  lr: 0xc04ff6b0  pc: 0xc04fef28
+12: 0xc018be50  sp: 0xc0d365b0  lr: 0xc04ff6b0  pc: 0xc04fef28
 cpsr: 0x60070113 fsr: 0x00000808 far: 0xec3fd01c
 
 Debugger message: Fatal Exception
@@ -38,26 +38,26 @@ qemu exit code: 137
 iBoot version: iBoot-385.22
 secure boot?: NO
 Paniclog version: 1
-Task 0xc09d6ce8: 1997 pages, 62 threads: pid 0: kernel_task
+Task 0xc09d6ce8: 1998 pages, 62 threads: pid 0: kernel_task
 	thread 0xe02f7920
-		kernel backtrace: eb273d98
-		  lr: 0xc00670b5  fp: 0xeb273dc8
-		  lr: 0xc00687bc  fp: 0xeb273dd4
-		  lr: 0xc0068cc8  fp: 0xeb273e68
-		  lr: 0xc006539c  fp: 0xeb273ec4
-		  lr: 0xc04ff6b0  fp: 0xeb273ed4
-		  lr: 0xc04ff734  fp: 0xeb273ee4
-		  lr: 0xc016009b  fp: 0xeb273f08
-		  lr: 0xc05009e0  fp: 0xeb273f28
-		  lr: 0xc0158fe9  fp: 0xeb273f64
-		  lr: 0xc01591e7  fp: 0xeb273f80
-		  lr: 0xc00296e7  fp: 0xeb273fa8
+		kernel backtrace: eb25bd98
+		  lr: 0xc00670b5  fp: 0xeb25bdc8
+		  lr: 0xc00687bc  fp: 0xeb25bdd4
+		  lr: 0xc0068cc8  fp: 0xeb25be68
+		  lr: 0xc006539c  fp: 0xeb25bec4
+		  lr: 0xc04ff6b0  fp: 0xeb25bed4
+		  lr: 0xc04ff734  fp: 0xeb25bee4
+		  lr: 0xc016009b  fp: 0xeb25bf08
+		  lr: 0xc05009e0  fp: 0xeb25bf28
+		  lr: 0xc0158fe9  fp: 0xeb25bf64
+		  lr: 0xc01591e7  fp: 0xeb25bf80
+		  lr: 0xc00296e7  fp: 0xeb25bfa8
 		  lr: 0xc00659f8  fp: 0x00000000
 
-Task 0xc09d6b10: 114 pages, 3 threads: pid 1: launchd
-Task 0xc09d6760: 359 pages, 3 threads: pid 8: lockdownd
-Task 0xc09d6588: 448 pages, 4 threads: pid 9: configd
-Task 0xc09d61d8: 2312 pages, 10 threads: pid 10: SpringBoard
+Task 0xc09d6b10: 116 pages, 3 threads: pid 1: launchd
+Task 0xc09d6760: 358 pages, 3 threads: pid 8: lockdownd
+Task 0xc09d6588: 447 pages, 4 threads: pid 9: configd
+Task 0xc09d61d8: 2308 pages, 10 threads: pid 10: SpringBoard
 Task 0xc09d6000: 94 pages, 2 threads: pid 11: notifyd
 Memory access exception (1,0,0)
 ethernet MAC address: 73:65:72:69:61:6c
