@@ -149,11 +149,11 @@
 
 Found ninja-1.13.2 at /usr/local/bin/ninja
 Running compile:
-Working directory:  /home/runner/work/qemu-ios/qemu-ios/build-android/meson-private/tmpcy8hkojr
+Working directory:  /home/runner/work/qemu-ios/qemu-ios/build-android/meson-private/tmpr19vr4x6
 Code:
  
 -----------
-Command line: `cc /home/runner/work/qemu-ios/qemu-ios/build-android/meson-private/tmpcy8hkojr/testfile.c -o /home/runner/work/qemu-ios/qemu-ios/build-android/meson-private/tmpcy8hkojr/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs` -> 0
+Command line: `cc /home/runner/work/qemu-ios/qemu-ios/build-android/meson-private/tmpr19vr4x6/testfile.c -o /home/runner/work/qemu-ios/qemu-ios/build-android/meson-private/tmpr19vr4x6/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs` -> 0
 stdout:
 install: /usr/lib/gcc/x86_64-linux-gnu/13/
 programs: =/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/bin/
