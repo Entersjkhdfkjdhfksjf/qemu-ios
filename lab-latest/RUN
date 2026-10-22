@@ -1,0 +1,4 @@
+run 39767476978 sha ad8132a8b114726b2f2b61e1bb4ab1dec47ae9bf
+# Read by .github/workflows/ios-lab.yml on every push to the ios-lab branch.
+MODE=baseline        # baseline = upstream n72ap_v1 files (iOS 2.1.1) to validate the lab
+SECONDS_TO_RUN=240
