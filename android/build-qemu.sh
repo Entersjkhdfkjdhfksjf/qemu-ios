@@ -30,7 +30,7 @@ rm -rf "$B"; mkdir -p "$B"; cd "$B"
 "$ROOT/configure" --cross-prefix= --cpu=aarch64 \
   --target-list=arm-softmmu --enable-sdl --disable-pie --disable-werror \
   --disable-docs --disable-tools --disable-guest-agent --disable-capstone --disable-slirp \
-  --disable-gtk --disable-opengl --disable-curses --disable-gio --disable-sdl-image \
+  --disable-plugins --disable-gtk --disable-opengl --disable-curses --disable-gio --disable-sdl-image \
   --disable-kvm --disable-xen --disable-seccomp --disable-cap-ng --disable-attr \
   --disable-linux-aio --disable-linux-io-uring --disable-libusb --disable-usb-redir \
   --disable-vhost-user --disable-vhost-net --disable-vhost-kernel --disable-fuse \
@@ -38,15 +38,15 @@ rm -rf "$B"; mkdir -p "$B"; cd "$B"
   --extra-cflags="-fPIC -ftls-model=global-dynamic -I$PREFIX/include" \
   --extra-ldflags="-L$PREFIX/lib -lcrypto -Wl,-z,max-page-size=16384"
 
-ninja -j"$(nproc)" arm-softmmu/qemu-system-arm
+ninja -j"$(nproc)" qemu-system-arm
 
 # Relink the same objects as a shared library that SDLActivity can dlopen().
 python3 - <<'PY'
 import subprocess, sys
-cmds = subprocess.check_output(['ninja','-t','commands','arm-softmmu/qemu-system-arm']).decode().splitlines()
-link = [c for c in cmds if ' -o arm-softmmu/qemu-system-arm ' in c][-1]
+cmds = subprocess.check_output(['ninja','-t','commands','qemu-system-arm']).decode().splitlines()
+link = [c for c in cmds if ' -o qemu-system-arm ' in c][-1]
 link = link.replace(' -no-pie','').replace(' -pie','')
-link = link.replace(' -o arm-softmmu/qemu-system-arm ', ' -shared -Wl,-soname,libmain.so -o libmain.so ')
+link = link.replace(' -o qemu-system-arm ', ' -shared -Wl,-soname,libmain.so -o libmain.so ')
 print(link[:400], '...')
 sys.exit(subprocess.call(link, shell=True))
 PY
