@@ -22,7 +22,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y ninja-build pkg-config python3-venv libssl-dev libsdl2-dev \
-            libpixman-1-dev libglib2.0-dev ccache unzip dmg2img
+            libpixman-1-dev libglib2.0-dev ccache unzip dmg2img clang
 
       - name: ccache
         uses: hendrikmuhs/ccache-action@v1.2
@@ -34,7 +34,7 @@ jobs:
           mkdir -p build-lab && cd build-lab
           ../configure --enable-sdl --target-list=arm-softmmu --disable-capstone --disable-slirp \
             --disable-werror --disable-docs --extra-cflags=-I/usr/include/openssl --extra-ldflags=-lcrypto \
-            --cc="ccache gcc" 2>&1 | tail -15
+            --cc="ccache clang" 2>&1 | tail -15
           ninja -j"$(nproc)" qemu-system-arm 2>&1 | tail -5
 
       - name: Run lab
