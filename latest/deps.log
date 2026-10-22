@@ -1,0 +1,586 @@
+android/build-deps.sh: line 70: done_zlib: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 1477k  100 1477k    0     0  5969k      0 --:--:-- --:--:-- --:--:-- 5969k
+Building static library libz.a version 1.3.1 with aarch64-linux-android29-clang.
+Checking for size_t... Yes.
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+Checking for strerror... Yes.
+Checking for unistd.h... Yes.
+Checking for stdarg.h... Yes.
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+Checking for vsnprintf() in stdio.h... Yes.
+Checking for return value of vsnprintf()... Yes.
+Checking for attribute(visibility) support... Yes.
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -c -o example.o test/example.c
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o adler32.o adler32.c
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o crc32.o crc32.c
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o deflate.o deflate.c
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o infback.o infback.c
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o inffast.o inffast.c
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o inflate.o inflate.c
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o inftrees.o inftrees.c
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o trees.o trees.c
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o zutil.o zutil.c
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o compress.o compress.c
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o uncompr.o uncompr.c
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o gzclose.o gzclose.c
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o gzlib.o gzlib.c
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o gzread.o gzread.c
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o gzwrite.o gzwrite.c
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -c -o minigzip.o test/minigzip.c
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -D_FILE_OFFSET_BITS=64 -c -o example64.o test/example.c
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -D_FILE_OFFSET_BITS=64 -c -o minigzip64.o test/minigzip.c
+llvm-ar rc libz.a adler32.o crc32.o deflate.o infback.o inffast.o inflate.o inftrees.o trees.o zutil.o compress.o uncompr.o gzclose.o gzlib.o gzread.o gzwrite.o 
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -o example example.o -L. libz.a
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -o minigzip minigzip.o -L. libz.a
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -o example64 example64.o -L. libz.a
+aarch64-linux-android29-clang -fPIC -O2 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -o minigzip64 minigzip64.o -L. libz.a
+rm -f /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/libz.a
+cp libz.a /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib
+chmod 644 /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/libz.a
+rm -f /home/runner/work/qemu-ios/qemu-ios/android/prefix/share/man/man3/zlib.3
+cp zlib.3 /home/runner/work/qemu-ios/qemu-ios/android/prefix/share/man/man3
+chmod 644 /home/runner/work/qemu-ios/qemu-ios/android/prefix/share/man/man3/zlib.3
+rm -f /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/pkgconfig/zlib.pc
+cp zlib.pc /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/pkgconfig
+chmod 644 /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/pkgconfig/zlib.pc
+rm -f /home/runner/work/qemu-ios/qemu-ios/android/prefix/include/zlib.h /home/runner/work/qemu-ios/qemu-ios/android/prefix/include/zconf.h
+cp zlib.h zconf.h /home/runner/work/qemu-ios/qemu-ios/android/prefix/include
+chmod 644 /home/runner/work/qemu-ios/qemu-ios/android/prefix/include/zlib.h /home/runner/work/qemu-ios/qemu-ios/android/prefix/include/zconf.h
+android/build-deps.sh: line 76: done_ffi: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 1359k  100 1359k    0     0  4607k      0 --:--:-- --:--:-- --:--:-- 13.0M
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... aarch64-unknown-linux-android
+checking target system type... aarch64-unknown-linux-android
+continue configure in default builddir "./aarch64-unknown-linux-android"
+....exec /bin/bash .././configure "--srcdir=.." "--enable-builddir=aarch64-unknown-linux-android" "linux
+android"
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... aarch64-unknown-linux-android
+checking target system type... aarch64-unknown-linux-android
+checking for gsed... sed
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for aarch64-linux-android-strip... llvm-strip
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for aarch64-linux-android-gcc... aarch64-linux-android29-clang
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether aarch64-linux-android29-clang accepts -g... yes
+checking for aarch64-linux-android29-clang option to enable C11 features... none needed
+checking whether aarch64-linux-android29-clang understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of aarch64-linux-android29-clang... gcc3
+checking whether the compiler supports GNU C++... yes
+checking whether aarch64-linux-android29-clang++ accepts -g... yes
+checking for aarch64-linux-android29-clang++ option to enable C++11 features... none needed
+checking dependency style of aarch64-linux-android29-clang++... gcc3
+checking dependency style of aarch64-linux-android29-clang... gcc3
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by aarch64-linux-android29-clang... /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/ld
+checking if the linker (/usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... llvm-nm
+checking the name lister (llvm-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 3145728
+checking how to convert x86_64-pc-linux-gnu file names to aarch64-unknown-linux-android format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/ld option to reload object files... -r
+checking for aarch64-linux-android-file... no
+checking for file... file
+configure: WARNING: using cross tools not prefixed with host triplet
+checking for aarch64-linux-android-objdump... no
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for aarch64-linux-android-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for aarch64-linux-android-ar... llvm-ar
+checking for archiver @FILE support... @
+checking for aarch64-linux-android-strip... (cached) llvm-strip
+checking for aarch64-linux-android-ranlib... llvm-ranlib
+checking command to parse llvm-nm output from aarch64-linux-android29-clang object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for aarch64-linux-android-mt... no
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if aarch64-linux-android29-clang supports -fno-rtti -fno-exceptions... yes
+checking for aarch64-linux-android29-clang option to produce PIC... -fPIC -DPIC
+checking if aarch64-linux-android29-clang PIC flag -fPIC -DPIC works... yes
+checking if aarch64-linux-android29-clang static flag -static works... yes
+checking if aarch64-linux-android29-clang supports -c -o file.o... yes
+checking if aarch64-linux-android29-clang supports -c -o file.o... (cached) yes
+checking whether the aarch64-linux-android29-clang linker (/usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... Android linker
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... aarch64-linux-android29-clang++ -E
+checking for ld used by aarch64-linux-android29-clang++... /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/ld
+checking if the linker (/usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/ld) is GNU ld... yes
+checking whether the aarch64-linux-android29-clang++ linker (/usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/ld) supports shared libraries... yes
+checking for aarch64-linux-android29-clang++ option to produce PIC... -fPIC -DPIC
+checking if aarch64-linux-android29-clang++ PIC flag -fPIC -DPIC works... yes
+checking if aarch64-linux-android29-clang++ static flag -static works... yes
+checking if aarch64-linux-android29-clang++ supports -c -o file.o... yes
+checking if aarch64-linux-android29-clang++ supports -c -o file.o... (cached) yes
+checking whether the aarch64-linux-android29-clang++ linker (/usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... Android linker
+checking how to hardcode library paths into programs... immediate
+checking for aarch64-linux-android-readelf... no
+checking for readelf... readelf
+checking size of size_t... 8
+checking for C compiler vendor... clang
+checking CFLAGS for most reasonable warnings... -Wall
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for sys/memfd.h... no
+checking for memfd_create... no
+checking for egrep... (cached) /usr/bin/grep -E
+checking for memcpy... yes
+checking for alloca.h... yes
+checking size of double... 8
+checking size of long double... 16
+checking whether byte ordering is bigendian... no
+checking assembler .cfi pseudo-op support... yes
+checking whether compiler supports pointer authentication... no
+checking for _ prefix in compiled symbols... no
+checking whether C compiler accepts -fno-lto... yes
+checking whether .eh_frame section should be read-only... yes
+checking for __attribute__((visibility("hidden")))... yes
+configure: versioning on shared library symbols is no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating include/Makefile
+config.status: creating include/ffi.h
+config.status: creating Makefile
+config.status: creating testsuite/Makefile
+config.status: creating man/Makefile
+config.status: creating doc/Makefile
+config.status: creating libffi.pc
+config.status: creating fficonfig.h
+config.status: executing buildir commands
+config.status: create top_srcdir/Makefile guessed from local Makefile
+config.status: build in aarch64-unknown-linux-android (HOST=)
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing include commands
+config.status: executing src commands
+MAKE x86_64-pc-linux-gnu : 0 * all-all
+make[1]: Entering directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android'
+make  all-recursive
+make[2]: Entering directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android'
+Making all in include
+make[3]: Entering directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android/include'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android/include'
+Making all in testsuite
+make[3]: Entering directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android/testsuite'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android/testsuite'
+Making all in man
+make[3]: Entering directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android/man'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android/man'
+make[3]: Entering directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android'
+depbase=`echo src/prep_cif.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile aarch64-linux-android29-clang -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -fPIC -O2 -fexceptions -MT src/prep_cif.lo -MD -MP -MF $depbase.Tpo -c -o src/prep_cif.lo ../src/prep_cif.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/types.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile aarch64-linux-android29-clang -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -fPIC -O2 -fexceptions -MT src/types.lo -MD -MP -MF $depbase.Tpo -c -o src/types.lo ../src/types.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/raw_api.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile aarch64-linux-android29-clang -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -fPIC -O2 -fexceptions -MT src/raw_api.lo -MD -MP -MF $depbase.Tpo -c -o src/raw_api.lo ../src/raw_api.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/java_raw_api.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile aarch64-linux-android29-clang -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -fPIC -O2 -fexceptions -MT src/java_raw_api.lo -MD -MP -MF $depbase.Tpo -c -o src/java_raw_api.lo ../src/java_raw_api.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  aarch64-linux-android29-clang -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -fPIC -O2 -fexceptions -MT src/java_raw_api.lo -MD -MP -MF src/.deps/java_raw_api.Tpo -c ../src/java_raw_api.c  -fPIC -DPIC -o src/java_raw_api.o
+libtool: compile:  aarch64-linux-android29-clang -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -fPIC -O2 -fexceptions -MT src/prep_cif.lo -MD -MP -MF src/.deps/prep_cif.Tpo -c ../src/prep_cif.c  -fPIC -DPIC -o src/prep_cif.o
+libtool: compile:  aarch64-linux-android29-clang -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -fPIC -O2 -fexceptions -MT src/types.lo -MD -MP -MF src/.deps/types.Tpo -c ../src/types.c  -fPIC -DPIC -o src/types.o
+libtool: compile:  aarch64-linux-android29-clang -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -fPIC -O2 -fexceptions -MT src/raw_api.lo -MD -MP -MF src/.deps/raw_api.Tpo -c ../src/raw_api.c  -fPIC -DPIC -o src/raw_api.o
+depbase=`echo src/closures.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile aarch64-linux-android29-clang -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -fPIC -O2 -fexceptions -MT src/closures.lo -MD -MP -MF $depbase.Tpo -c -o src/closures.lo ../src/closures.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+../src/java_raw_api.c:328:46: warning: 'ffi_java_raw_size' is deprecated [-Wdeprecated-declarations]
+  328 |   ffi_java_raw *raw = (ffi_java_raw*)alloca (ffi_java_raw_size (cif));
+      |                                              ^
+include/ffi.h:315:56: note: 'ffi_java_raw_size' has been explicitly marked deprecated here
+  315 | size_t ffi_java_raw_size (ffi_cif *cif) __attribute__((deprecated));
+      |                                                        ^
+../src/java_raw_api.c:331:3: warning: 'ffi_java_ptrarray_to_raw' is deprecated [-Wdeprecated-declarations]
+  331 |   ffi_java_ptrarray_to_raw (cif, avalue, raw);
+      |   ^
+include/ffi.h:311:93: note: 'ffi_java_ptrarray_to_raw' has been explicitly marked deprecated here
+  311 | void ffi_java_ptrarray_to_raw (ffi_cif *cif, void **args, ffi_java_raw *raw) __attribute__((deprecated));
+      |                                                                                             ^
+2 warnings generated.
+libtool: compile:  aarch64-linux-android29-clang -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -fPIC -O2 -fexceptions -MT src/closures.lo -MD -MP -MF src/.deps/closures.Tpo -c ../src/closures.c  -fPIC -DPIC -o src/closures.o
+depbase=`echo src/tramp.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile aarch64-linux-android29-clang -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -fPIC -O2 -fexceptions -MT src/tramp.lo -MD -MP -MF $depbase.Tpo -c -o src/tramp.lo ../src/tramp.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/aarch64/ffi.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile aarch64-linux-android29-clang -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -fPIC -O2 -fexceptions -MT src/aarch64/ffi.lo -MD -MP -MF $depbase.Tpo -c -o src/aarch64/ffi.lo ../src/aarch64/ffi.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/aarch64/sysv.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile aarch64-linux-android29-clang -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src  -I. -I../include -Iinclude -I../src -fPIC -O2 -MT src/aarch64/sysv.lo -MD -MP -MF $depbase.Tpo -c -o src/aarch64/sysv.lo ../src/aarch64/sysv.S &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  aarch64-linux-android29-clang -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -fPIC -O2 -fexceptions -MT src/aarch64/ffi.lo -MD -MP -MF src/aarch64/.deps/ffi.Tpo -c ../src/aarch64/ffi.c  -fPIC -DPIC -o src/aarch64/ffi.o
+libtool: compile:  aarch64-linux-android29-clang -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -fPIC -O2 -fexceptions -MT src/tramp.lo -MD -MP -MF src/.deps/tramp.Tpo -c ../src/tramp.c  -fPIC -DPIC -o src/tramp.o
+libtool: compile:  aarch64-linux-android29-clang -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -I. -I../include -Iinclude -I../src -fPIC -O2 -MT src/aarch64/sysv.lo -MD -MP -MF src/aarch64/.deps/sysv.Tpo -c ../src/aarch64/sysv.S  -fPIC -DPIC -o src/aarch64/sysv.o
+In file included from ../src/closures.c:572:
+../src/dlmalloc.c:3390:7: warning: variable 'nfences' set but not used [-Wunused-but-set-variable]
+ 3390 |   int nfences = 0;
+      |       ^
+1 warning generated.
+/bin/bash ./libtool  --tag=CC   --mode=link aarch64-linux-android29-clang  -Wall -fPIC -O2 -fexceptions   -o libffi_convenience.la  src/prep_cif.lo src/types.lo src/raw_api.lo src/java_raw_api.lo src/closures.lo src/tramp.lo   src/aarch64/ffi.lo src/aarch64/sysv.lo 
+/bin/bash ./libtool  --tag=CC   --mode=link aarch64-linux-android29-clang  -Wall -fPIC -O2 -fexceptions -no-undefined -version-info `grep -v '^#' ../libtool-version`     -o libffi.la -rpath /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib src/prep_cif.lo src/types.lo src/raw_api.lo src/java_raw_api.lo src/closures.lo src/tramp.lo  src/aarch64/ffi.lo src/aarch64/sysv.lo 
+libtool: link: llvm-ar cr .libs/libffi_convenience.a  src/prep_cif.o src/types.o src/raw_api.o src/java_raw_api.o src/closures.o src/tramp.o src/aarch64/ffi.o src/aarch64/sysv.o
+libtool: link: llvm-ar cr .libs/libffi.a  src/prep_cif.o src/types.o src/raw_api.o src/java_raw_api.o src/closures.o src/tramp.o src/aarch64/ffi.o src/aarch64/sysv.o
+libtool: link: llvm-ranlib .libs/libffi_convenience.a
+libtool: link: llvm-ranlib .libs/libffi.a
+libtool: link: ( cd ".libs" && rm -f "libffi_convenience.la" && ln -s "../libffi_convenience.la" "libffi_convenience.la" )
+libtool: link: ( cd ".libs" && rm -f "libffi.la" && ln -s "../libffi.la" "libffi.la" )
+make[3]: Leaving directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android'
+make[2]: Leaving directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android'
+make[1]: Leaving directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android'
+MAKE x86_64-pc-linux-gnu : 0 * install
+make[1]: Entering directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android'
+Making install in include
+make[2]: Entering directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android/include'
+make[3]: Entering directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android/include'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/runner/work/qemu-ios/qemu-ios/android/prefix/include'
+ /usr/bin/install -c -m 644 ffi.h ffitarget.h '/home/runner/work/qemu-ios/qemu-ios/android/prefix/include'
+make[3]: Leaving directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android/include'
+make[2]: Leaving directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android/include'
+Making install in testsuite
+make[2]: Entering directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android/testsuite'
+make[3]: Entering directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android/testsuite'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android/testsuite'
+make[2]: Leaving directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android/testsuite'
+Making install in man
+make[2]: Entering directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android/man'
+make[3]: Entering directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android/man'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/runner/work/qemu-ios/qemu-ios/android/prefix/share/man/man3'
+ /usr/bin/install -c -m 644 ../../man/ffi.3 ../../man/ffi_call.3 ../../man/ffi_prep_cif.3 ../../man/ffi_prep_cif_var.3 '/home/runner/work/qemu-ios/qemu-ios/android/prefix/share/man/man3'
+make[3]: Leaving directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android/man'
+make[2]: Leaving directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android/man'
+make[2]: Entering directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android'
+make[3]: Entering directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android'
+ /usr/bin/mkdir -p '/home/runner/work/qemu-ios/qemu-ios/android/prefix/lib'
+ /bin/bash ./libtool   --mode=install /usr/bin/install -c   libffi.la '/home/runner/work/qemu-ios/qemu-ios/android/prefix/lib'
+libtool: install: /usr/bin/install -c .libs/libffi.lai /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/libffi.la
+libtool: install: /usr/bin/install -c .libs/libffi.a /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/libffi.a
+libtool: install: chmod 644 /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/libffi.a
+libtool: install: llvm-ranlib /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/libffi.a
+ /usr/bin/mkdir -p '/home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libffi.pc '/home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/pkgconfig'
+make[3]: Leaving directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android'
+make[2]: Leaving directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android'
+make[1]: Leaving directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/libffi-3.4.6/aarch64-unknown-linux-android'
+android/build-deps.sh: line 84: done_pcre2: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 2341k  100 2341k    0     0  7747k      0 --:--:-- --:--:-- --:--:-- 7747k
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for aarch64-linux-android-strip... llvm-strip
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for aarch64-linux-android-gcc... aarch64-linux-android29-clang
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether aarch64-linux-android29-clang accepts -g... yes
+checking for aarch64-linux-android29-clang option to enable C11 features... none needed
+checking whether aarch64-linux-android29-clang understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of aarch64-linux-android29-clang... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for aarch64-linux-android-ar... llvm-ar
+checking the archiver (llvm-ar) interface... ar
+checking for int64_t... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... aarch64-unknown-linux-android
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by aarch64-linux-android29-clang... /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/ld
+checking if the linker (/usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... llvm-nm
+checking the name lister (llvm-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 3145728
+checking how to convert x86_64-pc-linux-gnu file names to aarch64-unknown-linux-android format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/ld option to reload object files... -r
+checking for aarch64-linux-android-file... no
+checking for file... file
+configure: WARNING: using cross tools not prefixed with host triplet
+checking for aarch64-linux-android-objdump... no
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for aarch64-linux-android-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for aarch64-linux-android-ar... (cached) llvm-ar
+checking for archiver @FILE support... @
+checking for aarch64-linux-android-strip... (cached) llvm-strip
+checking for aarch64-linux-android-ranlib... llvm-ranlib
+checking command to parse llvm-nm output from aarch64-linux-android29-clang object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for aarch64-linux-android-mt... no
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if aarch64-linux-android29-clang supports -fno-rtti -fno-exceptions... yes
+checking for aarch64-linux-android29-clang option to produce PIC... -fPIC -DPIC
+checking if aarch64-linux-android29-clang PIC flag -fPIC -DPIC works... yes
+checking if aarch64-linux-android29-clang static flag -static works... yes
+checking if aarch64-linux-android29-clang supports -c -o file.o... yes
+checking if aarch64-linux-android29-clang supports -c -o file.o... (cached) yes
+checking whether the aarch64-linux-android29-clang linker (/usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... Android linker
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking whether ln -s works... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking whether the -Werror option is usable... yes
+checking for simple visibility declarations... yes
+checking for __attribute__((uninitialized))... yes
+checking for limits.h... yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for dirent.h... yes
+checking for windows.h... no
+checking for sys/wait.h... yes
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking for bcopy... no
+checking for memfd_create... no
+checking for memmove... yes
+checking for mkostemp... yes
+checking for secure_getenv... no
+checking for strerror... yes
+checking for realpath... yes
+checking for zlib.h... yes
+checking for gzopen in -lz... yes
+checking for bzlib.h... no
+checking for libbz2... no
+checking whether Intel CET is enabled... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libpcre2-8.pc
+config.status: creating libpcre2-16.pc
+config.status: creating libpcre2-32.pc
+config.status: creating libpcre2-posix.pc
+config.status: creating pcre2-config
+config.status: creating src/pcre2.h
+config.status: creating src/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing script-chmod commands
+config.status: executing delete-old-chartables commands
+
+pcre2-10.42 configuration summary:
+
+    Install prefix ..................... : /home/runner/work/qemu-ios/qemu-ios/android/prefix
+    C preprocessor ..................... : 
+    C compiler ......................... : aarch64-linux-android29-clang
+    Linker ............................. : /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64/bin/ld
+    C preprocessor flags ............... : 
+    C compiler flags ................... : -fPIC -O2 -fvisibility=hidden
+    Linker flags ....................... : 
+    Extra libraries .................... : 
+
+    Build 8-bit pcre2 library .......... : yes
+    Build 16-bit pcre2 library ......... : no
+    Build 32-bit pcre2 library ......... : no
+    Include debugging code ............. : no
+    Enable JIT compiling support ....... : no
+    Use SELinux allocator in JIT ....... : no
+    Enable Unicode support ............. : yes
+    Newline char/sequence .............. : lf
+    \R matches only ANYCRLF ............ : no
+    \C is disabled ..................... : no
+    EBCDIC coding ...................... : no
+    EBCDIC code for NL ................. : n/a
+    Rebuild char tables ................ : no
+    Internal link size ................. : 2
+    Nested parentheses limit ........... : 250
+    Heap limit ......................... : 20000000 kibibytes
+    Match limit ........................ : 10000000
+    Match depth limit .................. : MATCH_LIMIT
+    Build shared libs .................. : no
+    Build static libs .................. : yes
+    Use JIT in pcre2grep ............... : no
+    Enable callouts in pcre2grep ....... : yes
+    Enable fork in pcre2grep callouts .. : yes
+    Initial buffer size for pcre2grep .. : 20480
+    Maximum buffer size for pcre2grep .. : 1048576
+    Link pcre2grep with libz ........... : no
+    Link pcre2grep with libbz2 ......... : no
+    Link pcre2test with libedit ........ : no
+    Link pcre2test with libreadline .... : no
+    Valgrind support ................... : no
+    Code coverage ...................... : no
+    Fuzzer support ..................... : no
+    Use %zu and %td .................... : auto
+
+rm -f src/pcre2_chartables.c
+ln -s /home/runner/work/qemu-ios/qemu-ios/android/work/src/pcre2-10.42/src/pcre2_chartables.c.dist /home/runner/work/qemu-ios/qemu-ios/android/work/src/pcre2-10.42/src/pcre2_chartables.c
+make  all-am
+make[1]: Entering directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/pcre2-10.42'
+  CC       src/pcre2grep-pcre2grep.o
+  CC       src/libpcre2_8_la-pcre2_auto_possess.lo
+  CC       src/libpcre2_8_la-pcre2_compile.lo
+  CC       src/libpcre2_8_la-pcre2_config.lo
+  CC       src/libpcre2_8_la-pcre2_context.lo
+  CC       src/libpcre2_8_la-pcre2_convert.lo
+  CC       src/libpcre2_8_la-pcre2_dfa_match.lo
+  CC       src/libpcre2_8_la-pcre2_error.lo
+  CC       src/libpcre2_8_la-pcre2_extuni.lo
+  CC       src/libpcre2_8_la-pcre2_find_bracket.lo
+  CC       src/libpcre2_8_la-pcre2_jit_compile.lo
+  CC       src/libpcre2_8_la-pcre2_maketables.lo
+  CC       src/libpcre2_8_la-pcre2_match.lo
+  CC       src/libpcre2_8_la-pcre2_match_data.lo
+  CC       src/libpcre2_8_la-pcre2_newline.lo
+  CC       src/libpcre2_8_la-pcre2_ord2utf.lo
+  CC       src/libpcre2_8_la-pcre2_pattern_info.lo
+  CC       src/libpcre2_8_la-pcre2_script_run.lo
+  CC       src/libpcre2_8_la-pcre2_serialize.lo
+  CC       src/libpcre2_8_la-pcre2_string_utils.lo
+  CC       src/libpcre2_8_la-pcre2_study.lo
+  CC       src/libpcre2_8_la-pcre2_substitute.lo
+  CC       src/libpcre2_8_la-pcre2_substring.lo
+  CC       src/libpcre2_8_la-pcre2_tables.lo
+  CC       src/libpcre2_8_la-pcre2_ucd.lo
+  CC       src/libpcre2_8_la-pcre2_valid_utf.lo
+  CC       src/libpcre2_8_la-pcre2_xclass.lo
+  CC       src/libpcre2_8_la-pcre2_chartables.lo
+  CC       src/pcre2test-pcre2test.o
+  CC       src/libpcre2_posix_la-pcre2posix.lo
+  CC       src/pcre2posix_test-pcre2posix_test.o
+  CCLD     libpcre2-8.la
+  CCLD     libpcre2-posix.la
+  CCLD     pcre2grep
+  CCLD     pcre2test
+  CCLD     pcre2posix_test
+make[1]: Leaving directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/pcre2-10.42'
+make  install-am
+make[1]: Entering directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/pcre2-10.42'
+make[2]: Entering directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/pcre2-10.42'
+ /usr/bin/mkdir -p '/home/runner/work/qemu-ios/qemu-ios/android/prefix/lib'
+ /bin/bash ./libtool   --mode=install /usr/bin/install -c   libpcre2-8.la libpcre2-posix.la '/home/runner/work/qemu-ios/qemu-ios/android/prefix/lib'
+libtool: install: /usr/bin/install -c .libs/libpcre2-8.lai /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/libpcre2-8.la
+libtool: install: /usr/bin/install -c .libs/libpcre2-posix.lai /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/libpcre2-posix.la
+libtool: install: /usr/bin/install -c .libs/libpcre2-8.a /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/libpcre2-8.a
+libtool: install: chmod 644 /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/libpcre2-8.a
+libtool: install: llvm-ranlib /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/libpcre2-8.a
+libtool: install: /usr/bin/install -c .libs/libpcre2-posix.a /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/libpcre2-posix.a
+libtool: install: chmod 644 /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/libpcre2-posix.a
+libtool: install: llvm-ranlib /home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/libpcre2-posix.a
+ /usr/bin/mkdir -p '/home/runner/work/qemu-ios/qemu-ios/android/prefix/bin'
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c pcre2grep pcre2test '/home/runner/work/qemu-ios/qemu-ios/android/prefix/bin'
+libtool: install: /usr/bin/install -c pcre2grep /home/runner/work/qemu-ios/qemu-ios/android/prefix/bin/pcre2grep
+libtool: install: /usr/bin/install -c pcre2test /home/runner/work/qemu-ios/qemu-ios/android/prefix/bin/pcre2test
+ /usr/bin/mkdir -p '/home/runner/work/qemu-ios/qemu-ios/android/prefix/bin'
+ /usr/bin/install -c pcre2-config '/home/runner/work/qemu-ios/qemu-ios/android/prefix/bin'
+ /usr/bin/mkdir -p '/home/runner/work/qemu-ios/qemu-ios/android/prefix/share/doc/pcre2'
+ /usr/bin/install -c -m 644 AUTHORS COPYING ChangeLog LICENCE NEWS README doc/pcre2.txt doc/pcre2-config.txt doc/pcre2grep.txt doc/pcre2test.txt '/home/runner/work/qemu-ios/qemu-ios/android/prefix/share/doc/pcre2'
+ /usr/bin/mkdir -p '/home/runner/work/qemu-ios/qemu-ios/android/prefix/share/doc/pcre2/html'
+ /usr/bin/install -c -m 644 doc/html/NON-AUTOTOOLS-BUILD.txt doc/html/README.txt doc/html/index.html doc/html/pcre2-config.html doc/html/pcre2.html doc/html/pcre2_callout_enumerate.html doc/html/pcre2_code_copy.html doc/html/pcre2_code_copy_with_tables.html doc/html/pcre2_code_free.html doc/html/pcre2_compile.html doc/html/pcre2_compile_context_copy.html doc/html/pcre2_compile_context_create.html doc/html/pcre2_compile_context_free.html doc/html/pcre2_config.html doc/html/pcre2_convert_context_copy.html doc/html/pcre2_convert_context_create.html doc/html/pcre2_convert_context_free.html doc/html/pcre2_converted_pattern_free.html doc/html/pcre2_dfa_match.html doc/html/pcre2_general_context_copy.html doc/html/pcre2_general_context_create.html doc/html/pcre2_general_context_free.html doc/html/pcre2_get_error_message.html doc/html/pcre2_get_mark.html doc/html/pcre2_get_match_data_size.html doc/html/pcre2_get_ovector_count.html doc/html/pcre2_get_ovector_pointer.html doc/html/pcre2_get_startchar.html doc/html/pcre2_jit_compile.html doc/html/pcre2_jit_free_unused_memory.html doc/html/pcre2_jit_match.html doc/html/pcre2_jit_stack_assign.html doc/html/pcre2_jit_stack_create.html doc/html/pcre2_jit_stack_free.html doc/html/pcre2_maketables.html doc/html/pcre2_maketables_free.html doc/html/pcre2_match.html doc/html/pcre2_match_context_copy.html doc/html/pcre2_match_context_create.html doc/html/pcre2_match_context_free.html '/home/runner/work/qemu-ios/qemu-ios/android/prefix/share/doc/pcre2/html'
+ /usr/bin/install -c -m 644 doc/html/pcre2_match_data_create.html doc/html/pcre2_match_data_create_from_pattern.html doc/html/pcre2_match_data_free.html doc/html/pcre2_pattern_convert.html doc/html/pcre2_pattern_info.html doc/html/pcre2_serialize_decode.html doc/html/pcre2_serialize_encode.html doc/html/pcre2_serialize_free.html doc/html/pcre2_serialize_get_number_of_codes.html doc/html/pcre2_set_bsr.html doc/html/pcre2_set_callout.html doc/html/pcre2_set_character_tables.html doc/html/pcre2_set_compile_extra_options.html doc/html/pcre2_set_compile_recursion_guard.html doc/html/pcre2_set_depth_limit.html doc/html/pcre2_set_glob_escape.html doc/html/pcre2_set_glob_separator.html doc/html/pcre2_set_heap_limit.html doc/html/pcre2_set_match_limit.html doc/html/pcre2_set_max_pattern_length.html doc/html/pcre2_set_offset_limit.html doc/html/pcre2_set_newline.html doc/html/pcre2_set_parens_nest_limit.html doc/html/pcre2_set_recursion_limit.html doc/html/pcre2_set_recursion_memory_management.html doc/html/pcre2_set_substitute_callout.html doc/html/pcre2_substitute.html doc/html/pcre2_substring_copy_byname.html doc/html/pcre2_substring_copy_bynumber.html doc/html/pcre2_substring_free.html doc/html/pcre2_substring_get_byname.html doc/html/pcre2_substring_get_bynumber.html doc/html/pcre2_substring_length_byname.html doc/html/pcre2_substring_length_bynumber.html doc/html/pcre2_substring_list_free.html doc/html/pcre2_substring_list_get.html doc/html/pcre2_substring_nametable_scan.html doc/html/pcre2_substring_number_from_name.html doc/html/pcre2api.html doc/html/pcre2build.html '/home/runner/work/qemu-ios/qemu-ios/android/prefix/share/doc/pcre2/html'
+ /usr/bin/install -c -m 644 doc/html/pcre2callout.html doc/html/pcre2compat.html doc/html/pcre2convert.html doc/html/pcre2demo.html doc/html/pcre2grep.html doc/html/pcre2jit.html doc/html/pcre2limits.html doc/html/pcre2matching.html doc/html/pcre2partial.html doc/html/pcre2pattern.html doc/html/pcre2perform.html doc/html/pcre2posix.html doc/html/pcre2sample.html doc/html/pcre2serialize.html doc/html/pcre2syntax.html doc/html/pcre2test.html doc/html/pcre2unicode.html '/home/runner/work/qemu-ios/qemu-ios/android/prefix/share/doc/pcre2/html'
+ /usr/bin/mkdir -p '/home/runner/work/qemu-ios/qemu-ios/android/prefix/include'
+ /usr/bin/install -c -m 644 src/pcre2posix.h '/home/runner/work/qemu-ios/qemu-ios/android/prefix/include'
+ /usr/bin/mkdir -p '/home/runner/work/qemu-ios/qemu-ios/android/prefix/share/man/man1'
+ /usr/bin/install -c -m 644 doc/pcre2-config.1 doc/pcre2grep.1 doc/pcre2test.1 '/home/runner/work/qemu-ios/qemu-ios/android/prefix/share/man/man1'
+ /usr/bin/mkdir -p '/home/runner/work/qemu-ios/qemu-ios/android/prefix/share/man/man3'
+ /usr/bin/install -c -m 644 doc/pcre2.3 doc/pcre2_callout_enumerate.3 doc/pcre2_code_copy.3 doc/pcre2_code_copy_with_tables.3 doc/pcre2_code_free.3 doc/pcre2_compile.3 doc/pcre2_compile_context_copy.3 doc/pcre2_compile_context_create.3 doc/pcre2_compile_context_free.3 doc/pcre2_config.3 doc/pcre2_convert_context_copy.3 doc/pcre2_convert_context_create.3 doc/pcre2_convert_context_free.3 doc/pcre2_converted_pattern_free.3 doc/pcre2_dfa_match.3 doc/pcre2_general_context_copy.3 doc/pcre2_general_context_create.3 doc/pcre2_general_context_free.3 doc/pcre2_get_error_message.3 doc/pcre2_get_mark.3 doc/pcre2_get_match_data_size.3 doc/pcre2_get_ovector_count.3 doc/pcre2_get_ovector_pointer.3 doc/pcre2_get_startchar.3 doc/pcre2_jit_compile.3 doc/pcre2_jit_free_unused_memory.3 doc/pcre2_jit_match.3 doc/pcre2_jit_stack_assign.3 doc/pcre2_jit_stack_create.3 doc/pcre2_jit_stack_free.3 doc/pcre2_maketables.3 doc/pcre2_maketables_free.3 doc/pcre2_match.3 doc/pcre2_match_context_copy.3 doc/pcre2_match_context_create.3 doc/pcre2_match_context_free.3 doc/pcre2_match_data_create.3 doc/pcre2_match_data_create_from_pattern.3 doc/pcre2_match_data_free.3 doc/pcre2_pattern_convert.3 '/home/runner/work/qemu-ios/qemu-ios/android/prefix/share/man/man3'
+ /usr/bin/install -c -m 644 doc/pcre2_pattern_info.3 doc/pcre2_serialize_decode.3 doc/pcre2_serialize_encode.3 doc/pcre2_serialize_free.3 doc/pcre2_serialize_get_number_of_codes.3 doc/pcre2_set_bsr.3 doc/pcre2_set_callout.3 doc/pcre2_set_character_tables.3 doc/pcre2_set_compile_extra_options.3 doc/pcre2_set_compile_recursion_guard.3 doc/pcre2_set_depth_limit.3 doc/pcre2_set_glob_escape.3 doc/pcre2_set_glob_separator.3 doc/pcre2_set_heap_limit.3 doc/pcre2_set_match_limit.3 doc/pcre2_set_max_pattern_length.3 doc/pcre2_set_offset_limit.3 doc/pcre2_set_newline.3 doc/pcre2_set_parens_nest_limit.3 doc/pcre2_set_recursion_limit.3 doc/pcre2_set_recursion_memory_management.3 doc/pcre2_set_substitute_callout.3 doc/pcre2_substitute.3 doc/pcre2_substring_copy_byname.3 doc/pcre2_substring_copy_bynumber.3 doc/pcre2_substring_free.3 doc/pcre2_substring_get_byname.3 doc/pcre2_substring_get_bynumber.3 doc/pcre2_substring_length_byname.3 doc/pcre2_substring_length_bynumber.3 doc/pcre2_substring_list_free.3 doc/pcre2_substring_list_get.3 doc/pcre2_substring_nametable_scan.3 doc/pcre2_substring_number_from_name.3 doc/pcre2api.3 doc/pcre2build.3 doc/pcre2callout.3 doc/pcre2compat.3 doc/pcre2convert.3 doc/pcre2demo.3 '/home/runner/work/qemu-ios/qemu-ios/android/prefix/share/man/man3'
+ /usr/bin/install -c -m 644 doc/pcre2jit.3 doc/pcre2limits.3 doc/pcre2matching.3 doc/pcre2partial.3 doc/pcre2pattern.3 doc/pcre2perform.3 doc/pcre2posix.3 doc/pcre2sample.3 doc/pcre2serialize.3 doc/pcre2syntax.3 doc/pcre2unicode.3 '/home/runner/work/qemu-ios/qemu-ios/android/prefix/share/man/man3'
+ /usr/bin/mkdir -p '/home/runner/work/qemu-ios/qemu-ios/android/prefix/include'
+ /usr/bin/install -c -m 644 src/pcre2.h '/home/runner/work/qemu-ios/qemu-ios/android/prefix/include'
+ /usr/bin/mkdir -p '/home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libpcre2-8.pc libpcre2-posix.pc '/home/runner/work/qemu-ios/qemu-ios/android/prefix/lib/pkgconfig'
+make[2]: Leaving directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/pcre2-10.42'
+make[1]: Leaving directory '/home/runner/work/qemu-ios/qemu-ios/android/work/src/pcre2-10.42'
+android/build-deps.sh: line 92: done_glib: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 5219k  100 5219k    0     0  10.5M      0 --:--:-- --:--:-- --:--:-- 10.5M
+The Meson build system
+Version: 1.3.2
+Source dir: /home/runner/work/qemu-ios/qemu-ios/android/work/src/glib-2.78.6
+Build dir: /home/runner/work/qemu-ios/qemu-ios/android/work/src/glib-2.78.6/_b
+Build type: cross build
+
+meson.build:1:0: ERROR: Unknown options: "documentation, introspection, man-pages"
+
+A full log can be found at /home/runner/work/qemu-ios/qemu-ios/android/work/src/glib-2.78.6/_b/meson-logs/meson-log.txt
