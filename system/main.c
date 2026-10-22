@@ -23,6 +23,9 @@
  */
 
 #include "qemu/osdep.h"
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
 #include "qemu-main.h"
 #include "sysemu/sysemu.h"
 
@@ -44,6 +47,23 @@ int (*qemu_main)(void) = qemu_default_main;
 
 int main(int argc, char **argv)
 {
+#if defined(__ANDROID__) && defined(CONFIG_SDL)
+    /*
+     * Android discards stdout/stderr of apps. "--stderr-file=PATH" (injected by
+     * the Java side) sends both to a file so the app can show QEMU's messages.
+     */
+    for (int i = 1; i < argc; i++) {
+        if (strncmp(argv[i], "--stderr-file=", 14) == 0) {
+            if (freopen(argv[i] + 14, "w", stderr)) {
+                setvbuf(stderr, NULL, _IOLBF, 0);
+                dup2(fileno(stderr), 1);
+            }
+            memmove(&argv[i], &argv[i + 1], (argc - i) * sizeof(char *));
+            argc--;
+            break;
+        }
+    }
+#endif
     qemu_init(argc, argv);
     return qemu_main();
 }

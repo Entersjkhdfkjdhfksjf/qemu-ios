@@ -582,6 +582,19 @@ static void handle_mousewheel(SDL_Event *ev)
     qemu_input_event_sync();
 }
 
+#ifdef __ANDROID__
+/* Android destroys the GL context when the activity is paused. */
+static void sdl2_android_recover(struct sdl2_console *scon)
+{
+    if (!scon->opengl && scon->surface) {
+        sdl2_2d_switch(&scon->dcl, scon->surface);
+    }
+    graphic_hw_invalidate(scon->dcl.con);
+    dpy_gfx_update_full(scon->dcl.con);
+    sdl2_redraw(scon);
+}
+#endif
+
 static void handle_windowevent(SDL_Event *ev)
 {
     struct sdl2_console *scon = get_scon_from_window(ev->window.windowID);
@@ -634,6 +647,9 @@ static void handle_windowevent(SDL_Event *ev)
         break;
     case SDL_WINDOWEVENT_RESTORED:
         update_displaychangelistener(&scon->dcl, GUI_REFRESH_INTERVAL_DEFAULT);
+#ifdef __ANDROID__
+        sdl2_android_recover(scon);
+#endif
         break;
     case SDL_WINDOWEVENT_MINIMIZED:
         update_displaychangelistener(&scon->dcl, 500);
@@ -711,6 +727,12 @@ void sdl2_poll_events(struct sdl2_console *scon)
         case SDL_WINDOWEVENT:
             handle_windowevent(ev);
             break;
+#ifdef __ANDROID__
+        case SDL_RENDER_DEVICE_RESET:
+        case SDL_RENDER_TARGETS_RESET:
+            sdl2_android_recover(scon);
+            break;
+#endif
         default:
             break;
         }

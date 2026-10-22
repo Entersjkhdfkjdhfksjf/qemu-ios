@@ -14,6 +14,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import java.io.File;
@@ -21,6 +22,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.RandomAccessFile;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.zip.ZipEntry;
@@ -36,7 +38,7 @@ public class LauncherActivity extends Activity {
 
     private final Handler ui = new Handler(Looper.getMainLooper());
     private TextView status;
-    private Button start, imp, clear;
+    private Button start, imp, clear, logBtn, dbgBtn;
     private volatile boolean busy;
 
     static File ipodDir(Context c) { return new File(c.getFilesDir(), "ipod"); }
@@ -61,7 +63,11 @@ public class LauncherActivity extends Activity {
         status = new TextView(this);
         status.setTextSize(15);
         status.setPadding(0, pad, 0, pad);
-        root.addView(status);
+        status.setTextIsSelectable(true);
+        ScrollView sv = new ScrollView(this);
+        sv.addView(status);
+        root.addView(sv, new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, 0, 1f));
 
         imp = new Button(this);
         imp.setText("Import firmware files…");
@@ -72,6 +78,19 @@ public class LauncherActivity extends Activity {
         start.setText("Start iPod touch");
         start.setOnClickListener(v -> startActivity(new Intent(this, QemuActivity.class)));
         root.addView(start);
+
+        logBtn = new Button(this);
+        logBtn.setText("Show QEMU log");
+        logBtn.setOnClickListener(v -> showLog());
+        root.addView(logBtn);
+
+        dbgBtn = new Button(this);
+        dbgBtn.setOnClickListener(v -> {
+            File f = new File(ipodDir(this), "debug");
+            if (f.exists()) f.delete(); else { ipodDir(this).mkdirs(); try { f.createNewFile(); } catch (IOException e) { } }
+            refresh();
+        });
+        root.addView(dbgBtn);
 
         clear = new Button(this);
         clear.setText("Delete imported files");
@@ -102,9 +121,27 @@ public class LauncherActivity extends Activity {
                     + (br && no && na ? "Ready."
                        : "Download the three files from the qemu-ios iPod touch 2G release, then tap Import and select all of them."));
         }
+        dbgBtn.setText(new File(ipodDir(this), "debug").exists()
+                ? "Verbose QEMU log: ON (tap to turn off)" : "Verbose QEMU log: off (tap to turn on)");
         start.setEnabled(!busy && br && no && na);
         imp.setEnabled(!busy);
         clear.setEnabled(!busy);
+    }
+
+    private static String tail(File f, int max) {
+        try (RandomAccessFile r = new RandomAccessFile(f, "r")) {
+            long len = r.length();
+            byte[] b = new byte[(int) Math.min(len, max)];
+            r.seek(len - b.length);
+            r.readFully(b);
+            return new String(b);
+        } catch (Exception e) { return "(none)"; }
+    }
+
+    private void showLog() {
+        File d = ipodDir(this);
+        status.setText("== qemu-stderr.log (last 4000 chars) ==\n" + tail(new File(d, "qemu-stderr.log"), 4000)
+                + "\n\n== qemu.log (verbose, last 3000 chars) ==\n" + tail(new File(d, "qemu.log"), 3000));
     }
 
     private void setStatus(String s) { ui.post(() -> status.setText(s)); }
