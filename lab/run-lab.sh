@@ -20,9 +20,9 @@ case "$MODE" in
 esac
 
 echo "== running $MODE for ${SECONDS_TO_RUN}s" | tee "$OUT/summary.txt"
-timeout --signal=KILL "$SECONDS_TO_RUN" "$QEMU" \
+SDL_VIDEODRIVER=dummy SDL_AUDIODRIVER=dummy timeout --signal=KILL "$SECONDS_TO_RUN" "$QEMU" \
   -M "iPod-Touch,bootrom=$BOOTROM,nand=$NAND,nor=$NOR" -cpu max -m 2G \
-  -display none -monitor none -serial "file:$OUT/serial.log" \
+  -display sdl -monitor none -serial "file:$OUT/serial.log" \
   -d unimp -D "$OUT/unimp.log" > "$OUT/stdout.log" 2> "$OUT/stderr.log"
 echo "qemu exit code: $?" | tee -a "$OUT/summary.txt"
 {
