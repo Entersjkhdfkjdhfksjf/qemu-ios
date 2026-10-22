@@ -47,3 +47,16 @@ int main(int argc, char **argv)
     qemu_init(argc, argv);
     return qemu_main();
 }
+
+#if defined(__ANDROID__) && defined(CONFIG_SDL)
+/*
+ * SDL.h renames the function above to SDL_main (called from SDLActivity).
+ * Keep a real main() so the intermediate executable still links before the
+ * Android build relinks the same objects as libmain.so.
+ */
+#undef main
+int main(int argc, char **argv)
+{
+    return SDL_main(argc, argv);
+}
+#endif

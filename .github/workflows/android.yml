@@ -1,0 +1,47 @@
+name: Android (arm64)
+
+on:
+  push:
+    branches: [android-port]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Host packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ninja-build pkg-config python3-venv python3-packaging cmake meson gcc g++ make perl xz-utils
+
+      - name: Cache cross-built dependencies
+        uses: actions/cache@v4
+        with:
+          path: android/prefix
+          key: android-deps-${{ hashFiles('android/build-deps.sh') }}
+
+      - name: Build dependencies
+        run: bash android/build-deps.sh
+
+      - name: Build QEMU (libmain.so)
+        run: bash android/build-qemu.sh
+
+      - name: Upload native libs
+        uses: actions/upload-artifact@v4
+        with:
+          name: native-libs-arm64
+          path: android/out/*.so
+
+      - name: Upload logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-logs
+          path: |
+            build-android/config.log
+            build-android/meson-logs/meson-log.txt
+            android/work/src/*/_b/meson-logs/meson-log.txt
+          if-no-files-found: ignore

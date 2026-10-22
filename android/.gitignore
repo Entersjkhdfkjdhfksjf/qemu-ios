@@ -1,0 +1,6 @@
+android/prefix/
+android/work/
+android/out/
+android/pkg-config-static
+android/cross-android-arm64.ini
+build-android/
