@@ -4,3 +4,9 @@ android/out/
 android/pkg-config-static
 android/cross-android-arm64.ini
 build-android/
+project/.gradle/
+project/build/
+project/app/build/
+project/app/src/main/jniLibs/
+project/local.properties
+gradle.log

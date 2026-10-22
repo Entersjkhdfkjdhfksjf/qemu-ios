@@ -50,12 +50,46 @@ jobs:
           name: native-libs-arm64
           path: android/out/*.so
 
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - name: Build APK
+        run: |
+          mkdir -p android/project/app/src/main/jniLibs/arm64-v8a
+          cp android/out/libmain.so android/out/libSDL2.so android/project/app/src/main/jniLibs/arm64-v8a/
+          cd android/project
+          gradle --no-daemon --stacktrace assembleRelease 2>&1 | tee ../gradle.log
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ipod-touch-apk
+          path: android/project/app/build/outputs/apk/release/*.apk
+
+      - name: Publish APK as GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          APK=$(ls android/project/app/build/outputs/apk/release/*.apk | head -1)
+          cp "$APK" /tmp/ipod-touch-qemu.apk
+          gh release delete android-latest --cleanup-tag -y --repo "${{ github.repository }}" || true
+          gh release create android-latest /tmp/ipod-touch-qemu.apk --repo "${{ github.repository }}" \
+            --target "${{ github.sha }}" --prerelease \
+            --title "Android build ${{ github.run_number }}" \
+            --notes "Built from ${{ github.sha }}. No Apple firmware is included; import it in the app."
+
       - name: Publish log tails to ci-logs branch
         if: always()
         run: |
           set +e
           mkdir -p /tmp/out
-          for f in android/deps.log android/qemu.log; do
+          for f in android/deps.log android/qemu.log android/gradle.log; do
             [ -f "$f" ] && tail -n 3000 "$f" > "/tmp/out/$(basename "$f")"
           done
           [ -f build-android/config.log ] && tail -n 400 build-android/config.log > /tmp/out/config.log.tail
