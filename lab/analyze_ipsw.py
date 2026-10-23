@@ -8,12 +8,33 @@ build = prof["build"]
 work = sys.argv[2] if len(sys.argv) > 2 else "/tmp/ipsw-" + build
 os.makedirs(work, exist_ok=True)
 
+def appledb_url():
+    for os_name in ("iPhone%20OS", "iOS"):
+        try:
+            d = json.load(urllib.request.urlopen(f"https://api.appledb.dev/ios/{os_name};{build}.json", timeout=60))
+        except Exception as e:
+            print("appledb", os_name, "->", e); continue
+        urls = []
+        def walk(x):
+            if isinstance(x, dict):
+                for v in x.values(): walk(v)
+            elif isinstance(x, list):
+                for v in x: walk(v)
+            elif isinstance(x, str) and ".ipsw" in x and "iPod2,1" in x:
+                urls.append(x)
+        walk(d)
+        print("appledb", os_name, "ipod2,1 urls:", urls[:3])
+        if urls: return urls[0]
+
 def find_url():
+    if prof.get("ipsw_url"): return prof["ipsw_url"]
     data = json.load(urllib.request.urlopen("https://api.ipsw.me/v4/device/iPod2,1?type=ipsw", timeout=60))
     for fw in data["firmwares"]:
         if fw["buildid"].lower() == build.lower():
             return fw["url"]
     print("builds known to ipsw.me for iPod2,1:", sorted((f["version"], f["buildid"]) for f in data["firmwares"]))
+    u = appledb_url()
+    if u: return u
     raise SystemExit("no IPSW for build " + build)
 
 ipsw = os.path.join(work, "fw.ipsw")

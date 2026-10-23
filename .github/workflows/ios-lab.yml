@@ -65,7 +65,7 @@ jobs:
         run: |
           mkdir -p /tmp/out
           [ -f lab/out/summary.txt ] && cp lab/out/summary.txt /tmp/out/
-          for f in serial stdout stderr unimp; do
+          for f in serial1 serial2 stdout1 stdout2 stderr1 stderr2; do
             [ -f lab/out/$f.log ] && { head -n 300 lab/out/$f.log > /tmp/out/$f.head; tail -n 1500 lab/out/$f.log > /tmp/out/$f.tail; }
           done
           cp lab/config.env /tmp/out/config.env
