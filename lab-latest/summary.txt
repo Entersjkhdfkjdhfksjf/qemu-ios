@@ -1,69 +1,26 @@
-== running baseline for 240s
+== boot 1 (baseline) for 200s
 qemu exit code: 137
---- sizes
- 98332 /home/runner/work/qemu-ios/qemu-ios/lab/out/serial.log
-  5180 /home/runner/work/qemu-ios/qemu-ios/lab/out/stderr.log
-186785 /home/runner/work/qemu-ios/qemu-ios/lab/out/stdout.log
-     0 /home/runner/work/qemu-ios/qemu-ios/lab/out/unimp.log
-290297 total
---- serial.log (last 60 lines)
-EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
-EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
-
-
-GINTSTS=00000000 GINTMSK=00000000 DAINT=00000000 DAINTMSK=00000000 GNPTXSTS=ffffffff 
-DCFG=00000000 DCTL=00000000 DSTS=00000000 
-EP80 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000 
-EP00 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
-EP81 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
-EP82 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
-EP83 DIEPCTL=00000000 DIEPINT=00000000 DIEPTSIZ=00000000 DIEPDMA=00000000
-EP01 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
-EP02 DOEPCTL=00000000 DOEPINT=00000000 DOEPTSIZ=00000000 DOEPDMA=00000000
-
-Registering: IOService:/AppleARMPE/dock/IOAccessoryManager
-config(0): creating
-+ AppleMPVDDriver[0xc0b60240]::setPowerStateGated()
-
-kernel abort type 4: fault_type=0x3, fault_addr=0xec3fd01c
-r0: 0xc0d77f40  r1: 0x00000000  r2: 0xec3fd000  r3: 0xffffffff
-r4: 0xc05026fc  r5: 0x00000000  r6: 0xc0d36460  r7: 0xea623ec4
-r8: 0xc04ff6f0  r9: 0xe02f7510 r10: 0x00000000 r11: 0xc0b60240
-12: 0xc018be50  sp: 0xc0d36460  lr: 0xc04ff6b0  pc: 0xc04fef28
-cpsr: 0x60070113 fsr: 0x00000808 far: 0xec3fd01c
-
-Debugger message: Fatal Exception
-OS version: 5F138
-Kernel version: Darwin Kernel Version 9.4.1: Sun Aug 10 21:25:25 PDT 2008; root:xnu-1228.7.27~12/RELEASE_ARM_S5L8720X
-iBoot version: iBoot-385.22
-secure boot?: NO
-Paniclog version: 1
-Task 0xc09d6ce8: 1997 pages, 62 threads: pid 0: kernel_task
-	thread 0xe02f7510
-		kernel backtrace: ea623d98
-		  lr: 0xc00670b5  fp: 0xea623dc8
-		  lr: 0xc00687bc  fp: 0xea623dd4
-		  lr: 0xc0068cc8  fp: 0xea623e68
-		  lr: 0xc006539c  fp: 0xea623ec4
-		  lr: 0xc04ff6b0  fp: 0xea623ed4
-		  lr: 0xc04ff734  fp: 0xea623ee4
-		  lr: 0xc016009b  fp: 0xea623f08
-		  lr: 0xc05009e0  fp: 0xea623f28
-		  lr: 0xc0158fe9  fp: 0xea623f64
-		  lr: 0xc01591e7  fp: 0xea623f80
-		  lr: 0xc00296e7  fp: 0xea623fa8
-		  lr: 0xc00659f8  fp: 0x00000000
-
-Task 0xc09d6b10: 114 pages, 3 threads: pid 1: launchd
-Task 0xc09d6760: 362 pages, 3 threads: pid 8: lockdownd
-Task 0xc09d6588: 448 pages, 4 threads: pid 9: configd
-Task 0xc09d61d8: 2296 pages, 10 threads: pid 10: SpringBoard
-Task 0xc09d6000: 94 pages, 2 threads: pid 11: notifyd
-Memory access exception (1,0,0)
-ethernet MAC address: 73:65:72:69:61:6c
-ip address: 190.186.173.171
-
-Waiting for remote debugger connection.
-
-Please run: ~luna/bin/panicDebug -a arm localhost
---- most frequent unimplemented accesses
+--- boot 1: sizes
+ 97718 /home/runner/work/qemu-ios/qemu-ios/lab/out/serial1.log
+  5180 /home/runner/work/qemu-ios/qemu-ios/lab/out/stderr1.log
+186785 /home/runner/work/qemu-ios/qemu-ios/lab/out/stdout1.log
+289683 total
+--- boot 1: panic/userland markers
+1888:kernel abort type 4: fault_type=0x3, fault_addr=0xec3fd01c
+1895:Debugger message: Fatal Exception
+1917:Task 0xc09d6b10: 114 pages, 3 threads: pid 1: launchd
+1920:Task 0xc09d61d8: 2306 pages, 10 threads: pid 10: SpringBoard
+1926:Waiting for remote debugger connection.
+== boot 2 (baseline) for 200s
+qemu exit code: 137
+--- boot 2: sizes
+ 97632 /home/runner/work/qemu-ios/qemu-ios/lab/out/serial2.log
+  5180 /home/runner/work/qemu-ios/qemu-ios/lab/out/stderr2.log
+186785 /home/runner/work/qemu-ios/qemu-ios/lab/out/stdout2.log
+289597 total
+--- boot 2: panic/userland markers
+1885:kernel abort type 4: fault_type=0x3, fault_addr=0xec3fd01c
+1892:Debugger message: Fatal Exception
+1914:Task 0xc09d6b10: 114 pages, 3 threads: pid 1: launchd
+1917:Task 0xc09d61d8: 2296 pages, 10 threads: pid 10: SpringBoard
+1923:Waiting for remote debugger connection.

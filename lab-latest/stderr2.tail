@@ -1,0 +1,93 @@
+ipod_touch_unknown1_read: offset = 0x00000140
+ipod_touch_unknown1_read: offset = 0x00000144
+ipod_touch_unknown1_read: offset = 0x00000144
+ipod_touch_unknown1_read: offset = 0x00000104
+ipod_touch_unknown1_read: offset = 0x00000104
+ipod_touch_unknown1_read: offset = 0x00000104
+ipod_touch_unknown1_read: offset = 0x00000104
+ipod_touch_unknown1_read: offset = 0x00000104
+ipod_touch_unknown1_read: offset = 0x00000108
+ipod_touch_unknown1_read: offset = 0x00000100
+ipod_touch_unknown1_read: offset = 0x0000011c
+ipod_touch_unknown1_read: offset = 0x00000120
+ipod_touch_mipi_dsi_write: writing 0x00000001 to 0x00000004
+ipod_touch_mipi_dsi_write: writing 0xffffffff to 0x00000030
+ipod_touch_mipi_dsi_write: writing 0x00100000 to 0x00000014
+ipod_touch_mipi_dsi_write: writing 0x81e00140 to 0x00000018
+ipod_touch_mipi_dsi_write: writing 0xd0060006 to 0x0000001c
+ipod_touch_mipi_dsi_write: writing 0x000c000c to 0x00000020
+ipod_touch_mipi_dsi_write: writing 0x02000010 to 0x00000024
+ipod_touch_mipi_dsi_write: writing 0x0000000a to 0x00000028
+ipod_touch_mipi_dsi_write: writing 0x07807027 to 0x00000010
+ipod_touch_mipi_dsi_write: writing 0x1b380002 to 0x00000008
+ipod_touch_mipi_dsi_write: writing 0x0000001f to 0x00000044
+ipod_touch_mipi_dsi_write: writing 0x000001ff to 0x00000040
+ipod_touch_mipi_dsi_write: writing 0x00100080 to 0x00000014
+ipod_touch_mipi_dsi_read: read from location 0x00000014
+ipod_touch_mipi_dsi_write: writing 0x00000000 to 0x00000014
+ipod_touch_mipi_dsi_write: writing 0x00000005 to 0x00000034
+ipod_touch_mipi_dsi_read: read from location 0x00000044
+ipod_touch_mipi_dsi_read: read from location 0x00000008
+ipod_touch_mipi_dsi_write: writing 0x80000000 to 0x00000008
+ipod_touch_mipi_dsi_write: writing 0xffffffff to 0x0000002c
+ipod_touch_mipi_dsi_write: writing 0x0000b114 to 0x00000034
+ipod_touch_mipi_dsi_read: read from location 0x00000044
+ipod_touch_mipi_dsi_read: read from location 0x0000002c
+ipod_touch_mipi_dsi_read: read from location 0x00000044
+ipod_touch_mipi_dsi_read: read from location 0x0000003c
+ipod_touch_mipi_dsi_read: read from location 0x00000044
+ipod_touch_mipi_dsi_read: read from location 0x0000003c
+ipod_touch_mipi_dsi_write: writing 0x00001105 to 0x00000034
+ipod_touch_mipi_dsi_read: read from location 0x00000044
+ipod_touch_mipi_dsi_write: writing 0x00002905 to 0x00000034
+ipod_touch_mipi_dsi_read: read from location 0x00000044
+ipod_touch_mipi_dsi_read: read from location 0x00000004
+ipod_touch_mipi_dsi_read: read from location 0x00000008
+ipod_touch_mipi_dsi_read: read from location 0x0000000c
+ipod_touch_mipi_dsi_read: read from location 0x00000010
+ipod_touch_mipi_dsi_read: read from location 0x00000014
+ipod_touch_mipi_dsi_read: read from location 0x00000018
+ipod_touch_mipi_dsi_read: read from location 0x0000001c
+ipod_touch_mipi_dsi_read: read from location 0x00000020
+ipod_touch_mipi_dsi_read: read from location 0x00000024
+ipod_touch_mipi_dsi_read: read from location 0x00000028
+ipod_touch_mipi_dsi_read: read from location 0x0000002c
+ipod_touch_mipi_dsi_read: read from location 0x00000030
+ipod_touch_mipi_dsi_read: read from location 0x00000034
+ipod_touch_mipi_dsi_read: read from location 0x00000038
+ipod_touch_mipi_dsi_read: read from location 0x0000003c
+ipod_touch_mipi_dsi_read: read from location 0x00000040
+ipod_touch_mipi_dsi_read: read from location 0x00000044
+ipod_touch_mipi_dsi_read: read from location 0x00000048
+ipod_touch_mipi_dsi_read: read from location 0x0000004c
+ipod_touch_mipi_dsi_read: read from location 0x00000050
+ipod_touch_mbx1_write: writing 0x00000111 to 0x00000080
+ipod_touch_mbx1_write: writing 0x00000000 to 0x00000080
+ipod_touch_mbx1_write: writing 0x000007ff to 0x00000134
+ipod_touch_mbx2_write: writing 0x00000001 to 0x0000000c
+ipod_touch_mbx1_write: writing 0x08d6b000 to 0x00001000
+ipod_touch_mbx1_write: writing 0x08d8c000 to 0x00001004
+ipod_touch_mbx1_write: writing 0x08d6b000 to 0x00001008
+ipod_touch_mbx1_write: writing 0x08d6b000 to 0x0000100c
+ipod_touch_mbx1_write: writing 0x08d6b000 to 0x00001010
+ipod_touch_mbx1_write: writing 0x08d6b000 to 0x00001014
+ipod_touch_mbx1_write: writing 0x08d6b000 to 0x00001018
+ipod_touch_mbx1_write: writing 0x08d6b000 to 0x0000101c
+ipod_touch_mbx1_write: writing 0x00010001 to 0x00001020
+ipod_touch_mbx1_write: writing 0x00000007 to 0x00000108
+ipod_touch_mbx1_write: writing 0x00015000 to 0x00000824
+ipod_touch_mbx1_write: writing 0x00000101 to 0x00000828
+ipod_touch_mbx1_write: writing 0x00000103 to 0x0000082c
+ipod_touch_mbx1_write: writing 0x00000001 to 0x00000838
+ipod_touch_mbx1_write: writing 0x00100000 to 0x0000083c
+ipod_touch_mbx1_write: writing 0x09000000 to 0x000006d8
+ipod_touch_mbx1_write: writing 0x00000040 to 0x00000134
+ipod_touch_mbx1_write: writing 0x000007ff to 0x00000134
+ipod_touch_mbx1_write: writing 0x0000867c to 0x00000130
+ipod_touch_mbx1_write: writing 0x00000000 to 0x00000130
+ipod_touch_mipi_dsi_write: writing 0x00002805 to 0x00000034
+ipod_touch_mipi_dsi_read: read from location 0x00000044
+ipod_touch_mipi_dsi_write: writing 0x00001005 to 0x00000034
+ipod_touch_mipi_dsi_read: read from location 0x00000044
+ipod_touch_mipi_dsi_read: read from location 0x00000008
+ipod_touch_mipi_dsi_write: writing 0x00000000 to 0x00000008
